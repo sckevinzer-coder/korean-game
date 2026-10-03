@@ -1,0 +1,4502 @@
+[
+  {
+    "id": "t5-001",
+    "korean": "형이상학",
+    "reading": "hyeongisanghak",
+    "meaningJa": "形而上学",
+    "exampleKo": "교수가 형이상학을 강의합니다.",
+    "exampleJa": "教授が形而上学を講義します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-002",
+    "korean": "존재론",
+    "reading": "jonjaeron",
+    "meaningJa": "存在論",
+    "exampleKo": "존재론을 공부합니다.",
+    "exampleJa": "存在論を勉強します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-003",
+    "korean": "인식론",
+    "reading": "insikron",
+    "meaningJa": "認識論",
+    "exampleKo": "인식론이 어렵습니다.",
+    "exampleJa": "認識論は難しいです。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-004",
+    "korean": "본체론",
+    "reading": "boncheron",
+    "meaningJa": "本体論",
+    "exampleKo": "본체론을 탐구합니다.",
+    "exampleJa": "本体論を探求します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-005",
+    "korean": "윤리학",
+    "reading": "yunrihak",
+    "meaningJa": "倫理学",
+    "exampleKo": "윤리학을 배웁니다.",
+    "exampleJa": "倫理学を学びます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-006",
+    "korean": "미학",
+    "reading": "mihak",
+    "meaningJa": "美学",
+    "exampleKo": "미학을 전공합니다.",
+    "exampleJa": "美学を専攻します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-007",
+    "korean": "논리학",
+    "reading": "nonrihak",
+    "meaningJa": "論理学",
+    "exampleKo": "논리학이 필요합니다.",
+    "exampleJa": "論理学が必要です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-008",
+    "korean": "변증법",
+    "reading": "byeonjeungbeop",
+    "meaningJa": "弁証法",
+    "exampleKo": "변증법으로 분석합니다.",
+    "exampleJa": "弁証法で分析します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-009",
+    "korean": "실증주의",
+    "reading": "siljeungjuui",
+    "meaningJa": "実証主義",
+    "exampleKo": "실증주의를 주장합니다.",
+    "exampleJa": "実証主義を主張します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-010",
+    "korean": "합리주의",
+    "reading": "haprijuui",
+    "meaningJa": "合理主義",
+    "exampleKo": "합리주의가 퍼졌습니다.",
+    "exampleJa": "合理主義が広がりました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-011",
+    "korean": "경험주의",
+    "reading": "gyeongheomjuui",
+    "meaningJa": "経験主義",
+    "exampleKo": "경험주의를 비판합니다.",
+    "exampleJa": "経験主義を批判します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-012",
+    "korean": "실존주의",
+    "reading": "siljonjuui",
+    "meaningJa": "実存主義",
+    "exampleKo": "실존주의를 읽습니다.",
+    "exampleJa": "実存主義を読みます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-013",
+    "korean": "허무주의",
+    "reading": "heomujuui",
+    "meaningJa": "虚無主義",
+    "exampleKo": "허무주의에 빠졌습니다.",
+    "exampleJa": "虚無主義に陥りました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-014",
+    "korean": "회의주의",
+    "reading": "hoeuijuui",
+    "meaningJa": "懐疑主義",
+    "exampleKo": "회의주의가 필요합니다.",
+    "exampleJa": "懐疑主義が必要です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-015",
+    "korean": "금욕주의",
+    "reading": "geumyokjuui",
+    "meaningJa": "禁欲主義",
+    "exampleKo": "금욕주의를 실천합니다.",
+    "exampleJa": "禁欲主義を実践します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-016",
+    "korean": "쾌락주의",
+    "reading": "kwaerakjuui",
+    "meaningJa": "快楽主義",
+    "exampleKo": "쾌락주의를 경계합니다.",
+    "exampleJa": "快楽主義を警戒します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-017",
+    "korean": "이기주의",
+    "reading": "igijuui",
+    "meaningJa": "利己主義",
+    "exampleKo": "이기주의를 버립니다.",
+    "exampleJa": "利己主義を捨てます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-018",
+    "korean": "이타주의",
+    "reading": "itajuui",
+    "meaningJa": "利他主義",
+    "exampleKo": "이타주의를 실천합니다.",
+    "exampleJa": "利他主義を実践します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-019",
+    "korean": "전체주의",
+    "reading": "jeonchejuui",
+    "meaningJa": "全体主義",
+    "exampleKo": "전체주의를 반대합니다.",
+    "exampleJa": "全体主義に反対します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-020",
+    "korean": "개인주의",
+    "reading": "gaeinjuui",
+    "meaningJa": "個人主義",
+    "exampleKo": "개인주의가 강합니다.",
+    "exampleJa": "個人主義が強いです。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-021",
+    "korean": "집단주의",
+    "reading": "jipdanjuui",
+    "meaningJa": "集団主義",
+    "exampleKo": "집단주의가 남았습니다.",
+    "exampleJa": "集団主義が残っています。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-022",
+    "korean": "자유주의",
+    "reading": "jayujuui",
+    "meaningJa": "自由主義",
+    "exampleKo": "자유주의를 옹호합니다.",
+    "exampleJa": "自由主義を擁護します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-023",
+    "korean": "보수주의",
+    "reading": "bosujuui",
+    "meaningJa": "保守主義",
+    "exampleKo": "보수주의가 세력을 얻었습니다.",
+    "exampleJa": "保守主義が勢力を得ました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-024",
+    "korean": "진보주의",
+    "reading": "jinbojuui",
+    "meaningJa": "進歩主義",
+    "exampleKo": "진보주의를 지지합니다.",
+    "exampleJa": "進歩主義を支持します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-025",
+    "korean": "민족주의",
+    "reading": "minjokjuui",
+    "meaningJa": "民族主義",
+    "exampleKo": "민족주의가 대두했습니다.",
+    "exampleJa": "民族主義が台頭しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-026",
+    "korean": "국제주의",
+    "reading": "gukjejuui",
+    "meaningJa": "国際主義",
+    "exampleKo": "국제주의를 표방합니다.",
+    "exampleJa": "国際主義を標榜します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-027",
+    "korean": "이상주의",
+    "reading": "isangjuui",
+    "meaningJa": "理想主義",
+    "exampleKo": "이상주의를 품습니다.",
+    "exampleJa": "理想主義を抱きます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-028",
+    "korean": "현실주의",
+    "reading": "hyeonsiljuui",
+    "meaningJa": "現実主義",
+    "exampleKo": "현실주의가 필요합니다.",
+    "exampleJa": "現実主義が必要です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-029",
+    "korean": "낙관주의",
+    "reading": "nakgwanjuui",
+    "meaningJa": "楽観主義",
+    "exampleKo": "낙관주의가 우세합니다.",
+    "exampleJa": "楽観主義が優勢です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-030",
+    "korean": "비관주의",
+    "reading": "bigwanjuui",
+    "meaningJa": "悲観主義",
+    "exampleKo": "비관주의에 빠졌습니다.",
+    "exampleJa": "悲観主義に陥りました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-031",
+    "korean": "운명론",
+    "reading": "unmyeongnon",
+    "meaningJa": "運命論",
+    "exampleKo": "운명론을 믿습니다.",
+    "exampleJa": "運命論を信じます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-032",
+    "korean": "결정론",
+    "reading": "gyeoljeongnon",
+    "meaningJa": "決定論",
+    "exampleKo": "결정론을 반박합니다.",
+    "exampleJa": "決定論に反論します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-033",
+    "korean": "상대주의",
+    "reading": "sangdaejuui",
+    "meaningJa": "相対主義",
+    "exampleKo": "상대주의를 주장합니다.",
+    "exampleJa": "相対主義を主張します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-034",
+    "korean": "절대주의",
+    "reading": "jeoldaejuui",
+    "meaningJa": "絶対主義",
+    "exampleKo": "절대주의를 배격합니다.",
+    "exampleJa": "絶対主義を排撃します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-035",
+    "korean": "권위주의",
+    "reading": "gwonwijuui",
+    "meaningJa": "権威主義",
+    "exampleKo": "권위주의가 무너졌습니다.",
+    "exampleJa": "権威主義が崩れました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-036",
+    "korean": "엘리트주의",
+    "reading": "elliteujuui",
+    "meaningJa": "エリート主義",
+    "exampleKo": "엘리트주의를 비판합니다.",
+    "exampleJa": "エリート主義を批判します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-037",
+    "korean": "포퓰리즘",
+    "reading": "popyullijeum",
+    "meaningJa": "ポピュリズム",
+    "exampleKo": "포퓰리즘이 확산됩니다.",
+    "exampleJa": "ポピュリズムが拡散します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-038",
+    "korean": "실용주의",
+    "reading": "silyongjuui",
+    "meaningJa": "実用主義",
+    "exampleKo": "실용주의를 택합니다.",
+    "exampleJa": "実用主義を選びます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-039",
+    "korean": "이상향",
+    "reading": "isanghyang",
+    "meaningJa": "理想郷",
+    "exampleKo": "이상향을 꿈꿉니다.",
+    "exampleJa": "理想郷を夢見ます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-040",
+    "korean": "유토피아",
+    "reading": "yutopia",
+    "meaningJa": "ユートピア",
+    "exampleKo": "유토피아를 그립니다.",
+    "exampleJa": "ユートピアを描きます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-041",
+    "korean": "디스토피아",
+    "reading": "diseutopia",
+    "meaningJa": "ディストピア",
+    "exampleKo": "디스토피아 소설을 읽습니다.",
+    "exampleJa": "ディストピア小説を読みます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-042",
+    "korean": "자의식",
+    "reading": "jauisik",
+    "meaningJa": "自意識",
+    "exampleKo": "자의식이 강합니다.",
+    "exampleJa": "自意識が強いです。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-043",
+    "korean": "초자아",
+    "reading": "chojaa",
+    "meaningJa": "超自我",
+    "exampleKo": "초자아가 형성됩니다.",
+    "exampleJa": "超自我が形成されます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-044",
+    "korean": "억압",
+    "reading": "eokap",
+    "meaningJa": "抑圧",
+    "exampleKo": "욕망을 억압합니다.",
+    "exampleJa": "欲望を抑圧します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-045",
+    "korean": "잠재의식",
+    "reading": "jamjaeuisik",
+    "meaningJa": "潜在意識",
+    "exampleKo": "잠재의식을 자극합니다.",
+    "exampleJa": "潜在意識を刺激します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-046",
+    "korean": "집단 무의식",
+    "reading": "jipdanmuuisik",
+    "meaningJa": "集合的無意識",
+    "exampleKo": "집단 무의식을 연구합니다.",
+    "exampleJa": "集合的無意識を研究します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-047",
+    "korean": "실체",
+    "reading": "silche",
+    "meaningJa": "実体",
+    "exampleKo": "실체를 파악합니다.",
+    "exampleJa": "実体を把握します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-048",
+    "korean": "본질",
+    "reading": "bonjil",
+    "meaningJa": "本質",
+    "exampleKo": "본질을 꿰뚫습니다.",
+    "exampleJa": "本質を見抜きます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-049",
+    "korean": "표상",
+    "reading": "pyosang",
+    "meaningJa": "表象",
+    "exampleKo": "표상을 분석합니다.",
+    "exampleJa": "表象を分析します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-050",
+    "korean": "실존",
+    "reading": "siljon",
+    "meaningJa": "実存",
+    "exampleKo": "실존을 자각합니다.",
+    "exampleJa": "実存を自覚します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-051",
+    "korean": "초월",
+    "reading": "chowol",
+    "meaningJa": "超越",
+    "exampleKo": "자아를 초월합니다.",
+    "exampleJa": "自我を超越します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-052",
+    "korean": "내재",
+    "reading": "naejae",
+    "meaningJa": "内在",
+    "exampleKo": "모순이 내재합니다.",
+    "exampleJa": "矛盾が内在します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-053",
+    "korean": "모순",
+    "reading": "mosun",
+    "meaningJa": "矛盾",
+    "exampleKo": "모순이 드러났습니다.",
+    "exampleJa": "矛盾が明らかになりました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-054",
+    "korean": "대치",
+    "reading": "daechi",
+    "meaningJa": "対峙",
+    "exampleKo": "남북이 대치합니다.",
+    "exampleJa": "南北が対峙します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-055",
+    "korean": "지양",
+    "reading": "jiyang",
+    "meaningJa": "止揚",
+    "exampleKo": "모순을 지양합니다.",
+    "exampleJa": "矛盾を止揚します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-056",
+    "korean": "정립",
+    "reading": "jeongnip",
+    "meaningJa": "定立",
+    "exampleKo": "명제를 정립합니다.",
+    "exampleJa": "命題を定立します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-057",
+    "korean": "반정립",
+    "reading": "banjeongnip",
+    "meaningJa": "反定立",
+    "exampleKo": "반정립을 제기합니다.",
+    "exampleJa": "反定立を提起します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-058",
+    "korean": "융합",
+    "reading": "yunghap",
+    "meaningJa": "融合",
+    "exampleKo": "문화가 융합합니다.",
+    "exampleJa": "文化が融合します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-059",
+    "korean": "소외",
+    "reading": "sowe",
+    "meaningJa": "疎外",
+    "exampleKo": "노동자가 소외됩니다.",
+    "exampleJa": "労働者が疎外されます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-060",
+    "korean": "자아 성찰",
+    "reading": "jaaseongchal",
+    "meaningJa": "自我省察",
+    "exampleKo": "자아 성찰이 필요합니다.",
+    "exampleJa": "自我省察が必要です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-061",
+    "korean": "성찰",
+    "reading": "seongchal",
+    "meaningJa": "省察",
+    "exampleKo": "깊이 성찰합니다.",
+    "exampleJa": "深く省察します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-062",
+    "korean": "관조",
+    "reading": "gwanjo",
+    "meaningJa": "観照",
+    "exampleKo": "자연을 관조합니다.",
+    "exampleJa": "自然を観照します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-063",
+    "korean": "명상",
+    "reading": "myeongsang",
+    "meaningJa": "瞑想",
+    "exampleKo": "매일 명상합니다.",
+    "exampleJa": "毎日瞑想します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-064",
+    "korean": "깨달음",
+    "reading": "kkaedaleum",
+    "meaningJa": "悟り",
+    "exampleKo": "깨달음을 얻었습니다.",
+    "exampleJa": "悟りを得ました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-065",
+    "korean": "각성",
+    "reading": "gakseong",
+    "meaningJa": "覚醒",
+    "exampleKo": "시민 의식이 각성했습니다.",
+    "exampleJa": "市民意識が覚醒しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-066",
+    "korean": "계몽",
+    "reading": "gyemong",
+    "meaningJa": "啓蒙",
+    "exampleKo": "민중을 계몽합니다.",
+    "exampleJa": "民衆を啓蒙します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-067",
+    "korean": "교화",
+    "reading": "gyohwa",
+    "meaningJa": "教化",
+    "exampleKo": "죄인을 교화합니다.",
+    "exampleJa": "罪人を教化します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-068",
+    "korean": "수양",
+    "reading": "suyang",
+    "meaningJa": "修養",
+    "exampleKo": "마음을 수양합니다.",
+    "exampleJa": "心を修養します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-069",
+    "korean": "인격",
+    "reading": "ingyeok",
+    "meaningJa": "人格",
+    "exampleKo": "인격을 존중합니다.",
+    "exampleJa": "人格を尊重します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-070",
+    "korean": "덕목",
+    "reading": "deokmok",
+    "meaningJa": "徳目",
+    "exampleKo": "겸손은 덕목입니다.",
+    "exampleJa": "謙虚さは徳目です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-071",
+    "korean": "절제",
+    "reading": "jeolje",
+    "meaningJa": "節制",
+    "exampleKo": "욕망을 절제합니다.",
+    "exampleJa": "欲望を節制します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-072",
+    "korean": "중용",
+    "reading": "jungyong",
+    "meaningJa": "中庸",
+    "exampleKo": "중용이 중요합니다.",
+    "exampleJa": "中庸が大切です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-073",
+    "korean": "절충",
+    "reading": "jeolchung",
+    "meaningJa": "折衷",
+    "exampleKo": "의견을 절충합니다.",
+    "exampleJa": "意見を折衷します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-074",
+    "korean": "상생",
+    "reading": "sangsaeng",
+    "meaningJa": "相生",
+    "exampleKo": "기업과 사회가 상생합니다.",
+    "exampleJa": "企業と社会が共生します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-075",
+    "korean": "병존",
+    "reading": "byeongjon",
+    "meaningJa": "併存",
+    "exampleKo": "두 제도가 병존합니다.",
+    "exampleJa": "二つの制度が併存します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-076",
+    "korean": "대동",
+    "reading": "daedong",
+    "meaningJa": "大同",
+    "exampleKo": "대동의 세상을 꿈꿉니다.",
+    "exampleJa": "大同の世を夢見ます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-077",
+    "korean": "박애",
+    "reading": "bakae",
+    "meaningJa": "博愛",
+    "exampleKo": "박애를 실천합니다.",
+    "exampleJa": "博愛を実践します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-078",
+    "korean": "인도주의",
+    "reading": "indojuui",
+    "meaningJa": "人道主義",
+    "exampleKo": "인도주의를 내세웁니다.",
+    "exampleJa": "人道主義を掲げます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-079",
+    "korean": "박애주의",
+    "reading": "bakaejuui",
+    "meaningJa": "博愛主義",
+    "exampleKo": "박애주의가 퍼졌습니다.",
+    "exampleJa": "博愛主義が広がりました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-080",
+    "korean": "세계관",
+    "reading": "segyegwan",
+    "meaningJa": "世界観",
+    "exampleKo": "세계관이 확립됩니다.",
+    "exampleJa": "世界観が確立されます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-081",
+    "korean": "인생관",
+    "reading": "insaenggwan",
+    "meaningJa": "人生観",
+    "exampleKo": "인생관이 바뀌었습니다.",
+    "exampleJa": "人生観が変わりました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-082",
+    "korean": "가치관",
+    "reading": "gachigwan",
+    "meaningJa": "価値観",
+    "exampleKo": "가치관이 다릅니다.",
+    "exampleJa": "価値観が違います。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-083",
+    "korean": "역사관",
+    "reading": "yeoksagwan",
+    "meaningJa": "歴史観",
+    "exampleKo": "역사관을 바로잡습니다.",
+    "exampleJa": "歴史観を正します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-084",
+    "korean": "우주관",
+    "reading": "ujugwan",
+    "meaningJa": "宇宙観",
+    "exampleKo": "우주관이 확장됩니다.",
+    "exampleJa": "宇宙観が拡張されます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-085",
+    "korean": "자연관",
+    "reading": "jayeongwan",
+    "meaningJa": "自然観",
+    "exampleKo": "자연관을 성찰합니다.",
+    "exampleJa": "自然観を省察します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-086",
+    "korean": "인간성",
+    "reading": "inganseong",
+    "meaningJa": "人間性",
+    "exampleKo": "인간성을 회복합니다.",
+    "exampleJa": "人間性を回復します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-087",
+    "korean": "도덕률",
+    "reading": "dodeokryul",
+    "meaningJa": "道徳律",
+    "exampleKo": "도덕률을 지킵니다.",
+    "exampleJa": "道徳律を守ります。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-088",
+    "korean": "당위",
+    "reading": "dangwi",
+    "meaningJa": "当為",
+    "exampleKo": "당위를 추구합니다.",
+    "exampleJa": "当為を追求します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-089",
+    "korean": "본연",
+    "reading": "bonyeon",
+    "meaningJa": "本然",
+    "exampleKo": "본연의 자세로 임합니다.",
+    "exampleJa": "本然の姿勢で臨みます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-090",
+    "korean": "실연",
+    "reading": "silyeon",
+    "meaningJa": "実然",
+    "exampleKo": "실연을 직시합니다.",
+    "exampleJa": "実然を直視します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-091",
+    "korean": "가능태",
+    "reading": "ganeungtae",
+    "meaningJa": "可能態",
+    "exampleKo": "가능태로 존재합니다.",
+    "exampleJa": "可能態として存在します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-092",
+    "korean": "현실태",
+    "reading": "hyeonsiltae",
+    "meaningJa": "現実態",
+    "exampleKo": "현실태로 나타났습니다.",
+    "exampleJa": "現実態として現れました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-093",
+    "korean": "필연",
+    "reading": "piryeon",
+    "meaningJa": "必然",
+    "exampleKo": "성공은 필연입니다.",
+    "exampleJa": "成功は必然です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-094",
+    "korean": "우연",
+    "reading": "uyeon",
+    "meaningJa": "偶然",
+    "exampleKo": "만남은 우연입니다.",
+    "exampleJa": "出会いは偶然です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-095",
+    "korean": "인과",
+    "reading": "ingwa",
+    "meaningJa": "因果",
+    "exampleKo": "인과를 따집니다.",
+    "exampleJa": "因果を問います。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-096",
+    "korean": "인과율",
+    "reading": "ingwayul",
+    "meaningJa": "因果律",
+    "exampleKo": "인과율을 믿습니다.",
+    "exampleJa": "因果律を信じます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-097",
+    "korean": "영겁",
+    "reading": "yeonggeop",
+    "meaningJa": "永劫",
+    "exampleKo": "영겁의 세월이 흘렀습니다.",
+    "exampleJa": "永劫の歳月が流れました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-098",
+    "korean": "영원회귀",
+    "reading": "yeongwonhoegwi",
+    "meaningJa": "永遠回帰",
+    "exampleKo": "영원회귀를 사유합니다.",
+    "exampleJa": "永遠回帰を思索します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-099",
+    "korean": "유한",
+    "reading": "yuhan",
+    "meaningJa": "有限",
+    "exampleKo": "인생은 유한합니다.",
+    "exampleJa": "人生は有限です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-100",
+    "korean": "제행무상",
+    "reading": "jehaengmusang",
+    "meaningJa": "諸行無常",
+    "exampleKo": "제행무상을 깨닫습니다.",
+    "exampleJa": "諸行無常を悟ります。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-101",
+    "korean": "귀납",
+    "reading": "gwinap",
+    "meaningJa": "帰納",
+    "exampleKo": "귀납으로 추론합니다.",
+    "exampleJa": "帰納で推論します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-102",
+    "korean": "연역",
+    "reading": "yeonyeok",
+    "meaningJa": "演繹",
+    "exampleKo": "연역으로 증명합니다.",
+    "exampleJa": "演繹で証明します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-103",
+    "korean": "작업 가설",
+    "reading": "jageopgaseol",
+    "meaningJa": "作業仮説",
+    "exampleKo": "작업 가설을 세웁니다.",
+    "exampleJa": "作業仮説を立てます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-104",
+    "korean": "교차 검증",
+    "reading": "gyochageumjeung",
+    "meaningJa": "交叉検証",
+    "exampleKo": "교차 검증을 실시합니다.",
+    "exampleJa": "交叉検証を実施します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-105",
+    "korean": "실증",
+    "reading": "siljeung",
+    "meaningJa": "実証",
+    "exampleKo": "이론을 실증합니다.",
+    "exampleJa": "理論を実証します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-106",
+    "korean": "반증",
+    "reading": "banjeung",
+    "meaningJa": "反証",
+    "exampleKo": "가설이 반증됐습니다.",
+    "exampleJa": "仮説が反証されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-107",
+    "korean": "논증",
+    "reading": "nonjeung",
+    "meaningJa": "論証",
+    "exampleKo": "논증이 치밀합니다.",
+    "exampleJa": "論証が緻密です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-108",
+    "korean": "논박",
+    "reading": "nonbak",
+    "meaningJa": "論駁",
+    "exampleKo": "상대를 논박합니다.",
+    "exampleJa": "相手を論駁します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-109",
+    "korean": "변론",
+    "reading": "byeonnon",
+    "meaningJa": "弁論",
+    "exampleKo": "변론을 펼칩니다.",
+    "exampleJa": "弁論を繰り広げます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-110",
+    "korean": "항변",
+    "reading": "hangbyeon",
+    "meaningJa": "抗弁",
+    "exampleKo": "항변이 받아들여졌습니다.",
+    "exampleJa": "抗弁が受け入れられました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-111",
+    "korean": "궤변",
+    "reading": "gwebyeon",
+    "meaningJa": "詭弁",
+    "exampleKo": "궤변을 늘어놓습니다.",
+    "exampleJa": "詭弁を並べ立てます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-112",
+    "korean": "정설",
+    "reading": "jeongseol",
+    "meaningJa": "定説",
+    "exampleKo": "정설로 굳어졌습니다.",
+    "exampleJa": "定説として定着しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-113",
+    "korean": "통설",
+    "reading": "tongseol",
+    "meaningJa": "通説",
+    "exampleKo": "통설을 따릅니다.",
+    "exampleJa": "通説に従います。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-114",
+    "korean": "다수설",
+    "reading": "dasuseol",
+    "meaningJa": "多数説",
+    "exampleKo": "다수설을 따릅니다.",
+    "exampleJa": "多数説に従います。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-115",
+    "korean": "이설",
+    "reading": "iseol",
+    "meaningJa": "異説",
+    "exampleKo": "이설이 존재합니다.",
+    "exampleJa": "異説が存在します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-116",
+    "korean": "속설",
+    "reading": "sokseol",
+    "meaningJa": "俗説",
+    "exampleKo": "속설에 불과합니다.",
+    "exampleJa": "俗説にすぎません。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-117",
+    "korean": "야사",
+    "reading": "yasa",
+    "meaningJa": "野史",
+    "exampleKo": "야사에 기록됐습니다.",
+    "exampleJa": "野史に記録されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-118",
+    "korean": "정사",
+    "reading": "jeongsa",
+    "meaningJa": "正史",
+    "exampleKo": "정사에 근거합니다.",
+    "exampleJa": "正史に基づきます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-119",
+    "korean": "사료",
+    "reading": "saryo",
+    "meaningJa": "史料",
+    "exampleKo": "사료를 발굴합니다.",
+    "exampleJa": "史料を発掘します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-120",
+    "korean": "전거",
+    "reading": "jeongeo",
+    "meaningJa": "典拠",
+    "exampleKo": "전거를 밝힙니다.",
+    "exampleJa": "典拠を明らかにします。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-121",
+    "korean": "출전",
+    "reading": "chulcheon",
+    "meaningJa": "出典",
+    "exampleKo": "출전을 명기합니다.",
+    "exampleJa": "出典を明記します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-122",
+    "korean": "각주",
+    "reading": "gakju",
+    "meaningJa": "脚注",
+    "exampleKo": "각주를 답니다.",
+    "exampleJa": "脚注を付けます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-123",
+    "korean": "미주",
+    "reading": "miju",
+    "meaningJa": "尾注",
+    "exampleKo": "미주를 참고합니다.",
+    "exampleJa": "尾注を参考にします。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-124",
+    "korean": "전재",
+    "reading": "jeonjae",
+    "meaningJa": "転載",
+    "exampleKo": "무단 전재를 금합니다.",
+    "exampleJa": "無断転載を禁じます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-125",
+    "korean": "발췌",
+    "reading": "balchwe",
+    "meaningJa": "抜粋",
+    "exampleKo": "명문을 발췌합니다.",
+    "exampleJa": "名文を抜粋します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-126",
+    "korean": "개요",
+    "reading": "gaeyo",
+    "meaningJa": "概要",
+    "exampleKo": "계획의 개요를 설명합니다.",
+    "exampleJa": "計画の概要を説明します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-127",
+    "korean": "요지",
+    "reading": "yoji",
+    "meaningJa": "要旨",
+    "exampleKo": "연설의 요지를 전합니다.",
+    "exampleJa": "演説の要旨を伝えます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-128",
+    "korean": "취지",
+    "reading": "chwiji",
+    "meaningJa": "趣旨",
+    "exampleKo": "행사의 취지를 살립니다.",
+    "exampleJa": "行事の趣旨を生かします。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-129",
+    "korean": "서문",
+    "reading": "seomun",
+    "meaningJa": "序文",
+    "exampleKo": "서문을 씁니다.",
+    "exampleJa": "序文を書きます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-130",
+    "korean": "서설",
+    "reading": "seoseol",
+    "meaningJa": "序説",
+    "exampleKo": "서설을 덧붙입니다.",
+    "exampleJa": "序説を付け加えます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-131",
+    "korean": "총론",
+    "reading": "chongnon",
+    "meaningJa": "総論",
+    "exampleKo": "총론부터 읽습니다.",
+    "exampleJa": "総論から読みます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-132",
+    "korean": "각론",
+    "reading": "gakron",
+    "meaningJa": "各論",
+    "exampleKo": "각론을 다룹니다.",
+    "exampleJa": "各論を扱います。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-133",
+    "korean": "개론",
+    "reading": "gaeron",
+    "meaningJa": "概論",
+    "exampleKo": "개론서를 탐독합니다.",
+    "exampleJa": "概論書を読破します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-134",
+    "korean": "원론",
+    "reading": "wonnon",
+    "meaningJa": "原論",
+    "exampleKo": "원론을 강독합니다.",
+    "exampleJa": "原論を講読します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-135",
+    "korean": "방법론",
+    "reading": "bangbeomnon",
+    "meaningJa": "方法論",
+    "exampleKo": "방법론을 정립합니다.",
+    "exampleJa": "方法論を定立します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-136",
+    "korean": "패러다임",
+    "reading": "paereodaim",
+    "meaningJa": "パラダイム",
+    "exampleKo": "패러다임이 전환됐습니다.",
+    "exampleJa": "パラダイムが転換されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-137",
+    "korean": "담론",
+    "reading": "damnon",
+    "meaningJa": "言説",
+    "exampleKo": "담론이 형성됩니다.",
+    "exampleJa": "言説が形成されます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-138",
+    "korean": "담화",
+    "reading": "damhwa",
+    "meaningJa": "談話",
+    "exampleKo": "담화를 발표했습니다.",
+    "exampleJa": "談話を発表しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-139",
+    "korean": "화용",
+    "reading": "hwayong",
+    "meaningJa": "語用",
+    "exampleKo": "화용을 연구합니다.",
+    "exampleJa": "語用を研究します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-140",
+    "korean": "의미론",
+    "reading": "uimiron",
+    "meaningJa": "意味論",
+    "exampleKo": "의미론을 전공합니다.",
+    "exampleJa": "意味論を専攻します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-141",
+    "korean": "음운론",
+    "reading": "eumunnon",
+    "meaningJa": "音韻論",
+    "exampleKo": "음운론이 어렵습니다.",
+    "exampleJa": "音韻論は難しいです。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-142",
+    "korean": "형태론",
+    "reading": "hyeongtaeron",
+    "meaningJa": "形態論",
+    "exampleKo": "형태론을 배웁니다.",
+    "exampleJa": "形態論を学びます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-143",
+    "korean": "어원",
+    "reading": "eowon",
+    "meaningJa": "語源",
+    "exampleKo": "어원을 밝힙니다.",
+    "exampleJa": "語源を明らかにします。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-144",
+    "korean": "문체",
+    "reading": "munche",
+    "meaningJa": "文体",
+    "exampleKo": "문체가 격조 높습니다.",
+    "exampleJa": "文体が高尚です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-145",
+    "korean": "수사법",
+    "reading": "susabeop",
+    "meaningJa": "修辞法",
+    "exampleKo": "수사법을 익힙니다.",
+    "exampleJa": "修辞法を身につけます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-146",
+    "korean": "은유",
+    "reading": "eunyu",
+    "meaningJa": "隠喩",
+    "exampleKo": "은유를 구사합니다.",
+    "exampleJa": "隠喩を駆使します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-147",
+    "korean": "직유",
+    "reading": "jigyu",
+    "meaningJa": "直喩",
+    "exampleKo": "직유를 사용합니다.",
+    "exampleJa": "直喩を使います。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-148",
+    "korean": "반어",
+    "reading": "baneo",
+    "meaningJa": "反語",
+    "exampleKo": "반어로 풍자합니다.",
+    "exampleJa": "反語で風刺します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-149",
+    "korean": "역설",
+    "reading": "yeokseol",
+    "meaningJa": "逆説",
+    "exampleKo": "역설이 담겼습니다.",
+    "exampleJa": "逆説が込められています。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-150",
+    "korean": "아이러니",
+    "reading": "aireoni",
+    "meaningJa": "アイロニー",
+    "exampleKo": "아이러니가 느껴집니다.",
+    "exampleJa": "アイロニーを感じます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-151",
+    "korean": "알레고리",
+    "reading": "allegori",
+    "meaningJa": "アレゴリー",
+    "exampleKo": "알레고리로 해석합니다.",
+    "exampleJa": "アレゴリーとして解釈します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-152",
+    "korean": "우화",
+    "reading": "uhwa",
+    "meaningJa": "寓話",
+    "exampleKo": "우화를 들려줍니다.",
+    "exampleJa": "寓話を聞かせます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-153",
+    "korean": "풍자",
+    "reading": "pungja",
+    "meaningJa": "諷刺",
+    "exampleKo": "권력을 풍자합니다.",
+    "exampleJa": "権力を風刺します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-154",
+    "korean": "해학",
+    "reading": "haehak",
+    "meaningJa": "諧謔",
+    "exampleKo": "해학이 넘칩니다.",
+    "exampleJa": "諧謔にあふれています。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-155",
+    "korean": "골계",
+    "reading": "golgye",
+    "meaningJa": "滑稽",
+    "exampleKo": "골계미가 있습니다.",
+    "exampleJa": "滑稽味があります。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-156",
+    "korean": "풍유",
+    "reading": "pungyu",
+    "meaningJa": "諷諭",
+    "exampleKo": "풍유로 깨우칩니다.",
+    "exampleJa": "諷諭で悟らせます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-157",
+    "korean": "잠언",
+    "reading": "jameon",
+    "meaningJa": "箴言",
+    "exampleKo": "잠언을 되새깁니다.",
+    "exampleJa": "箴言をかみしめます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-158",
+    "korean": "격언",
+    "reading": "gyeogeon",
+    "meaningJa": "格言",
+    "exampleKo": "격언을 새깁니다.",
+    "exampleJa": "格言を刻みます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-159",
+    "korean": "위인전",
+    "reading": "wiinjeon",
+    "meaningJa": "偉人伝",
+    "exampleKo": "위인전을 읽습니다.",
+    "exampleJa": "偉人伝を読みます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-160",
+    "korean": "자서전",
+    "reading": "jaseojeon",
+    "meaningJa": "自叙伝",
+    "exampleKo": "자서전을 집필합니다.",
+    "exampleJa": "自叙伝を執筆します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-161",
+    "korean": "평전",
+    "reading": "pyeongjeon",
+    "meaningJa": "評伝",
+    "exampleKo": "평전이 출간됐습니다.",
+    "exampleJa": "評伝が出版されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-162",
+    "korean": "연보",
+    "reading": "yeonbo",
+    "meaningJa": "年譜",
+    "exampleKo": "연보를 정리합니다.",
+    "exampleJa": "年譜を整理します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-163",
+    "korean": "계보",
+    "reading": "gyebo",
+    "meaningJa": "系譜",
+    "exampleKo": "사상의 계보를 잇습니다.",
+    "exampleJa": "思想の系譜を受け継ぎます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-164",
+    "korean": "문헌",
+    "reading": "munheon",
+    "meaningJa": "文献",
+    "exampleKo": "문헌을 고증합니다.",
+    "exampleJa": "文献を考証します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-165",
+    "korean": "고문헌",
+    "reading": "gomunheon",
+    "meaningJa": "古文献",
+    "exampleKo": "고문헌을 해독합니다.",
+    "exampleJa": "古文献を解読します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-166",
+    "korean": "비문",
+    "reading": "bimun",
+    "meaningJa": "碑文",
+    "exampleKo": "비문을 판독합니다.",
+    "exampleJa": "碑文を判読します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-167",
+    "korean": "금석문",
+    "reading": "geumseongmun",
+    "meaningJa": "金石文",
+    "exampleKo": "금석문을 탁본합니다.",
+    "exampleJa": "金石文を拓本します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-168",
+    "korean": "필사본",
+    "reading": "pilsabon",
+    "meaningJa": "筆写本",
+    "exampleKo": "필사본을 대조합니다.",
+    "exampleJa": "筆写本を対照します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-169",
+    "korean": "목판본",
+    "reading": "mokpanbon",
+    "meaningJa": "木版本",
+    "exampleKo": "목판본을 간행합니다.",
+    "exampleJa": "木版本を刊行します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-170",
+    "korean": "간행",
+    "reading": "ganhaeng",
+    "meaningJa": "刊行",
+    "exampleKo": "전집을 간행합니다.",
+    "exampleJa": "全集を刊行します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-171",
+    "korean": "중판",
+    "reading": "jungpan",
+    "meaningJa": "重版",
+    "exampleKo": "책이 중판됐습니다.",
+    "exampleJa": "本が重版されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-172",
+    "korean": "절판",
+    "reading": "jeolpan",
+    "meaningJa": "絶版",
+    "exampleKo": "책이 절판됐습니다.",
+    "exampleJa": "本が絶版になりました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-173",
+    "korean": "초판",
+    "reading": "chopan",
+    "meaningJa": "初版",
+    "exampleKo": "초판을 소장합니다.",
+    "exampleJa": "初版を所蔵します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-174",
+    "korean": "합본",
+    "reading": "hapbon",
+    "meaningJa": "合本",
+    "exampleKo": "전권을 합본합니다.",
+    "exampleJa": "全巻を合本します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-175",
+    "korean": "분책",
+    "reading": "bunchaek",
+    "meaningJa": "分冊",
+    "exampleKo": "전집을 분책합니다.",
+    "exampleJa": "全集を分冊します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-176",
+    "korean": "총서",
+    "reading": "chongseo",
+    "meaningJa": "叢書",
+    "exampleKo": "총서를 기획합니다.",
+    "exampleJa": "叢書を企画します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-177",
+    "korean": "전집",
+    "reading": "jeonjip",
+    "meaningJa": "全集",
+    "exampleKo": "전집을 탐독합니다.",
+    "exampleJa": "全集を読破します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-178",
+    "korean": "선집",
+    "reading": "seonjip",
+    "meaningJa": "選集",
+    "exampleKo": "시 선집을 엮습니다.",
+    "exampleJa": "詩の選集を編みます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-179",
+    "korean": "문집",
+    "reading": "munjip",
+    "meaningJa": "文集",
+    "exampleKo": "문집을 발간합니다.",
+    "exampleJa": "文集を発刊します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-180",
+    "korean": "어록",
+    "reading": "eorok",
+    "meaningJa": "語録",
+    "exampleKo": "스승의 어록을 모았습니다.",
+    "exampleJa": "師の語録を集めました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-181",
+    "korean": "실록",
+    "reading": "sillok",
+    "meaningJa": "実録",
+    "exampleKo": "실록을 편찬합니다.",
+    "exampleJa": "実録を編纂します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-182",
+    "korean": "연대기",
+    "reading": "yeondaegi",
+    "meaningJa": "年代記",
+    "exampleKo": "연대기를 엮습니다.",
+    "exampleJa": "年代記を編みます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-183",
+    "korean": "편년체",
+    "reading": "pyeonnyeonche",
+    "meaningJa": "編年体",
+    "exampleKo": "편년체로 서술합니다.",
+    "exampleJa": "編年体で叙述します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-184",
+    "korean": "기전체",
+    "reading": "gijeonche",
+    "meaningJa": "紀伝体",
+    "exampleKo": "기전체로 기록합니다.",
+    "exampleJa": "紀伝体で記録します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-185",
+    "korean": "박사 학위",
+    "reading": "baksahagwi",
+    "meaningJa": "博士学位",
+    "exampleKo": "박사 학위를 받았습니다.",
+    "exampleJa": "博士学位を受けました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-186",
+    "korean": "학술원",
+    "reading": "haksulwon",
+    "meaningJa": "学術院",
+    "exampleKo": "학술원에 선출됐습니다.",
+    "exampleJa": "学術院に選出されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-187",
+    "korean": "객원",
+    "reading": "gaegwon",
+    "meaningJa": "客員",
+    "exampleKo": "객원 교수로 초빙됐습니다.",
+    "exampleJa": "客員教授として招かれました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-188",
+    "korean": "초빙",
+    "reading": "chobing",
+    "meaningJa": "招請",
+    "exampleKo": "석학을 초빙합니다.",
+    "exampleJa": "碩学を招請します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-189",
+    "korean": "특강",
+    "reading": "teukgang",
+    "meaningJa": "特講",
+    "exampleKo": "특강을 엽니다.",
+    "exampleJa": "特別講義を開きます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-190",
+    "korean": "심포지엄",
+    "reading": "simpojieom",
+    "meaningJa": "シンポジウム",
+    "exampleKo": "심포지엄을 개최합니다.",
+    "exampleJa": "シンポジウムを開催します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-191",
+    "korean": "콜로키움",
+    "reading": "kolrokium",
+    "meaningJa": "コロキウム",
+    "exampleKo": "콜로키움을 엽니다.",
+    "exampleJa": "コロキウムを開きます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-192",
+    "korean": "학회",
+    "reading": "hakhoe",
+    "meaningJa": "学会",
+    "exampleKo": "학회에서 발표합니다.",
+    "exampleJa": "学会で発表します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-193",
+    "korean": "분과",
+    "reading": "bungwa",
+    "meaningJa": "分科",
+    "exampleKo": "분과를 신설합니다.",
+    "exampleJa": "分科を新設します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-194",
+    "korean": "간사",
+    "reading": "gansa",
+    "meaningJa": "幹事",
+    "exampleKo": "간사를 맡습니다.",
+    "exampleJa": "幹事を務めます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-195",
+    "korean": "기조 연설",
+    "reading": "gijoyeonseol",
+    "meaningJa": "基調演説",
+    "exampleKo": "기조 연설을 맡았습니다.",
+    "exampleJa": "基調演説を務めました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-196",
+    "korean": "발제",
+    "reading": "balje",
+    "meaningJa": "発題",
+    "exampleKo": "발제를 담당합니다.",
+    "exampleJa": "発題を担当します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-197",
+    "korean": "질의응답",
+    "reading": "jiruieungdap",
+    "meaningJa": "質疑応答",
+    "exampleKo": "질의응답을 진행합니다.",
+    "exampleJa": "質疑応答を進めます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-198",
+    "korean": "폐회",
+    "reading": "pyehoe",
+    "meaningJa": "閉会",
+    "exampleKo": "회의가 폐회됐습니다.",
+    "exampleJa": "会議が閉会しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-199",
+    "korean": "산회",
+    "reading": "sanhoe",
+    "meaningJa": "散会",
+    "exampleKo": "집회가 산회됐습니다.",
+    "exampleJa": "集会が散会しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-200",
+    "korean": "정회",
+    "reading": "jeonghoe",
+    "meaningJa": "停会",
+    "exampleKo": "심의를 정회합니다.",
+    "exampleJa": "審議を停会します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-201",
+    "korean": "시행령",
+    "reading": "sihaengnyeong",
+    "meaningJa": "施行令",
+    "exampleKo": "시행령을 개정합니다.",
+    "exampleJa": "施行令を改正します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-202",
+    "korean": "시행규칙",
+    "reading": "sihaenggyuchik",
+    "meaningJa": "施行規則",
+    "exampleKo": "시행규칙을 공포합니다.",
+    "exampleJa": "施行規則を公布します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-203",
+    "korean": "자치 조례",
+    "reading": "jachijorye",
+    "meaningJa": "自治条例",
+    "exampleKo": "자치 조례를 제정합니다.",
+    "exampleJa": "自治条例を制定します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-204",
+    "korean": "고시",
+    "reading": "gosi",
+    "meaningJa": "告示",
+    "exampleKo": "고시가 내려졌습니다.",
+    "exampleJa": "告示が出されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-205",
+    "korean": "훈령",
+    "reading": "hunnyeong",
+    "meaningJa": "訓令",
+    "exampleKo": "훈령을 시달합니다.",
+    "exampleJa": "訓令を伝達します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-206",
+    "korean": "예규",
+    "reading": "yegyu",
+    "meaningJa": "例規",
+    "exampleKo": "예규를 정비합니다.",
+    "exampleJa": "例規を整備します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-207",
+    "korean": "입법",
+    "reading": "yipbeop",
+    "meaningJa": "立法",
+    "exampleKo": "입법을 추진합니다.",
+    "exampleJa": "立法を推進します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-208",
+    "korean": "입안",
+    "reading": "iban",
+    "meaningJa": "立案",
+    "exampleKo": "법안을 입안합니다.",
+    "exampleJa": "法案を立案します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-209",
+    "korean": "공포",
+    "reading": "gongpo",
+    "meaningJa": "公布",
+    "exampleKo": "법률을 공포합니다.",
+    "exampleJa": "法律を公布します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-210",
+    "korean": "발효",
+    "reading": "barhyo",
+    "meaningJa": "発効",
+    "exampleKo": "조약이 발효됐습니다.",
+    "exampleJa": "条約が発効しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-211",
+    "korean": "소급",
+    "reading": "sogeup",
+    "meaningJa": "遡及",
+    "exampleKo": "소급을 인정합니다.",
+    "exampleJa": "遡及を認めます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-212",
+    "korean": "소급효",
+    "reading": "sogeuphyo",
+    "meaningJa": "遡及効",
+    "exampleKo": "소급효가 인정됩니다.",
+    "exampleJa": "遡及効が認められます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-213",
+    "korean": "경과 조치",
+    "reading": "gyeonggwajochi",
+    "meaningJa": "経過措置",
+    "exampleKo": "경과 조치를 둡니다.",
+    "exampleJa": "経過措置を置きます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-214",
+    "korean": "부칙",
+    "reading": "buchik",
+    "meaningJa": "附則",
+    "exampleKo": "부칙에 규정합니다.",
+    "exampleJa": "附則に規定します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-215",
+    "korean": "별표",
+    "reading": "byeolpyo",
+    "meaningJa": "別表",
+    "exampleKo": "별표에 명시합니다.",
+    "exampleJa": "別表に明示します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-216",
+    "korean": "서식",
+    "reading": "seosik",
+    "meaningJa": "書式",
+    "exampleKo": "서식에 맞춥니다.",
+    "exampleJa": "書式に合わせます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-217",
+    "korean": "인가",
+    "reading": "inga",
+    "meaningJa": "認可",
+    "exampleKo": "설립을 인가합니다.",
+    "exampleJa": "設立を認可します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-218",
+    "korean": "면허",
+    "reading": "myeonheo",
+    "meaningJa": "免許",
+    "exampleKo": "면허를 취득합니다.",
+    "exampleJa": "免許を取得します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-219",
+    "korean": "특허권",
+    "reading": "teukheogwon",
+    "meaningJa": "特許権",
+    "exampleKo": "특허권을 취득합니다.",
+    "exampleJa": "特許権を取得します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-220",
+    "korean": "등기",
+    "reading": "deunggi",
+    "meaningJa": "登記",
+    "exampleKo": "등기를 마칩니다.",
+    "exampleJa": "登記を済ませます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-221",
+    "korean": "공증",
+    "reading": "gongjeung",
+    "meaningJa": "公証",
+    "exampleKo": "공증을 받습니다.",
+    "exampleJa": "公証を受けます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-222",
+    "korean": "검인",
+    "reading": "geomin",
+    "meaningJa": "検印",
+    "exampleKo": "검인을 받습니다.",
+    "exampleJa": "検印を受けます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-223",
+    "korean": "날인",
+    "reading": "narin",
+    "meaningJa": "捺印",
+    "exampleKo": "직인을 날인합니다.",
+    "exampleJa": "職印を捺印します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-224",
+    "korean": "직인",
+    "reading": "jigin",
+    "meaningJa": "職印",
+    "exampleKo": "직인을 찍습니다.",
+    "exampleJa": "職印を押します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-225",
+    "korean": "관인",
+    "reading": "gwanin",
+    "meaningJa": "官印",
+    "exampleKo": "관인을 날인합니다.",
+    "exampleJa": "官印を捺印します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-226",
+    "korean": "기명",
+    "reading": "gimyong",
+    "meaningJa": "記名",
+    "exampleKo": "기명 투표를 실시합니다.",
+    "exampleJa": "記名投票を実施します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-227",
+    "korean": "연서",
+    "reading": "yeonseo",
+    "meaningJa": "連署",
+    "exampleKo": "연서로 청원합니다.",
+    "exampleJa": "連署で請願します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-228",
+    "korean": "청원서",
+    "reading": "cheongwonseo",
+    "meaningJa": "請願書",
+    "exampleKo": "청원서를 제출합니다.",
+    "exampleJa": "請願書を提出します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-229",
+    "korean": "공익 신고",
+    "reading": "gongiksingo",
+    "meaningJa": "公益申告",
+    "exampleKo": "공익 신고를 접수합니다.",
+    "exampleJa": "公益申告を受け付けます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-230",
+    "korean": "탄원서",
+    "reading": "tanwonseo",
+    "meaningJa": "嘆願書",
+    "exampleKo": "탄원서를 냅니다.",
+    "exampleJa": "嘆願書を出します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-231",
+    "korean": "소청",
+    "reading": "socheong",
+    "meaningJa": "訴請",
+    "exampleKo": "소청을 제기합니다.",
+    "exampleJa": "訴請を提起します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-232",
+    "korean": "행정 심판",
+    "reading": "haengjeongsimpan",
+    "meaningJa": "行政審判",
+    "exampleKo": "행정 심판을 청구합니다.",
+    "exampleJa": "行政審判を請求します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-233",
+    "korean": "행정 소송",
+    "reading": "haengjeongsosong",
+    "meaningJa": "行政訴訟",
+    "exampleKo": "행정 소송을 제기합니다.",
+    "exampleJa": "行政訴訟を提起します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-234",
+    "korean": "항고",
+    "reading": "hanggo",
+    "meaningJa": "抗告",
+    "exampleKo": "항고를 제기합니다.",
+    "exampleJa": "抗告を提起します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-235",
+    "korean": "항소심",
+    "reading": "hangsosim",
+    "meaningJa": "控訴審",
+    "exampleKo": "항소심이 열렸습니다.",
+    "exampleJa": "控訴審が開かれました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-236",
+    "korean": "피의자",
+    "reading": "piuija",
+    "meaningJa": "被疑者",
+    "exampleKo": "피의자를 조사합니다.",
+    "exampleJa": "被疑者を取り調べます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-237",
+    "korean": "원고 측",
+    "reading": "wongocheuk",
+    "meaningJa": "原告側",
+    "exampleKo": "원고 측이 승소했습니다.",
+    "exampleJa": "原告側が勝訴しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-238",
+    "korean": "증인 신문",
+    "reading": "jeunginsinmun",
+    "meaningJa": "証人尋問",
+    "exampleKo": "증인 신문을 실시합니다.",
+    "exampleJa": "証人尋問を実施します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-239",
+    "korean": "채증",
+    "reading": "chaejeung",
+    "meaningJa": "採証",
+    "exampleKo": "증거를 채증합니다.",
+    "exampleJa": "証拠を採取します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-240",
+    "korean": "입증",
+    "reading": "ipjeung",
+    "meaningJa": "立証",
+    "exampleKo": "무죄를 입증합니다.",
+    "exampleJa": "無罪を立証します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-241",
+    "korean": "심증",
+    "reading": "simjeung",
+    "meaningJa": "心証",
+    "exampleKo": "심증을 굳혔습니다.",
+    "exampleJa": "心証を固めました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-242",
+    "korean": "자백",
+    "reading": "jabaek",
+    "meaningJa": "自白",
+    "exampleKo": "죄를 자백합니다.",
+    "exampleJa": "罪を自白します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-243",
+    "korean": "자수하다",
+    "reading": "jasuhada",
+    "meaningJa": "自首する",
+    "exampleKo": "경찰에 자수합니다.",
+    "exampleJa": "警察に自首します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-244",
+    "korean": "공소",
+    "reading": "gongso",
+    "meaningJa": "公訴",
+    "exampleKo": "공소를 제기합니다.",
+    "exampleJa": "公訴を提起します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-245",
+    "korean": "불기소",
+    "reading": "bulgiso",
+    "meaningJa": "不起訴",
+    "exampleKo": "혐의가 불기소됐습니다.",
+    "exampleJa": "容疑が不起訴になりました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-246",
+    "korean": "약식 명령",
+    "reading": "yaksikmyeongnyeong",
+    "meaningJa": "略式命令",
+    "exampleKo": "약식 명령을 발합니다.",
+    "exampleJa": "略式命令を発します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-247",
+    "korean": "구형",
+    "reading": "guhyeong",
+    "meaningJa": "求刑",
+    "exampleKo": "검사가 구형합니다.",
+    "exampleJa": "検事が求刑します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-248",
+    "korean": "선고 기일",
+    "reading": "seongogiil",
+    "meaningJa": "宣告期日",
+    "exampleKo": "선고 기일이 잡혔습니다.",
+    "exampleJa": "宣告期日が決まりました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-249",
+    "korean": "확정 판결",
+    "reading": "hwakjeongpangyeol",
+    "meaningJa": "確定判決",
+    "exampleKo": "확정 판결을 받았습니다.",
+    "exampleJa": "確定判決を受けました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-250",
+    "korean": "가집행",
+    "reading": "gajiphaeng",
+    "meaningJa": "仮執行",
+    "exampleKo": "가집행을 선고합니다.",
+    "exampleJa": "仮執行を宣告します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-251",
+    "korean": "강제 집행",
+    "reading": "gangjejiphaeng",
+    "meaningJa": "強制執行",
+    "exampleKo": "강제 집행을 신청합니다.",
+    "exampleJa": "強制執行を申請します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-252",
+    "korean": "압류",
+    "reading": "apryu",
+    "meaningJa": "差押え",
+    "exampleKo": "재산을 압류합니다.",
+    "exampleJa": "財産を差し押さえます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-253",
+    "korean": "가압류",
+    "reading": "gaapryu",
+    "meaningJa": "仮差押え",
+    "exampleKo": "가압류를 신청합니다.",
+    "exampleJa": "仮差押えを申請します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-254",
+    "korean": "가처분",
+    "reading": "gacheobun",
+    "meaningJa": "仮処分",
+    "exampleKo": "가처분을 신청합니다.",
+    "exampleJa": "仮処分を申請します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-255",
+    "korean": "추징",
+    "reading": "chujing",
+    "meaningJa": "追徴",
+    "exampleKo": "세금을 추징합니다.",
+    "exampleJa": "税金を追徴します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-256",
+    "korean": "몰수",
+    "reading": "molsu",
+    "meaningJa": "没収",
+    "exampleKo": "불법 수익을 몰수합니다.",
+    "exampleJa": "不法収益を没収します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-257",
+    "korean": "이행 강제금",
+    "reading": "ihaenggangjegeum",
+    "meaningJa": "履行強制金",
+    "exampleKo": "이행 강제금을 부과합니다.",
+    "exampleJa": "履行強制金を賦課します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-258",
+    "korean": "과징금",
+    "reading": "gwajinggeum",
+    "meaningJa": "課徴金",
+    "exampleKo": "과징금을 물립니다.",
+    "exampleJa": "課徴金を科します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-259",
+    "korean": "범칙금",
+    "reading": "beomchikgeum",
+    "meaningJa": "反則金",
+    "exampleKo": "범칙금을 납부합니다.",
+    "exampleJa": "反則金を納付します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-260",
+    "korean": "구류",
+    "reading": "guryu",
+    "meaningJa": "拘留",
+    "exampleKo": "구류에 처합니다.",
+    "exampleJa": "拘留に処します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-261",
+    "korean": "금고",
+    "reading": "geumgo",
+    "meaningJa": "禁錮",
+    "exampleKo": "금고를 선고합니다.",
+    "exampleJa": "禁錮を宣告します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-262",
+    "korean": "선고 유예",
+    "reading": "seongoyuye",
+    "meaningJa": "宣告猶予",
+    "exampleKo": "선고 유예가 내려졌습니다.",
+    "exampleJa": "宣告猶予が下されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-263",
+    "korean": "사면",
+    "reading": "samyeon",
+    "meaningJa": "赦免",
+    "exampleKo": "사면을 단행합니다.",
+    "exampleJa": "赦免を断行します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-264",
+    "korean": "명예 회복",
+    "reading": "myeongyehoebok",
+    "meaningJa": "名誉回復",
+    "exampleKo": "명예 회복을 선언합니다.",
+    "exampleJa": "名誉回復を宣言します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-265",
+    "korean": "소멸 시효",
+    "reading": "somyeolsihyo",
+    "meaningJa": "消滅時効",
+    "exampleKo": "소멸 시효가 완성됐습니다.",
+    "exampleJa": "消滅時効が完成しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-266",
+    "korean": "제척 기간",
+    "reading": "jecheokgigan",
+    "meaningJa": "除斥期間",
+    "exampleKo": "제척 기간이 지났습니다.",
+    "exampleJa": "除斥期間が過ぎました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-267",
+    "korean": "공소시효",
+    "reading": "gongsosihyo",
+    "meaningJa": "公訴時効",
+    "exampleKo": "공소시효가 만료됐습니다.",
+    "exampleJa": "公訴時効が満了しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-268",
+    "korean": "민사",
+    "reading": "minsa",
+    "meaningJa": "民事",
+    "exampleKo": "민사로 제소합니다.",
+    "exampleJa": "民事で提訴します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-269",
+    "korean": "가사 심판",
+    "reading": "gasasimpan",
+    "meaningJa": "家事審判",
+    "exampleKo": "가사 심판을 청구합니다.",
+    "exampleJa": "家事審判を請求します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-270",
+    "korean": "헌법재판소",
+    "reading": "heonbeopjaepanso",
+    "meaningJa": "憲法裁判所",
+    "exampleKo": "헌법재판소에 제소합니다.",
+    "exampleJa": "憲法裁判所に提訴します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-271",
+    "korean": "고등법원",
+    "reading": "godeungbeobwon",
+    "meaningJa": "高等法院",
+    "exampleKo": "고등법원에 항소합니다.",
+    "exampleJa": "高等法院に控訴します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-272",
+    "korean": "지방법원",
+    "reading": "jibangbeobwon",
+    "meaningJa": "地方法院",
+    "exampleKo": "지방법원이 심리합니다.",
+    "exampleJa": "地方法院が審理します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-273",
+    "korean": "가정법원",
+    "reading": "gajeongbeobwon",
+    "meaningJa": "家庭法院",
+    "exampleKo": "가정법원이 조정합니다.",
+    "exampleJa": "家庭法院が調停します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-274",
+    "korean": "특허법원",
+    "reading": "teukheobeobwon",
+    "meaningJa": "特許法院",
+    "exampleKo": "특허법원이 관할합니다.",
+    "exampleJa": "特許法院が管轄します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-275",
+    "korean": "법관",
+    "reading": "beopgwan",
+    "meaningJa": "法官",
+    "exampleKo": "법관이 판결합니다.",
+    "exampleJa": "法官が判決します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-276",
+    "korean": "법무사",
+    "reading": "beommusa",
+    "meaningJa": "法務士",
+    "exampleKo": "법무사에 의뢰합니다.",
+    "exampleJa": "法務士に依頼します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-277",
+    "korean": "변리사",
+    "reading": "byeollisa",
+    "meaningJa": "弁理士",
+    "exampleKo": "변리사를 선임합니다.",
+    "exampleJa": "弁理士を選任します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-278",
+    "korean": "세무사",
+    "reading": "semusa",
+    "meaningJa": "税理士",
+    "exampleKo": "세무사와 상담합니다.",
+    "exampleJa": "税理士と相談します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-279",
+    "korean": "관세사",
+    "reading": "gwansesa",
+    "meaningJa": "関税士",
+    "exampleKo": "관세사에 맡깁니다.",
+    "exampleJa": "関税士に任せます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-280",
+    "korean": "노무사",
+    "reading": "nomusa",
+    "meaningJa": "労務士",
+    "exampleKo": "노무사의 자문을 받습니다.",
+    "exampleJa": "労務士の助言を受けます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-281",
+    "korean": "감정인",
+    "reading": "gamjeongin",
+    "meaningJa": "鑑定人",
+    "exampleKo": "감정인이 평가합니다.",
+    "exampleJa": "鑑定人が評価します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-282",
+    "korean": "속기사",
+    "reading": "sokgisa",
+    "meaningJa": "速記者",
+    "exampleKo": "속기사가 기록합니다.",
+    "exampleJa": "速記者が記録します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-283",
+    "korean": "집행관",
+    "reading": "jiphaenggwan",
+    "meaningJa": "執行官",
+    "exampleKo": "집행관이 압류합니다.",
+    "exampleJa": "執行官が差し押さえます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-284",
+    "korean": "교도관",
+    "reading": "gyodogwan",
+    "meaningJa": "刑務官",
+    "exampleKo": "교도관이 순찰합니다.",
+    "exampleJa": "刑務官が巡回します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-285",
+    "korean": "보호 관찰",
+    "reading": "bohogwanchal",
+    "meaningJa": "保護観察",
+    "exampleKo": "보호 관찰을 받습니다.",
+    "exampleJa": "保護観察を受けます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-286",
+    "korean": "개폐",
+    "reading": "gaepye",
+    "meaningJa": "改廃",
+    "exampleKo": "제도를 개폐합니다.",
+    "exampleJa": "制度を改廃します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-287",
+    "korean": "철폐",
+    "reading": "cheolpye",
+    "meaningJa": "撤廃",
+    "exampleKo": "악습을 철폐합니다.",
+    "exampleJa": "悪習を撤廃します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-288",
+    "korean": "기소",
+    "reading": "giso",
+    "meaningJa": "起訴",
+    "exampleKo": "검사가 기소합니다.",
+    "exampleJa": "検事が起訴します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-289",
+    "korean": "의결",
+    "reading": "uigyeol",
+    "meaningJa": "議決",
+    "exampleKo": "안건이 의결됐습니다.",
+    "exampleJa": "案件が議決されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-290",
+    "korean": "심사 보류",
+    "reading": "simsaboru",
+    "meaningJa": "審査保留",
+    "exampleKo": "안건을 심사 보류합니다.",
+    "exampleJa": "案件を審査保留します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-291",
+    "korean": "만장일치",
+    "reading": "manjangilchi",
+    "meaningJa": "満場一致",
+    "exampleKo": "만장일치로 통과됐습니다.",
+    "exampleJa": "満場一致で通過しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-292",
+    "korean": "과반수",
+    "reading": "gwabansu",
+    "meaningJa": "過半数",
+    "exampleKo": "과반수를 확보합니다.",
+    "exampleJa": "過半数を確保します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-293",
+    "korean": "재적",
+    "reading": "jaejeok",
+    "meaningJa": "在籍",
+    "exampleKo": "재적 과반이 출석했습니다.",
+    "exampleJa": "在籍の過半数が出席しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-294",
+    "korean": "재석",
+    "reading": "jaeseok",
+    "meaningJa": "在席",
+    "exampleKo": "재석 의원으로 의결합니다.",
+    "exampleJa": "在席議員で議決します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-295",
+    "korean": "위임",
+    "reading": "wiim",
+    "meaningJa": "委任",
+    "exampleKo": "권한을 위임합니다.",
+    "exampleJa": "権限を委任します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-296",
+    "korean": "수임",
+    "reading": "suim",
+    "meaningJa": "受任",
+    "exampleKo": "사건을 수임합니다.",
+    "exampleJa": "事件を受任します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-297",
+    "korean": "위촉",
+    "reading": "wichok",
+    "meaningJa": "委嘱",
+    "exampleKo": "위원으로 위촉합니다.",
+    "exampleJa": "委員に委嘱します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-298",
+    "korean": "해촉",
+    "reading": "haechok",
+    "meaningJa": "解嘱",
+    "exampleKo": "위원을 해촉합니다.",
+    "exampleJa": "委員を解嘱します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-299",
+    "korean": "파면",
+    "reading": "pamyeon",
+    "meaningJa": "罷免",
+    "exampleKo": "장관을 파면합니다.",
+    "exampleJa": "長官を罷免します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-300",
+    "korean": "정족수",
+    "reading": "jeongjoksu",
+    "meaningJa": "定足数",
+    "exampleKo": "정족수를 채웁니다.",
+    "exampleJa": "定足数を満たします。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-301",
+    "korean": "양극화",
+    "reading": "yanggeukhwa",
+    "meaningJa": "両極化",
+    "exampleKo": "소득 양극화가 심화됩니다.",
+    "exampleJa": "所得の両極化が深化します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-302",
+    "korean": "빈부 격차",
+    "reading": "binbugyeokcha",
+    "meaningJa": "貧富格差",
+    "exampleKo": "빈부 격차가 벌어집니다.",
+    "exampleJa": "貧富の格差が広がります。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-303",
+    "korean": "소득 격차",
+    "reading": "sodeukgyeokcha",
+    "meaningJa": "所得格差",
+    "exampleKo": "소득 격차를 해소합니다.",
+    "exampleJa": "所得格差を解消します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-304",
+    "korean": "지니 계수",
+    "reading": "jinigyesu",
+    "meaningJa": "ジニ係数",
+    "exampleKo": "지니 계수가 상승했습니다.",
+    "exampleJa": "ジニ係数が上昇しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-305",
+    "korean": "상대적 빈곤",
+    "reading": "sangdaejeokbingon",
+    "meaningJa": "相対的貧困",
+    "exampleKo": "상대적 빈곤을 측정합니다.",
+    "exampleJa": "相対的貧困を測定します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-306",
+    "korean": "절대적 빈곤",
+    "reading": "jeoldaejeokbingon",
+    "meaningJa": "絶対的貧困",
+    "exampleKo": "절대적 빈곤을 퇴치합니다.",
+    "exampleJa": "絶対的貧困を撲滅します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-307",
+    "korean": "차상위",
+    "reading": "chasangwi",
+    "meaningJa": "次上位層",
+    "exampleKo": "차상위를 지원합니다.",
+    "exampleJa": "次上位層を支援します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-308",
+    "korean": "기초 생활 수급자",
+    "reading": "gichosaenghwalsugeupja",
+    "meaningJa": "基礎生活受給者",
+    "exampleKo": "기초 생활 수급자를 돕습니다.",
+    "exampleJa": "基礎生活受給者を助けます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-309",
+    "korean": "차등 지원",
+    "reading": "chadeungjiwon",
+    "meaningJa": "差等支援",
+    "exampleKo": "차등 지원을 실시합니다.",
+    "exampleJa": "差等支援を実施します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-310",
+    "korean": "누진세",
+    "reading": "nujinse",
+    "meaningJa": "累進税",
+    "exampleKo": "누진세를 적용합니다.",
+    "exampleJa": "累進税を適用します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-311",
+    "korean": "역진세",
+    "reading": "yeokjinse",
+    "meaningJa": "逆進税",
+    "exampleKo": "역진세 논란이 일었습니다.",
+    "exampleJa": "逆進税の論争が起きました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-312",
+    "korean": "직접세",
+    "reading": "jikjeopse",
+    "meaningJa": "直接税",
+    "exampleKo": "직접세를 부과합니다.",
+    "exampleJa": "直接税を賦課します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-313",
+    "korean": "간접세",
+    "reading": "ganjeopse",
+    "meaningJa": "間接税",
+    "exampleKo": "간접세가 인상됐습니다.",
+    "exampleJa": "間接税が引き上げられました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-314",
+    "korean": "부가가치세",
+    "reading": "bugagachise",
+    "meaningJa": "付加価値税",
+    "exampleKo": "부가가치세를 신고합니다.",
+    "exampleJa": "付加価値税を申告します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-315",
+    "korean": "종합 부동산세",
+    "reading": "jonghabbudongsanse",
+    "meaningJa": "総合不動産税",
+    "exampleKo": "종합 부동산세를 납부합니다.",
+    "exampleJa": "総合不動産税を納付します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-316",
+    "korean": "상속세",
+    "reading": "sangsokse",
+    "meaningJa": "相続税",
+    "exampleKo": "상속세를 물립니다.",
+    "exampleJa": "相続税を科します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-317",
+    "korean": "증여세",
+    "reading": "jeungyeose",
+    "meaningJa": "贈与税",
+    "exampleKo": "증여세를 신고합니다.",
+    "exampleJa": "贈与税を申告します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-318",
+    "korean": "취득세",
+    "reading": "chwideukse",
+    "meaningJa": "取得税",
+    "exampleKo": "취득세가 부과됐습니다.",
+    "exampleJa": "取得税が賦課されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-319",
+    "korean": "인지세",
+    "reading": "injise",
+    "meaningJa": "印紙税",
+    "exampleKo": "인지세를 냅니다.",
+    "exampleJa": "印紙税を払います。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-320",
+    "korean": "내국세",
+    "reading": "naegukse",
+    "meaningJa": "内国税",
+    "exampleKo": "내국세를 징수합니다.",
+    "exampleJa": "内国税を徴収します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-321",
+    "korean": "목적세",
+    "reading": "mokjeokse",
+    "meaningJa": "目的税",
+    "exampleKo": "목적세를 신설합니다.",
+    "exampleJa": "目的税を新設します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-322",
+    "korean": "보통세",
+    "reading": "botongse",
+    "meaningJa": "普通税",
+    "exampleKo": "보통세를 거둡니다.",
+    "exampleJa": "普通税を集めます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-323",
+    "korean": "조세 저항",
+    "reading": "josejeohang",
+    "meaningJa": "租税抵抗",
+    "exampleKo": "조세 저항이 거셉니다.",
+    "exampleJa": "租税抵抗が激しいです。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-324",
+    "korean": "절세",
+    "reading": "jeolse",
+    "meaningJa": "節税",
+    "exampleKo": "절세 방안을 찾습니다.",
+    "exampleJa": "節税策を探します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-325",
+    "korean": "조세 회피",
+    "reading": "josehoepi",
+    "meaningJa": "租税回避",
+    "exampleKo": "조세 회피를 단속합니다.",
+    "exampleJa": "租税回避を取り締まります。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-326",
+    "korean": "이전 가격",
+    "reading": "ijeongagyeok",
+    "meaningJa": "移転価格",
+    "exampleKo": "이전 가격을 조사합니다.",
+    "exampleJa": "移転価格を調査します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-327",
+    "korean": "이중 과세",
+    "reading": "ijunggwase",
+    "meaningJa": "二重課税",
+    "exampleKo": "이중 과세를 조정합니다.",
+    "exampleJa": "二重課税を調整します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-328",
+    "korean": "감면",
+    "reading": "gammyeon",
+    "meaningJa": "減免",
+    "exampleKo": "세금을 감면합니다.",
+    "exampleJa": "税金を減免します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-329",
+    "korean": "비과세",
+    "reading": "bigwase",
+    "meaningJa": "非課税",
+    "exampleKo": "비과세가 적용됩니다.",
+    "exampleJa": "非課税が適用されます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-330",
+    "korean": "과세",
+    "reading": "gwase",
+    "meaningJa": "課税",
+    "exampleKo": "과세를 강화합니다.",
+    "exampleJa": "課税を強化します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-331",
+    "korean": "세무 조사",
+    "reading": "semujosa",
+    "meaningJa": "税務調査",
+    "exampleKo": "세무 조사를 받습니다.",
+    "exampleJa": "税務調査を受けます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-332",
+    "korean": "가산세",
+    "reading": "gasanse",
+    "meaningJa": "加算税",
+    "exampleKo": "가산세가 붙습니다.",
+    "exampleJa": "加算税が付きます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-333",
+    "korean": "체납",
+    "reading": "chenap",
+    "meaningJa": "滞納",
+    "exampleKo": "세금을 체납합니다.",
+    "exampleJa": "税金を滞納します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-334",
+    "korean": "독촉",
+    "reading": "dokchok",
+    "meaningJa": "督促",
+    "exampleKo": "납부를 독촉합니다.",
+    "exampleJa": "納付を督促します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-335",
+    "korean": "공매",
+    "reading": "gongmae",
+    "meaningJa": "公売",
+    "exampleKo": "재산을 공매합니다.",
+    "exampleJa": "財産を公売します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-336",
+    "korean": "유찰",
+    "reading": "yuchal",
+    "meaningJa": "流札",
+    "exampleKo": "경매가 유찰됐습니다.",
+    "exampleJa": "競売が流札になりました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-337",
+    "korean": "낙찰",
+    "reading": "nakchal",
+    "meaningJa": "落札",
+    "exampleKo": "공사를 낙찰받았습니다.",
+    "exampleJa": "工事を落札しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-338",
+    "korean": "수의 계약",
+    "reading": "suuigyeyak",
+    "meaningJa": "随意契約",
+    "exampleKo": "수의 계약을 맺습니다.",
+    "exampleJa": "随意契約を結びます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-339",
+    "korean": "경쟁 입찰",
+    "reading": "gyeongjaengipchal",
+    "meaningJa": "競争入札",
+    "exampleKo": "경쟁 입찰을 실시합니다.",
+    "exampleJa": "競争入札を実施します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-340",
+    "korean": "담합",
+    "reading": "damhap",
+    "meaningJa": "談合",
+    "exampleKo": "담합을 적발합니다.",
+    "exampleJa": "談合を摘発します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-341",
+    "korean": "하도급",
+    "reading": "hadogeup",
+    "meaningJa": "下請",
+    "exampleKo": "하도급을 줍니다.",
+    "exampleJa": "下請けに出します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-342",
+    "korean": "원청",
+    "reading": "woncheong",
+    "meaningJa": "元請",
+    "exampleKo": "원청이 발주합니다.",
+    "exampleJa": "元請けが発注します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-343",
+    "korean": "재하청",
+    "reading": "jaehacheong",
+    "meaningJa": "再下請",
+    "exampleKo": "재하청을 금지합니다.",
+    "exampleJa": "再下請けを禁止します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-344",
+    "korean": "도급",
+    "reading": "dogeup",
+    "meaningJa": "請負",
+    "exampleKo": "도급을 맡깁니다.",
+    "exampleJa": "請負を任せます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-345",
+    "korean": "수주 잔고",
+    "reading": "sujujango",
+    "meaningJa": "受注残高",
+    "exampleKo": "수주 잔고가 늘었습니다.",
+    "exampleJa": "受注残高が増えました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-346",
+    "korean": "발주서",
+    "reading": "baljuseo",
+    "meaningJa": "発注書",
+    "exampleKo": "발주서를 보냅니다.",
+    "exampleJa": "発注書を送ります。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-347",
+    "korean": "납품 단가",
+    "reading": "nappumdanga",
+    "meaningJa": "納品単価",
+    "exampleKo": "납품 단가를 협상합니다.",
+    "exampleJa": "納品単価を交渉します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-348",
+    "korean": "검수",
+    "reading": "geomsu",
+    "meaningJa": "検収",
+    "exampleKo": "물량을 검수합니다.",
+    "exampleJa": "物量を検収します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-349",
+    "korean": "하자",
+    "reading": "haja",
+    "meaningJa": "瑕疵",
+    "exampleKo": "하자가 발견됐습니다.",
+    "exampleJa": "瑕疵が発見されました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-350",
+    "korean": "하자 보수",
+    "reading": "hajabosu",
+    "meaningJa": "瑕疵補修",
+    "exampleKo": "하자 보수를 요구합니다.",
+    "exampleJa": "瑕疵補修を要求します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-351",
+    "korean": "유지 보수",
+    "reading": "yujibosu",
+    "meaningJa": "維持補修",
+    "exampleKo": "설비를 유지 보수합니다.",
+    "exampleJa": "設備を維持補修します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-352",
+    "korean": "감리",
+    "reading": "gamni",
+    "meaningJa": "監理",
+    "exampleKo": "공사를 감리합니다.",
+    "exampleJa": "工事を監理します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-353",
+    "korean": "시공",
+    "reading": "sigong",
+    "meaningJa": "施工",
+    "exampleKo": "시공이 부실합니다.",
+    "exampleJa": "施工が粗雑です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-354",
+    "korean": "준공",
+    "reading": "jungong",
+    "meaningJa": "竣工",
+    "exampleKo": "건물이 준공됐습니다.",
+    "exampleJa": "建物が竣工しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-355",
+    "korean": "착공",
+    "reading": "chakgong",
+    "meaningJa": "着工",
+    "exampleKo": "댐이 착공됐습니다.",
+    "exampleJa": "ダムが着工しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-356",
+    "korean": "청약",
+    "reading": "cheongyak",
+    "meaningJa": "請約",
+    "exampleKo": "분양을 청약합니다.",
+    "exampleJa": "分譲を請約します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-357",
+    "korean": "당첨",
+    "reading": "dancheom",
+    "meaningJa": "当選",
+    "exampleKo": "분양에 당첨됐습니다.",
+    "exampleJa": "分譲に当選しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-358",
+    "korean": "계약 보증금",
+    "reading": "gyeyakbojeunggeum",
+    "meaningJa": "契約保証金",
+    "exampleKo": "계약 보증금을 걸었습니다.",
+    "exampleJa": "契約保証金を預けました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-359",
+    "korean": "계약 이행 보증금",
+    "reading": "gyeyakihaengbojeunggeum",
+    "meaningJa": "契約履行保証金",
+    "exampleKo": "계약 이행 보증금을 예치합니다.",
+    "exampleJa": "契約履行保証金を預託します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-360",
+    "korean": "완납",
+    "reading": "wannap",
+    "meaningJa": "完納",
+    "exampleKo": "대금을 완납합니다.",
+    "exampleJa": "代金を完納します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-361",
+    "korean": "반전세",
+    "reading": "banjeonse",
+    "meaningJa": "半チョンセ",
+    "exampleKo": "반전세로 계약합니다.",
+    "exampleJa": "半チョンセで契約します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-362",
+    "korean": "역전세",
+    "reading": "yeokjeonse",
+    "meaningJa": "逆チョンセ",
+    "exampleKo": "역전세가 속출합니다.",
+    "exampleJa": "逆チョンセが続出します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-363",
+    "korean": "전세가율",
+    "reading": "jeonsegayul",
+    "meaningJa": "チョンセ価格率",
+    "exampleKo": "전세가율이 올랐습니다.",
+    "exampleJa": "チョンセ価格率が上がりました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-364",
+    "korean": "근저당",
+    "reading": "geunjeodang",
+    "meaningJa": "根抵当",
+    "exampleKo": "근저당을 설정합니다.",
+    "exampleJa": "根抵当を設定します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-365",
+    "korean": "저당",
+    "reading": "jeodang",
+    "meaningJa": "抵当",
+    "exampleKo": "집에 저당을 설정합니다.",
+    "exampleJa": "家に抵当を設定します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-366",
+    "korean": "질권",
+    "reading": "jilgwon",
+    "meaningJa": "質権",
+    "exampleKo": "질권을 취득합니다.",
+    "exampleJa": "質権を取得します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-367",
+    "korean": "유치권",
+    "reading": "yuchigwon",
+    "meaningJa": "留置権",
+    "exampleKo": "유치권을 행사합니다.",
+    "exampleJa": "留置権を行使します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-368",
+    "korean": "전세권",
+    "reading": "jeonsegwon",
+    "meaningJa": "チョンセ権",
+    "exampleKo": "전세권을 등기합니다.",
+    "exampleJa": "チョンセ権を登記します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-369",
+    "korean": "지상권",
+    "reading": "jisanggwon",
+    "meaningJa": "地上権",
+    "exampleKo": "지상권을 취득합니다.",
+    "exampleJa": "地上権を取得します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-370",
+    "korean": "지역권",
+    "reading": "jiyeokgwon",
+    "meaningJa": "地役権",
+    "exampleKo": "지역권을 설정합니다.",
+    "exampleJa": "地役権を設定します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-371",
+    "korean": "용익물권",
+    "reading": "yongikmulgwon",
+    "meaningJa": "用益物権",
+    "exampleKo": "용익물권을 취득합니다.",
+    "exampleJa": "用益物権を取得します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-372",
+    "korean": "담보 물권",
+    "reading": "dambomulgwon",
+    "meaningJa": "担保物権",
+    "exampleKo": "담보 물권을 실행합니다.",
+    "exampleJa": "担保物権を実行します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-373",
+    "korean": "점유",
+    "reading": "jeomyu",
+    "meaningJa": "占有",
+    "exampleKo": "토지를 점유합니다.",
+    "exampleJa": "土地を占有します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-374",
+    "korean": "공유",
+    "reading": "gongyu",
+    "meaningJa": "共有",
+    "exampleKo": "재산을 공유합니다.",
+    "exampleJa": "財産を共有します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-375",
+    "korean": "합유",
+    "reading": "habyu",
+    "meaningJa": "合有",
+    "exampleKo": "조합원이 합유합니다.",
+    "exampleJa": "組合員が合有します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-376",
+    "korean": "구분 소유",
+    "reading": "gubunsoyu",
+    "meaningJa": "区分所有",
+    "exampleKo": "아파트를 구분 소유합니다.",
+    "exampleJa": "マンションを区分所有します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-377",
+    "korean": "대지권",
+    "reading": "daejigwon",
+    "meaningJa": "敷地権",
+    "exampleKo": "대지권을 확보합니다.",
+    "exampleJa": "敷地権を確保します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-378",
+    "korean": "도시 재생",
+    "reading": "dosijaesaeng",
+    "meaningJa": "都市再生",
+    "exampleKo": "도시 재생을 추진합니다.",
+    "exampleJa": "都市再生を推進します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-379",
+    "korean": "택지",
+    "reading": "taekji",
+    "meaningJa": "宅地",
+    "exampleKo": "택지를 조성합니다.",
+    "exampleJa": "宅地を造成します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-380",
+    "korean": "용도 지역",
+    "reading": "yongdojiyeok",
+    "meaningJa": "用途地域",
+    "exampleKo": "용도 지역을 지정합니다.",
+    "exampleJa": "用途地域を指定します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-381",
+    "korean": "그린벨트",
+    "reading": "geurinbelteu",
+    "meaningJa": "グリーンベルト",
+    "exampleKo": "그린벨트를 해제합니다.",
+    "exampleJa": "グリーンベルトを解除します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-382",
+    "korean": "용적률",
+    "reading": "yongjeongnyul",
+    "meaningJa": "容積率",
+    "exampleKo": "용적률을 완화합니다.",
+    "exampleJa": "容積率を緩和します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-383",
+    "korean": "건폐율",
+    "reading": "geonpyeyul",
+    "meaningJa": "建蔽率",
+    "exampleKo": "건폐율을 적용합니다.",
+    "exampleJa": "建蔽率を適用します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-384",
+    "korean": "일조권",
+    "reading": "iljogwon",
+    "meaningJa": "日照権",
+    "exampleKo": "일조권을 주장합니다.",
+    "exampleJa": "日照権を主張します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-385",
+    "korean": "조망권",
+    "reading": "jomanggwon",
+    "meaningJa": "眺望権",
+    "exampleKo": "조망권 소송이 늘었습니다.",
+    "exampleJa": "眺望権訴訟が増えました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-386",
+    "korean": "환경권",
+    "reading": "hwangyeonggwon",
+    "meaningJa": "環境権",
+    "exampleKo": "환경권을 보장합니다.",
+    "exampleJa": "環境権を保障します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-387",
+    "korean": "스태그플레이션",
+    "reading": "seutaegeupeulleisyeon",
+    "meaningJa": "スタグフレーション",
+    "exampleKo": "스태그플레이션이 우려됩니다.",
+    "exampleJa": "スタグフレーションが懸念されます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-388",
+    "korean": "디플레이션",
+    "reading": "dipeulleisyeon",
+    "meaningJa": "デフレーション",
+    "exampleKo": "디플레이션에 빠졌습니다.",
+    "exampleJa": "デフレーションに陥りました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-389",
+    "korean": "초인플레이션",
+    "reading": "choinpeulleisyeon",
+    "meaningJa": "超インフレーション",
+    "exampleKo": "초인플레이션이 발생했습니다.",
+    "exampleJa": "超インフレーションが発生しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-390",
+    "korean": "기준금리",
+    "reading": "gijungeumni",
+    "meaningJa": "基準金利",
+    "exampleKo": "기준금리를 인상합니다.",
+    "exampleJa": "基準金利を引き上げます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-391",
+    "korean": "콜금리",
+    "reading": "kolgeumni",
+    "meaningJa": "コール金利",
+    "exampleKo": "콜금리가 올랐습니다.",
+    "exampleJa": "コール金利が上がりました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-392",
+    "korean": "가산금리",
+    "reading": "gasangeumni",
+    "meaningJa": "加算金利",
+    "exampleKo": "가산금리가 적용됩니다.",
+    "exampleJa": "加算金利が適用されます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-393",
+    "korean": "우대금리",
+    "reading": "udaegeumni",
+    "meaningJa": "優待金利",
+    "exampleKo": "우대금리를 받습니다.",
+    "exampleJa": "優待金利を受けます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-394",
+    "korean": "변동금리",
+    "reading": "byeondonggeumni",
+    "meaningJa": "変動金利",
+    "exampleKo": "변동금리로 대출합니다.",
+    "exampleJa": "変動金利で借ります。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-395",
+    "korean": "고정금리",
+    "reading": "gojeonggeumni",
+    "meaningJa": "固定金利",
+    "exampleKo": "고정금리로 갈아탑니다.",
+    "exampleJa": "固定金利に借り換えます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-396",
+    "korean": "역마진",
+    "reading": "yeokmajin",
+    "meaningJa": "逆ざや",
+    "exampleKo": "역마진이 발생했습니다.",
+    "exampleJa": "逆ざやが発生しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-397",
+    "korean": "기축 통화",
+    "reading": "gichuktonghwa",
+    "meaningJa": "基軸通貨",
+    "exampleKo": "달러는 기축 통화입니다.",
+    "exampleJa": "ドルは基軸通貨です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-398",
+    "korean": "평가 절하",
+    "reading": "pyeonggajeolha",
+    "meaningJa": "評価切下げ",
+    "exampleKo": "정부가 통화를 평가 절하했습니다.",
+    "exampleJa": "政府が通貨を評価切り下げしました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-399",
+    "korean": "외환 보유고",
+    "reading": "oehwanboyugo",
+    "meaningJa": "外貨準備高",
+    "exampleKo": "외환 보유고가 늘었습니다.",
+    "exampleJa": "外貨準備高が増えました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-400",
+    "korean": "핫머니",
+    "reading": "hatmeoni",
+    "meaningJa": "ホットマネー",
+    "exampleKo": "핫머니가 유출됐습니다.",
+    "exampleJa": "ホットマネーが流出しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-401",
+    "korean": "읊다",
+    "reading": "eulpda",
+    "meaningJa": "詠む",
+    "exampleKo": "시를 읊습니다.",
+    "exampleJa": "詩を詠みます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-402",
+    "korean": "읊조리다",
+    "reading": "eulpjorida",
+    "meaningJa": "口ずさむ",
+    "exampleKo": "노래를 읊조립니다.",
+    "exampleJa": "歌を口ずさみます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-403",
+    "korean": "되뇌이다",
+    "reading": "doenoeida",
+    "meaningJa": "反芻する",
+    "exampleKo": "결심을 되뇌입니다.",
+    "exampleJa": "決心を反芻します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-404",
+    "korean": "곱씹다",
+    "reading": "gopsipda",
+    "meaningJa": "噛みしめる",
+    "exampleKo": "말을 곱씹습니다.",
+    "exampleJa": "言葉をかみしめます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-405",
+    "korean": "음미하다",
+    "reading": "eummihada",
+    "meaningJa": "味わう",
+    "exampleKo": "여운을 음미합니다.",
+    "exampleJa": "余韻を味わいます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-406",
+    "korean": "만끽하다",
+    "reading": "mankkikhada",
+    "meaningJa": "満喫する",
+    "exampleKo": "휴가를 만끽합니다.",
+    "exampleJa": "休暇を満喫します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-407",
+    "korean": "향유하다",
+    "reading": "hyangyuhada",
+    "meaningJa": "享有する",
+    "exampleKo": "문화를 향유합니다.",
+    "exampleJa": "文化を享有します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-408",
+    "korean": "체득하다",
+    "reading": "chedeukhada",
+    "meaningJa": "体得する",
+    "exampleKo": "기술을 체득합니다.",
+    "exampleJa": "技術を体得します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-409",
+    "korean": "터득하다",
+    "reading": "teodeukhada",
+    "meaningJa": "会得する",
+    "exampleKo": "비법을 터득합니다.",
+    "exampleJa": "秘法を会得します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-410",
+    "korean": "연마하다",
+    "reading": "yeonmahada",
+    "meaningJa": "磨く",
+    "exampleKo": "기량을 연마합니다.",
+    "exampleJa": "技量を磨きます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-411",
+    "korean": "함양하다",
+    "reading": "hamyanghada",
+    "meaningJa": "涵養する",
+    "exampleKo": "교양을 함양합니다.",
+    "exampleJa": "教養を涵養します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-412",
+    "korean": "배양하다",
+    "reading": "baeyanghada",
+    "meaningJa": "培養する",
+    "exampleKo": "인재를 배양합니다.",
+    "exampleJa": "人材を培養します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-413",
+    "korean": "고양하다",
+    "reading": "goyanghada",
+    "meaningJa": "高揚する",
+    "exampleKo": "사기를 고양합니다.",
+    "exampleJa": "士気を高揚します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-414",
+    "korean": "고취하다",
+    "reading": "gochwihada",
+    "meaningJa": "鼓舞する",
+    "exampleKo": "의욕을 고취합니다.",
+    "exampleJa": "意欲を鼓舞します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-415",
+    "korean": "조장하다",
+    "reading": "jojanghada",
+    "meaningJa": "助長する",
+    "exampleKo": "불안을 조장합니다.",
+    "exampleJa": "不安を助長します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-416",
+    "korean": "선동하다",
+    "reading": "seondonghada",
+    "meaningJa": "扇動する",
+    "exampleKo": "군중을 선동합니다.",
+    "exampleJa": "群衆を扇動します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-417",
+    "korean": "획책하다",
+    "reading": "hoekchaekhada",
+    "meaningJa": "画策する",
+    "exampleKo": "음모를 획책합니다.",
+    "exampleJa": "陰謀を画策します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-418",
+    "korean": "모의하다",
+    "reading": "mouihada",
+    "meaningJa": "謀議する",
+    "exampleKo": "범행을 모의합니다.",
+    "exampleJa": "犯行を謀議します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-419",
+    "korean": "공모하다",
+    "reading": "gongmohada",
+    "meaningJa": "共謀する",
+    "exampleKo": "범행을 공모합니다.",
+    "exampleJa": "犯行を共謀します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-420",
+    "korean": "결탁하다",
+    "reading": "gyeoltakhada",
+    "meaningJa": "結託する",
+    "exampleKo": "권력과 결탁합니다.",
+    "exampleJa": "権力と結託します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-421",
+    "korean": "야합하다",
+    "reading": "yahaphada",
+    "meaningJa": "野合する",
+    "exampleKo": "여야가 야합했습니다.",
+    "exampleJa": "与野党が野合しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-422",
+    "korean": "결속하다",
+    "reading": "gyeolsokhada",
+    "meaningJa": "結束する",
+    "exampleKo": "조직을 결속합니다.",
+    "exampleJa": "組織を結束します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-423",
+    "korean": "화합",
+    "reading": "hwahap",
+    "meaningJa": "和合",
+    "exampleKo": "국민이 화합합니다.",
+    "exampleJa": "国民が和合します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-424",
+    "korean": "봉합하다",
+    "reading": "bonghaphada",
+    "meaningJa": "縫合する",
+    "exampleKo": "상처를 봉합합니다.",
+    "exampleJa": "傷を縫合します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-425",
+    "korean": "봉쇄하다",
+    "reading": "bongswaehada",
+    "meaningJa": "封鎖する",
+    "exampleKo": "국경을 봉쇄합니다.",
+    "exampleJa": "国境を封鎖します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-426",
+    "korean": "봉인하다",
+    "reading": "bonginhada",
+    "meaningJa": "封印する",
+    "exampleKo": "문서를 봉인합니다.",
+    "exampleJa": "文書を封印します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-427",
+    "korean": "밀봉하다",
+    "reading": "milbonghada",
+    "meaningJa": "密封する",
+    "exampleKo": "편지를 밀봉합니다.",
+    "exampleJa": "手紙を密封します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-428",
+    "korean": "개봉하다",
+    "reading": "gaebonghada",
+    "meaningJa": "開封する",
+    "exampleKo": "소포를 개봉합니다.",
+    "exampleJa": "小包を開封します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-429",
+    "korean": "은폐하다",
+    "reading": "eunpyehada",
+    "meaningJa": "隠蔽する",
+    "exampleKo": "사실을 은폐합니다.",
+    "exampleJa": "事実を隠蔽します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-430",
+    "korean": "은닉하다",
+    "reading": "eunnikhada",
+    "meaningJa": "隠匿する",
+    "exampleKo": "재산을 은닉합니다.",
+    "exampleJa": "財産を隠匿します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-431",
+    "korean": "위장하다",
+    "reading": "wijanghada",
+    "meaningJa": "偽装する",
+    "exampleKo": "신분을 위장합니다.",
+    "exampleJa": "身分を偽装します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-432",
+    "korean": "변조하다",
+    "reading": "byeonjohada",
+    "meaningJa": "変造する",
+    "exampleKo": "문서를 변조합니다.",
+    "exampleJa": "文書を変造します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-433",
+    "korean": "날조하다",
+    "reading": "naljohada",
+    "meaningJa": "捏造する",
+    "exampleKo": "증거를 날조합니다.",
+    "exampleJa": "証拠を捏造します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-434",
+    "korean": "왜곡하다",
+    "reading": "waegokhada",
+    "meaningJa": "歪曲する",
+    "exampleKo": "역사를 왜곡합니다.",
+    "exampleJa": "歴史を歪曲します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-435",
+    "korean": "과장하다",
+    "reading": "gwajanghada",
+    "meaningJa": "誇張する",
+    "exampleKo": "성과를 과장합니다.",
+    "exampleJa": "成果を誇張します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-436",
+    "korean": "감축하다",
+    "reading": "gamchukhada",
+    "meaningJa": "減縮する",
+    "exampleKo": "인원을 감축합니다.",
+    "exampleJa": "人員を減らします。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-437",
+    "korean": "호도하다",
+    "reading": "hodohada",
+    "meaningJa": "ごまかす",
+    "exampleKo": "여론을 호도합니다.",
+    "exampleJa": "世論をごまかします。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-438",
+    "korean": "현혹하다",
+    "reading": "hyeonhokhada",
+    "meaningJa": "眩惑する",
+    "exampleKo": "민심을 현혹합니다.",
+    "exampleJa": "民心を眩惑します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-439",
+    "korean": "심취하다",
+    "reading": "simchwihada",
+    "meaningJa": "心酔する",
+    "exampleKo": "예술에 심취합니다.",
+    "exampleJa": "芸術に心酔します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-440",
+    "korean": "매진하다",
+    "reading": "maejinhada",
+    "meaningJa": "邁進する",
+    "exampleKo": "연구에 매진합니다.",
+    "exampleJa": "研究に邁進します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-441",
+    "korean": "정진하다",
+    "reading": "jeongjinhada",
+    "meaningJa": "精進する",
+    "exampleKo": "수련에 정진합니다.",
+    "exampleJa": "修練に精進します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-442",
+    "korean": "자제하다",
+    "reading": "jajehada",
+    "meaningJa": "自制する",
+    "exampleKo": "감정을 자제합니다.",
+    "exampleJa": "感情を自制します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-443",
+    "korean": "극기하다",
+    "reading": "geukgihada",
+    "meaningJa": "克己する",
+    "exampleKo": "욕망을 극기합니다.",
+    "exampleJa": "欲望を克己します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-444",
+    "korean": "수신하다",
+    "reading": "susinhada",
+    "meaningJa": "修身する",
+    "exampleKo": "마음을 수신합니다.",
+    "exampleJa": "心を修めます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-445",
+    "korean": "온고지신",
+    "reading": "ongojisin",
+    "meaningJa": "温故知新",
+    "exampleKo": "온고지신의 자세로 배웁니다.",
+    "exampleJa": "温故知新の姿勢で学びます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-446",
+    "korean": "유비무환",
+    "reading": "yubimuhwan",
+    "meaningJa": "有備無患",
+    "exampleKo": "유비무환의 대비가 필요합니다.",
+    "exampleJa": "有備無患の備えが必要です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-447",
+    "korean": "고진감래",
+    "reading": "gojingamnae",
+    "meaningJa": "苦尽甘来",
+    "exampleKo": "고진감래를 믿습니다.",
+    "exampleJa": "苦尽甘来を信じます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-448",
+    "korean": "전화위복",
+    "reading": "jeonhwawibok",
+    "meaningJa": "転禍為福",
+    "exampleKo": "위기를 전화위복합니다.",
+    "exampleJa": "危機を転禍為福します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-449",
+    "korean": "새옹지마",
+    "reading": "saeongjima",
+    "meaningJa": "塞翁が馬",
+    "exampleKo": "새옹지마를 되새깁니다.",
+    "exampleJa": "塞翁が馬をかみしめます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-450",
+    "korean": "인과응보",
+    "reading": "ingwaeungbo",
+    "meaningJa": "因果応報",
+    "exampleKo": "인과응보를 믿습니다.",
+    "exampleJa": "因果応報を信じます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-451",
+    "korean": "권선징악",
+    "reading": "gwonseonjigak",
+    "meaningJa": "勧善懲悪",
+    "exampleKo": "권선징악이 주제입니다.",
+    "exampleJa": "勧善懲悪がテーマです。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-452",
+    "korean": "사필귀정",
+    "reading": "sapilgwijeong",
+    "meaningJa": "事必帰正",
+    "exampleKo": "사필귀정을 믿습니다.",
+    "exampleJa": "事は必ず正に帰すと信じます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-453",
+    "korean": "기승전결",
+    "reading": "giseungjeongyeol",
+    "meaningJa": "起承転結",
+    "exampleKo": "기승전결이 뚜렷합니다.",
+    "exampleJa": "起承転結がはっきりしています。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-454",
+    "korean": "언행일치",
+    "reading": "eonhaengilchi",
+    "meaningJa": "言行一致",
+    "exampleKo": "언행일치를 실천합니다.",
+    "exampleJa": "言行一致を実践します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-455",
+    "korean": "표리부동",
+    "reading": "pyoribudong",
+    "meaningJa": "表裏不同",
+    "exampleKo": "표리부동한 태도를 경계합니다.",
+    "exampleJa": "表裏不同な態度を警戒します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-456",
+    "korean": "유명무실",
+    "reading": "yumyeongmusil",
+    "meaningJa": "有名無実",
+    "exampleKo": "조직이 유명무실합니다.",
+    "exampleJa": "組織が有名無実です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-457",
+    "korean": "명실상부",
+    "reading": "myeongsilsangbu",
+    "meaningJa": "名実相符",
+    "exampleKo": "명실상부한 일인자입니다.",
+    "exampleJa": "名実ともに第一人者です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-458",
+    "korean": "대동소이",
+    "reading": "daedongsoi",
+    "meaningJa": "大同小異",
+    "exampleKo": "두 안은 대동소이합니다.",
+    "exampleJa": "二つの案は大同小異です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-459",
+    "korean": "천차만별",
+    "reading": "cheonchamanbyeol",
+    "meaningJa": "千差万別",
+    "exampleKo": "실력이 천차만별입니다.",
+    "exampleJa": "実力が千差万別です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-460",
+    "korean": "천편일률",
+    "reading": "cheonpyeonilryul",
+    "meaningJa": "千篇一律",
+    "exampleKo": "대답이 천편일률입니다.",
+    "exampleJa": "答えが千篇一律です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-461",
+    "korean": "이심전심",
+    "reading": "isimjeonsim",
+    "meaningJa": "以心伝心",
+    "exampleKo": "이심전심으로 통했습니다.",
+    "exampleJa": "以心伝心で通じました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-462",
+    "korean": "동병상련",
+    "reading": "dongbyeongsangnyeon",
+    "meaningJa": "同病相憐",
+    "exampleKo": "동병상련을 느낍니다.",
+    "exampleJa": "同病相憐を感じます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-463",
+    "korean": "동고동락",
+    "reading": "donggodongnak",
+    "meaningJa": "同苦同楽",
+    "exampleKo": "동고동락한 사이입니다.",
+    "exampleJa": "同苦同楽の仲です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-464",
+    "korean": "역지사지",
+    "reading": "yeokjisaji",
+    "meaningJa": "易地思之",
+    "exampleKo": "역지사지가 필요합니다.",
+    "exampleJa": "易地思之が必要です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-465",
+    "korean": "격세지감",
+    "reading": "gyeoksejigam",
+    "meaningJa": "隔世の感",
+    "exampleKo": "격세지감을 느낍니다.",
+    "exampleJa": "隔世の感を覚えます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-466",
+    "korean": "상전벽해",
+    "reading": "sangjeonbyeokhae",
+    "meaningJa": "桑田碧海",
+    "exampleKo": "상전벽해의 변화입니다.",
+    "exampleJa": "桑田碧海の変化です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-467",
+    "korean": "격물치지",
+    "reading": "gyeongmulchiji",
+    "meaningJa": "格物致知",
+    "exampleKo": "격물치지의 학문입니다.",
+    "exampleJa": "格物致知の学問です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-468",
+    "korean": "기승을 부리다",
+    "reading": "giseungeulburida",
+    "meaningJa": "猛威を振るう",
+    "exampleKo": "전염병이 기승을 부립니다.",
+    "exampleJa": "伝染病が猛威を振るいます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-469",
+    "korean": "판을 치다",
+    "reading": "paneulchida",
+    "meaningJa": "横行する",
+    "exampleKo": "가짜 뉴스가 판을 칩니다.",
+    "exampleJa": "フェイクニュースが横行します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-470",
+    "korean": "활개치다",
+    "reading": "hwalgaechida",
+    "meaningJa": "跳梁する",
+    "exampleKo": "도적이 활개칩니다.",
+    "exampleJa": "盗賊が跳梁します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-471",
+    "korean": "준동하다",
+    "reading": "jundonghada",
+    "meaningJa": "蠢動する",
+    "exampleKo": "불순 세력이 준동합니다.",
+    "exampleJa": "不純勢力が蠢動します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-472",
+    "korean": "발호하다",
+    "reading": "barhohada",
+    "meaningJa": "跋扈する",
+    "exampleKo": "간신들이 발호합니다.",
+    "exampleJa": "姦臣たちが跋扈します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-473",
+    "korean": "부단히",
+    "reading": "budanhi",
+    "meaningJa": "絶えず",
+    "exampleKo": "부단히 노력합니다.",
+    "exampleJa": "絶えず努力します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-474",
+    "korean": "묵묵히",
+    "reading": "mukmukhi",
+    "meaningJa": "黙々と",
+    "exampleKo": "묵묵히 일합니다.",
+    "exampleJa": "黙々と働きます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-475",
+    "korean": "묵묵부답",
+    "reading": "mukmukbudap",
+    "meaningJa": "黙して答えないこと",
+    "exampleKo": "질문에 묵묵부답합니다.",
+    "exampleJa": "質問に黙して答えません。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-476",
+    "korean": "묵살하다",
+    "reading": "muksalhada",
+    "meaningJa": "黙殺する",
+    "exampleKo": "요구를 묵살합니다.",
+    "exampleJa": "要求を黙殺します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-477",
+    "korean": "일축하다",
+    "reading": "ilchukhada",
+    "meaningJa": "一蹴する",
+    "exampleKo": "주장을 일축합니다.",
+    "exampleJa": "主張を一蹴します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-478",
+    "korean": "마지못해",
+    "reading": "majimothae",
+    "meaningJa": "渋々",
+    "exampleKo": "마지못해 승낙합니다.",
+    "exampleJa": "渋々承諾します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-479",
+    "korean": "달갑지 않다",
+    "reading": "dalgapjianha",
+    "meaningJa": "歓迎できない",
+    "exampleKo": "소식이 달갑지 않습니다.",
+    "exampleJa": "知らせが歓迎できません。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-480",
+    "korean": "야속하다",
+    "reading": "yasokhada",
+    "meaningJa": "薄情だ",
+    "exampleKo": "세월이 야속합니다.",
+    "exampleJa": "歳月が薄情です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-481",
+    "korean": "매정하다",
+    "reading": "maejeonghada",
+    "meaningJa": "薄情だ",
+    "exampleKo": "매정하게 거절합니다.",
+    "exampleJa": "薄情に断ります。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-482",
+    "korean": "박정하다",
+    "reading": "bakjeonghada",
+    "meaningJa": "薄情だ",
+    "exampleKo": "박정하게 대합니다.",
+    "exampleJa": "薄情に接します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-483",
+    "korean": "무정하다",
+    "reading": "mujeonghada",
+    "meaningJa": "無情だ",
+    "exampleKo": "무정한 세월이 흘렀습니다.",
+    "exampleJa": "無情な歳月が流れました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-484",
+    "korean": "냉혹하다",
+    "reading": "naenghokhada",
+    "meaningJa": "冷酷だ",
+    "exampleKo": "냉혹한 현실입니다.",
+    "exampleJa": "冷酷な現実です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-485",
+    "korean": "포악하다",
+    "reading": "poakhada",
+    "meaningJa": "暴悪だ",
+    "exampleKo": "포악한 통치자입니다.",
+    "exampleJa": "暴悪な統治者です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-486",
+    "korean": "흉포하다",
+    "reading": "hyungpohada",
+    "meaningJa": "凶暴だ",
+    "exampleKo": "흉포한 범죄입니다.",
+    "exampleJa": "凶暴な犯罪です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-487",
+    "korean": "험악하다",
+    "reading": "heomakhada",
+    "meaningJa": "険悪だ",
+    "exampleKo": "분위기가 험악합니다.",
+    "exampleJa": "雰囲気が険悪です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-488",
+    "korean": "험준하다",
+    "reading": "heomjunhada",
+    "meaningJa": "険しい",
+    "exampleKo": "산세가 험준합니다.",
+    "exampleJa": "山容が険しいです。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-489",
+    "korean": "수그리다",
+    "reading": "sugeurida",
+    "meaningJa": "頭を下げる",
+    "exampleKo": "고개를 수그립니다.",
+    "exampleJa": "頭を下げます。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-490",
+    "korean": "숙연하다",
+    "reading": "sugyeonhada",
+    "meaningJa": "粛然だ",
+    "exampleKo": "숙연해졌습니다.",
+    "exampleJa": "粛然としました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-491",
+    "korean": "경건하다",
+    "reading": "gyeonggeonhada",
+    "meaningJa": "敬虔だ",
+    "exampleKo": "경건하게 기도합니다.",
+    "exampleJa": "敬虔に祈ります。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-492",
+    "korean": "숭고하다",
+    "reading": "sunggohada",
+    "meaningJa": "崇高だ",
+    "exampleKo": "숭고한 희생입니다.",
+    "exampleJa": "崇高な犠牲です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-493",
+    "korean": "장엄하다",
+    "reading": "jangeomhada",
+    "meaningJa": "荘厳だ",
+    "exampleKo": "장엄한 의식입니다.",
+    "exampleJa": "荘厳な儀式です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-494",
+    "korean": "엄숙하다",
+    "reading": "eomsukhada",
+    "meaningJa": "厳粛だ",
+    "exampleKo": "엄숙하게 선서합니다.",
+    "exampleJa": "厳粛に宣誓します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-495",
+    "korean": "비장하다",
+    "reading": "bijanghada",
+    "meaningJa": "悲壮だ",
+    "exampleKo": "비장한 각오입니다.",
+    "exampleJa": "悲壮な覚悟です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-496",
+    "korean": "장렬하다",
+    "reading": "jangnyeolhada",
+    "meaningJa": "壮烈だ",
+    "exampleKo": "장렬하게 산화했습니다.",
+    "exampleJa": "壮烈に散華しました。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-497",
+    "korean": "비통하다",
+    "reading": "bitonghada",
+    "meaningJa": "悲痛だ",
+    "exampleKo": "비통한 심정입니다.",
+    "exampleJa": "悲痛な心境です。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-498",
+    "korean": "애통하다",
+    "reading": "aetonghada",
+    "meaningJa": "哀痛だ",
+    "exampleKo": "애통해합니다.",
+    "exampleJa": "哀痛します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-499",
+    "korean": "통탄하다",
+    "reading": "tongtanhada",
+    "meaningJa": "痛嘆する",
+    "exampleKo": "시대를 통탄합니다.",
+    "exampleJa": "時代を痛嘆します。",
+    "topikLevel": 5
+  },
+  {
+    "id": "t5-500",
+    "korean": "개탄하다",
+    "reading": "gaetanhada",
+    "meaningJa": "慨嘆する",
+    "exampleKo": "세태를 개탄합니다.",
+    "exampleJa": "世態を慨嘆します。",
+    "topikLevel": 5
+  }
+]

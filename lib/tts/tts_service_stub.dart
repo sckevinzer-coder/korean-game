@@ -6,6 +6,9 @@ import 'tts_service.dart';
 class FlutterTtsService implements TtsService {
   FlutterTts? _tts;
   bool _languageSet = false;
+  double _rate = 1.0;
+  double _pitch = 1.0;
+  double _volume = 1.0;
 
   Future<FlutterTts> _ensureInitialized() async {
     var tts = _tts;
@@ -21,8 +24,16 @@ class FlutterTtsService implements TtsService {
   }
 
   @override
-  Future<void> speak(String text) async {
-    await (await _ensureInitialized()).speak(text);
+  Future<void> speak(String text, {double rate = 1.0, double pitch = 1.0, double volume = 1.0}) async {
+    _rate = rate.clamp(0.0, 2.0);
+    _pitch = pitch.clamp(0.0, 2.0);
+    _volume = volume.clamp(0.0, 1.0);
+
+    final tts = await _ensureInitialized();
+    await tts.setSpeechRate(_rate);
+    await tts.setPitch(_pitch);
+    await tts.setVolume(_volume);
+    await tts.speak(text);
   }
 
   @override

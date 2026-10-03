@@ -25,11 +25,17 @@ Word word(String id, String korean, String meaningJa, {String? exampleKo}) => Wo
 class FakeTtsService implements TtsService {
   FakeTtsService({this.shouldThrow = false});
   final List<String> spoken = [];
+  final List<double> rates = [];
+  final List<double> pitches = [];
+  final List<double> volumes = [];
   final bool shouldThrow;
 
   @override
-  Future<void> speak(String text) async {
+  Future<void> speak(String text, {double rate = 1.0, double pitch = 1.0, double volume = 1.0}) async {
     spoken.add(text);
+    rates.add(rate);
+    pitches.add(pitch);
+    volumes.add(volume);
     if (shouldThrow) throw StateError('TTS error');
   }
 

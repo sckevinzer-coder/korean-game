@@ -1,0 +1,4502 @@
+[
+  {
+    "exampleJa": "恩師の退任式では万感が込み上げて言葉が出なかった。",
+    "exampleKo": "은사님의 퇴임식에서 만감이 북받쳐 말이 나오지 않았다.",
+    "id": "t6-001",
+    "korean": "만감",
+    "meaningJa": "万感（込み上げる様々な思い）",
+    "reading": "mangam",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "若気の至りへの悔恨が今も彼を苦しめている。",
+    "exampleKo": "젊은 시절의 치기를 향한 회한이 지금도 그를 괴롭힌다.",
+    "id": "t6-002",
+    "korean": "회한",
+    "meaningJa": "悔恨（悔いと恨みが残る心）",
+    "reading": "hoehan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "約束を守れなかった自愧に彼はうつむいた。",
+    "exampleKo": "약속을 지키지 못한 자괴에 그는 고개를 숙였다.",
+    "id": "t6-003",
+    "korean": "자괴",
+    "meaningJa": "自愧（自らを恥じる気持ち）",
+    "reading": "jagoe",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "決勝での敗北は選手たちに骨身にしみる痛恨を残した。",
+    "exampleKo": "결승전 패배는 선수들에게 뼈에 사무치는 통한을 남겼다.",
+    "id": "t6-004",
+    "korean": "통한",
+    "meaningJa": "痛恨（骨身にしみる恨み）",
+    "reading": "tonghan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "秋の雨は旅人の悲感をいっそう深めた。",
+    "exampleKo": "가을비는 나그네의 비감을 한층 깊게 했다.",
+    "id": "t6-005",
+    "korean": "비감",
+    "meaningJa": "悲感（悲しい思い）",
+    "reading": "bigam",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼の詩には晴れない憂愁が全編に漂っている。",
+    "exampleKo": "그의 시에는 걷히지 않는 우수가 가득 배어 있다.",
+    "id": "t6-006",
+    "korean": "우수",
+    "meaningJa": "憂愁（晴れない憂い）",
+    "reading": "usu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "深夜の山寺には寂寞だけが沈んでいた。",
+    "exampleKo": "한밤의 산사에는 적막만이 가라앉아 있었다.",
+    "id": "t6-007",
+    "korean": "적막",
+    "meaningJa": "寂寞（ひっそりした寂しさ）",
+    "reading": "jeongmak",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "老学者は江南の地で気ままな逍遙を楽しんだ。",
+    "exampleKo": "노학자는 강남 땅에서 한가로운 소요를 즐겼다.",
+    "id": "t6-008",
+    "korean": "소요",
+    "meaningJa": "逍遙（気ままな散策）",
+    "reading": "soyo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "戦争は数百万人をあてのない漂泊へと追いやった。",
+    "exampleKo": "전쟁은 수백만 명을 기약 없는 표박으로 내몰았다.",
+    "id": "t6-009",
+    "korean": "표박",
+    "meaningJa": "漂泊（あてのない放浪）",
+    "reading": "pyobak",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は職を求めて各地を転々とする流浪を続けた。",
+    "exampleKo": "그는 일자리를 찾아 여러 고장을 전전하며 떠돌았다.",
+    "id": "t6-010",
+    "korean": "전전",
+    "meaningJa": "転々と流浪すること",
+    "reading": "jeonjeon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "万物は移ろい流れる流転の中にあると仏教は説く。",
+    "exampleKo": "만물은 흘러가며 변하는 유전 속에 있다고 불교는 설한다.",
+    "id": "t6-011",
+    "korean": "유전",
+    "meaningJa": "流転（移ろい流れること）",
+    "reading": "yujeon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "生と滅の繰り返しである生滅を悟ることが解脱への道だ。",
+    "exampleKo": "삶과 죽음이 되풀이되는 생멸을 깨닫는 것이 해탈로 가는 길이다.",
+    "id": "t6-012",
+    "korean": "생멸",
+    "meaningJa": "生滅（生と滅の繰り返し）",
+    "reading": "saengmyeol",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "そのきわめて短い瞬間である刹那に勝敗が決まった。",
+    "exampleKo": "그 찰나의 순간에 승패가 갈렸다.",
+    "id": "t6-013",
+    "korean": "찰나",
+    "meaningJa": "刹那（きわめて短い瞬間）",
+    "reading": "chalna",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "王朝の物事の終わりである終焉は静かに訪れた。",
+    "exampleKo": "왕조의 종언은 조용히 찾아왔다.",
+    "id": "t6-014",
+    "korean": "종언",
+    "meaningJa": "終焉（物事の終わり）",
+    "reading": "jongeon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "長編小説の物語の最終章である終章が読者を泣かせた。",
+    "exampleKo": "장편소설의 종장이 독자들의 눈시울을 적셨다.",
+    "id": "t6-015",
+    "korean": "종장",
+    "meaningJa": "終章（物語の最終章）",
+    "reading": "jongjang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "事件の起こり始めである発端は一通の密告状だった。",
+    "exampleKo": "사건의 발단은 한 통의 밀고장이었다.",
+    "id": "t6-016",
+    "korean": "발단",
+    "meaningJa": "発端（物事の起こり始め）",
+    "reading": "baldan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "演奏は最高潮の境地である絶頂に向かって駆け上がった。",
+    "exampleKo": "연주는 절정을 향해 치달아 올랐다.",
+    "id": "t6-017",
+    "korean": "절정",
+    "meaningJa": "絶頂（最高潮の境地）",
+    "reading": "jeoljeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "映画は二人の再会というめでたい結末である大団円で幕を閉じた。",
+    "exampleKo": "영화는 두 사람의 재회라는 대단원으로 막을 내렸다.",
+    "id": "t6-018",
+    "korean": "대단원",
+    "meaningJa": "大団圓（めでたい結末）",
+    "reading": "daedanwon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "公演が終わった後も後に残る趣である余韻が長く続いた。",
+    "exampleKo": "공연이 끝난 뒤에도 여운이 길게 남았다.",
+    "id": "t6-019",
+    "korean": "여운",
+    "meaningJa": "余韻（後に残る趣）",
+    "reading": "yeoun",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "手紙には母の残り香である残香がほのかに漂っていた。",
+    "exampleKo": "편지에는 어머니의 잔향이 은은히 배어 있었다.",
+    "id": "t6-020",
+    "korean": "잔향",
+    "meaningJa": "残香（ほのかに残る香り）",
+    "reading": "janhyang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "写真の中の祖父の残る姿である残影が胸を打った。",
+    "exampleKo": "사진 속 할아버지의 잔영이 가슴을 울렸다.",
+    "id": "t6-021",
+    "korean": "잔영",
+    "meaningJa": "残影（残る姿や面影）",
+    "reading": "janyeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "砂漠で見た湖はまぼろしの姿である幻影にすぎなかった。",
+    "exampleKo": "사막에서 본 호수는 환영에 불과했다.",
+    "id": "t6-022",
+    "korean": "환영",
+    "meaningJa": "幻影（まぼろしの姿）",
+    "reading": "hwanyeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "水平線に浮かぶ蜃気楼は旅人たちの目を奪った。",
+    "exampleKo": "수평선에 떠오른 신기루가 나그네들의 눈을 사로잡았다.",
+    "id": "t6-023",
+    "korean": "신기루",
+    "meaningJa": "蜃気楼（大気の幻影現象）",
+    "reading": "singiru",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "天地自然の営みである造化の妙に彼は嘆声を上げた。",
+    "exampleKo": "천지자연의 조화의 오묘함에 그는 탄성을 올렸다.",
+    "id": "t6-024",
+    "korean": "조화",
+    "meaningJa": "造化（天地自然の営み）",
+    "reading": "johwa",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "青々とした大空である蒼空に一羽の鷹が舞っていた。",
+    "exampleKo": "푸르게 높은 창공에 매 한 마리가 날고 있었다.",
+    "id": "t6-025",
+    "korean": "창공",
+    "meaningJa": "蒼空（青々とした大空）",
+    "reading": "changgong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "頂上から見下ろす雲の海原である雲海が朝日に輝いた。",
+    "exampleKo": "정상에서 내려다본 운해가 아침 햇살에 빛났다.",
+    "id": "t6-026",
+    "korean": "운해",
+    "meaningJa": "雲海（雲の海原）",
+    "reading": "unhae",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "渓谷には立ち込める雲と霧である雲霧が深く垂れていた。",
+    "exampleKo": "계곡에는 운무가 깊게 드리워 있었다.",
+    "id": "t6-027",
+    "korean": "운무",
+    "meaningJa": "雲霧（立ち込める雲と霧）",
+    "reading": "unmu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "四月になると山全体が新緑の若葉である新緑に覆われる。",
+    "exampleKo": "사월이 되면 온 산이 신록으로 뒤덮인다.",
+    "id": "t6-028",
+    "korean": "신록",
+    "meaningJa": "新緑（若葉の緑）",
+    "reading": "sinnok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "雪の風景である雪景を撮ろうと写真家が集まった。",
+    "exampleKo": "눈 덮인 설경을 담으려 사진가들이 모여들었다.",
+    "id": "t6-029",
+    "korean": "설경",
+    "meaningJa": "雪景（雪の風景）",
+    "reading": "seolgyeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "雪の降る夜である雪夜に彼は一編の詩を書いた。",
+    "exampleKo": "눈 내리는 설야에 그는 한 편의 시를 썼다.",
+    "id": "t6-030",
+    "korean": "설야",
+    "meaningJa": "雪夜（雪の降る夜）",
+    "reading": "seorya",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "湖面には月の光である月光が銀色に揺れていた。",
+    "exampleKo": "호수에는 월광이 은빛으로 흔들리고 있었다.",
+    "id": "t6-031",
+    "korean": "월광",
+    "meaningJa": "月光（月の光）",
+    "reading": "wolgwang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "望遠鏡の先には星の雲状集団である星雲が広がっていた。",
+    "exampleKo": "망원경 너머에는 성운이 넓게 펼쳐져 있었다.",
+    "id": "t6-032",
+    "korean": "성운",
+    "meaningJa": "星雲（星の雲状集団）",
+    "reading": "seongun",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "古宮の木陰の緑である緑陰でひとときの涼を取った。",
+    "exampleKo": "고궁의 녹음에서 잠시 더위를 식혔다.",
+    "id": "t6-033",
+    "korean": "녹음",
+    "meaningJa": "緑陰（木陰の緑）",
+    "reading": "nogeum",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "散る花である落花が石畳を薄紅に染めた。",
+    "exampleKo": "지는 꽃 낙화가 돌길을 연분홍으로 물들였다.",
+    "id": "t6-034",
+    "korean": "낙화",
+    "meaningJa": "落花（散る花）",
+    "reading": "nakhwa",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "山が赤く染まる葉である紅葉の名所に人波が押し寄せた。",
+    "exampleKo": "온 산이 홍엽으로 물드는 명소에 인파가 몰려들었다.",
+    "id": "t6-035",
+    "korean": "홍엽",
+    "meaningJa": "紅葉（赤く染まる葉）",
+    "reading": "hongyeop",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "秋の終わりである晩秋になると渡り鳥が南へ発った。",
+    "exampleKo": "만추가 되면 철새들이 남쪽으로 떠났다.",
+    "id": "t6-036",
+    "korean": "만추",
+    "meaningJa": "晩秋（秋の終わり）",
+    "reading": "manchu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "冬の始まりである初冬の風が頬を刺すように冷たい。",
+    "exampleKo": "초동의 바람이 뺨을 에이듯 차갑다.",
+    "id": "t6-037",
+    "korean": "초동",
+    "meaningJa": "初冬（冬の始まり）",
+    "reading": "chodong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "真冬の厳しさである深冬の寒さに川面が凍りついた。",
+    "exampleKo": "심동의 추위에 강물이 꽁꽁 얼어붙었다.",
+    "id": "t6-038",
+    "korean": "심동",
+    "meaningJa": "深冬（真冬の厳しさ）",
+    "reading": "simdong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "春の心浮き立つ思いである春情を抑えきれず彼は野原へ出た。",
+    "exampleKo": "봄의 설레는 춘정을 억누르지 못하고 그는 들판으로 나갔다.",
+    "id": "t6-039",
+    "korean": "춘정",
+    "meaningJa": "春情（春の心浮き立つ思い）",
+    "reading": "chunjeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "秋の物思いである秋懐に耽る老人の背中が寂しげだ。",
+    "exampleKo": "가을 생각에 잠긴 추회에 빠진 노인의 등이 쓸쓸해 보인다.",
+    "id": "t6-040",
+    "korean": "추회",
+    "meaningJa": "秋懐（秋の物思い）",
+    "reading": "chuhoe",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "春の物憂さである春愁に窓辺で彼は一日を過ごした。",
+    "exampleKo": "봄의 나른한 춘수에 창가에서 그는 하루를 보냈다.",
+    "id": "t6-041",
+    "korean": "춘수",
+    "meaningJa": "春愁（春の物憂さ）",
+    "reading": "chunsu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "故郷を慕う心である望郷の念が兵士たちを支えた。",
+    "exampleKo": "고향을 그리는 망향의 염원이 병사들을 지탱했다.",
+    "id": "t6-042",
+    "korean": "망향",
+    "meaningJa": "望郷（故郷を慕う心）",
+    "reading": "manghyang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女は生まれ故郷である郷里に小さな図書館を建てた。",
+    "exampleKo": "그녀는 태어난 향리에 작은 도서관을 세웠다.",
+    "id": "t6-043",
+    "korean": "향리",
+    "meaningJa": "郷里（生まれ故郷）",
+    "reading": "hyangni",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "のどかな田舎である田園での暮らしに彼は憧れた。",
+    "exampleKo": "한적한 전원 생활에 그는 동경을 품었다.",
+    "id": "t6-044",
+    "korean": "전원",
+    "meaningJa": "田園（のどかな田舎）",
+    "reading": "jeonwon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "故郷を離れることである離郷から十年が過ぎた。",
+    "exampleKo": "고향을 떠난 이향살이로 십 년이 흘렀다.",
+    "id": "t6-045",
+    "korean": "이향",
+    "meaningJa": "離郷（故郷を離れること）",
+    "reading": "ihyang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "旅先の土地である客地で彼は温かいもてなしを受けた。",
+    "exampleKo": "나그네 낯선 객지에서 그는 따뜻한 대접을 받았다.",
+    "id": "t6-046",
+    "korean": "객지",
+    "meaningJa": "客地（旅先の土地）",
+    "reading": "gaekji",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "故郷でない土地である他郷での生活は容易ではなかった。",
+    "exampleKo": "고향 아닌 타향살이는 쉽지 않았다.",
+    "id": "t6-047",
+    "korean": "타향",
+    "meaningJa": "他郷（故郷でない土地）",
+    "reading": "tahyang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "旅路を行くことである行旅の途中で彼は師と出会った。",
+    "exampleKo": "머나먼 행려 도중에 그는 스승을 만났다.",
+    "id": "t6-048",
+    "korean": "행려",
+    "meaningJa": "行旅（旅路を行くこと）",
+    "reading": "haengnyeo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "旅の道のりである路程を終えて彼は無事に帰宅した。",
+    "exampleKo": "긴 노정을 마치고 그는 무사히 귀가했다.",
+    "id": "t6-049",
+    "korean": "노정",
+    "meaningJa": "路程（旅の道のり）",
+    "reading": "nojeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "長い旅路である逆旅に就く前に彼は地図を広げた。",
+    "exampleKo": "머나먼 역로에 오르기 전 그는 지도를 펼쳤다.",
+    "id": "t6-050",
+    "korean": "역로",
+    "meaningJa": "逆旅（長い旅路）",
+    "reading": "yeokro",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "バスに揺られて三日間の紀行が始まった。",
+    "exampleKo": "버스에 몸을 싣고 사흘간의 기행이 시작됐다.",
+    "id": "t6-051",
+    "korean": "기행",
+    "meaningJa": "紀行（旅の記録と見聞）",
+    "reading": "gihaeng",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "名所を巡る遊覧の季節がやってきた。",
+    "exampleKo": "명소를 둘러보는 유람의 계절이 돌아왔다.",
+    "id": "t6-052",
+    "korean": "유람",
+    "meaningJa": "遊覧（名所を巡る旅）",
+    "reading": "yuram",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "名山を探り訪ねる探勝に出かける計画を立てた。",
+    "exampleKo": "명산을 찾아다니는 탐승에 나설 계획을 세웠다.",
+    "id": "t6-053",
+    "korean": "탐승",
+    "meaningJa": "探勝（名所を探り訪ねること）",
+    "reading": "tamseung",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "滝と紅葉の絶景が見事だと評判になった。",
+    "exampleKo": "폭포와 단풍의 절경이 일품이라는 소문이 났다.",
+    "id": "t6-054",
+    "korean": "절경",
+    "meaningJa": "絶景（この上ない景色）",
+    "reading": "jeolgyeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "仙境のような勝景が目の前に広がった。",
+    "exampleKo": "선경 같은 승경이 눈앞에 펼쳐졌다.",
+    "id": "t6-055",
+    "korean": "승경",
+    "meaningJa": "勝景（すぐれた景色）",
+    "reading": "seunggyeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "慶州一帯は新羅の名勝が散在する地域だ。",
+    "exampleKo": "경주 일대는 신라의 명승이 흩어져 있는 지역이다.",
+    "id": "t6-056",
+    "korean": "명승",
+    "meaningJa": "名勝（名高い景勝地）",
+    "reading": "myeongseung",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "古い史跡である古跡を訪ねて歴史の息吹を感じた。",
+    "exampleKo": "오랜 고적을 찾아 역사의 숨결을 느꼈다.",
+    "id": "t6-057",
+    "korean": "고적",
+    "meaningJa": "古跡（古い史跡）",
+    "reading": "gojeok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "書庫の奥から貴重な古書が見つかった。",
+    "exampleKo": "서고 깊숙한 곳에서 귀중한 고서가 발견됐다.",
+    "id": "t6-058",
+    "korean": "고서",
+    "meaningJa": "古書（古い書籍）",
+    "reading": "goseo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "石に刻んだ文字である石刻の拓本を研究室に掲げた。",
+    "exampleKo": "돌에 새긴 석각의 탁본을 연구실에 내걸었다.",
+    "id": "t6-059",
+    "korean": "석각",
+    "meaningJa": "石刻（石に刻んだ文字）",
+    "reading": "seokgak",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "墓碑に刻まれた墓誌銘が彼の生涯を物語っていた。",
+    "exampleKo": "묘비에 새겨진 묘지명이 그의 일생을 말해주고 있었다.",
+    "id": "t6-060",
+    "korean": "묘지명",
+    "meaningJa": "墓誌銘（墓碑の追悼文）",
+    "reading": "myojimyeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "書と絵画である書画の展示会が芸術の殿堂で開かれた。",
+    "exampleKo": "글씨와 그림 서화의 전시회가 예술의 전당에서 열렸다.",
+    "id": "t6-061",
+    "korean": "서화",
+    "meaningJa": "書画（書と絵画）",
+    "reading": "seohwa",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "水墨で描いた水墨画の淡さに観客が魅了された。",
+    "exampleKo": "먹으로 그린 수묵화의 담백함에 관객이 매료됐다.",
+    "id": "t6-062",
+    "korean": "수묵화",
+    "meaningJa": "水墨画（墨絵の絵画）",
+    "reading": "sumukhwa",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "文人が描いた文人画の気品が漂う一幅だ。",
+    "exampleKo": "문인이 그린 문인화의 기품이 흐르는 한 폭이다.",
+    "id": "t6-063",
+    "korean": "문인화",
+    "meaningJa": "文人画（文人の描く絵）",
+    "reading": "muninhwa",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "梅蘭菊竹である四君子を描いた屏風が客間を飾った。",
+    "exampleKo": "매화와 난초 사군자를 그린 병풍이 객실을 장식했다.",
+    "id": "t6-064",
+    "korean": "사군자",
+    "meaningJa": "四君子（梅蘭菊竹の画題）",
+    "reading": "sagunja",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "梅蘭菊竹の大作が公開された。",
+    "exampleKo": "매란국죽의 대작이 공개됐다.",
+    "id": "t6-065",
+    "korean": "매란국죽",
+    "meaningJa": "梅蘭菊竹（四君子の四植物）",
+    "reading": "maerangukjuk",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "詩書画の三芸に通じた老大家だった。",
+    "exampleKo": "시와 글씨와 그림 시서화에 통한 노대가였다.",
+    "id": "t6-066",
+    "korean": "시서화",
+    "meaningJa": "詩書画（詩と書と絵画）",
+    "reading": "siseohwa",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "風流を楽しむ吟風弄月の夜が更けていった。",
+    "exampleKo": "풍류를 즐기는 음풍농월의 밤이 깊어 갔다.",
+    "id": "t6-067",
+    "korean": "음풍농월",
+    "meaningJa": "吟風弄月（風流を楽しむこと）",
+    "reading": "eumpungnongwol",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は俗を離れた風流を愛する隠者だった。",
+    "exampleKo": "그는 세속을 떠난 풍류를 사랑하는 은자였다.",
+    "id": "t6-068",
+    "korean": "풍류",
+    "meaningJa": "風流（俗を離れた趣）",
+    "reading": "pungryu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "その茶室には格調高い雅趣が満ちていた。",
+    "exampleKo": "그 다실에는 격조 높은 아취가 가득했다.",
+    "id": "t6-069",
+    "korean": "아취",
+    "meaningJa": "雅趣（みやびな趣）",
+    "reading": "achwi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "庭園の風情ある趣である韻致が訪れる者を和ませた。",
+    "exampleKo": "정원의 운치가 찾는 이들을 부드럽게 했다.",
+    "id": "t6-070",
+    "korean": "운치",
+    "meaningJa": "韻致（風情ある趣）",
+    "reading": "unchi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "この随筆には人生の情趣がにじみ出ている。",
+    "exampleKo": "이 수필에는 인생의 정취가 배어 있다.",
+    "id": "t6-071",
+    "korean": "정취",
+    "meaningJa": "情趣（心に響く趣）",
+    "reading": "jeongchwi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "漢詩の調べが朗々と講堂に響き渡った。",
+    "exampleKo": "한시의 가락이 강당에 낭랑히 울려 퍼졌다.",
+    "id": "t6-072",
+    "korean": "한시",
+    "meaningJa": "漢詩（漢文体の詩）",
+    "reading": "hansi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "律詩の厳格な形式が彼の詩才を鍛えた。",
+    "exampleKo": "율시의 엄격한 격식이 그의 시재를 단련시켰다.",
+    "id": "t6-073",
+    "korean": "율시",
+    "meaningJa": "律詩（定型の漢詩）",
+    "reading": "yulsi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "絶句の一首に故郷への思いを託した。",
+    "exampleKo": "절구 한 수에 고향을 향한 그리움을 실어 보냈다.",
+    "id": "t6-074",
+    "korean": "절구",
+    "meaningJa": "絶句（四句の漢詩）",
+    "reading": "jeolgu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "五言絶句の名作が教科書に載っている。",
+    "exampleKo": "오언절구의 명작이 교과서에 실려 있다.",
+    "id": "t6-075",
+    "korean": "오언절구",
+    "meaningJa": "五言絶句（一句五字の絶句）",
+    "reading": "oeonjeolgu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "七言律詩の大作を彼は一夜で書き上げた。",
+    "exampleKo": "칠언율시의 대작을 그는 하룻밤에 써냈다.",
+    "id": "t6-076",
+    "korean": "칠언율시",
+    "meaningJa": "七言律詩（一句七字の律詩）",
+    "reading": "chireonyulsi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "連時調の調べに合わせて皆で歌った。",
+    "exampleKo": "연시조의 가락에 맞춰 모두가 노래했다.",
+    "id": "t6-077",
+    "korean": "연시조",
+    "meaningJa": "連時調（連作の時調）",
+    "reading": "yeonsijo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "歌辞体の長編が口承で伝えられてきた。",
+    "exampleKo": "가사체의 장편이 구전으로 전해져 왔다.",
+    "id": "t6-078",
+    "korean": "가사체",
+    "meaningJa": "歌辞体（歌辞の文体）",
+    "reading": "gasache",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "民謡調の旋律が祭りの夜を盛り上げた。",
+    "exampleKo": "민요조의 선율이 축제의 밤을 달궜다.",
+    "id": "t6-079",
+    "korean": "민요조",
+    "meaningJa": "民謡調（民謡風の調べ）",
+    "reading": "minyojo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "パンソリ調の語りが観客を引き込んだ。",
+    "exampleKo": "판소리조의 사설이 관객을 끌어들였다.",
+    "id": "t6-080",
+    "korean": "판소리조",
+    "meaningJa": "パンソリ調（パンソリ風の語り口）",
+    "reading": "pansorijo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "説話調の昔話にお年寄りが耳を傾けた。",
+    "exampleKo": "설화조의 옛이야기에 어르신들이 귀를 기울였다.",
+    "id": "t6-081",
+    "korean": "설화조",
+    "meaningJa": "説話調（昔話風の語り口）",
+    "reading": "seolhwajo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "口碑文学の宝庫がこの村だと言われている。",
+    "exampleKo": "이 마을은 구비문학의 보고라고 불린다.",
+    "id": "t6-082",
+    "korean": "구비문학",
+    "meaningJa": "口碑文学（口承の文学）",
+    "reading": "gubimunhak",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "版木に彫る板刻の技術が代々受け継がれた。",
+    "exampleKo": "목판에 새기는 판각 기술이 대대로 이어졌다.",
+    "id": "t6-083",
+    "korean": "판각",
+    "meaningJa": "板刻（版木に彫る技術）",
+    "reading": "pangak",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "謄写版の謄写本が資料室に保管されている。",
+    "exampleKo": "등사판으로 찍은 등사본이 자료실에 보관돼 있다.",
+    "id": "t6-084",
+    "korean": "등사본",
+    "meaningJa": "謄写本（謄写版の写本）",
+    "reading": "deungsabon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "初刊の初刊本は今や入手困難だ。",
+    "exampleKo": "처음 찍어낸 초간본은 이제 구하기 어렵다.",
+    "id": "t6-085",
+    "korean": "초간본",
+    "meaningJa": "初刊本（最初の刊行本）",
+    "reading": "choganbon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "稀覯本の収集が彼の生涯の楽しみだった。",
+    "exampleKo": "희귀본 수집이 그의 평생 낙이었다.",
+    "id": "t6-086",
+    "korean": "희귀본",
+    "meaningJa": "稀覯本（珍しい版本）",
+    "reading": "huigwibon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "絶版本となった名著の復刊が決まった。",
+    "exampleKo": "절판본이 된 명저의 복간이 결정됐다.",
+    "id": "t6-087",
+    "korean": "절판본",
+    "meaningJa": "絶版本（品切れの版本）",
+    "reading": "jeolpanbon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "初版本の奥付には著者の署名があった。",
+    "exampleKo": "초판본의 간기에는 저자의 서명이 있었다.",
+    "id": "t6-088",
+    "korean": "초판본",
+    "meaningJa": "初版本（最初の版本）",
+    "reading": "chopanbon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "改訂版の内容が大幅に補強された。",
+    "exampleKo": "개정판의 내용이 크게 보강됐다.",
+    "id": "t6-089",
+    "korean": "개정판",
+    "meaningJa": "改訂版（改め直した版本）",
+    "reading": "gaejeongpan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "増補版には未公開の書簡が追加された。",
+    "exampleKo": "증보판에는 공개되지 않은 서간이 추가됐다.",
+    "id": "t6-090",
+    "korean": "증보판",
+    "meaningJa": "増補版（補い増した版本）",
+    "reading": "jeungbopan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "箴言集の一節が朝礼で朗読された。",
+    "exampleKo": "잠언집의 한 구절이 조회 시간에 낭독됐다.",
+    "id": "t6-091",
+    "korean": "잠언집",
+    "meaningJa": "箴言集（戒めの言葉集）",
+    "reading": "jameonjip",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "格言集を座右に置いて日々を省みた。",
+    "exampleKo": "격언집을 가까이 두고 나날을 되돌아봤다.",
+    "id": "t6-092",
+    "korean": "격언집",
+    "meaningJa": "格言集（格言の集成）",
+    "reading": "gyeogeonjip",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "祖父の金言を胸に刻んで生きてきた。",
+    "exampleKo": "할아버지의 금언을 가슴에 새기며 살아왔다.",
+    "id": "t6-093",
+    "korean": "금언",
+    "meaningJa": "金言（心の糧となる言葉）",
+    "reading": "geumeon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "訓戒文を新入生全員に配布した。",
+    "exampleKo": "훈계문을 신입생 전원에게 배포했다.",
+    "id": "t6-094",
+    "korean": "훈계문",
+    "meaningJa": "訓戒文（訓戒の文章）",
+    "reading": "hungyemun",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "教訓譚としての昔話が子供たちに語られた。",
+    "exampleKo": "교훈담으로서의 옛이야기가 아이들에게 전해졌다.",
+    "id": "t6-095",
+    "korean": "교훈담",
+    "meaningJa": "教訓譚（教訓の物語）",
+    "reading": "gyohundam",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "比喩譚を交えた説法に聴衆が耳を傾けた。",
+    "exampleKo": "비유담을 곁들인 설법에 청중이 귀를 기울였다.",
+    "id": "t6-096",
+    "korean": "비유담",
+    "meaningJa": "比喩譚（たとえ話の物語）",
+    "reading": "biyudam",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "伝説譚の舞台となった村を訪ねた。",
+    "exampleKo": "전설담의 무대가 된 마을을 찾았다.",
+    "id": "t6-097",
+    "korean": "전설담",
+    "meaningJa": "伝説譚（伝説の物語）",
+    "reading": "jeonseoldam",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "神話譚の世界に子供たちは目を輝かせた。",
+    "exampleKo": "신화담의 세계에 아이들은 눈을 반짝였다.",
+    "id": "t6-098",
+    "korean": "신화담",
+    "meaningJa": "神話譚（神話の物語）",
+    "reading": "sinhwadam",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "英雄譚の主人公に自分の姿を重ねた。",
+    "exampleKo": "영웅담의 주인공에 자신의 모습을 겹쳐 봤다.",
+    "id": "t6-099",
+    "korean": "영웅담",
+    "meaningJa": "英雄譚（英雄の物語）",
+    "reading": "yeongungdam",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "武勇譚を肴に老兵たちの夜は更けていった。",
+    "exampleKo": "무용담을 안주 삼아 노병들의 밤은 깊어 갔다.",
+    "id": "t6-100",
+    "korean": "무용담",
+    "meaningJa": "武勇譚（武勇の物語）",
+    "reading": "muyongdam",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "住民たちは請願書を手に窮状を泣訴した。",
+    "exampleKo": "주민들은 탄원서를 손에 들고 읍소했다.",
+    "id": "t6-101",
+    "korean": "읍소하다",
+    "meaningJa": "泣訴する（泣いて訴える）",
+    "reading": "eupsohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "遺族たちは真相究明を嘆願した。",
+    "exampleKo": "유족들은 진상 규명을 탄원했다.",
+    "id": "t6-102",
+    "korean": "탄원하다",
+    "meaningJa": "嘆願する（救済を求める）",
+    "reading": "tanwonhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は官庁に窮状を訴情した。",
+    "exampleKo": "그는 관청에 궁한 사정을 소청했다.",
+    "id": "t6-103",
+    "korean": "소청하다",
+    "meaningJa": "訴情する（事情を訴える）",
+    "reading": "socheonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "臣下たちは王に諫める上疏を奉った。",
+    "exampleKo": "신하들은 왕께 간하는 상소를 올렸다.",
+    "id": "t6-104",
+    "korean": "상소하다",
+    "meaningJa": "上疏する（王に諫言する）",
+    "reading": "sangsohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女は長官に直訴して窮状を訴えた。",
+    "exampleKo": "그녀는 장관에게 직소하여 궁상을 호소했다.",
+    "id": "t6-105",
+    "korean": "직소하다",
+    "meaningJa": "直訴する（直接訴え出る）",
+    "reading": "jiksohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "忠臣たちは命をかけて王を諫めた。",
+    "exampleKo": "충신들은 목숨을 걸고 왕을 간했다.",
+    "id": "t6-106",
+    "korean": "간하다",
+    "meaningJa": "諫める（目上を諌止する）",
+    "reading": "ganhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "討論会で彼は相手の主張を鋭く論駁した。",
+    "exampleKo": "토론회에서 그는 상대의 주장을 날카롭게 논박했다.",
+    "id": "t6-107",
+    "korean": "논박하다",
+    "meaningJa": "論駁する（論じて退ける）",
+    "reading": "nonbakhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "被告人は法廷で無罪を抗弁した。",
+    "exampleKo": "피고인은 법정에서 무죄를 항변했다.",
+    "id": "t6-108",
+    "korean": "항변하다",
+    "meaningJa": "抗弁する（反論して守る）",
+    "reading": "hangbyeonhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は自分の非を強弁して譲らなかった。",
+    "exampleKo": "그는 자신의 잘못을 강변하며 물러서지 않았다.",
+    "id": "t6-109",
+    "korean": "강변하다",
+    "meaningJa": "強弁する（無理に言い張る）",
+    "reading": "gangbyeonhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "疑惑について彼は潔白を疎明した。",
+    "exampleKo": "의혹에 대해 그는 결백을 소명했다.",
+    "id": "t6-110",
+    "korean": "소명하다",
+    "meaningJa": "疎明する（事情を釈明する）",
+    "reading": "somyeonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は経緯を自述した書面を提出した。",
+    "exampleKo": "그는 경위를 스스로 적은 자술서를 제출했다.",
+    "id": "t6-111",
+    "korean": "자술하다",
+    "meaningJa": "自述する（自ら書き述べる）",
+    "reading": "jasulhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "兵士たちは国旗の前で忠誠を盟誓した。",
+    "exampleKo": "병사들은 국기 앞에서 충성을 맹세했다.",
+    "id": "t6-112",
+    "korean": "맹세하다",
+    "meaningJa": "盟誓する（固く誓う）",
+    "reading": "maengsehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "二人は秘密を守ると誓約した。",
+    "exampleKo": "두 사람은 비밀을 지키기로 서약했다.",
+    "id": "t6-113",
+    "korean": "서약하다",
+    "meaningJa": "誓約する（約束を誓う）",
+    "reading": "seoyakhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は失敗を覚悟の上で挑戦した。",
+    "exampleKo": "그는 실패를 각오하고 도전했다.",
+    "id": "t6-114",
+    "korean": "각오하다",
+    "meaningJa": "覚悟する（心を定める）",
+    "reading": "gagohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "全員一致で改革を決議した。",
+    "exampleKo": "만장일치로 개혁을 결의했다.",
+    "id": "t6-115",
+    "korean": "결의하다",
+    "meaningJa": "決議する（意志を定める）",
+    "reading": "gyeoluihada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は留学の夢を断念した。",
+    "exampleKo": "그는 유학의 꿈을 단념했다.",
+    "id": "t6-116",
+    "korean": "단념하다",
+    "meaningJa": "断念する（思いを断つ）",
+    "reading": "dannyeomhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女は復職を諦念して田舎へ帰った。",
+    "exampleKo": "그녀는 복직을 체념하고 시골로 돌아갔다.",
+    "id": "t6-117",
+    "korean": "체념하다",
+    "meaningJa": "諦念する（諦めて受け入れる）",
+    "reading": "chenyeomhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は自分の軽率さを自責した。",
+    "exampleKo": "그는 자신의 경솔함을 자책했다.",
+    "id": "t6-118",
+    "korean": "자책하다",
+    "meaningJa": "自責する（自らを責める）",
+    "reading": "jachaekhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "役目を果たせなかった自愧に彼は沈んだ。",
+    "exampleKo": "맡은 바를 다하지 못한 자괴에 그는 잠겼다.",
+    "id": "t6-119",
+    "korean": "자괴하다",
+    "meaningJa": "自愧する（自らを恥じる）",
+    "reading": "jagoehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は過ちを悔いて涙を流した。",
+    "exampleKo": "그는 잘못을 뉘우치며 눈물을 흘렸다.",
+    "id": "t6-120",
+    "korean": "뉘우치다",
+    "meaningJa": "悔いる（過ちを反省する）",
+    "reading": "nwiuchida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "老人は過ぎた日々を嘆息して語った。",
+    "exampleKo": "노인은 지난 세월을 탄식하며 말했다.",
+    "id": "t6-121",
+    "korean": "탄식하다",
+    "meaningJa": "嘆息する（嘆いて息をつく）",
+    "reading": "tansikhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "国民は英雄の死を悲嘆して悼んだ。",
+    "exampleKo": "국민은 영웅의 죽음을 비탄하며 애도했다.",
+    "id": "t6-122",
+    "korean": "비탄하다",
+    "meaningJa": "悲嘆する（悲しみ嘆く）",
+    "reading": "bitanhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "全国が犠牲者を哀悼する式が開かれた。",
+    "exampleKo": "전국에서 희생자를 애도하는 식이 열렸다.",
+    "id": "t6-123",
+    "korean": "애도하다",
+    "meaningJa": "哀悼する（死を悼む）",
+    "reading": "aedohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "弔問のため多くの人が葬儀場を訪れた。",
+    "exampleKo": "조문하러 많은 사람이 장례식장을 찾았다.",
+    "id": "t6-124",
+    "korean": "조문하다",
+    "meaningJa": "弔問する（葬家を見舞う）",
+    "reading": "jomunhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "人々は殉国先烈を追慕する碑を建てた。",
+    "exampleKo": "사람들은 순국선열을 추모하는 비를 세웠다.",
+    "id": "t6-125",
+    "korean": "추모하다",
+    "meaningJa": "追慕する（偲んで慕う）",
+    "reading": "chumohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "詩人は師の徳を称頌する詩を捧げた。",
+    "exampleKo": "시인은 스승의 덕을 칭송하는 시를 바쳤다.",
+    "id": "t6-126",
+    "korean": "칭송하다",
+    "meaningJa": "称頌する（褒め称える）",
+    "reading": "chingsonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "評論家たちは新人の演技を激讃した。",
+    "exampleKo": "평론가들은 신인의 연기를 격찬했다.",
+    "id": "t6-127",
+    "korean": "격찬하다",
+    "meaningJa": "激讃する（大いに褒める）",
+    "reading": "gyeokchanhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は自然の美を礼讃する随筆を書いた。",
+    "exampleKo": "그는 자연의 아름다움을 예찬하는 수필을 썼다.",
+    "id": "t6-128",
+    "korean": "예찬하다",
+    "meaningJa": "礼讃する（たたえて賛美する）",
+    "reading": "yechanhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "信徒たちは神を讃美する歌を歌った。",
+    "exampleKo": "신도들은 신을 찬미하는 노래를 불렀다.",
+    "id": "t6-129",
+    "korean": "찬미하다",
+    "meaningJa": "讃美する（褒めたたえる）",
+    "reading": "chanmihada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "村人たちは彼の善行を頌徳する碑を立てた。",
+    "exampleKo": "마을 사람들은 그의 선행을 송덕하는 비를 세웠다.",
+    "id": "t6-130",
+    "korean": "송덕하다",
+    "meaningJa": "頌徳する（徳をたたえる）",
+    "reading": "songdeokhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は恩師の恩に謝恩する手紙を書いた。",
+    "exampleKo": "그는 은사의 은혜에 사은하는 편지를 썼다.",
+    "id": "t6-131",
+    "korean": "사은하다",
+    "meaningJa": "謝恩する（恩に感謝する）",
+    "reading": "saeunhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女は育ててくれた親に報恩する道を選んだ。",
+    "exampleKo": "그녀는 길러준 부모에게 보은하는 길을 택했다.",
+    "id": "t6-132",
+    "korean": "보은하다",
+    "meaningJa": "報恩する（恩に報いる）",
+    "reading": "boeunhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "弟子たちは師を仰望する気持ちで集まった。",
+    "exampleKo": "제자들은 스승을 앙망하는 마음으로 모였다.",
+    "id": "t6-133",
+    "korean": "앙망하다",
+    "meaningJa": "仰望する（仰ぎ慕う）",
+    "reading": "angmanghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "人々は独立運動家を敬慕して記念館を建てた。",
+    "exampleKo": "사람들은 독립운동가를 경모하여 기념관을 세웠다.",
+    "id": "t6-134",
+    "korean": "경모하다",
+    "meaningJa": "敬慕する（敬って慕う）",
+    "reading": "gyeongmohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "民衆は指導者を崇拝するように従った。",
+    "exampleKo": "민중은 지도자를 숭배하듯 따랐다.",
+    "id": "t6-135",
+    "korean": "숭배하다",
+    "meaningJa": "崇拝する（あがめて敬う）",
+    "reading": "sungbaehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "後世の人々は彼の学徳を追仰した。",
+    "exampleKo": "후세 사람들은 그의 학덕을 추앙했다.",
+    "id": "t6-136",
+    "korean": "추앙하다",
+    "meaningJa": "追仰する（慕って尊ぶ）",
+    "reading": "chuanghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "厳かな自然の前で敬畏の念を覚えた。",
+    "exampleKo": "장엄한 자연 앞에서 경외의 염을 느꼈다.",
+    "id": "t6-137",
+    "korean": "경외하다",
+    "meaningJa": "敬畏する（畏れて尊ぶ）",
+    "reading": "gyeongoehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女は篤実な信仰を持つ信者だ。",
+    "exampleKo": "그녀는 독실한 믿음을 지닌 신자다.",
+    "id": "t6-138",
+    "korean": "독실하다",
+    "meaningJa": "篤実だ（信仰が厚い）",
+    "reading": "doksilhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "軽はずみな妄動は慎まねばならない。",
+    "exampleKo": "경솔한 망동은 삼가야 한다.",
+    "id": "t6-139",
+    "korean": "망동하다",
+    "meaningJa": "妄動する（軽はずみに動く）",
+    "reading": "mangdonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "軽挙妄動を戒める社説が掲載された。",
+    "exampleKo": "경거망동을 경계하는 사설이 실렸다.",
+    "id": "t6-140",
+    "korean": "경거망동하다",
+    "meaningJa": "軽挙妄動する（軽々しく振る舞う）",
+    "reading": "gyeonggeomangdonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は結果を焦ってやきもきした。",
+    "exampleKo": "그는 발표를 앞두고 조바심냈다.",
+    "id": "t6-141",
+    "korean": "조바심내다",
+    "meaningJa": "焦る（気がせいて落ち着かない）",
+    "reading": "jobasimnaeda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "母は遅い帰りに苛立って待った。",
+    "exampleKo": "어머니는 늦은 귀가를 안달하며 기다렸다.",
+    "id": "t6-142",
+    "korean": "안달하다",
+    "meaningJa": "苛立つ（待ち焦がれて苛つく）",
+    "reading": "andalhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女は息子の安否を気をもんで案じた。",
+    "exampleKo": "그녀는 아들의 안부를 애태우며 걱정했다.",
+    "id": "t6-143",
+    "korean": "애태우다",
+    "meaningJa": "気をもむ（心を焦がす）",
+    "reading": "aetaeuda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は寤寐不忘の思いで恋人を慕い続けた。",
+    "exampleKo": "그는 밤낮없이 연인을 오매불망했다.",
+    "id": "t6-144",
+    "korean": "오매불망하다",
+    "meaningJa": "寤寐不忘する（寝ても覚めても慕う）",
+    "reading": "omaebulmanghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は研究に没頭して歳月を忘れた。",
+    "exampleKo": "그는 연구에 몰두하여 세월을 잊었다.",
+    "id": "t6-145",
+    "korean": "몰두하다",
+    "meaningJa": "没頭する（熱中して打ち込む）",
+    "reading": "molduhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "観客は映画に没入して息をのんだ。",
+    "exampleKo": "관객은 영화에 몰입하여 숨을 죽였다.",
+    "id": "t6-146",
+    "korean": "몰입하다",
+    "meaningJa": "没入する（深く入り込む）",
+    "reading": "moriphada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は勝利の美酒に陶酔した。",
+    "exampleKo": "그는 승리의 미주에 도취했다.",
+    "id": "t6-147",
+    "korean": "도취하다",
+    "meaningJa": "陶酔する（うっとり酔う）",
+    "reading": "dochwihada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女の歌声に聴衆は魅了された。",
+    "exampleKo": "그녀의 노랫소리에 청중은 매료됐다.",
+    "id": "t6-148",
+    "korean": "매료되다",
+    "meaningJa": "魅了される（心を奪われる）",
+    "reading": "maeryodoeda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "甘言に眩惑されて財産を失った。",
+    "exampleKo": "감언에 현혹되어 재산을 잃었다.",
+    "id": "t6-149",
+    "korean": "현혹되다",
+    "meaningJa": "眩惑される（惑わされる）",
+    "reading": "hyeonhokdoeda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "邪教に迷妄に陥って家を出た若者が救済された。",
+    "exampleKo": "사교에 미혹되어 집을 나선 청년이 구제됐다.",
+    "id": "t6-150",
+    "korean": "미혹되다",
+    "meaningJa": "迷妄に陥る（分別を失い惑う）",
+    "reading": "mihokdoeda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は競争相手を教唆して不正を働かせた。",
+    "exampleKo": "그는 경쟁자를 사주하여 부정을 저지르게 했다.",
+    "id": "t6-151",
+    "korean": "사주하다",
+    "meaningJa": "教唆する（そそのかして行わせる）",
+    "reading": "sajuhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "犯行を幇助した共犯も処罰された。",
+    "exampleKo": "범행을 방조한 공범도 처벌받았다.",
+    "id": "t6-152",
+    "korean": "방조하다",
+    "meaningJa": "幇助する（助けて加担する）",
+    "reading": "bangjohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は証拠を操作して真実を覆い隠した。",
+    "exampleKo": "그는 증거를 조작하여 진실을 뒤덮었다.",
+    "id": "t6-153",
+    "korean": "조작하다",
+    "meaningJa": "操作する（事実を捻じ曲げる）",
+    "reading": "jojakhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "偽造した印鑑で契約書を偽造した。",
+    "exampleKo": "위조한 도장으로 계약서를 꾸며 위조했다.",
+    "id": "t6-154",
+    "korean": "위조하다",
+    "meaningJa": "偽造する（偽って作り出す）",
+    "reading": "wijohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "他人の名義を盗用した業者が摘発された。",
+    "exampleKo": "남의 명의를 도용한 업자가 적발됐다.",
+    "id": "t6-155",
+    "korean": "도용하다",
+    "meaningJa": "盗用する（無断で用いる）",
+    "reading": "doyonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "論文の剽窃が発覚して学位が取り消された。",
+    "exampleKo": "논문의 표절이 발각되어 학위가 취소됐다.",
+    "id": "t6-156",
+    "korean": "표절하다",
+    "meaningJa": "剽窃する（盗み取って使う）",
+    "reading": "pyojeolhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は師の画風を模写して研鑽を積んだ。",
+    "exampleKo": "그는 스승의 화풍을 모사하며 연마를 쌓았다.",
+    "id": "t6-157",
+    "korean": "모사하다",
+    "meaningJa": "模写する（写し取って描く）",
+    "reading": "mosahada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "旧弊を踏襲するだけでは改革は進まない。",
+    "exampleKo": "구폐를 답습하기만 해서는 개혁이 나아가지 않는다.",
+    "id": "t6-158",
+    "korean": "답습하다",
+    "meaningJa": "踏襲する（旧例をなぞる）",
+    "reading": "dapseuphada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "交渉は足踏みして打開策が見えなかった。",
+    "exampleKo": "협상은 답보하여 타개책이 보이지 않았다.",
+    "id": "t6-159",
+    "korean": "답보하다",
+    "meaningJa": "足踏みする（進まず停まる）",
+    "reading": "dapbohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "景気は停滞して回復の兆しがなかった。",
+    "exampleKo": "경기는 정체하여 회복의 조짐이 없었다.",
+    "id": "t6-160",
+    "korean": "정체하다",
+    "meaningJa": "停滞する（滞って進まない）",
+    "reading": "jeongchehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "学力が退歩したと教師に叱られた。",
+    "exampleKo": "학력이 퇴보했다고 선생님께 꾸중을 들었다.",
+    "id": "t6-161",
+    "korean": "퇴보하다",
+    "meaningJa": "退歩する（後戻りして劣る）",
+    "reading": "toebohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女の記録は飛躍して新記録を出した。",
+    "exampleKo": "그녀의 기록은 비약하여 새 기록을 냈다.",
+    "id": "t6-162",
+    "korean": "비약하다",
+    "meaningJa": "飛躍する（大きく躍進する）",
+    "reading": "biyakhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "企業は海外市場へ跳躍する足場を築いた。",
+    "exampleKo": "기업은 해외시장으로 도약하는 발판을 쌓았다.",
+    "id": "t6-163",
+    "korean": "도약하다",
+    "meaningJa": "跳躍する（高く躍り上がる）",
+    "reading": "doyakhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "改革は漸進して着実に進められた。",
+    "exampleKo": "개혁은 점진하여 착실히 추진됐다.",
+    "id": "t6-164",
+    "korean": "점진하다",
+    "meaningJa": "漸進する（徐々に進む）",
+    "reading": "jeomjinhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は穏健な改革路線を主張した。",
+    "exampleKo": "그는 온건한 개혁 노선을 주장했다.",
+    "id": "t6-165",
+    "korean": "온건하다",
+    "meaningJa": "穏健だ（穏やかで行き過ぎない）",
+    "reading": "ongeonhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "中庸を得た判断が危機を救った。",
+    "exampleKo": "중용을 얻은 판단이 위기를 구했다.",
+    "id": "t6-166",
+    "korean": "중용하다",
+    "meaningJa": "中庸する（偏らず調和する）",
+    "reading": "jungyonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "両案を折衷して修正案を作った。",
+    "exampleKo": "두 안을 절충하여 수정안을 만들었다.",
+    "id": "t6-167",
+    "korean": "절충하다",
+    "meaningJa": "折衷する（取り合わせて調える）",
+    "reading": "jeolchunghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "城兵はついに敵に屈服して降伏した。",
+    "exampleKo": "성의 병사는 끝내 적에게 굴복하여 항복했다.",
+    "id": "t6-168",
+    "korean": "굴복하다",
+    "meaningJa": "屈服する（屈して従う）",
+    "reading": "gulbokhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "残党が政府軍に帰順してきた。",
+    "exampleKo": "잔당이 정부군에 귀순해 왔다.",
+    "id": "t6-169",
+    "korean": "귀순하다",
+    "meaningJa": "帰順する（帰して従う）",
+    "reading": "gwisunhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "包囲された部隊が敵に投降した。",
+    "exampleKo": "포위된 부대가 적에게 투항했다.",
+    "id": "t6-170",
+    "korean": "투항하다",
+    "meaningJa": "投降する（降って敵に従う）",
+    "reading": "tuhanghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "聴衆は演説に呼応して拍手を送った。",
+    "exampleKo": "청중은 연설에 호응하여 박수를 보냈다.",
+    "id": "t6-171",
+    "korean": "호응하다",
+    "meaningJa": "呼応する（応えて和する）",
+    "reading": "hoeunghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "政策は国民の期待に応えて成功した。",
+    "exampleKo": "정책은 국민의 기대에 부응하여 성공했다.",
+    "id": "t6-172",
+    "korean": "부응하다",
+    "meaningJa": "応える（期待に応える）",
+    "reading": "bueunghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "売上は努力に相応して伸びた。",
+    "exampleKo": "매출은 노력에 상응하여 늘었다.",
+    "id": "t6-173",
+    "korean": "상응하다",
+    "meaningJa": "相応する（釣り合って応じる）",
+    "reading": "sangeunghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "条件に符合する応募者が選ばれた。",
+    "exampleKo": "조건에 부합하는 응모자가 뽑혔다.",
+    "id": "t6-174",
+    "korean": "부합하다",
+    "meaningJa": "符合する（ぴたりと合う）",
+    "reading": "buhaphada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "二人の証言が相衝して審理が難航した。",
+    "exampleKo": "두 사람의 증언이 상충하여 심리가 난항했다.",
+    "id": "t6-175",
+    "korean": "상충하다",
+    "meaningJa": "相衝する（互いに衝突する）",
+    "reading": "sangchunghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼の言動は矛盾していると批判された。",
+    "exampleKo": "그의 언행은 모순된다고 비판받았다.",
+    "id": "t6-176",
+    "korean": "모순하다",
+    "meaningJa": "矛盾する（筋が通らない）",
+    "reading": "mosunhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "条例に牴触する行為は禁じられている。",
+    "exampleKo": "조례에 저촉되는 행위는 금지돼 있다.",
+    "id": "t6-177",
+    "korean": "저촉하다",
+    "meaningJa": "牴触する（触れて抵する）",
+    "reading": "jeochokhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "騒音が学習を阻害すると苦情が出た。",
+    "exampleKo": "소음이 학습을 저해한다는 민원이 나왔다.",
+    "id": "t6-178",
+    "korean": "저해하다",
+    "meaningJa": "阻害する（妨げて害する）",
+    "reading": "jeohaehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "何者かが工事を妨害して工期が延びた。",
+    "exampleKo": "누군가가 공사를 훼방하여 공기가 늘어졌다.",
+    "id": "t6-179",
+    "korean": "훼방하다",
+    "meaningJa": "妨害する（邪魔して害する）",
+    "reading": "hwebanghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "村の妨害者が祭りの準備をかき回した。",
+    "exampleKo": "마을의 훼방꾼이 축제 준비를 헤집었다.",
+    "id": "t6-180",
+    "korean": "훼방꾼",
+    "meaningJa": "妨害者（邪魔をする者）",
+    "reading": "hwebangkkun",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は兄弟を離間して仲たがいさせた。",
+    "exampleKo": "그는 형제를 이간하여 사이를 벌려놓았다.",
+    "id": "t6-181",
+    "korean": "이간하다",
+    "meaningJa": "離間する（仲を裂く）",
+    "reading": "iganhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "離間工作に乗ってはならないと諭した。",
+    "exampleKo": "이간질에 넘어가서는 안 된다고 타일렀다.",
+    "id": "t6-182",
+    "korean": "이간질하다",
+    "meaningJa": "離間工作する（仲たがいさせる）",
+    "reading": "iganjilhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "政敵を誣陷した記事が問題になった。",
+    "exampleKo": "정적을 모함한 기사가 문제가 됐다.",
+    "id": "t6-183",
+    "korean": "모함하다",
+    "meaningJa": "誣陷する（陥れて貶める）",
+    "reading": "mohamhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "中傷記事に彼は法的対応を取った。",
+    "exampleKo": "중상 기사에 그는 법적 대응을 했다.",
+    "id": "t6-184",
+    "korean": "중상하다",
+    "meaningJa": "中傷する（貶めて傷つける）",
+    "reading": "jungsanghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "匿名の誹謗に彼は毅然と対応した。",
+    "exampleKo": "익명의 비방에 그는 의연히 대응했다.",
+    "id": "t6-185",
+    "korean": "비방하다",
+    "meaningJa": "誹謗する（そしって貶す）",
+    "reading": "bibanghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "陰で人を害する陰害に注意が必要だ。",
+    "exampleKo": "뒤에서 사람을 해치는 음해에 주의가 필요하다.",
+    "id": "t6-186",
+    "korean": "음해하다",
+    "meaningJa": "陰害する（陰で害する）",
+    "reading": "eumhaehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "奸臣が忠臣を讒訴して追放させた。",
+    "exampleKo": "간신이 충신을 참소하여 추방시켰다.",
+    "id": "t6-187",
+    "korean": "참소하다",
+    "meaningJa": "讒訴する（讒言して訴える）",
+    "reading": "chamsohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "無辜の民を誣告した者が罰せられた。",
+    "exampleKo": "죄 없는 백성을 무고한 자가 벌받았다.",
+    "id": "t6-188",
+    "korean": "무고하다",
+    "meaningJa": "誣告する（偽って訴える）",
+    "reading": "mugohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は濡れ衣を着せられて職を失った。",
+    "exampleKo": "그는 누명을 쓰고 직을 잃었다.",
+    "id": "t6-189",
+    "korean": "누명",
+    "meaningJa": "濡れ衣（着せられた汚名）",
+    "reading": "numyeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "国境の警備が森厳で隙がなかった。",
+    "exampleKo": "국경의 경비가 삼엄하여 틈이 없었다.",
+    "id": "t6-190",
+    "korean": "삼엄하다",
+    "meaningJa": "森厳だ（厳重で隙がない）",
+    "reading": "sameomhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "厳正な審査で受賞者が選ばれた。",
+    "exampleKo": "엄정한 심사로 수상자가 뽑혔다.",
+    "id": "t6-191",
+    "korean": "엄정하다",
+    "meaningJa": "厳正だ（厳しく正しい）",
+    "reading": "eomjeonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "寛容な心で部下の過ちを許した。",
+    "exampleKo": "관용한 마음으로 부하의 잘못을 용서했다.",
+    "id": "t6-192",
+    "korean": "관용하다",
+    "meaningJa": "寛容だ（心が広く許す）",
+    "reading": "gwanyonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼の雅量に一同が頭を下げた。",
+    "exampleKo": "그의 아량에 모두가 고개를 숙였다.",
+    "id": "t6-193",
+    "korean": "아량",
+    "meaningJa": "雅量（度量の広さ）",
+    "reading": "aryang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "宰相の度量の大きさが国を安定させた。",
+    "exampleKo": "재상의 도량이 나라를 안정시켰다.",
+    "id": "t6-194",
+    "korean": "도량",
+    "meaningJa": "度量（器の大きさ）",
+    "reading": "doryang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "多様な意見を包容する社会を目指した。",
+    "exampleKo": "다양한 의견을 포용하는 사회를 지향했다.",
+    "id": "t6-195",
+    "korean": "포용하다",
+    "meaningJa": "包容する（包み入れて受け入れる）",
+    "reading": "poyonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "古今の名作を網羅した全集が出た。",
+    "exampleKo": "고금의 명작을 망라한 전집이 나왔다.",
+    "id": "t6-196",
+    "korean": "망라하다",
+    "meaningJa": "網羅する（漏らさず集める）",
+    "reading": "mangnahada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "全国の方言を総網羅した辞典が完成した。",
+    "exampleKo": "전국 방언을 총망라한 사전이 완성됐다.",
+    "id": "t6-197",
+    "korean": "총망라하다",
+    "meaningJa": "総網羅する（余さず集め尽くす）",
+    "reading": "chongmangnahada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は学問を集大成した大著を残した。",
+    "exampleKo": "그는 학문을 집대성한 대저를 남겼다.",
+    "id": "t6-198",
+    "korean": "집대성하다",
+    "meaningJa": "集大成する（集めて完成させる）",
+    "reading": "jipdaeseonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "汗の結実として豊作を迎えた。",
+    "exampleKo": "땀의 결실로 풍작을 맞았다.",
+    "id": "t6-199",
+    "korean": "결실하다",
+    "meaningJa": "結実する（実を結んで成る）",
+    "reading": "gyeolsilhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "長い努力が実を結んで賞を受けた。",
+    "exampleKo": "긴 노력이 열매를 맺어 상을 받았다.",
+    "id": "t6-200",
+    "korean": "열매를 맺다",
+    "meaningJa": "実を結ぶ（努力が報われる）",
+    "reading": "yeolmaereulmaetda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "遠くの山がうっすらとかすんで見えた。",
+    "exampleKo": "먼 산이 아스라이 보였다.",
+    "id": "t6-201",
+    "korean": "아스라이",
+    "meaningJa": "かすかに（ぼんやりと）",
+    "reading": "aseurai",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "ろうそくの火がゆらゆらと揺れた。",
+    "exampleKo": "촛불이 아른아른 흔들렸다.",
+    "id": "t6-202",
+    "korean": "아른아른",
+    "meaningJa": "ゆらゆら（揺らめくさま）",
+    "reading": "areunareun",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "蜃気楼がゆらゆらと立ちのぼった。",
+    "exampleKo": "아지랑이가 어른어른 피어올랐다.",
+    "id": "t6-203",
+    "korean": "어른어른",
+    "meaningJa": "ゆらゆらと立ちのぼるさま",
+    "reading": "eoreuneoreun",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "古い記憶がほのかに胸を打った。",
+    "exampleKo": "오래된 기억이 아련하게 가슴을 울렸다.",
+    "id": "t6-204",
+    "korean": "아련하다",
+    "meaningJa": "ほのかだ（淡く心に残る）",
+    "reading": "aryeonhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "稜線がかすかに遠く望めた。",
+    "exampleKo": "먼 봉우리가 아스라하게 보였다.",
+    "id": "t6-205",
+    "korean": "아스라하다",
+    "meaningJa": "かすかだ（遠くぼやける）",
+    "reading": "aseurahada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "薄暗い中で人影が動いた。",
+    "exampleKo": "어슴푸레한 가운데 인영이 움직였다.",
+    "id": "t6-206",
+    "korean": "어슴푸레",
+    "meaningJa": "薄暗く（ほの暗いさま）",
+    "reading": "eoseumpure",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "夕方の黄昏時に帰路についた。",
+    "exampleKo": "저녁 어스름에 귀갓길에 올랐다.",
+    "id": "t6-207",
+    "korean": "어스름",
+    "meaningJa": "黄昏（夕方の薄暗さ）",
+    "reading": "eoseureum",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "季節はいつのまにか移ろっていた。",
+    "exampleKo": "계절은 시나브로 바뀌어 있었다.",
+    "id": "t6-208",
+    "korean": "시나브로",
+    "meaningJa": "いつのまにか（知らぬ間に）",
+    "reading": "sinabeuro",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "不安がむくむくと湧き上がった。",
+    "exampleKo": "불안이 스멀스멀 피어올랐다.",
+    "id": "t6-209",
+    "korean": "스멀스멀",
+    "meaningJa": "むくむくと（湧き上がるさま）",
+    "reading": "seumeulseumeul",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "秋風がさらさらと吹き抜けた。",
+    "exampleKo": "가을바람이 소슬소슬 불어 지나갔다.",
+    "id": "t6-210",
+    "korean": "소슬소슬",
+    "meaningJa": "さらさらと（秋風のさま）",
+    "reading": "soseulsoseul",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "秋風が肌寒い季節になった。",
+    "exampleKo": "가을바람이 스미는 소슬한 계절이 됐다.",
+    "id": "t6-211",
+    "korean": "소슬하다",
+    "meaningJa": "肌寒い（秋風が身にしみる）",
+    "reading": "soseulhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "廃屋には荒涼とした気が漂っていた。",
+    "exampleKo": "폐가에는 스산한 기운이 감돌았다.",
+    "id": "t6-212",
+    "korean": "스산하다",
+    "meaningJa": "荒涼だ（わびしく寒々しい）",
+    "reading": "sesanhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "一人残された駅はわびしかった。",
+    "exampleKo": "홀로 남은 정거장은 쓸쓸했다.",
+    "id": "t6-213",
+    "korean": "쓸쓸하다",
+    "meaningJa": "わびしい（寂しく心細い）",
+    "reading": "sseulsseulhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "古寺の境内は孤閑として静まり返った。",
+    "exampleKo": "고찰의 경내는 고적하게 고요했다.",
+    "id": "t6-214",
+    "korean": "고적하다",
+    "meaningJa": "孤閑だ（人けなく静かだ）",
+    "reading": "gojeokhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "深夜の待合室はひっそりとしていた。",
+    "exampleKo": "한밤의 대합실은 적적했다.",
+    "id": "t6-215",
+    "korean": "적적하다",
+    "meaningJa": "ひっそりだ（人けがなく寂しい）",
+    "reading": "jeokjeokhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "山寺の夜は寂寞として更けていった。",
+    "exampleKo": "산사의 밤은 적막하게 깊어 갔다.",
+    "id": "t6-216",
+    "korean": "적막하다",
+    "meaningJa": "寂寞だ（ひっそり寂しい）",
+    "reading": "jeongmakhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "重苦しい沈黙が会議室を支配した。",
+    "exampleKo": "무거운 정적이 회의실을 지배했다.",
+    "id": "t6-217",
+    "korean": "정적",
+    "meaningJa": "沈黙（重苦しい静けさ）",
+    "reading": "jeongjeok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は黙ってうつむいていた。",
+    "exampleKo": "그는 잠자코 고개를 숙이고 있었다.",
+    "id": "t6-218",
+    "korean": "잠자코",
+    "meaningJa": "黙って（口をつぐんで）",
+    "reading": "jamjako",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "子どもたちはそっと息をひそめた。",
+    "exampleKo": "아이들은 가만가만 숨을 죽였다.",
+    "id": "t6-219",
+    "korean": "가만가만",
+    "meaningJa": "そっと（静かにそろりと）",
+    "reading": "gamangaman",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "泥棒はそろそろと塀を越えた。",
+    "exampleKo": "도둑은 살금살금 담을 넘었다.",
+    "id": "t6-220",
+    "korean": "살금살금",
+    "meaningJa": "そろそろと（足音を忍ばせるさま）",
+    "reading": "salgeumsalgeum",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼はこっそりと席を立った。",
+    "exampleKo": "그는 슬금슬금 자리를 떴다.",
+    "id": "t6-221",
+    "korean": "슬금슬금",
+    "meaningJa": "こっそりと（目立たぬように）",
+    "reading": "seulgeumseulgeum",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女は人知れず涙を流した。",
+    "exampleKo": "그녀는 남몰래 눈물을 흘렸다.",
+    "id": "t6-222",
+    "korean": "남몰래",
+    "meaningJa": "人知れず（隠れてこっそり）",
+    "reading": "nammollae",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "隠密のうちに取引が行われた。",
+    "exampleKo": "은밀하게 거래가 이뤄졌다.",
+    "id": "t6-223",
+    "korean": "은밀하다",
+    "meaningJa": "隠密だ（秘密めいて慎ましい）",
+    "reading": "eunmilhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼はさりげなく財布をしまった。",
+    "exampleKo": "그는 은근슬쩍 지갑을 챙겼다.",
+    "id": "t6-224",
+    "korean": "은근슬쩍",
+    "meaningJa": "さりげなく（悟られぬように）",
+    "reading": "eungeunseuljjeok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "猫が抜き足差し足で台所へ入ってきた。",
+    "exampleKo": "고양이가 슬그머니 부엌으로 들어왔다.",
+    "id": "t6-225",
+    "korean": "슬그머니",
+    "meaningJa": "抜き足差し足で（気づかれぬようそっと）",
+    "reading": "seulgeumeoni",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "二人はひそひそと耳打ちした。",
+    "exampleKo": "두 사람은 소곤소곤 귓속말했다.",
+    "id": "t6-226",
+    "korean": "소곤소곤",
+    "meaningJa": "ひそひそと（小声のさま）",
+    "reading": "sogonsogon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "村人たちは集まってひそひそ噂した。",
+    "exampleKo": "마을 사람들은 모여 수군거렸다.",
+    "id": "t6-227",
+    "korean": "수군거리다",
+    "meaningJa": "ひそひそ噂する",
+    "reading": "sugungeorida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "祭りの朝はがやがやとにぎわった。",
+    "exampleKo": "축제 아침은 시끌시끌 떠들썩했다.",
+    "id": "t6-228",
+    "korean": "시끌시끌",
+    "meaningJa": "がやがやと（にぎやかなさま）",
+    "reading": "sikkeulsikkeul",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "市場はわいわいと活気にあふれた。",
+    "exampleKo": "시장은 왁자지껄 활기로 넘쳤다.",
+    "id": "t6-229",
+    "korean": "왁자지껄",
+    "meaningJa": "わいわいと（騒がしいさま）",
+    "reading": "wakjajikkeol",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は大げさに騒ぎ立てた。",
+    "exampleKo": "그는 법석대며 호들갑을 떨었다.",
+    "id": "t6-230",
+    "korean": "법석대다",
+    "meaningJa": "騒ぎ立てる（大げさに騒ぐ）",
+    "reading": "beopseokdaeda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "合格の知らせに家じゅうが大騒ぎになった。",
+    "exampleKo": "합격 소식에 온 집안이 야단법석이 됐다.",
+    "id": "t6-231",
+    "korean": "야단법석",
+    "meaningJa": "大騒ぎ（騒動の渦）",
+    "reading": "yadanbeopseok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は大げさに騒ぎ立てて皆を困らせた。",
+    "exampleKo": "그는 호들갑떨며 모두를 곤란하게 했다.",
+    "id": "t6-232",
+    "korean": "호들갑떨다",
+    "meaningJa": "大げさに騒ぐ",
+    "reading": "hodeulgaptteolda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼はあたふたと支度をした。",
+    "exampleKo": "그는 허둥지둥 채비를 했다.",
+    "id": "t6-233",
+    "korean": "허둥지둥",
+    "meaningJa": "あたふたと（慌てふためくさま）",
+    "reading": "heodungjidung",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "新人は慌てふためいて書類を落とした。",
+    "exampleKo": "신입은 허둥대며 서류를 떨어뜨렸다.",
+    "id": "t6-234",
+    "korean": "허둥대다",
+    "meaningJa": "慌てふためく",
+    "reading": "heodungdaeda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "指示がなくて皆が右往左往した。",
+    "exampleKo": "지시가 없어 모두가 우왕좌왕했다.",
+    "id": "t6-235",
+    "korean": "우왕좌왕",
+    "meaningJa": "右往左往（うろたえ騒ぐさま）",
+    "reading": "uwangjwawang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は返答にもたもたして機会を逃した。",
+    "exampleKo": "그는 대답을 우물쭈물하다 기회를 놓쳤다.",
+    "id": "t6-236",
+    "korean": "우물쭈물",
+    "meaningJa": "もたもたと（決めかねるさま）",
+    "reading": "umuljjumul",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼はためらって前に進めなかった。",
+    "exampleKo": "그는 머뭇거리며 앞으로 나아가지 못했다.",
+    "id": "t6-237",
+    "korean": "머뭇거리다",
+    "meaningJa": "ためらう（躊躇して進めない）",
+    "reading": "meomutgeorida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "馬はたじろいで足を止めた。",
+    "exampleKo": "말은 주춤거리며 걸음을 멈췄다.",
+    "id": "t6-238",
+    "korean": "주춤거리다",
+    "meaningJa": "たじろぐ（ひるんで止まる）",
+    "reading": "juchumgeorida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "責任を取らずに後ずさりするな。",
+    "exampleKo": "책임을 지지 않고 뒷걸음질치지 마라.",
+    "id": "t6-239",
+    "korean": "뒷걸음질치다",
+    "meaningJa": "後ずさりする（退いて避ける）",
+    "reading": "dwitgeoreumjilchida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "終わってから後追いで騒ぐものではない。",
+    "exampleKo": "일이 끝난 뒤에 뒷북치지 마라.",
+    "id": "t6-240",
+    "korean": "뒷북치다",
+    "meaningJa": "後追いで騒ぐ（時機を逃して言う）",
+    "reading": "dwitbukchida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "陰口をたたく者は信用を失う。",
+    "exampleKo": "뒷담화하는 사람은 신용을 잃는다.",
+    "id": "t6-241",
+    "korean": "뒷담화",
+    "meaningJa": "陰口（背後の悪口）",
+    "reading": "dwitdamhwa",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "身辺の裏調査が行われたという。",
+    "exampleKo": "신변의 뒷조사가 이뤄졌다고 한다.",
+    "id": "t6-242",
+    "korean": "뒷조사하다",
+    "meaningJa": "裏調査する（内密に調べる）",
+    "reading": "dwitjosahada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "失敗の後始末に彼は奔走した。",
+    "exampleKo": "실패의 뒷수습에 그는 동분서주했다.",
+    "id": "t6-243",
+    "korean": "뒷수습하다",
+    "meaningJa": "後始末する（後を収拾する）",
+    "reading": "dwitsuseuphada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "自分のことの尻ぬぐいは自分でしろ。",
+    "exampleKo": "자기 일의 뒷감당은 스스로 해라.",
+    "id": "t6-244",
+    "korean": "뒷감당하다",
+    "meaningJa": "尻ぬぐいする（後を引き受ける）",
+    "reading": "dwitgamdanghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "この酒は後味がすっきりしている。",
+    "exampleKo": "이 술은 뒷맛이 깔끔하다.",
+    "id": "t6-245",
+    "korean": "뒷맛",
+    "meaningJa": "後味（後に残る味わい）",
+    "reading": "dwinmat",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は後を引かない性格で好かれた。",
+    "exampleKo": "그는 뒷끝 없는 성격으로 사랑받았다.",
+    "id": "t6-246",
+    "korean": "뒷끝 없다",
+    "meaningJa": "後を引かない（根に持たない）",
+    "reading": "dwitkkeuteopda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "終盤に底力がある選手が勝った。",
+    "exampleKo": "막판에 뒷심 있는 선수가 이겼다.",
+    "id": "t6-247",
+    "korean": "뒷심 있다",
+    "meaningJa": "底力がある（粘り強い力）",
+    "reading": "dwitsimitda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は反対を押し切って計画を推し進めた。",
+    "exampleKo": "그는 반대를 무릅쓰고 계획을 밀어붙였다.",
+    "id": "t6-248",
+    "korean": "밀어붙이다",
+    "meaningJa": "押し切る（強引に進める）",
+    "reading": "mireobuchida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は周りにせき立てられて登壇した。",
+    "exampleKo": "그는 주변에 등 떠밀려 단상에 올랐다.",
+    "id": "t6-249",
+    "korean": "등 떠밀리다",
+    "meaningJa": "せき立てられる（強いられて動く）",
+    "reading": "deungtteomillida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は負けたふりをして譲ってやった。",
+    "exampleKo": "그는 못 이기는 척하며 져주었다.",
+    "id": "t6-250",
+    "korean": "못 이기는 척하다",
+    "meaningJa": "負けたふりをする",
+    "reading": "motigineuncheokhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は泣く泣く辛い仕事を我慢して続けた。",
+    "exampleKo": "그는 울며 겨자 먹기로 힘든 일을 이어 갔다.",
+    "id": "t6-251",
+    "korean": "울며 겨자 먹기",
+    "meaningJa": "泣く泣く我慢する（嫌でも耐える）",
+    "reading": "ulmyeogyeojameokgi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は目をつぶって手術台に上がった。",
+    "exampleKo": "그는 눈 딱 감고 수술대에 올랐다.",
+    "id": "t6-252",
+    "korean": "눈 딱 감고",
+    "meaningJa": "目をつぶって（覚悟を決めて）",
+    "reading": "nunttakgamgo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女は歯を食いしばって痛みに耐えた。",
+    "exampleKo": "그녀는 이를 악물고 아픔을 참아냈다.",
+    "id": "t6-253",
+    "korean": "이를 악물고",
+    "meaningJa": "歯を食いしばって",
+    "reading": "ireulakmulgo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は拳を握りしめて決意を固めた。",
+    "exampleKo": "그는 주먹을 불끈 쥐고 결의를 다졌다.",
+    "id": "t6-254",
+    "korean": "주먹을 불끈 쥐다",
+    "meaningJa": "拳を握りしめる",
+    "reading": "jumeogeulbulkkeunjwida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "母は胸を叩いて嘆き悲しんだ。",
+    "exampleKo": "어머니는 가슴을 치며 통탄했다.",
+    "id": "t6-255",
+    "korean": "가슴을 치다",
+    "meaningJa": "胸を叩いて嘆く",
+    "reading": "gaseumeulchida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "名案に彼は膝を打った。",
+    "exampleKo": "묘안에 그는 무릎을 탁 쳤다.",
+    "id": "t6-256",
+    "korean": "무릎을 탁 치다",
+    "meaningJa": "膝を打つ（名案に感心する）",
+    "reading": "mureupeultakchida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は深いため息をついた。",
+    "exampleKo": "그는 앉은 채로 한숨짓고 있었다.",
+    "id": "t6-257",
+    "korean": "한숨짓다",
+    "meaningJa": "ため息をつく",
+    "reading": "hansumjitda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "ひと息ついてから彼は話し始めた。",
+    "exampleKo": "그는 한숨 돌리고 나서 말을 시작했다.",
+    "id": "t6-258",
+    "korean": "한숨 돌리다",
+    "meaningJa": "ひと息つく（休息して整える）",
+    "reading": "hansumdollida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "母は息子の帰りをやきもきして待った。",
+    "exampleKo": "어머니는 아들의 귀가를 가슴 졸이며 기다렸다.",
+    "id": "t6-259",
+    "korean": "가슴 졸이다",
+    "meaningJa": "やきもきする（気が気でない）",
+    "reading": "gaseumjorida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は身動きもできずに立ちすくんだ。",
+    "exampleKo": "그는 옴짝달싹못하고 우두커니 섰다.",
+    "id": "t6-260",
+    "korean": "옴짝달싹못하다",
+    "meaningJa": "身動きできない（金縛りのようだ）",
+    "reading": "omjjakdalssakmothada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は進退両難の境地に立たされた。",
+    "exampleKo": "그는 진퇴양난의 처지에 몰렸다.",
+    "id": "t6-261",
+    "korean": "진퇴양난",
+    "meaningJa": "進退両難（進むも退くも難い）",
+    "reading": "jintoeyangnan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "非難を浴びて退路が断たれた。",
+    "exampleKo": "비난을 받아 퇴로가 막혔다.",
+    "id": "t6-262",
+    "korean": "퇴로가 막히다",
+    "meaningJa": "退路が断たれる",
+    "reading": "toegogamakhida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "証拠を突きつけられて窮地に追い込まれた。",
+    "exampleKo": "증거를 들이대자 궁지에 몰렸다.",
+    "id": "t6-263",
+    "korean": "궁지에 몰리다",
+    "meaningJa": "窮地に追い込まれる",
+    "reading": "gungjiemollida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "会社は断崖の淵に立たされた。",
+    "exampleKo": "회사는 벼랑 끝에 섰다.",
+    "id": "t6-264",
+    "korean": "벼랑 끝에 서다",
+    "meaningJa": "断崖に立つ（破滅の瀬戸際だ）",
+    "reading": "byeorangkkeuteseoda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "王者は挑戦者に隅に追い込まれた。",
+    "exampleKo": "왕자는 도전자에 의해 코너에 몰렸다.",
+    "id": "t6-265",
+    "korean": "코너에 몰리다",
+    "meaningJa": "隅に追い込まれる",
+    "reading": "koneoemollida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "行き止まりの路地で彼は立ち止まった。",
+    "exampleKo": "막다른 골목에서 그는 걸음을 멈췄다.",
+    "id": "t6-266",
+    "korean": "막다른 골목",
+    "meaningJa": "行き止まり（進めない窮境）",
+    "reading": "makdareungolmok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は進退きわまって足がすくんだ。",
+    "exampleKo": "그는 오도가도 못하고 발이 묶였다.",
+    "id": "t6-267",
+    "korean": "오도가도 못하다",
+    "meaningJa": "進退きわまる（行き場がない）",
+    "reading": "odogadomothada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "突然の質問に彼は途方に暮れた。",
+    "exampleKo": "갑작스러운 질문에 어찌할 바를 몰랐다.",
+    "id": "t6-268",
+    "korean": "어찌할 바를 모르다",
+    "meaningJa": "途方に暮れる（どうすべきか分からない）",
+    "reading": "eojjihalbareulmoreuda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "突然の要求に彼は当惑した。",
+    "exampleKo": "뜬금없는 요구에 그는 난감했다.",
+    "id": "t6-269",
+    "korean": "난감하다",
+    "meaningJa": "当惑だ（処理に困る）",
+    "reading": "nangamhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "無理な頼みに彼女は困惑した。",
+    "exampleKo": "무리한 부탁에 그녀는 난처해했다.",
+    "id": "t6-270",
+    "korean": "난처해하다",
+    "meaningJa": "困惑する（立場に困る）",
+    "reading": "nancheohaehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "難問に彼は困惑して答えられなかった。",
+    "exampleKo": "난제에 그는 곤혹스러워 답하지 못했다.",
+    "id": "t6-271",
+    "korean": "곤혹스럽다",
+    "meaningJa": "困惑だ（当惑して困る）",
+    "reading": "gonhokseureopda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は汚職事件で辛酸をなめた。",
+    "exampleKo": "그는 비리 사건으로 곤욕을 치렀다.",
+    "id": "t6-272",
+    "korean": "곤욕을 치르다",
+    "meaningJa": "辛酸をなめる",
+    "reading": "gonyogeulchireuda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "作戦の失敗で彼は大失態を演じた。",
+    "exampleKo": "작전 실패로 그는 낭패를 봤다.",
+    "id": "t6-273",
+    "korean": "낭패를 보다",
+    "meaningJa": "失態を演じる（大恥をかく）",
+    "reading": "nangpaereulboda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "落選の知らせに彼は落胆した。",
+    "exampleKo": "낙선 소식에 그는 낙담했다.",
+    "id": "t6-274",
+    "korean": "낙담하다",
+    "meaningJa": "落胆する（がっくり失望する）",
+    "reading": "nakdamhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "連敗に選手たちは落心した。",
+    "exampleKo": "연패에 선수들은 낙심했다.",
+    "id": "t6-275",
+    "korean": "낙심하다",
+    "meaningJa": "落心する（心が折れて沈む）",
+    "reading": "naksimhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼の胸に絶望感が広がった。",
+    "exampleKo": "그의 가슴에 절망감이 퍼졌다.",
+    "id": "t6-276",
+    "korean": "절망감",
+    "meaningJa": "絶望感（希望を失う思い）",
+    "reading": "jeolmanggam",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "借金に彼は自暴自棄になって荒れた。",
+    "exampleKo": "빚 때문에 그는 자포자기하여 막나갔다.",
+    "id": "t6-277",
+    "korean": "자포자기하다",
+    "meaningJa": "自暴自棄になる（投げやりになる）",
+    "reading": "japojagihada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼はわがままに振る舞って非難された。",
+    "exampleKo": "그는 제멋대로 굴어 비난받았다.",
+    "id": "t6-278",
+    "korean": "제멋대로",
+    "meaningJa": "わがままに（自分勝手に）",
+    "reading": "jemeotdaero",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は偏屈な頑固者だと評された。",
+    "exampleKo": "그는 고집불통이라고 평받았다.",
+    "id": "t6-279",
+    "korean": "고집불통",
+    "meaningJa": "偏屈な頑固者",
+    "reading": "gojipbultong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼の独善が組織を分裂させた。",
+    "exampleKo": "그의 독선이 조직을 분열시켰다.",
+    "id": "t6-280",
+    "korean": "독선",
+    "meaningJa": "独善（独りよがりの正義）",
+    "reading": "dokseon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "長官は独断で人事を決めた。",
+    "exampleKo": "장관은 독단으로 인사를 결정했다.",
+    "id": "t6-281",
+    "korean": "독단하다",
+    "meaningJa": "独断だ（独りで断を下す）",
+    "reading": "dokdanhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "権力者の専横が民を苦しめた。",
+    "exampleKo": "권력자의 전횡이 백성을 괴롭혔다.",
+    "id": "t6-282",
+    "korean": "전횡하다",
+    "meaningJa": "専横する（権をほしいままにする）",
+    "reading": "jeonhoenghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "大家が横暴を働いて追い出された。",
+    "exampleKo": "집주인이 횡포부리다 쫓겨났다.",
+    "id": "t6-283",
+    "korean": "횡포부리다",
+    "meaningJa": "横暴を働く",
+    "reading": "hoengpoburida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "上司の甲質に部下が苦しんだ。",
+    "exampleKo": "상사의 갑질에 부하가 시달렸다.",
+    "id": "t6-284",
+    "korean": "갑질하다",
+    "meaningJa": "甲質する（優位を笠に虐める）",
+    "reading": "gapjilhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "敗戦の報に彼は茫然自失した。",
+    "exampleKo": "패전 소식에 그는 망연자실했다.",
+    "id": "t6-285",
+    "korean": "망연자실하다",
+    "meaningJa": "茫然自失する（呆然とする）",
+    "reading": "mangyeonjasilhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "突然の解雇通告に彼女は愕然失色した。",
+    "exampleKo": "갑작스러운 해고 통고에 그녀는 아연실색했다.",
+    "id": "t6-286",
+    "korean": "아연실색하다",
+    "meaningJa": "愕然失色する（顔色を失う）",
+    "reading": "ayeonsilsaekhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "非常識な額に彼はあっけにとられた。",
+    "exampleKo": "상식을 벗어난 액수에 그는 어안이 벙벙했다.",
+    "id": "t6-287",
+    "korean": "어안이 벙벙하다",
+    "meaningJa": "あっけにとられる",
+    "reading": "eoanibeongbeonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "爆発音に住民たちは驚愕した。",
+    "exampleKo": "폭발음에 주민들은 경악했다.",
+    "id": "t6-288",
+    "korean": "경악하다",
+    "meaningJa": "驚愕する（ぎょっと驚く）",
+    "reading": "gyeongakhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "夜道の人影に彼女は魂飛魄散した。",
+    "exampleKo": "밤길 인영에 그녀는 혼비백산했다.",
+    "id": "t6-289",
+    "korean": "혼비백산하다",
+    "meaningJa": "魂飛魄散する（肝をつぶす）",
+    "reading": "honbibaeksanhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "断崖からのぞいて肝胆が冷えた。",
+    "exampleKo": "벼랑 아래를 내려다보니 간담이 서늘했다.",
+    "id": "t6-290",
+    "korean": "간담이 서늘하다",
+    "meaningJa": "肝胆が冷える",
+    "reading": "gandamiseoneulhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "叱声に彼の肝が豆粒ほどに縮んだ。",
+    "exampleKo": "호통에 그의 간이 콩알만해졌다.",
+    "id": "t6-291",
+    "korean": "간이 콩알만해지다",
+    "meaningJa": "肝が縮む（ひどく怖がる）",
+    "reading": "ganikongalmanhaejida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "電話の知らせに胸がどきんとした。",
+    "exampleKo": "전화 소식에 가슴이 철렁했다.",
+    "id": "t6-292",
+    "korean": "가슴이 철렁하다",
+    "meaningJa": "胸がどきんとする",
+    "reading": "gaseumicheolreonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "息子の事故の報に胸が沈んだ。",
+    "exampleKo": "아들의 사고 소식에 가슴이 내려앉았다.",
+    "id": "t6-293",
+    "korean": "가슴이 내려앉다",
+    "meaningJa": "胸が沈む（衝撃に沈痛だ）",
+    "reading": "gaseuminaeryeoantda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "目の前が真っ暗になって倒れそうだった。",
+    "exampleKo": "눈앞이 캄캄해져 쓰러질 것 같았다.",
+    "id": "t6-294",
+    "korean": "눈앞이 캄캄하다",
+    "meaningJa": "目の前が真っ暗だ",
+    "reading": "nunapikamkamhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "高所から下を見て目がくらっとした。",
+    "exampleKo": "높은 곳에서 내려다보니 눈앞이 아찔했다.",
+    "id": "t6-295",
+    "korean": "눈앞이 아찔하다",
+    "meaningJa": "目がくらむ（めまいがする）",
+    "reading": "nunapiajjilhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "難問を前に頭が真っ白になった。",
+    "exampleKo": "난제를 앞에 두고 머리가 새하얘졌다.",
+    "id": "t6-296",
+    "korean": "머리가 새하얘지다",
+    "meaningJa": "頭が真っ白になる",
+    "reading": "meorigasaehayaejida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "難事件に頭痛の種を病んだ。",
+    "exampleKo": "난사건에 골머리를 앓았다.",
+    "id": "t6-297",
+    "korean": "골머리를 앓다",
+    "meaningJa": "頭痛の種を病む",
+    "reading": "golmeorireulalta",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "対策に彼は頭を抱え込んだ。",
+    "exampleKo": "대책 마련에 그는 머리를 싸맸다.",
+    "id": "t6-298",
+    "korean": "머리를 싸매다",
+    "meaningJa": "頭を抱え込む",
+    "reading": "meorireulssamaeda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "いらだって彼は地団駄を踏んだ。",
+    "exampleKo": "안타까워 그는 발을 동동 구르며 애탔다.",
+    "id": "t6-299",
+    "korean": "발을 동동 구르다",
+    "meaningJa": "地団駄を踏む",
+    "reading": "bareuldongdonggureuda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "連絡がなくて気が気でなかった。",
+    "exampleKo": "연락이 없어 애가 탔다.",
+    "id": "t6-300",
+    "korean": "애가 타다",
+    "meaningJa": "気が気でない（心が焦げる）",
+    "reading": "aegatada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "受賞の知らせに感慨無量の思いが込み上げた。",
+    "exampleKo": "수상 소식에 감개무량한 회포가 북받쳤다.",
+    "id": "t6-301",
+    "korean": "감개무량",
+    "meaningJa": "感慨無量（深く心を動かされること）",
+    "reading": "gamgaemuryang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は孤軍奮闘して事業を守り抜いた。",
+    "exampleKo": "그는 고군분투하며 사업을 지켜냈다.",
+    "id": "t6-302",
+    "korean": "고군분투",
+    "meaningJa": "孤軍奮闘（孤立して奮闘すること）",
+    "reading": "gogunbuntu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "孤立無援の境地で彼は決断を下した。",
+    "exampleKo": "고립무원의 처지에서 그는 결단을 내렸다.",
+    "id": "t6-303",
+    "korean": "고립무원",
+    "meaningJa": "孤立無援（助けなく孤立すること）",
+    "reading": "goripmuwon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼の成長ぶりには刮目相待するしかない。",
+    "exampleKo": "그의 성장에는 괄목상대할 수밖에 없다.",
+    "id": "t6-304",
+    "korean": "괄목상대",
+    "meaningJa": "刮目相待（目を見張り相対すること）",
+    "reading": "gwalmoksangdae",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "師弟は教学相長して共に成長した。",
+    "exampleKo": "스승과 제자는 교학상장하며 함께 성장했다.",
+    "id": "t6-305",
+    "korean": "교학상장",
+    "meaningJa": "教学相長（教え学び共に伸びること）",
+    "reading": "gyohaksangjang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "事故から九死に一生を得て生還した。",
+    "exampleKo": "사고에서 구사일생으로 살아 돌아왔다.",
+    "id": "t6-306",
+    "korean": "구사일생",
+    "meaningJa": "九死一生（死に瀕して助かること）",
+    "reading": "gusailsaeng",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女は群鶏一鶴のごとく衆に抜きんでた。",
+    "exampleKo": "그녀는 군계일학처럼 무리에서 두드러졌다.",
+    "id": "t6-307",
+    "korean": "군계일학",
+    "meaningJa": "群鶏一鶴（衆に抜きんでること）",
+    "reading": "gungyeilhak",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "新薬で病人が起死回生を果たした。",
+    "exampleKo": "신약으로 환자가 기사회생했다.",
+    "id": "t6-308",
+    "korean": "기사회생",
+    "meaningJa": "起死回生（死境から蘇ること）",
+    "reading": "gisahoesaeng",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "二人の名勝負は難兄難弟の争いだった。",
+    "exampleKo": "두 사람의 명승부는 난형난제의 다툼이었다.",
+    "id": "t6-309",
+    "korean": "난형난제",
+    "meaningJa": "難兄難弟（優劣つけがたいこと）",
+    "reading": "nanhyeongnanje",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "母は息子の前途を労心焦思して案じた。",
+    "exampleKo": "어머니는 아들의 앞날을 노심초사하며 걱정했다.",
+    "id": "t6-310",
+    "korean": "노심초사",
+    "meaningJa": "労心焦思（心を労し思い焦がすこと）",
+    "reading": "nosimchosa",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "兵は多多益善というから志願者を募った。",
+    "exampleKo": "병사는 다다익선이라 하여 지원자를 모았다.",
+    "id": "t6-311",
+    "korean": "다다익선",
+    "meaningJa": "多多益善（多いほど良いこと）",
+    "reading": "dadaikseon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は大器晩成の典型だと評された。",
+    "exampleKo": "그는 대기만성의 본보기라고 평받았다.",
+    "id": "t6-312",
+    "korean": "대기만성",
+    "meaningJa": "大器晩成（大成は遅いこと）",
+    "reading": "daegimanseong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "質問に東問西答する証人に法廷が騒然とした。",
+    "exampleKo": "질문에 동문서답하는 증인에 법정이 소란해졌다.",
+    "id": "t6-313",
+    "korean": "동문서답",
+    "meaningJa": "東問西答（的外れに答えること）",
+    "reading": "dongmunseodap",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "磨斧為針の努力で彼は合格を果たした。",
+    "exampleKo": "마부위침의 노력으로 그는 합격을 이뤘다.",
+    "id": "t6-314",
+    "korean": "마부위침",
+    "meaningJa": "磨斧為針（不断の努力のたとえ）",
+    "reading": "mabuwichim",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "二人は莫逆之友として生涯を共にした。",
+    "exampleKo": "두 사람은 막역지우로 평생을 함께했다.",
+    "id": "t6-315",
+    "korean": "막역지우",
+    "meaningJa": "莫逆之友（心許せる親友）",
+    "reading": "mangnyeokjiu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "母は孟母三遷の思いで三度引っ越した。",
+    "exampleKo": "어머니는 맹모삼천의 심정으로 세 번 이사했다.",
+    "id": "t6-316",
+    "korean": "맹모삼천",
+    "meaningJa": "孟母三遷（教育の環境選び）",
+    "reading": "maengmosamcheon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "名店の味は名不虚伝だった。",
+    "exampleKo": "유명 가게의 맛은 명불허전이었다.",
+    "id": "t6-317",
+    "korean": "명불허전",
+    "meaningJa": "名不虚伝（名に背かないこと）",
+    "reading": "myeongbulheojeon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "開店の日は門前成市のにぎわいだった。",
+    "exampleKo": "개업일에는 문전성시의 북적임이었다.",
+    "id": "t6-318",
+    "korean": "문전성시",
+    "meaningJa": "門前成市（門前が市をなす盛況）",
+    "reading": "munjeonseongsi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は尾生之信を守って約束を果たした。",
+    "exampleKo": "그는 미생지신을 지켜 약속을 지켰다.",
+    "id": "t6-319",
+    "korean": "미생지신",
+    "meaningJa": "尾生之信（固く守る約束）",
+    "reading": "misaengjisin",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "老教授は博学多識で名高かった。",
+    "exampleKo": "노교수는 박학다식으로 이름높았다.",
+    "id": "t6-320",
+    "korean": "박학다식",
+    "meaningJa": "博学多識（広く多く知ること）",
+    "reading": "bakdakdasik",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "神射手の矢は百発百中だった。",
+    "exampleKo": "명사수의 화살은 백발백중이었다.",
+    "id": "t6-321",
+    "korean": "백발백중",
+    "meaningJa": "百発百中（必ず命中させること）",
+    "reading": "baekbalbaekjung",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "常勝軍は百戦百勝を誇った。",
+    "exampleKo": "상승군은 백전백승을 자랑했다.",
+    "id": "t6-322",
+    "korean": "백전백승",
+    "meaningJa": "百戦百勝（戦うごとに勝つこと）",
+    "reading": "baekjeonbaekseung",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "登山隊は百尺竿頭に立たされた。",
+    "exampleKo": "등산대는 백척간두에 몰렸다.",
+    "id": "t6-323",
+    "korean": "백척간두",
+    "meaningJa": "百尺竿頭（進退きわまる瀬戸際）",
+    "reading": "baekcheokgandu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "不屈不撓の精神で難関を突破した。",
+    "exampleKo": "불굴불요의 정신으로 난관을 돌파했다.",
+    "id": "t6-324",
+    "korean": "불굴불요",
+    "meaningJa": "不屈不撓（屈せず撓まないこと）",
+    "reading": "bulgulburyo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は悲憤慷慨して時局を論じた。",
+    "exampleKo": "그는 비분강개하여 시국을 논했다.",
+    "id": "t6-325",
+    "korean": "비분강개",
+    "meaningJa": "悲憤慷慨（憤って慨嘆すること）",
+    "reading": "bibunganggae",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "異郷で四顧無親の身を嘆いた。",
+    "exampleKo": "낯선 땅에서 사고무친의 몸을 한탄했다.",
+    "id": "t6-326",
+    "korean": "사고무친",
+    "meaningJa": "四顧無親（頼る者なき身）",
+    "reading": "sagomuchin",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "敵に包囲されて四面楚歌の境地だった。",
+    "exampleKo": "적에게 포위되어 사면초가의 처지였다.",
+    "id": "t6-327",
+    "korean": "사면초가",
+    "meaningJa": "四面楚歌（孤立無援の境地）",
+    "reading": "samyeonchoga",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "同盟国の崩壊は唇亡歯寒の関係だった。",
+    "exampleKo": "동맹국의 무너짐은 순망치한의 관계였다.",
+    "id": "t6-328",
+    "korean": "순망치한",
+    "meaningJa": "唇亡歯寒（利害を共にすること）",
+    "reading": "sunmangchihan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "無理な要求は縁木求魚に等しい。",
+    "exampleKo": "무리한 요구는 연목구어와 같다.",
+    "id": "t6-329",
+    "korean": "연목구어",
+    "meaningJa": "縁木求魚（不可能な望みのたとえ）",
+    "reading": "yeonmokgueo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "同時の昇進は烏飛梨落の偶然だった。",
+    "exampleKo": "함께 오른 승진은 오비이락의 우연이었다.",
+    "id": "t6-330",
+    "korean": "오비이락",
+    "meaningJa": "烏飛梨落（疑われる偶然の一致）",
+    "reading": "obiinak",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は臥薪嘗胆して復讐を誓った。",
+    "exampleKo": "그는 와신상담하며 복수를 다짐했다.",
+    "id": "t6-331",
+    "korean": "와신상담",
+    "meaningJa": "臥薪嘗胆（苦難に耐え志すこと）",
+    "reading": "wasinsangdam",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "愚公移山の努力がついに実を結んだ。",
+    "exampleKo": "우공이산의 노력이 드디어 열매를 맺었다.",
+    "id": "t6-332",
+    "korean": "우공이산",
+    "meaningJa": "愚公移山（愚直な努力のたとえ）",
+    "reading": "ugongisan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "遠交近攻の策で強国は勢力を伸ばした。",
+    "exampleKo": "원교근공의 계책으로 강국은 세력을 넓혔다.",
+    "id": "t6-333",
+    "korean": "원교근공",
+    "meaningJa": "遠交近攻（遠くと結び近くを攻める策）",
+    "reading": "wongyogeungong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "水を飲むたびに飲水思源の心を忘れない。",
+    "exampleKo": "물을 마실 때마다 음수사원의 마음을 잊지 않는다.",
+    "id": "t6-334",
+    "korean": "음수사원",
+    "meaningJa": "飲水思源（恩本を忘れない心）",
+    "reading": "eumsusawon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "祭りの会場は人山人海の混雑だった。",
+    "exampleKo": "축제장은 인산인해의 혼잡이었다.",
+    "id": "t6-335",
+    "korean": "인산인해",
+    "meaningJa": "人山人海（人の大混雑）",
+    "reading": "insaninhae",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "この策は一挙両得の妙案だ。",
+    "exampleKo": "이 계책은 일거양득의 묘안이다.",
+    "id": "t6-336",
+    "korean": "일거양득",
+    "meaningJa": "一挙両得（一度に二つ得ること）",
+    "reading": "ilgeoyangdeuk",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "南北関係は一触即発の緊張だった。",
+    "exampleKo": "남북관계는 일촉즉발의 긴장이었다.",
+    "id": "t6-337",
+    "korean": "일촉즉발",
+    "meaningJa": "一触即発（触れれば発する危機）",
+    "reading": "ilchokjeukbal",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "心配で夜も輾転反側して眠れなかった。",
+    "exampleKo": "걱정에 밤에도 전전반측하며 잠들지 못했다.",
+    "id": "t6-338",
+    "korean": "전전반측",
+    "meaningJa": "輾転反側（寝返り打つ焦燥）",
+    "reading": "jeonjeonbancheuk",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "物語は漸入佳境して目が離せない。",
+    "exampleKo": "이야기는 점입가경하여 눈을 뗄 수 없다.",
+    "id": "t6-339",
+    "korean": "점입가경",
+    "meaningJa": "漸入佳境（佳境に入る面白さ）",
+    "reading": "jeomipgagyeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は昼耕夜読して学問に励んだ。",
+    "exampleKo": "그는 주경야독하며 학문에 힘썼다.",
+    "id": "t6-340",
+    "korean": "주경야독",
+    "meaningJa": "昼耕夜読（昼夜励む向学心）",
+    "reading": "jugyeongyadok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "故郷の変貌は滄海桑田の感があった。",
+    "exampleKo": "고향의 변함은 창해상전의 느낌이었다.",
+    "id": "t6-341",
+    "korean": "창해상전",
+    "meaningJa": "滄海桑田（世の激しい変遷）",
+    "reading": "changhaesangjeon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "賢者にも千慮一失は免れない。",
+    "exampleKo": "현자에게도 천려일실은 피할 수 없다.",
+    "id": "t6-342",
+    "korean": "천려일실",
+    "meaningJa": "千慮一失（賢者の一つの過ち）",
+    "reading": "cheonryeoilsil",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "千辛万苦の末に彼は故郷へ帰った。",
+    "exampleKo": "천신만고 끝에 그는 고향으로 돌아갔다.",
+    "id": "t6-343",
+    "korean": "천신만고",
+    "meaningJa": "千辛万苦（非常な苦労）",
+    "reading": "cheonsinmango",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は初志一貫して夢を実現した。",
+    "exampleKo": "그는 초지일관하여 꿈을 이뤘다.",
+    "id": "t6-344",
+    "korean": "초지일관",
+    "meaningJa": "初志一貫（初の志を貫くこと）",
+    "reading": "chojiilgwan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "七転八起の精神で再起を果たした。",
+    "exampleKo": "칠전팔기의 정신으로 재기를 이뤘다.",
+    "id": "t6-345",
+    "korean": "칠전팔기",
+    "meaningJa": "七転八起（倒れても起きること）",
+    "reading": "chiljeonpalgi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "他人の失敗を他山之石とせよ。",
+    "exampleKo": "남의 실패를 타산지석으로 삼아라.",
+    "id": "t6-346",
+    "korean": "타산지석",
+    "meaningJa": "他山之石（他人の戒めの先例）",
+    "reading": "tasanjiseok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "功臣は兎死狗烹の運命をたどった。",
+    "exampleKo": "공신은 토사구팽의 운명을 따랐다.",
+    "id": "t6-347",
+    "korean": "토사구팽",
+    "meaningJa": "兎死狗烹（用済みは捨てられること）",
+    "reading": "tosagupaeng",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "連勝は破竹之勢で続いた。",
+    "exampleKo": "연승은 파죽지세로 이어졌다.",
+    "id": "t6-348",
+    "korean": "파죽지세",
+    "meaningJa": "破竹之勢（激しい勢いのたとえ）",
+    "reading": "pajukjise",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "螢雪之功が実って首席で合格した。",
+    "exampleKo": "형설지공이 열매 맺어 수석으로 합격했다.",
+    "id": "t6-349",
+    "korean": "형설지공",
+    "meaningJa": "螢雪之功（苦学の功績）",
+    "reading": "hyeongseoljigong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "最後の一筆が画竜点睛となった。",
+    "exampleKo": "마지막 한 붓이 화룡점정이 됐다.",
+    "id": "t6-350",
+    "korean": "화룡점정",
+    "meaningJa": "画竜点睛（仕上げの妙筆）",
+    "reading": "hwaryongjeomjeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "後生は畏るべしと師は言った。",
+    "exampleKo": "스승은 후생가외라 말씀하셨다.",
+    "id": "t6-351",
+    "korean": "후생가외",
+    "meaningJa": "後生可畏（若者は恐るべく尊いこと）",
+    "reading": "husaenggaoe",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は乾坤一擲の勝負に出た。",
+    "exampleKo": "그는 건곤일척의 승부에 나섰다.",
+    "id": "t6-352",
+    "korean": "건곤일척",
+    "meaningJa": "乾坤一擲（運をかけた大勝負）",
+    "reading": "geongonilcheok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "恩に結草報恩する思いで奉仕した。",
+    "exampleKo": "은혜에 결초보은하는 마음으로 봉사했다.",
+    "id": "t6-353",
+    "korean": "결초보은",
+    "meaningJa": "結草報恩（死後も恩に報いること）",
+    "reading": "gyeolchoboeun",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "過ぎたるは及ばざるがごとし、過猶不及だ。",
+    "exampleKo": "지나침은 모자람과 같으니 과유불급이다.",
+    "id": "t6-354",
+    "korean": "과유불급",
+    "meaningJa": "過猶不及（過ぎるも及ばぬも同じこと）",
+    "reading": "gwayubulgeup",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "二人の友情は管鮑之交とたたえられた。",
+    "exampleKo": "두 사람의 우정은 관포지교로 일컬어졌다.",
+    "id": "t6-355",
+    "korean": "관포지교",
+    "meaningJa": "管鮑之交（利害を超えた友情）",
+    "reading": "gwanpojigyo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "光風霽月の人柄に皆が敬服した。",
+    "exampleKo": "광풍제월의 인품에 모두가 경복했다.",
+    "id": "t6-356",
+    "korean": "광풍제월",
+    "meaningJa": "光風霽月（清く朗らかな人柄）",
+    "reading": "gwangpungjewol",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "寄付は九牛一毛にすぎないと謙遜した。",
+    "exampleKo": "기부는 구우일모에 불과하다고 겸손해했다.",
+    "id": "t6-357",
+    "korean": "구우일모",
+    "meaningJa": "九牛一毛（ごく僅かなこと）",
+    "reading": "guuilmo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "受賞に錦上添花の祝いが寄せられた。",
+    "exampleKo": "수상에 금상첨화의 축하가 쏟아졌다.",
+    "id": "t6-358",
+    "korean": "금상첨화",
+    "meaningJa": "錦上添花（良い上にさらに良いこと）",
+    "reading": "geumsangcheomhwa",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は錦衣還郷して故郷に錦を飾った。",
+    "exampleKo": "그는 출세하여 금의환향했다.",
+    "id": "t6-359",
+    "korean": "금의환향",
+    "meaningJa": "錦衣還郷（立身して帰郷すること）",
+    "reading": "geumuihwanhyang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "要塞は難攻不落を誇った。",
+    "exampleKo": "요새는 난공불락을 자랑했다.",
+    "id": "t6-360",
+    "korean": "난공불락",
+    "meaningJa": "難攻不落（攻め落とせないこと）",
+    "reading": "nangongbullak",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "王朝は累卵之危に瀕していた。",
+    "exampleKo": "왕조는 누란지위에 처해 있었다.",
+    "id": "t6-361",
+    "korean": "누란지위",
+    "meaningJa": "累卵之危（崩れそうな危機）",
+    "reading": "nuranjiwi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "うっかり馬脚露出して計画がばれた。",
+    "exampleKo": "깜빡 마각노출하여 계획이 새어 나갔다.",
+    "id": "t6-362",
+    "korean": "마각노출",
+    "meaningJa": "馬脚露出（化けの皮が剥がれること）",
+    "reading": "magaknochul",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "忠告は馬耳東風と聞き流された。",
+    "exampleKo": "충고는 마이동풍으로 흘려들었다.",
+    "id": "t6-363",
+    "korean": "마이동풍",
+    "meaningJa": "馬耳東風（聞き流すこと）",
+    "reading": "maiidongpung",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "失敗を亡羊補牢の戒めとした。",
+    "exampleKo": "실패를 망양보뢰의 경계로 삼았다.",
+    "id": "t6-364",
+    "korean": "망양보뢰",
+    "meaningJa": "亡羊補牢（後の備えの大切さ）",
+    "reading": "mangyangboroe",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "断片で全体を語るは盲人摸象だ。",
+    "exampleKo": "조각으로 전체를 말함은 맹인모상이다.",
+    "id": "t6-365",
+    "korean": "맹인모상",
+    "meaningJa": "盲人摸象（部分で全体を測る愚）",
+    "reading": "maenginmosang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "面従腹背の部下に長は手を焼いた。",
+    "exampleKo": "면종복배의 부하에 장은 애를 먹었다.",
+    "id": "t6-366",
+    "korean": "면종복배",
+    "meaningJa": "面従腹背（表従い裏背くこと）",
+    "reading": "myeonjongbokbae",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "明鏡止水の心で試合に臨んだ。",
+    "exampleKo": "명경지수의 마음으로 경기에 나섰다.",
+    "id": "t6-367",
+    "korean": "명경지수",
+    "meaningJa": "明鏡止水（曇りなき静かな心）",
+    "reading": "myeonggyeongjisu",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "無念無想の境地で座禅を組んだ。",
+    "exampleKo": "무념무상의 경지에서 좌선을 했다.",
+    "id": "t6-368",
+    "korean": "무념무상",
+    "meaningJa": "無念無想（一切の雑念なき境地）",
+    "reading": "munyeommusang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は聞一知十の聡明さで名高かった。",
+    "exampleKo": "그는 문일지십의 총명함으로 이름났다.",
+    "id": "t6-369",
+    "korean": "문일지십",
+    "meaningJa": "聞一知十（一を聞き十を知る聡明さ）",
+    "reading": "muniljisip",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "事件の背景は盤根錯節として絡んだ。",
+    "exampleKo": "사건의 배경은 반근착절로 얽혀 있었다.",
+    "id": "t6-370",
+    "korean": "반근착절",
+    "meaningJa": "盤根錯節（複雑に絡むこと）",
+    "reading": "bangeunchakjeol",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "二人は百年偕老を誓い合った。",
+    "exampleKo": "두 사람은 백년해로를 서약했다.",
+    "id": "t6-371",
+    "korean": "백년해로",
+    "meaningJa": "百年偕老（共に老いる夫婦愛）",
+    "reading": "baengnyeonhaero",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "白面書生の議論は現実離れしていた。",
+    "exampleKo": "백면서생의 논의는 현실과 동떨어져 있었다.",
+    "id": "t6-372",
+    "korean": "백면서생",
+    "meaningJa": "白面書生（世間知らずの書生）",
+    "reading": "baengmyeonseosaeng",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "粉骨砕身して恩に報いた。",
+    "exampleKo": "분골쇄신하여 은혜에 보답했다.",
+    "id": "t6-373",
+    "korean": "분골쇄신",
+    "meaningJa": "粉骨砕身（身を粉にする献身）",
+    "reading": "bungolswaesin",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "人は皆不老長生を夢見る。",
+    "exampleKo": "사람들은 모두 불로장생을 꿈꾼다.",
+    "id": "t6-374",
+    "korean": "불로장생",
+    "meaningJa": "不老長生（老いず長生きすること）",
+    "reading": "bullojangsaeng",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "そんな失敗は非一非再だと笑い飛ばした。",
+    "exampleKo": "그런 실패는 비일비재하다고 웃어넘겼다.",
+    "id": "t6-375",
+    "korean": "비일비재",
+    "meaningJa": "非一非再（珍しくない日常茶飯事）",
+    "reading": "biilbijae",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "賢主を三顧之礼で迎えた。",
+    "exampleKo": "현주를 삼고초려로 맞았다.",
+    "id": "t6-376",
+    "korean": "삼고초려",
+    "meaningJa": "三顧之礼（三度尋ねる丁重さ）",
+    "reading": "samgochoryeo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は袖手傍観して助けなかった。",
+    "exampleKo": "그는 수수방관하며 돕지 않았다.",
+    "id": "t6-377",
+    "korean": "수수방관",
+    "meaningJa": "袖手傍観（腕組みして眺めること）",
+    "reading": "susubanggwan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "我が軍は連戦連勝を重ねた。",
+    "exampleKo": "우리 군은 연전연승을 거듭했다.",
+    "id": "t6-378",
+    "korean": "연전연승",
+    "meaningJa": "連戦連勝（戦うごとに連勝すること）",
+    "reading": "yeonjeonyeonseung",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "政敵同士が呉越同舟で協力した。",
+    "exampleKo": "정적끼리 오월동주로 협력했다.",
+    "id": "t6-379",
+    "korean": "오월동주",
+    "meaningJa": "呉越同舟（敵同士の同乗協力）",
+    "reading": "owoldongju",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "計画は竜頭蛇尾に終わった。",
+    "exampleKo": "계획은 용두사미로 끝났다.",
+    "id": "t6-380",
+    "korean": "용두사미",
+    "meaningJa": "竜頭蛇尾（始め立派で終わり惨めなこと）",
+    "reading": "yongdusami",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "高僧は原始返本して入寂した。",
+    "exampleKo": "고승은 원시반본하여 입적했다.",
+    "id": "t6-381",
+    "korean": "원시반본",
+    "meaningJa": "原始返本（始めに返ること、死の婉曲）",
+    "reading": "wonsibanbon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は有口無言でうつむいた。",
+    "exampleKo": "그는 유구무언으로 고개를 숙였다.",
+    "id": "t6-382",
+    "korean": "유구무언",
+    "meaningJa": "有口無言（口あれど物言えぬこと）",
+    "reading": "yugumueon",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "二人は意気投合して契りを結んだ。",
+    "exampleKo": "두 사람은 의기투합하여 뜻을 모았다.",
+    "id": "t6-383",
+    "korean": "의기투합",
+    "meaningJa": "意気投合（気が合って結ぶこと）",
+    "reading": "uigituhap",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "暑さは以熱治熱で乗り切った。",
+    "exampleKo": "더위는 이열치열로 이겨냈다.",
+    "id": "t6-384",
+    "korean": "이열치열",
+    "meaningJa": "以熱治熱（熱をもって熱を治めること）",
+    "reading": "iyeolchiyeol",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "不正は一罰百戒に処された。",
+    "exampleKo": "부정은 일벌백계에 처해졌다.",
+    "id": "t6-385",
+    "korean": "일벌백계",
+    "meaningJa": "一罰百戒（一人を罰し百を戒めること）",
+    "reading": "ilbeolbaekgye",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "行進は一糸不乱に続いた。",
+    "exampleKo": "행진은 일사불란하게 이어졌다.",
+    "id": "t6-386",
+    "korean": "일사불란",
+    "meaningJa": "一糸不乱（少しも乱れないこと）",
+    "reading": "ilsabullan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "留学は一石二鳥の選択だった。",
+    "exampleKo": "유학은 일석이조의 선택이었다.",
+    "id": "t6-387",
+    "korean": "일석이조",
+    "meaningJa": "一石二鳥（一挙に二得すること）",
+    "reading": "ilseogijo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼の学力は日就月将に伸びた。",
+    "exampleKo": "그의 학력은 일취월장으로 늘었다.",
+    "id": "t6-388",
+    "korean": "일취월장",
+    "meaningJa": "日就月将（日に日に進歩すること）",
+    "reading": "ilchwiwoljang",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "師友と切磋琢磨して成長した。",
+    "exampleKo": "스승과 벗과 절차탁마하며 성장했다.",
+    "id": "t6-389",
+    "korean": "절차탁마",
+    "meaningJa": "切磋琢磨（互いに磨き合うこと）",
+    "reading": "jeolchatangma",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "糟糠之妻を忘れるなと諭した。",
+    "exampleKo": "조강지처를 잊지 말라고 타일렀다.",
+    "id": "t6-390",
+    "korean": "조강지처",
+    "meaningJa": "糟糠之妻（苦労を共にした妻）",
+    "reading": "jogangjicheo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "走馬看山の旅では何も残らない。",
+    "exampleKo": "주마간산의 여행에서는 아무것도 남지 않는다.",
+    "id": "t6-391",
+    "korean": "주마간산",
+    "meaningJa": "走馬看山（駆け足の物見遊山）",
+    "reading": "jumagansan",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "衆寡不敵で退却を決めた。",
+    "exampleKo": "중과부적으로 후퇴를 결정했다.",
+    "id": "t6-392",
+    "korean": "중과부적",
+    "meaningJa": "衆寡不敵（少数は多数に敵しないこと）",
+    "reading": "junggwabujeok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "尽人事待天命の心で結果を待った。",
+    "exampleKo": "진인사대천명의 마음으로 결과를 기다렸다.",
+    "id": "t6-393",
+    "korean": "진인사대천명",
+    "meaningJa": "尽人事待天命（人事を尽くし天命を待つこと）",
+    "reading": "jininsadaecheonmyeong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "秋は天高馬肥の季節だ。",
+    "exampleKo": "가을은 천고마비의 계절이다.",
+    "id": "t6-394",
+    "korean": "천고마비",
+    "meaningJa": "天高馬肥（秋晴れの好時節）",
+    "reading": "cheongomabi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "弟子は青出於藍とたたえられた。",
+    "exampleKo": "제자는 청출어람이라 일컬어졌다.",
+    "id": "t6-395",
+    "korean": "청출어람",
+    "meaningJa": "青出於藍（弟子が師を超えること）",
+    "reading": "cheongchureoram",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "小物が狐仮虎威して威張った。",
+    "exampleKo": "소인이 호가호위하며 으스댔다.",
+    "id": "t6-396",
+    "korean": "호가호위",
+    "meaningJa": "狐仮虎威（権を借りて威張ること）",
+    "reading": "hogahowi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "和光同塵の処世で波風を立てなかった。",
+    "exampleKo": "화광동진의 처세로 파문을 일으키지 않았다.",
+    "id": "t6-397",
+    "korean": "화광동진",
+    "meaningJa": "和光同塵（光を和らげ俗に交わること）",
+    "reading": "hwagwangdongjin",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "今さら後悔莫及だと嘆いた。",
+    "exampleKo": "이제 와 후회막급이라고 한탄했다.",
+    "id": "t6-398",
+    "korean": "후회막급",
+    "meaningJa": "後悔莫及（悔いても及ばないこと）",
+    "reading": "huhoemakgeup",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "甲男乙女の暮らしに幸がある。",
+    "exampleKo": "갑남을녀의 삶에 행복이 있다.",
+    "id": "t6-399",
+    "korean": "갑남을녀",
+    "meaningJa": "甲男乙女（ありふれた人々）",
+    "reading": "gamnabeulnyeo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "二人は肝胆相照らして契りを結んだ。",
+    "exampleKo": "두 사람은 간담상조하여 맹약을 맺었다.",
+    "id": "t6-400",
+    "korean": "간담상조",
+    "meaningJa": "肝胆相照（心を開き照らし合うこと）",
+    "reading": "gandamsangjo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「上の水が澄んでこそ下の水も澄む」；上が正しくてこそ下も正しくなるということだ。",
+    "exampleKo": "윗물이 맑아야 아랫물이 맑다고 윗사람이 먼저 바로서야 한다.",
+    "id": "t6-401",
+    "korean": "윗물이 맑아야 아랫물이 맑다",
+    "meaningJa": "直訳「上の水が澄んでこそ下の水も澄む」；上が正しくてこそ下も正しい",
+    "reading": "winmurimangayaaraenmurimarkda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「ネズミの穴にも日が差す日がある」；誰にでも良い日が来るということだ。",
+    "exampleKo": "쥐구멍에도 볕 들 날 있다고 좌절하지 말자.",
+    "id": "t6-402",
+    "korean": "쥐구멍에도 볕 들 날 있다",
+    "meaningJa": "直訳「ネズミの穴にも日が差す日がある」；誰にでも好機が来る",
+    "reading": "jwigumeongedobyeotdeunnalitda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「一つの井戸を掘れ」；一筋に打ち込むことが大切だということだ。",
+    "exampleKo": "한 우물을 파라던 스승의 가르침을 잊지 않는다.",
+    "id": "t6-403",
+    "korean": "한 우물을 파라",
+    "meaningJa": "直訳「一つの井戸を掘れ」；一筋に打ち込むことの大切さ",
+    "reading": "hanumureulpara",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「石橋も叩いて渡れ」；慎重に事を運べということだ。",
+    "exampleKo": "돌다리도 두들겨 보고 건너라던 어머니 말씀이 생각난다.",
+    "id": "t6-404",
+    "korean": "돌다리도 두들겨 보고 건너라",
+    "meaningJa": "直訳「石橋も叩いて渡れ」；慎重に事を運ぶこと",
+    "reading": "doldaridodudeulgyeobogogeonneora",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「千里の道も一歩から」；何事も始めが肝心だということだ。",
+    "exampleKo": "천리길도 한 걸음부터라 일단 시작해 보자.",
+    "id": "t6-405",
+    "korean": "천리길도 한 걸음부터",
+    "meaningJa": "直訳「千里の道も一歩から」；始めの一歩の大切さ",
+    "reading": "cheonrigildohangeoreumbuteo",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「三歳の癖は八十まで行く」；幼時の習慣は一生残るということだ。",
+    "exampleKo": "세 살 버릇 여든 간다니 어릴 때 습관이 중요하다.",
+    "id": "t6-406",
+    "korean": "세 살 버릇 여든 간다",
+    "meaningJa": "直訳「三歳の癖は八十まで行く」；幼時の習慣は一生残る",
+    "reading": "sesalbeoreutyeodeunganda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「針の行く所に糸が行く」；夫婦は連れ添うものだということだ。",
+    "exampleKo": "바늘 가는 데 실 간다고 두 사람은 늘 함께 다닌다.",
+    "id": "t6-407",
+    "korean": "바늘 가는 데 실 간다",
+    "meaningJa": "直訳「針の行く所に糸が行く」；連れ添いの情の深さ",
+    "reading": "baneulganeundesilganda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「ザリガニはカニの味方だ」；類は友を呼ぶということだ。",
+    "exampleKo": "가재는 게 편이라 비슷한 사람끼리 어울린다.",
+    "id": "t6-408",
+    "korean": "가재는 게 편이다",
+    "meaningJa": "直訳「ザリガニはカニの味方だ」；類は友を呼ぶこと",
+    "reading": "gajaeneungepyeonida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「緑は同色だ」；似た者同士が集まるということだ。",
+    "exampleKo": "초록은 동색이라 취미가 맞는 사람과 친해졌다.",
+    "id": "t6-409",
+    "korean": "초록은 동색이다",
+    "meaningJa": "直訳「緑は同色だ」；似た者同士の親近感",
+    "reading": "chorogeundongsaegida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "類は友を呼ぶ、悠悠相従の集まりだった。",
+    "exampleKo": "유유상종이라 비슷한 사람들이 모였다.",
+    "id": "t6-410",
+    "korean": "유유상종",
+    "meaningJa": "悠悠相従（似た者同士が集まること）",
+    "reading": "yuyusangjong",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「遊ぶ口で念仏する」；口先だけの偽善だということだ。",
+    "exampleKo": "노는 입에 염불한다고 말뿐인 약속은 믿지 않는다.",
+    "id": "t6-411",
+    "korean": "노는 입에 염불한다",
+    "meaningJa": "直訳「遊ぶ口で念仏する」；口先だけの偽善",
+    "reading": "noneunibeyeombulhanda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は口に唾が乾くほど称賛してやまない。",
+    "exampleKo": "그는 입에 침이 마르도록 칭찬을 아끼지 않았다.",
+    "id": "t6-412",
+    "korean": "입에 침이 마르도록",
+    "meaningJa": "口に唾が乾くほど（絶えず褒めるさま）",
+    "reading": "ibeachimimareudorok",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "昔話は口伝えに伝えられてきた。",
+    "exampleKo": "옛이야기는 구전되어 전해져 왔다.",
+    "id": "t6-413",
+    "korean": "구전되어 전해지다",
+    "meaningJa": "口伝えに伝わる",
+    "reading": "gujeondoeeojeonhaejida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "この祭りは代々受け継がれてきた。",
+    "exampleKo": "이 축제는 대대로 이어져 왔다.",
+    "id": "t6-414",
+    "korean": "대대로 이어지다",
+    "meaningJa": "代々受け継がれる",
+    "reading": "daedaeroieojida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「足のない言葉が千里を行く」；噂の広がりの速さだ。",
+    "exampleKo": "발 없는 말이 천 리 간다고 소문은 순식간에 퍼졌다.",
+    "id": "t6-415",
+    "korean": "발 없는 말이 천 리 간다",
+    "meaningJa": "直訳「足のない言葉が千里を行く」；噂の広がりの速さ",
+    "reading": "bareomneunmaricheonriganda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "言葉が種になるから良い言葉を使おう。",
+    "exampleKo": "말이 씨가 된다고 좋은 말을 쓰자.",
+    "id": "t6-416",
+    "korean": "말이 씨가 된다",
+    "meaningJa": "言葉が種になる（言葉が現実になる）",
+    "reading": "marissigadoenda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「口は禍の門だ」；言葉を慎めという戒めだ。",
+    "exampleKo": "입은 화의 문이라 말을 조심해야 한다.",
+    "id": "t6-417",
+    "korean": "입은 화의 문이다",
+    "meaningJa": "直訳「口は禍の門だ」；言葉を慎む戒め",
+    "reading": "ibeunhwauimunida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "沈黙は金だと言って彼は黙っていた。",
+    "exampleKo": "침묵은 금이라 그는 입을 다물었다.",
+    "id": "t6-418",
+    "korean": "침묵은 금이다",
+    "meaningJa": "沈黙は金だ（黙する美徳）",
+    "reading": "chimmugeungeumida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は口が堅くて秘密を守った。",
+    "exampleKo": "그는 입이 무거워 비밀을 지켰다.",
+    "id": "t6-419",
+    "korean": "입이 무겁다",
+    "meaningJa": "口が堅い（秘密を漏らさない）",
+    "reading": "ibimugeopda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は口が軽くて噂を広めた。",
+    "exampleKo": "그는 입이 가벼워 소문을 퍼뜨렸다.",
+    "id": "t6-420",
+    "korean": "입이 가볍다",
+    "meaningJa": "口が軽い（秘密を漏らしがちだ）",
+    "reading": "ibigabyeopda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "悪いうわさをまき散らす者は咎められた。",
+    "exampleKo": "나쁜 소문을 퍼뜨리는 사람은 문책을 받았다.",
+    "id": "t6-421",
+    "korean": "소문을 퍼뜨리다",
+    "meaningJa": "うわさをまき散らす",
+    "reading": "somuneulpeotteurida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "根も葉もないデマをまき散らすな。",
+    "exampleKo": "뜬소문을 퍼뜨리지 마라.",
+    "id": "t6-422",
+    "korean": "뜬소문을 퍼뜨리다",
+    "meaningJa": "デマをまき散らす（根拠なき噂を広める）",
+    "reading": "tteunsomuneulpeotteurida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "流言を流布した者が検挙された。",
+    "exampleKo": "유언비어를 퍼뜨린 사람이 검거됐다.",
+    "id": "t6-423",
+    "korean": "유언비어를 퍼뜨리다",
+    "meaningJa": "流言を流布する（虚偽の情報を広める）",
+    "reading": "yueonbieoreulpeotteurida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "扇動で民心を騒然とさせてはならない。",
+    "exampleKo": "선동으로 민심을 흉흉하게 해서는 안 된다.",
+    "id": "t6-424",
+    "korean": "민심을 흉흉하게 하다",
+    "meaningJa": "民心を騒然とさせる",
+    "reading": "minsimeulhyunghyunghagehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "騒然たる民心を鎮めるのが急務だった。",
+    "exampleKo": "흉흉한 민심을 가라앉히는 게 급선무였다.",
+    "id": "t6-425",
+    "korean": "흉흉한 민심",
+    "meaningJa": "騒然たる民心（落ち着かぬ世情）",
+    "reading": "hyunghyunghanminsim",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "ざわついた雰囲気の中で会議が始まった。",
+    "exampleKo": "뒤숭숭한 분위기 속에 회의가 시작됐다.",
+    "id": "t6-426",
+    "korean": "뒤숭숭한 분위기",
+    "meaningJa": "ざわついた雰囲気（落ち着かぬ空気）",
+    "reading": "dwisungsunghanbunwigi",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "地方で騒擾事件が起きたという報が入った。",
+    "exampleKo": "지방에서 소요 사태가 일어났다는 소식이 들어왔다.",
+    "id": "t6-427",
+    "korean": "소요 사태가 일어나다",
+    "meaningJa": "騒擾事件が起きる",
+    "reading": "soyosataegaireonada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "扇動家が群衆を扇動して騒ぎになった。",
+    "exampleKo": "선동가가 군중을 선동하여 소란이 일었다.",
+    "id": "t6-428",
+    "korean": "군중을 선동하다",
+    "meaningJa": "群衆を扇動する",
+    "reading": "gunjungeulseondonghada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は扇動に乗せられてデモに参加した。",
+    "exampleKo": "그는 선동에 넘어가 시위에 참가했다.",
+    "id": "t6-429",
+    "korean": "선동에 넘어가다",
+    "meaningJa": "扇動に乗せられる",
+    "reading": "seondongeneomeogada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は人心を惑わす風を吹かせた。",
+    "exampleKo": "그는 민심을 흔드는 바람을 잡았다.",
+    "id": "t6-430",
+    "korean": "바람을 잡다",
+    "meaningJa": "人心を惑わす（扇動の風を起こす）",
+    "reading": "barameuljapda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「昼の言葉は鳥が聞き夜の言葉はネズミが聞く」；言葉を慎めということだ。",
+    "exampleKo": "낮말은 새가 듣고 밤말은 쥐가 듣는다니 말조심해야 한다.",
+    "id": "t6-431",
+    "korean": "낮말은 새가 듣고 밤말은 쥐가 듣는다",
+    "meaningJa": "直訳「昼の言葉は鳥が聞き夜の言葉はネズミが聞く」；言葉を慎む戒め",
+    "reading": "nanmareunsaegadeutgonbammareunjwigadeutneunda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「行く言葉が美しくてこそ来る言葉も美しい」；言葉遣いの大切さだ。",
+    "exampleKo": "가는 말이 고와야 오는 말이 곱다고 예쁘게 말하자.",
+    "id": "t6-432",
+    "korean": "가는 말이 고와야 오는 말이 곱다",
+    "meaningJa": "直訳「行く言葉が美しくてこそ来る言葉も美しい」；言葉遣いの大切さ",
+    "reading": "ganeunmarigowayaoeneunmarigopda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「紙一枚も力を合わせれば良い」；協力の大切さだ。",
+    "exampleKo": "백지장도 맞들면 낫다고 힘을 모았다.",
+    "id": "t6-433",
+    "korean": "백지장도 맞들면 낫다",
+    "meaningJa": "直訳「紙一枚も力を合わせれば良い」；協力の大切さ",
+    "reading": "baekjijangdomatdeulmyeonnatda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「霧雨に服が濡れる」；知らぬ間に感化されることだ。",
+    "exampleKo": "가랑비에 옷 젖는다고 나쁜 버릇이 스며들었다.",
+    "id": "t6-434",
+    "korean": "가랑비에 옷 젖는다",
+    "meaningJa": "直訳「霧雨に服が濡れる」；知らぬ間の感化",
+    "reading": "garangbieotjeotneunda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「牛を失って牛小屋を直す」；後の祭りのたとえだ。",
+    "exampleKo": "소 잃고 외양간 고친다고 사후 대책을 비웃었다.",
+    "id": "t6-435",
+    "korean": "소 잃고 외양간 고친다",
+    "meaningJa": "直訳「牛を失って牛小屋を直す」；後の祭りの愚",
+    "reading": "soilkgooyanggangochinda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「鎌を置いてもキヨクの字も知らない」；無学のたとえだ。",
+    "exampleKo": "낫 놓고 기역 자도 모른다고 무학을 탓했다.",
+    "id": "t6-436",
+    "korean": "낫 놓고 기역 자도 모른다",
+    "meaningJa": "直訳「鎌を置いても字を知らない」；無学のたとえ",
+    "reading": "natnokgogiyeokjadomoreunda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「灯台下が暗い」；身近なことに疎いことだ。",
+    "exampleKo": "등잔 밑이 어둡다고 가까운 일을 놓쳤다.",
+    "id": "t6-437",
+    "korean": "등잔 밑이 어둡다",
+    "meaningJa": "直訳「灯台下が暗い」；身近なことへの無知",
+    "reading": "deungjanmichieodupda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「急ぐほど回って行け」；急がば回れということだ。",
+    "exampleKo": "급할수록 돌아가라고 서두르지 않았다.",
+    "id": "t6-438",
+    "korean": "급할수록 돌아가라",
+    "meaningJa": "直訳「急ぐほど回って行け」；急がば回れの教え",
+    "reading": "geupalsurokdoragara",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「一言で千両の借りを返す」；言葉の重さのたとえだ。",
+    "exampleKo": "말 한마디에 천 냥 빚을 갚는다고 말을 아꼈다.",
+    "id": "t6-439",
+    "korean": "말 한마디에 천 냥 빚을 갚는다",
+    "meaningJa": "直訳「一言で千両の借りを返す」；言葉の重さのたとえ",
+    "reading": "malhanmadiecheonnyangbicheulgapneunda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「稲は実るほど頭を垂れる」；謙虚の徳のたとえだ。",
+    "exampleKo": "벼는 익을수록 고개를 숙인다고 겸손을 배웠다.",
+    "id": "t6-440",
+    "korean": "벼는 익을수록 고개를 숙인다",
+    "meaningJa": "直訳「稲は実るほど頭を垂れる」；謙虚の徳のたとえ",
+    "reading": "byeoneunigeulsurokgogaereulsuginda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「溝から竜が出る」；寒門から英傑が出ることだ。",
+    "exampleKo": "개천에서 용 난다고 희망을 품었다.",
+    "id": "t6-441",
+    "korean": "개천에서 용 난다",
+    "meaningJa": "直訳「溝から竜が出る」；寒門からの英傑",
+    "reading": "gaecheoneseoyongnanda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「生まれたての子犬は虎の怖さを知らない」；世間知らずのたとえだ。",
+    "exampleKo": "하룻강아지 범 무서운 줄 모른다고 무모함을 나무랐다.",
+    "id": "t6-442",
+    "korean": "하룻강아지 범 무서운 줄 모른다",
+    "meaningJa": "直訳「子犬は虎の怖さを知らない」；世間知らずの無謀",
+    "reading": "harutgangajibeommuseounjulmoreunda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「猿も木から落ちる」；達人も失敗することだ。",
+    "exampleKo": "원숭이도 나무에서 떨어진다고 실수를 위로했다.",
+    "id": "t6-443",
+    "korean": "원숭이도 나무에서 떨어진다",
+    "meaningJa": "直訳「猿も木から落ちる」；達人の失敗の慰め",
+    "reading": "wonsungidonamueseotteoreojinda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「雉を食べつつ卵も食べる」；一挙両得のことだ。",
+    "exampleKo": "꿩 먹고 알 먹는다고 두 마리 토끼를 잡았다.",
+    "id": "t6-444",
+    "korean": "꿩 먹고 알 먹는다",
+    "meaningJa": "直訳「雉を食べつつ卵も食べる」；一挙両得の欲張り",
+    "reading": "kkwongmeokgoalmeokneunda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「空の荷車ほどやかましい」；実なき者の虚勢だ。",
+    "exampleKo": "빈 수레가 요란하다고 실력 없는 자를 꼬집었다.",
+    "id": "t6-445",
+    "korean": "빈 수레가 요란하다",
+    "meaningJa": "直訳「空の荷車ほどやかましい」；実なき者の虚勢",
+    "reading": "binsuregayoranhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「言い訳のない墓はない」；誰もが言い訳を持つものだ。",
+    "exampleKo": "핑계 없는 무덤 없다고 변명을 늘어놓았다.",
+    "id": "t6-446",
+    "korean": "핑계 없는 무덤 없다",
+    "meaningJa": "直訳「言い訳のない墓はない」；誰もが持つ言い訳",
+    "reading": "pinggyeeomneunmudeomeopda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「知る道も尋ねて行け」；知ることも確認せよということだ。",
+    "exampleKo": "아는 길도 물어가라고 확인을 게을리하지 않았다.",
+    "id": "t6-447",
+    "korean": "아는 길도 물어가라",
+    "meaningJa": "直訳「知る道も尋ねて行け」；確認を怠らぬ用心",
+    "reading": "aneungildomureogara",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「鯨の喧嘩にエビの背が破れる」；巻き添えのたとえだ。",
+    "exampleKo": "고래 싸움에 새우 등 터진다고 엉뚱한 피해를 걱정했다.",
+    "id": "t6-448",
+    "korean": "고래 싸움에 새우 등 터진다",
+    "meaningJa": "直訳「鯨の喧嘩にエビの背が破れる」；強者の巻き添え",
+    "reading": "goraessaumesaeudeungteojinda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「針泥棒が牛泥棒になる」；小悪が大悪になる戒めだ。",
+    "exampleKo": "바늘 도둑이 소 도둑 된다고 작은 악을 경계했다.",
+    "id": "t6-449",
+    "korean": "바늘 도둑이 소 도둑 된다",
+    "meaningJa": "直訳「針泥棒が牛泥棒になる」；小悪の大悪化の戒め",
+    "reading": "baneuldodugisododukdoenda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「船頭が多ければ船が山へ行く」；指図の多さの弊害だ。",
+    "exampleKo": "사공이 많으면 배가 산으로 간다고 지시가 엇갈렸다.",
+    "id": "t6-450",
+    "korean": "사공이 많으면 배가 산으로 간다",
+    "meaningJa": "直訳「船頭が多ければ船が山へ行く」；指図多き弊害",
+    "reading": "sagongimanyeonbaegasaneuroganda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「こぼした水を拾い集めようか」；取り返しのつかなさの嘆きだ。",
+    "exampleKo": "엎지른 물을 주워 담으랴 한탄만 앞섰다.",
+    "id": "t6-451",
+    "korean": "엎지른 물을 주워 담으랴",
+    "meaningJa": "直訳「こぼした水を拾い集めようか」；取り返しのつかなさの嘆き",
+    "reading": "eopjireunmureuljuwodameurya",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "敗北に後悔を禁じ得なかった。",
+    "exampleKo": "패배에 후회를 금치 못했다.",
+    "id": "t6-452",
+    "korean": "후회를 금치 못하다",
+    "meaningJa": "後悔を禁じ得ない",
+    "reading": "huhoereulgeumchimothada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "無念さに痛嘆を禁じ得なかった。",
+    "exampleKo": "분함에 통탄을 금치 못했다.",
+    "id": "t6-453",
+    "korean": "통탄을 금치 못하다",
+    "meaningJa": "痛嘆を禁じ得ない（嘆きを抑えられない）",
+    "reading": "tongtaneulgeumchimothada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "怒りで目がひっくり返りそうだった。",
+    "exampleKo": "분노에 눈이 뒤집힐 지경이었다.",
+    "id": "t6-454",
+    "korean": "눈이 뒤집히다",
+    "meaningJa": "目がひっくり返る（激昂のさま）",
+    "reading": "nunidwijiphida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "悔しさに目が真っ赤になった。",
+    "exampleKo": "분함에 눈이 벌개졌다.",
+    "id": "t6-455",
+    "korean": "눈이 벌개지다",
+    "meaningJa": "目が真っ赤になる（悔しさのさま）",
+    "reading": "nunibeolgaejida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "復讐を誓って歯ぎしりした。",
+    "exampleKo": "복수를 다짐하며 이를 갈았다.",
+    "id": "t6-456",
+    "korean": "이를 갈다",
+    "meaningJa": "歯ぎしりする（雪辱を誓うさま）",
+    "reading": "ireulgalda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "遺影の前で胸を叩いて慟哭した。",
+    "exampleKo": "영정 앞에서 가슴을 치며 통곡했다.",
+    "id": "t6-457",
+    "korean": "가슴을 치며 통곡하다",
+    "meaningJa": "胸を叩いて慟哭する",
+    "reading": "gaseumeulchimyeotonggokhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "退路を断つ背水の陣を敷いた。",
+    "exampleKo": "물러설 곳을 끊는 배수진을 쳤다.",
+    "id": "t6-458",
+    "korean": "배수진을 치다",
+    "meaningJa": "背水の陣を敷く（決死の覚悟だ）",
+    "reading": "baesujineulchida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「同じ値なら赤が良い」；どうせなら良い物をということだ。",
+    "exampleKo": "같은 값이면 다홍치마라 어차피 좋은 것으로 골랐다.",
+    "id": "t6-459",
+    "korean": "같은 값이면 다홍치마다",
+    "meaningJa": "直訳「同じ値なら赤が良い」；どうせなら良い物を選ぶこと",
+    "reading": "gateungapsimyeondahongchimada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「安物は粕の餅だ」；安かろう悪かろうということだ。",
+    "exampleKo": "싼 게 비지떡이라 싼 물건은 금방 고장 났다.",
+    "id": "t6-460",
+    "korean": "싼 게 비지떡이다",
+    "meaningJa": "直訳「安物は粕の餅だ」；安かろう悪かろうの戒め",
+    "reading": "ssangebijitteogida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「急げば針の腰に糸を通して使う」；窮すれば知恵が出ることだ。",
+    "exampleKo": "급하면 바늘허리에 실 매어 쓴다고 기지를 발휘했다.",
+    "id": "t6-461",
+    "korean": "급하면 바늘허리에 실 매어 쓴다",
+    "meaningJa": "直訳「急げば針の腰に糸を通して使う」；窮すれば知恵が出ること",
+    "reading": "geuphamyeonbaneulheoriesilmaeeosseunda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「評判の宴に食べ物はない」；噂倒れのたとえだ。",
+    "exampleKo": "소문난 잔치에 먹을 것 없다고 기대 이하의 결과였다.",
+    "id": "t6-462",
+    "korean": "소문난 잔치에 먹을 것 없다",
+    "meaningJa": "直訳「評判の宴に食べ物はない」；噂倒れの落胆",
+    "reading": "somunnanjanchiemeogeulgeoteopda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「餅をくれる人は考えもしないのにキムチ汁からすする」；早合点の戒めだ。",
+    "exampleKo": "떡 줄 사람은 생각도 않는데 김칫국부터 마신다고 성급한 판단을 나무랐다.",
+    "id": "t6-463",
+    "korean": "떡 줄 사람은 생각도 않는데 김칫국부터 마신다",
+    "meaningJa": "直訳「餅の前にキムチ汁をすする」；早合点の戒め",
+    "reading": "tteokjulsarameunsaenggakdoanneundekimchitgukbuteomasinda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「木だけ見て森を見ない」；全体を見失う愚だ。",
+    "exampleKo": "나무만 보고 숲을 보지 못한다고 전체를 보라고 충고했다.",
+    "id": "t6-464",
+    "korean": "나무만 보고 숲을 보지 못한다",
+    "meaningJa": "直訳「木だけ見て森を見ない」；全体を見失う愚",
+    "reading": "namumanbogosupeulbojimothanda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「十尋の水底は知れど一尋の人心は知れない」；人心の難測だ。",
+    "exampleKo": "열 길 물속은 알아도 한 길 사람 속은 모른다고 사람 마음을 경계했다.",
+    "id": "t6-465",
+    "korean": "열 길 물속은 알아도 한 길 사람 속은 모른다",
+    "meaningJa": "直訳「十尋の水底は知れど人心は知れない」；人心の難測",
+    "reading": "yeolgilmulsogeunaradohangilsaramsogeunmoreunda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「十本の指を噛んで痛くない指はない」；子への平等の愛だ。",
+    "exampleKo": "열 손가락 깨물어 안 아픈 손가락 없다고 자식에 대한 사랑을 말했다.",
+    "id": "t6-466",
+    "korean": "열 손가락 깨물어 안 아픈 손가락 없다",
+    "meaningJa": "直訳「十本の指に痛くない指はない」；子への平等の愛",
+    "reading": "yeolsongarakkkaemureoanapeunsongarageopda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「子の自慢は物笑いだ」；親ばかへの皮肉だ。",
+    "exampleKo": "자식 자랑은 팔불출이라고 놀림받았다.",
+    "id": "t6-467",
+    "korean": "자식 자랑은 팔불출이다",
+    "meaningJa": "直訳「子の自慢は物笑いだ」；親ばかへの皮肉",
+    "reading": "jasikjarangepalbulchurida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "親ばかぶりを物笑いにされた。",
+    "exampleKo": "그는 팔불출이라고 놀림받았다.",
+    "id": "t6-468",
+    "korean": "팔불출",
+    "meaningJa": "親ばか（子の自慢に夢中な者）",
+    "reading": "palbulchul",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「肉は噛んでこそ味だ」；労してこそ得るものだ。",
+    "exampleKo": "고기는 씹어야 맛이라고 노력해야 보람이 있다.",
+    "id": "t6-469",
+    "korean": "고기는 씹어야 맛이다",
+    "meaningJa": "直訳「肉は噛んでこそ味だ」；労してこそ得る教え",
+    "reading": "gogineunssibeoyamashida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "足を棒にして調査に走り回った。",
+    "exampleKo": "발품을 팔아 조사에 뛰어다녔다.",
+    "id": "t6-470",
+    "korean": "발품을 팔다",
+    "meaningJa": "足を棒にする（歩き回って調べる）",
+    "reading": "balpumeulpalda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は東奔西走して後援を募った。",
+    "exampleKo": "그는 동분서주하며 후원을 모았다.",
+    "id": "t6-471",
+    "korean": "동분서주하다",
+    "meaningJa": "東奔西走する（駆け回って奔走する）",
+    "reading": "dongbunseojuhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "四方八方へ駆け回って人を集めた。",
+    "exampleKo": "사방팔방으로 뛰며 사람을 모았다.",
+    "id": "t6-472",
+    "korean": "사방팔방으로 뛰다",
+    "meaningJa": "四方八方へ駆ける",
+    "reading": "sabangpalbangeurottwida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は寝ても覚めても便りを待った。",
+    "exampleKo": "그는 오매불망 소식만 기다렸다.",
+    "id": "t6-473",
+    "korean": "오매불망 기다리다",
+    "meaningJa": "寝ても覚めても待つ",
+    "reading": "omaebulmanggidarida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "母はやきもきして息子を待った。",
+    "exampleKo": "어머니는 애타게 아들을 기다렸다.",
+    "id": "t6-474",
+    "korean": "애타게 기다리다",
+    "meaningJa": "やきもきして待つ",
+    "reading": "aetagegidarida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女は首を長くして連絡を待った。",
+    "exampleKo": "그녀는 목이 빠지게 연락을 기다렸다.",
+    "id": "t6-475",
+    "korean": "목이 빠지게 기다리다",
+    "meaningJa": "首を長くして待つ",
+    "reading": "mogippajigegidarida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は目を皿のようにしてバスを待った。",
+    "exampleKo": "그는 눈이 빠지게 버스를 기다렸다.",
+    "id": "t6-476",
+    "korean": "눈이 빠지게 기다리다",
+    "meaningJa": "目を皿のようにして待つ",
+    "reading": "nunippajigegidarida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は鶴首苦待して恩師を迎えた。",
+    "exampleKo": "그는 학수고대하며 은사를 맞았다.",
+    "id": "t6-477",
+    "korean": "학수고대하다",
+    "meaningJa": "鶴首苦待する（首を長くして待つ）",
+    "reading": "haksugodaehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "長い待機に彼は待ち疲れた。",
+    "exampleKo": "긴 대기에 그는 기다림에 지쳤다.",
+    "id": "t6-478",
+    "korean": "기다림에 지치다",
+    "meaningJa": "待ち疲れる（待機に疲れる）",
+    "reading": "gidarimejichida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "カレンダーに印をつけて指折り数えて待った。",
+    "exampleKo": "달력에 표시하며 손꼽아 기다렸다.",
+    "id": "t6-479",
+    "korean": "손꼽아 기다리다",
+    "meaningJa": "指折り数えて待つ",
+    "reading": "sonkkobagidarida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は日を数えながら除隊を待った。",
+    "exampleKo": "그는 날을 세며 제대를 기다렸다.",
+    "id": "t6-480",
+    "korean": "날을 세며 기다리다",
+    "meaningJa": "日を数えて待つ（除隊などを待つ）",
+    "reading": "nareulsemyeogidarida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼女はそわそわして面接を待った。",
+    "exampleKo": "그녀는 초조하게 면접을 기다렸다.",
+    "id": "t6-481",
+    "korean": "초조하게 기다리다",
+    "meaningJa": "そわそわして待つ",
+    "reading": "chojohagegidarida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「転んだ上に覆いかぶさる格好だ」；泣き面に蜂のことだ。",
+    "exampleKo": "엎친 데 덮친 격이라고 나쁜 일이 겹쳤다.",
+    "id": "t6-482",
+    "korean": "엎친 데 덮친 격이다",
+    "meaningJa": "直訳「転んだ上に覆いかぶさる格好だ」；泣き面に蜂",
+    "reading": "eopchindedeopchingeogida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「火のない煙突に煙が立とうか」；訳なく噂は立たないものだ。",
+    "exampleKo": "아니 땐 굴뚝에 연기 나랴고 소문에는 까닭이 있다.",
+    "id": "t6-483",
+    "korean": "아니 땐 굴뚝에 연기 나랴",
+    "meaningJa": "直訳「火のない煙突に煙が立とうか」；噂に根ありの理",
+    "reading": "anittaengulttugeyeonginarya",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「火事の家に団扇で煽ぐ」；災いに油を注ぐ愚行だ。",
+    "exampleKo": "불난 집에 부채질한다고 사태를 악화시켰다.",
+    "id": "t6-484",
+    "korean": "불난 집에 부채질하다",
+    "meaningJa": "直訳「火事の家に団扇で煽ぐ」；災いを煽る愚行",
+    "reading": "bullanjibebuchaejilhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「火に油を注ぐ」；事態を悪化させることだ。",
+    "exampleKo": "불에 기름을 붓는다고 싸움이 커졌다.",
+    "id": "t6-485",
+    "korean": "불에 기름을 붓다",
+    "meaningJa": "直訳「火に油を注ぐ」；事態を悪化させること",
+    "reading": "buregireumeulbutda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「乾いた空に落雷だ」；青天の霹靂のことだ。",
+    "exampleKo": "마른하늘에 날벼락이라고뜻밖의 비보가 날아들었다.",
+    "id": "t6-486",
+    "korean": "마른하늘에 날벼락이다",
+    "meaningJa": "直訳「乾いた空に落雷だ」；青天の霹靂の災い",
+    "reading": "mareunhaneurenalbyeoragida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "突然の解雇は青天霹靂だった。",
+    "exampleKo": "갑작스러운 해고는 청천벽력이었다.",
+    "id": "t6-487",
+    "korean": "청천벽력이다",
+    "meaningJa": "青天霹靂だ（突然の衝撃）",
+    "reading": "cheongcheonbyeongnyeogida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「空が崩れても逃げ穴はある」；窮しても活路ありということだ。",
+    "exampleKo": "하늘이 무너져도 솟아날 구멍이 있다고 희망을 버리지 않았다.",
+    "id": "t6-488",
+    "korean": "하늘이 무너져도 솟아날 구멍이 있다",
+    "meaningJa": "直訳「空が崩れても逃げ穴はある」；窮しても活路あり",
+    "reading": "haneurimuneojyeodososanalgumeongiitda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "直訳「空が崩れたようだ」；目の前が真っ暗な衝撃だ。",
+    "exampleKo": "하늘이 무너진 것 같다고 충격에 말을 잃었다.",
+    "id": "t6-489",
+    "korean": "하늘이 무너진 것 같다",
+    "meaningJa": "直訳「空が崩れたようだ」；目の前が真っ暗な衝撃",
+    "reading": "haneurimuneojingeotgatda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "地を叩いて後悔しても後の祭りだった。",
+    "exampleKo": "땅을 치고 후회해도 때늦은 후회였다.",
+    "id": "t6-490",
+    "korean": "땅을 치고 후회하다",
+    "meaningJa": "地を叩いて後悔する",
+    "reading": "ttangeulchigohuhoehada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は目に火をつけて犯人を追った。",
+    "exampleKo": "그는 눈에 불을 켜고 범인을 쫓았다.",
+    "id": "t6-491",
+    "korean": "눈에 불을 켜다",
+    "meaningJa": "目に火をつける（血眼で追う）",
+    "reading": "nuneonbureulkiyeoda",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "儲け話に彼の耳がぴくんと動いた。",
+    "exampleKo": "돈벌이 이야기에 그의 귀가 솔깃했다.",
+    "id": "t6-492",
+    "korean": "귀가 솔깃하다",
+    "meaningJa": "耳がぴくんと動く（関心をそそられる）",
+    "reading": "gwigasolgishada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "連敗に驕った鼻がへし折れた。",
+    "exampleKo": "연패에 거만했던 콧대가 꺾였다.",
+    "id": "t6-493",
+    "korean": "콧대가 꺾이다",
+    "meaningJa": "鼻がへし折れる（驕りが砕かれる）",
+    "reading": "kotdaegakkeokida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "表彰に彼の肩がうんと上がった。",
+    "exampleKo": "표창에 그의 어깨가 으쓱했다.",
+    "id": "t6-494",
+    "korean": "어깨가 으쓱하다",
+    "meaningJa": "肩がうんと上がる（得意のさま）",
+    "reading": "eokkaegaeusseukhada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "口が耳にかかるほど彼は笑った。",
+    "exampleKo": "입이 귀에 걸릴 만큼 그는 웃었다.",
+    "id": "t6-495",
+    "korean": "입이 귀에 걸리다",
+    "meaningJa": "口が耳にかかる（満面の笑みだ）",
+    "reading": "ibigwiegeollida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "彼は破顔大笑して涙を流した。",
+    "exampleKo": "그는 파안대소하며 눈물을 흘렸다.",
+    "id": "t6-496",
+    "korean": "파안대소하다",
+    "meaningJa": "破顔大笑する（顔を崩して笑う）",
+    "reading": "paandaesohada",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "一同は爆笑をほとばしらせた。",
+    "exampleKo": "모두는 폭소를 터뜨렸다.",
+    "id": "t6-497",
+    "korean": "폭소를 터뜨리다",
+    "meaningJa": "爆笑をほとばしらせる",
+    "reading": "poksoreulteotteurida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "腹を抱えて笑い転げた。",
+    "exampleKo": "배를 움켜쥐고 웃어 넘어졌다.",
+    "id": "t6-498",
+    "korean": "배를 움켜쥐다",
+    "meaningJa": "腹を抱える（抱腹のさま）",
+    "reading": "baereulumkyeojwida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "会場の笑いのツボが破裂した。",
+    "exampleKo": "회장의 웃음보가 터졌다.",
+    "id": "t6-499",
+    "korean": "웃음보가 터지다",
+    "meaningJa": "笑いのツボが破裂する",
+    "reading": "useumbogateojida",
+    "topikLevel": 6
+  },
+  {
+    "exampleJa": "侮辱に鬱火がこみ上げた。",
+    "exampleKo": "모욕에 울화가 치밀었다.",
+    "id": "t6-500",
+    "korean": "울화가 치밀다",
+    "meaningJa": "鬱火がこみ上げる（怒りが湧く）",
+    "reading": "ulhwagachimilda",
+    "topikLevel": 6
+  }
+]

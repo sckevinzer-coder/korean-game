@@ -1,9 +1,10 @@
-import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
+
+import '../db/database_init.dart';
 
 class StatsStore {
   StatsStore({this.path, DatabaseFactory? factory})
-      : _factory = factory ?? databaseFactory;
+      : _factory = factory ?? databaseFactoryForPlatform;
 
   final String? path;
   final DatabaseFactory _factory;
@@ -11,7 +12,7 @@ class StatsStore {
 
   Future<Database> _database() async {
     if (_db != null) return _db!;
-    final dbPath = path ?? p.join(await getDatabasesPath(), 'stats.db');
+    final dbPath = path ?? await defaultDbPath('stats.db');
     _db = await _factory.openDatabase(
       dbPath,
       options: OpenDatabaseOptions(

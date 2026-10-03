@@ -1,11 +1,11 @@
-import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 
 import '../srs/srs_scheduler.dart';
+import 'database_init.dart';
 
 class ProgressStore {
   ProgressStore({this.path, DatabaseFactory? factory})
-      : _factory = factory ?? databaseFactory;
+      : _factory = factory ?? databaseFactoryForPlatform;
 
   final String? path;
   final DatabaseFactory _factory;
@@ -13,7 +13,7 @@ class ProgressStore {
 
   Future<Database> _database() async {
     if (_db != null) return _db!;
-    final dbPath = path ?? p.join(await getDatabasesPath(), 'progress.db');
+    final dbPath = path ?? await defaultDbPath('progress.db');
     _db = await _factory.openDatabase(
       dbPath,
       options: OpenDatabaseOptions(

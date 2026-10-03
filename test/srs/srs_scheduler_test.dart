@@ -28,6 +28,12 @@ void main() {
     expect(easy.ease - 2.5, greaterThan(hard.ease - 2.5));
   });
 
+  test('again and hard lower ease; ease floored at 1.3', () {
+    expect(schedule(cardWith(), Grade.again, now).ease, closeTo(2.3, 1e-9));
+    expect(schedule(cardWith(), Grade.hard, now).ease, closeTo(2.35, 1e-9));
+    expect(schedule(cardWith(ease: 1.3), Grade.again, now).ease, 1.3);
+  });
+
   test('dueDate is set to now + interval', () {
     final result = schedule(cardWith(interval: const Duration(days: 2), ease: 2.0), Grade.good, now);
     expect(result.dueDate, now.add(result.interval));

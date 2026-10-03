@@ -20,12 +20,12 @@ SrsCard schedule(SrsCard card, Grade grade, DateTime now) {
   switch (grade) {
     case Grade.again:
       interval = const Duration(minutes: 1);
-      ease = card.ease;
+      ease = card.ease - 0.2;
     case Grade.hard:
       interval = card.interval <= Duration.zero
           ? const Duration(days: 1)
           : card.interval * 1.2;
-      ease = card.ease + 0.1;
+      ease = card.ease - 0.15;
     case Grade.good:
       interval = card.interval <= Duration.zero
           ? const Duration(days: 1)
@@ -37,5 +37,6 @@ SrsCard schedule(SrsCard card, Grade grade, DateTime now) {
           : card.interval * card.ease * 1.5;
       ease = card.ease + 0.3;
   }
+  ease = ease.clamp(1.3, 3.5);
   return SrsCard(wordId: card.wordId, interval: interval, ease: ease, dueDate: now.add(interval));
 }

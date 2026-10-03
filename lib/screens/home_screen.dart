@@ -49,12 +49,18 @@ class _HomeScreenState extends State<HomeScreen> {
     // Dispatch concurrently: awaiting FFI stores one by one stalls
     // completion inside the widget test zone.
     final dueFuture = widget.store.dueCards(now);
-    final totalFuture = widget.loadWords(widget.level);
+    final wordsFuture = widget.loadWords(widget.level);
+    final knownFuture = widget.store.allCardsForLevel(widget.level);
     final stats = widget.stats;
     final streakFuture =
         stats == null ? Future<int>.value(0) : stats.displayStreak(now);
-    final due = (await dueFuture).length;
-    final total = (await totalFuture).length;
+    final dueCards = await dueFuture;
+    final words = await wordsFuture;
+    final knownIds =
+        (await knownFuture).map((c) => c.wordId).toSet();
+    final total = words.length;
+    final unstudied = words.where((w) => !knownIds.contains(w.id)).length;
+    final due = dueCards.length + unstudied;
     final streak = await streakFuture;
     return _Counts(due, total, streak);
   }

@@ -70,8 +70,8 @@ void main() {
         store: store,
         stats: stats,
         now: () => now,
-        loadWords: (level) async =>
-            List.generate(10, (i) => word('t1-${i + 1}')),
+        loadWords: (level) async => List.generate(
+            10, (i) => word('t1-${(i + 1).toString().padLeft(3, '0')}')),
       ),
     ));
     // Poll with real time: FFI store futures resolve outside fake async.
@@ -79,7 +79,7 @@ void main() {
       await tester.runAsync(
           () => Future<void>.delayed(const Duration(milliseconds: 300)));
       await tester.pump();
-      if (find.text('今日の復習: 2 / 10 枚').evaluate().isNotEmpty) return;
+      if (find.text('今日の復習: 9 / 10 枚').evaluate().isNotEmpty) return;
     }
   }
 
@@ -90,7 +90,7 @@ void main() {
     });
     await pumpHome(tester);
 
-    expect(find.text('今日の復習: 2 / 10 枚'), findsOneWidget);
+    expect(find.text('今日の復習: 9 / 10 枚'), findsOneWidget);
     // Studied yesterday but not today: max(today=0, yesterday=2) = 2.
     expect(find.text('連続学習: 2日'), findsOneWidget);
   });

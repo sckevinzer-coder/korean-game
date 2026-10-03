@@ -1,0 +1,47 @@
+[
+  {
+    "id": "t2-001",
+    "korean": "가족",
+    "reading": "gajok",
+    "meaningJa": "家族",
+    "exampleKo": "가족과 함께 삽니다.",
+    "exampleJa": "家族と一緒に住んでいます。",
+    "topikLevel": 2
+  },
+  {
+    "id": "t2-002",
+    "korean": "시간",
+    "reading": "sigan",
+    "meaningJa": "時間",
+    "exampleKo": "시간을 지킵니다.",
+    "exampleJa": "時間を守ります。",
+    "topikLevel": 2
+  },
+  {
+    "id": "t2-003",
+    "korean": "음식",
+    "reading": "eumsik",
+    "meaningJa": "食べ物",
+    "exampleKo": "한국 음식을 좋아합니다.",
+    "exampleJa": "韓国料理が好きです。",
+    "topikLevel": 2
+  },
+  {
+    "id": "t2-004",
+    "korean": "날씨",
+    "reading": "nalssi",
+    "meaningJa": "天気",
+    "exampleKo": "오늘 날씨가 좋습니다.",
+    "exampleJa": "今日は天気がいいです。",
+    "topikLevel": 2
+  },
+  {
+    "id": "t2-005",
+    "korean": "여행",
+    "reading": "yeohaeng",
+    "meaningJa": "旅行",
+    "exampleKo": "여행을 갑니다.",
+    "exampleJa": "旅行に行きます。",
+    "topikLevel": 2
+  }
+]

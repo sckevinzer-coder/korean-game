@@ -44,4 +44,11 @@ void main() {
     expect(words, isNotEmpty);
     expect(words.every((w) => w.topikLevel == 1), isTrue);
   });
+
+  test('loadWordsForLevel(2) returns only level-2 words', () async {
+    TestWidgetsFlutterBinding.ensureInitialized();
+    final words = await loadWordsForLevel(2);
+    expect(words, isNotEmpty);
+    expect(words.every((w) => w.topikLevel == 2), isTrue);
+  });
 }

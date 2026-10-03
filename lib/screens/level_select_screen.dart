@@ -12,7 +12,7 @@ class LevelSelectScreen extends StatefulWidget {
     super.key,
     required this.store,
     this.stats,
-    this.levels = const [1, 2],
+    this.levels = const [1, 2, 3, 4, 5, 6],
     this.loadWords = loadWordsForLevel,
     this.now,
   });

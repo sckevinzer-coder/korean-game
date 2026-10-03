@@ -56,7 +56,7 @@ void main() {
 
   Future<void> pumpLevels(
     WidgetTester tester, {
-    List<int> levels = const [1, 2],
+    List<int> levels = const [1, 2, 3, 4, 5, 6],
     Future<List<Word>> Function(int level)? loadWords,
   }) async {
     await tester.pumpWidget(MaterialApp(
@@ -76,11 +76,41 @@ void main() {
     await pumpLevels(tester);
 
     expect(find.text('レベル選択'), findsOneWidget);
-    expect(find.text('TOPIK 1級'), findsOneWidget);
-    expect(find.text('TOPIK 2級'), findsOneWidget);
-    expect(find.text('5語'), findsNWidgets(2));
-    expect(find.text('学習する'), findsNWidgets(2));
-    expect(find.text('クイズ'), findsNWidgets(2));
+    for (var level = 1; level <= 6; level++) {
+      expect(find.text('TOPIK $level級'), findsOneWidget);
+    }
+    expect(find.text('5語'), findsNWidgets(6));
+    expect(find.text('学習する'), findsNWidgets(6));
+    expect(find.text('クイズ'), findsNWidgets(6));
+  });
+
+  testWidgets('selecting level 6 starts a session with level-6 words',
+      (tester) async {
+    await pumpLevels(tester);
+
+    await tester.tap(find.text('学習する').last);
+    await tester.pumpAndSettle();
+
+    // First word of the level-6 pool on the flashcard front.
+    expect(find.text('한국어-t6-0'), findsOneWidget);
+    expect(find.text('タップして意味を見る'), findsOneWidget);
+  });
+
+  testWidgets('defaults to TOPIK levels 1-6', (tester) async {
+    await tester.pumpWidget(MaterialApp(
+      home: LevelSelectScreen(
+        store: store,
+        stats: stats,
+        loadWords: (level) async => fiveWords(level, 't$level'),
+        now: () => now,
+      ),
+    ));
+    await tester.pump();
+
+    for (var level = 1; level <= 6; level++) {
+      expect(find.text('TOPIK $level級'), findsOneWidget);
+    }
+    expect(find.text('5語'), findsNWidgets(6));
   });
 
   testWidgets('tapping 学習する opens the flashcard session', (tester) async {

@@ -20,7 +20,7 @@ Word word(String id, String korean, String meaningJa, {String? exampleKo}) => Wo
 List<Word> pool() => [
       word('t1-001', '한국어', '韓国語'),
       word('t1-002', '사랑', '愛'),
-      word('t1-003', '학교', '학교'),
+      word('t1-003', '학교', '学校'),
       word('t1-004', '친구', '友達'),
       word('t1-005', '음식', '食べ物'),
     ];
@@ -83,14 +83,14 @@ void main() {
       );
     });
 
-    test('listeningWord: audioText is target.korean, prompt contains 듣기, options are Korean', () {
+    test('listeningWord: audioText is target.korean, prompt contains 聞いて, options are Korean', () {
       final words = pool();
       final target = words[0];
       final question = makeQuestion(target, words, QuizKind.listeningWord, Random(1));
 
       expect(question.kind, QuizKind.listeningWord);
       expect(question.audioText, target.korean);
-      expect(question.prompt, contains('듣기'));
+      expect(question.prompt, contains('聞いて'));
       expect(question.options, hasLength(4));
       expect(question.options.toSet(), hasLength(4));
       expect(question.options[question.correctIndex], target.korean);
@@ -100,14 +100,14 @@ void main() {
       }
     });
 
-    test('listeningMeaning: audioText is target.korean, prompt contains 듣기, options are meanings', () {
+    test('listeningMeaning: audioText is target.korean, prompt contains 聞いて, options are meanings', () {
       final words = pool();
       final target = words[1];
       final question = makeQuestion(target, words, QuizKind.listeningMeaning, Random(2));
 
       expect(question.kind, QuizKind.listeningMeaning);
       expect(question.audioText, target.korean);
-      expect(question.prompt, contains('듣기'));
+      expect(question.prompt, contains('聞いて'));
       expect(question.options, hasLength(4));
       expect(question.options.toSet(), hasLength(4));
       expect(question.options[question.correctIndex], target.meaningJa);
@@ -162,7 +162,7 @@ void main() {
 
     test('blank: tries 다-stripped stem when full word not found', () {
       final words = pool();
-      final target = word('t1-006', '가다', '行く', exampleKo: '학교에 가요');
+      final target = word('t1-006', '가다', '行く', exampleKo: '학교에 가다');
       final allWords = [...words, target];
       final question = makeBlankQuestion(target, allWords, Random(6));
 

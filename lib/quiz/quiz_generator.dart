@@ -44,12 +44,12 @@ QuizQuestion makeQuestion(
       answerOf = (w) => w.meaningJa;
       audioText = null;
     case QuizKind.listeningWord:
-      prompt = '듣기: 알맞은 단어를 고르세요';
+      prompt = '聞いて: 適切な単語を選んでください';
       correct = target.korean;
       answerOf = (w) => w.korean;
       audioText = target.korean;
     case QuizKind.listeningMeaning:
-      prompt = '듣기: 알맞은 뜻을 고르세요';
+      prompt = '聞いて: 適切な意味を選んでください';
       correct = target.meaningJa;
       answerOf = (w) => w.meaningJa;
       audioText = target.korean;

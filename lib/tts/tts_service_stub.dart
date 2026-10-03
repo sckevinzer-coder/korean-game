@@ -9,6 +9,7 @@ class FlutterTtsService implements TtsService {
   double _rate = 1.0;
   double _pitch = 1.0;
   double _volume = 1.0;
+  TtsVoice? _selectedVoice;
 
   Future<FlutterTts> _ensureInitialized() async {
     var tts = _tts;
@@ -33,12 +34,35 @@ class FlutterTtsService implements TtsService {
     await tts.setSpeechRate(_rate);
     await tts.setPitch(_pitch);
     await tts.setVolume(_volume);
+    if (_selectedVoice != null && _selectedVoice!.uri != null) {
+      await tts.setVoice({'name': _selectedVoice!.name, 'locale': _selectedVoice!.lang});
+    }
     await tts.speak(text);
   }
 
   @override
   Future<void> stop() async {
     await _tts?.stop();
+  }
+
+  @override
+  Future<List<TtsVoice>> getVoices() async {
+    final tts = await _ensureInitialized();
+    // flutter_tts getVoices is a getter that returns List<dynamic> directly
+    final voices = tts.getVoices;
+    return (voices as List)
+        .map((v) => TtsVoice(
+              name: v['name']?.toString() ?? '',
+              lang: v['locale']?.toString() ?? v['language']?.toString() ?? '',
+              uri: v['name']?.toString(),
+            ))
+        .where((v) => v.name.isNotEmpty)
+        .toList();
+  }
+
+  @override
+  Future<void> setVoice(TtsVoice voice) async {
+    _selectedVoice = voice;
   }
 }
 

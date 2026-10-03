@@ -28,6 +28,8 @@ class FakeTtsService implements TtsService {
   final List<double> rates = [];
   final List<double> pitches = [];
   final List<double> volumes = [];
+  final List<TtsVoice> voices = [];
+  TtsVoice? selectedVoice;
   final bool shouldThrow;
 
   @override
@@ -41,6 +43,14 @@ class FakeTtsService implements TtsService {
 
   @override
   Future<void> stop() async {}
+
+  @override
+  Future<List<TtsVoice>> getVoices() async => voices;
+
+  @override
+  Future<void> setVoice(TtsVoice voice) async {
+    selectedVoice = voice;
+  }
 }
 
 void main() {

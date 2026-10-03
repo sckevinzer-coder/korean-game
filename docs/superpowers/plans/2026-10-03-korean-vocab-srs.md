@@ -37,11 +37,11 @@
 - Create: `assets/words/topik1.json` (sample)
 - Modify: `.gitignore`
 
-- [ ] Install Flutter SDK (e.g. `brew install --cask flutter` or FVM), verify `flutter doctor`
-- [ ] `git init` (done) and commit spec docs: `git add docs && git commit -m "docs: add design spec"`
-- [ ] Run `flutter create .` in repo root, pick org `com.example`
-- [ ] Verify `flutter test` passes on the default counter test
-- [ ] Commit: `chore: scaffold Flutter project`
+- [x] Install Flutter SDK (e.g. `brew install --cask flutter` or FVM), verify `flutter doctor`
+- [x] `git init` (done) and commit spec docs: `git add docs && git commit -m "docs: add design spec"`
+- [x] Run `flutter create .` in repo root, pick org `com.example`
+- [x] Verify `flutter test` passes on the default counter test
+- [x] Commit: `chore: scaffold Flutter project`
 
 ### Task 2: Word data model + bundled asset
 

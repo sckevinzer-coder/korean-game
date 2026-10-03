@@ -162,7 +162,7 @@ void main() {
 
     test('blank: tries 다-stripped stem when full word not found', () {
       final words = pool();
-      final target = word('t1-006', '가다', '行く', exampleKo: '학교에 가다');
+      final target = word('t1-006', '가다', '行く', exampleKo: '학교에 가요');
       final allWords = [...words, target];
       final question = makeBlankQuestion(target, allWords, Random(6));
 

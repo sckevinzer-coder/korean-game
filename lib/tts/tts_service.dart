@@ -30,6 +30,10 @@ abstract class TtsService {
   /// Speaks the given [text] with optional [rate] (0.0-2.0), [pitch] (0.0-2.0), and [volume] (0.0-1.0).
   Future<void> speak(String text, {double rate = 1.0, double pitch = 1.0, double volume = 1.0});
 
+  /// Speaks the given [ssml] (Speech Synthesis Markup Language) string.
+  /// Falls back to [speak] if the platform doesn't support SSML.
+  Future<void> speakSsml(String ssml, {double rate = 1.0, double pitch = 1.0, double volume = 1.0});
+
   /// Stops any ongoing speech.
   Future<void> stop();
 
@@ -45,6 +49,9 @@ abstract class TtsService {
 class NoopTtsService implements TtsService {
   @override
   Future<void> speak(String text, {double rate = 1.0, double pitch = 1.0, double volume = 1.0}) async {}
+
+  @override
+  Future<void> speakSsml(String ssml, {double rate = 1.0, double pitch = 1.0, double volume = 1.0}) async {}
 
   @override
   Future<void> stop() async {}

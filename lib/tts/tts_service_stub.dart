@@ -41,6 +41,22 @@ class FlutterTtsService implements TtsService {
   }
 
   @override
+  Future<void> speakSsml(String ssml, {double rate = 1.0, double pitch = 1.0, double volume = 1.0}) async {
+    _rate = rate.clamp(0.0, 2.0);
+    _pitch = pitch.clamp(0.0, 2.0);
+    _volume = volume.clamp(0.0, 1.0);
+
+    final tts = await _ensureInitialized();
+    await tts.setSpeechRate(_rate);
+    await tts.setPitch(_pitch);
+    await tts.setVolume(_volume);
+    if (_selectedVoice != null && _selectedVoice!.uri != null) {
+      await tts.setVoice({'name': _selectedVoice!.name, 'locale': _selectedVoice!.lang});
+    }
+    await tts.speak(ssml);
+  }
+
+  @override
   Future<void> stop() async {
     await _tts?.stop();
   }

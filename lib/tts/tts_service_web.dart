@@ -66,6 +66,13 @@ class WebTtsService implements TtsService {
   }
 
   @override
+  Future<void> speakSsml(String ssml, {double rate = 1.0, double pitch = 1.0, double volume = 1.0}) async {
+    // Web Speech API has limited SSML support; strip tags and speak plain text as fallback
+    final plainText = _stripSsml(ssml);
+    await speak(plainText, rate: rate, pitch: pitch, volume: volume);
+  }
+
+  @override
   Future<void> stop() async {
     _speechSynthesis.cancel();
   }
@@ -93,6 +100,18 @@ class WebTtsService implements TtsService {
   @override
   Future<void> setVoice(TtsVoice voice) async {
     _selectedVoice = voice;
+  }
+
+  /// Strips SSML tags and returns plain text.
+  static String _stripSsml(String ssml) {
+    return ssml
+        .replaceAll(RegExp(r'<[^>]+>'), '') // Remove XML tags
+        .replaceAll(RegExp(r'<'), '<')
+        .replaceAll(RegExp(r'>'), '>')
+        .replaceAll(RegExp(r'&'), '&')
+        .replaceAll(RegExp(r'"'), '"')
+        .replaceAll(RegExp(r'&apos;'), "'")
+        .trim();
   }
 }
 

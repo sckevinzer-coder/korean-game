@@ -2,7 +2,7 @@ import 'dart:math';
 
 import '../models/word.dart';
 
-enum QuizKind { meaningToWord, wordToMeaning, listeningWord, listeningMeaning, blank }
+enum QuizKind { meaningToWord, wordToMeaning, listeningWord, listeningMeaning, blank, writing }
 
 class QuizQuestion {
   const QuizQuestion({
@@ -44,17 +44,19 @@ QuizQuestion makeQuestion(
       answerOf = (w) => w.meaningJa;
       audioText = null;
     case QuizKind.listeningWord:
-      prompt = '聞いて: 適切な単語を選んでください';
+      prompt = '듣기: 적절한 단어를 선택하세요';
       correct = target.korean;
       answerOf = (w) => w.korean;
       audioText = target.korean;
     case QuizKind.listeningMeaning:
-      prompt = '聞いて: 適切な意味を選んでください';
+      prompt = '듣기: 적절한 의미를 선택하세요';
       correct = target.meaningJa;
       answerOf = (w) => w.meaningJa;
       audioText = target.korean;
     case QuizKind.blank:
       throw ArgumentError('Use makeBlankQuestion for blank kind');
+    case QuizKind.writing:
+      throw ArgumentError('Writing kind handled separately in QuizScreen');
   }
 
   final distractors = pool
@@ -101,7 +103,7 @@ QuizQuestion? makeBlankQuestion(
 
   final prompt = example.replaceFirst(searchWord, '＿＿');
   final correct = target.korean;
-  final answerOf = (Word w) => w.korean;
+  String answerOf(Word w) => w.korean;
 
   final distractors = pool
       .where((w) => w.id != target.id)

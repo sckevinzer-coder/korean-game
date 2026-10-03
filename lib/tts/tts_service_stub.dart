@@ -31,4 +31,6 @@ class FlutterTtsService implements TtsService {
   }
 }
 
-TtsService createTtsService() => FlutterTtsService();
+TtsService createTtsService() {
+  return FlutterTtsService();
+}

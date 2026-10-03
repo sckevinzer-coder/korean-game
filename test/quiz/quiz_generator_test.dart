@@ -83,14 +83,14 @@ void main() {
       );
     });
 
-    test('listeningWord: audioText is target.korean, prompt contains 聞いて, options are Korean', () {
+    test('listeningWord: audioText is target.korean, prompt contains 듣기, options are Korean', () {
       final words = pool();
       final target = words[0];
       final question = makeQuestion(target, words, QuizKind.listeningWord, Random(1));
 
       expect(question.kind, QuizKind.listeningWord);
       expect(question.audioText, target.korean);
-      expect(question.prompt, contains('聞いて'));
+      expect(question.prompt, contains('듣기'));
       expect(question.options, hasLength(4));
       expect(question.options.toSet(), hasLength(4));
       expect(question.options[question.correctIndex], target.korean);
@@ -100,14 +100,14 @@ void main() {
       }
     });
 
-    test('listeningMeaning: audioText is target.korean, prompt contains 聞いて, options are meanings', () {
+    test('listeningMeaning: audioText is target.korean, prompt contains 듣기, options are meanings', () {
       final words = pool();
       final target = words[1];
       final question = makeQuestion(target, words, QuizKind.listeningMeaning, Random(2));
 
       expect(question.kind, QuizKind.listeningMeaning);
       expect(question.audioText, target.korean);
-      expect(question.prompt, contains('聞いて'));
+      expect(question.prompt, contains('듣기'));
       expect(question.options, hasLength(4));
       expect(question.options.toSet(), hasLength(4));
       expect(question.options[question.correctIndex], target.meaningJa);

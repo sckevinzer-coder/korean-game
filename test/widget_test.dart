@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -75,12 +76,14 @@ void main() {
   testWidgets('daily cycle: home to level select to completed session',
       (tester) async {
     final now = DateTime(2026, 10, 3, 12);
+    final words = fiveWords();
     await tester.pumpWidget(MaterialApp(
       home: HomeScreen(
         store: store,
         stats: stats,
         loadWords: (level) async => fiveWords(),
         now: () => now,
+        random: Random(21),
       ),
     ));
     await pumpUntil(tester, find.text('レベルを選ぶ'));
@@ -99,9 +102,10 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('タップして意味を見る'), findsOneWidget);
 
-    // Study all five cards.
-    for (var i = 0; i < 5; i++) {
-      await tester.tap(find.text('한국어-$i'));
+    // Study all five cards in seeded shuffle order.
+    final order = List<Word>.of(words)..shuffle(Random(21));
+    for (final word in order) {
+      await tester.tap(find.text(word.korean));
       await tester.pump();
       await tester.tap(find.text('普通'));
       await tester.runAsync(

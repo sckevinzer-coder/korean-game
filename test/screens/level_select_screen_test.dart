@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -58,6 +59,7 @@ void main() {
     WidgetTester tester, {
     List<int> levels = const [1, 2, 3, 4, 5, 6],
     Future<List<Word>> Function(int level)? loadWords,
+    Random? random,
   }) async {
     await tester.pumpWidget(MaterialApp(
       home: LevelSelectScreen(
@@ -67,6 +69,7 @@ void main() {
         loadWords: loadWords ??
             (level) async => fiveWords(level, 't$level'),
         now: () => now,
+        random: random,
       ),
     ));
     await tester.pump();
@@ -86,13 +89,19 @@ void main() {
 
   testWidgets('selecting level 6 starts a session with level-6 words',
       (tester) async {
-    await pumpLevels(tester);
+    final pool = fiveWords(6, 't6');
+    await pumpLevels(
+      tester,
+      loadWords: (level) async => level == 6 ? pool : fiveWords(level, 't$level'),
+      random: Random(7),
+    );
 
     await tester.tap(find.text('学習する').last);
     await tester.pumpAndSettle();
 
-    // First word of the level-6 pool on the flashcard front.
-    expect(find.text('한국어-t6-0'), findsOneWidget);
+    // Seeded shuffle order: first card is deterministic.
+    final expected = List<Word>.of(pool)..shuffle(Random(7));
+    expect(find.text(expected.first.korean), findsOneWidget);
     expect(find.text('タップして意味を見る'), findsOneWidget);
   });
 
@@ -114,14 +123,38 @@ void main() {
   });
 
   testWidgets('tapping 学習する opens the flashcard session', (tester) async {
-    await pumpLevels(tester);
+    final pool = fiveWords(1, 't1');
+    await pumpLevels(
+      tester,
+      loadWords: (level) async => level == 1 ? pool : fiveWords(level, 't$level'),
+      random: Random(3),
+    );
 
     await tester.tap(find.text('学習する').first);
     await tester.pumpAndSettle();
 
-    // First word of the level-1 pool on the flashcard front.
-    expect(find.text('한국어-t1-0'), findsOneWidget);
+    // Seeded shuffle order: first card is deterministic.
+    final expected = List<Word>.of(pool)..shuffle(Random(3));
+    expect(find.text(expected.first.korean), findsOneWidget);
     expect(find.text('タップして意味を見る'), findsOneWidget);
+  });
+
+  testWidgets('sessions start in shuffled, not asset, order', (tester) async {
+    final pool = fiveWords(1, 't1');
+    await pumpLevels(
+      tester,
+      levels: const [1],
+      loadWords: (_) async => pool,
+      random: Random(11),
+    );
+
+    await tester.tap(find.text('学習する'));
+    await tester.pumpAndSettle();
+
+    final expected = List<Word>.of(pool)..shuffle(Random(11));
+    expect(find.text(expected.first.korean), findsOneWidget);
+    // Shuffled order differs from asset order for this seed.
+    expect(expected.first.korean, isNot(pool.first.korean));
   });
 
   testWidgets('tapping クイズ opens the quiz session when pool is large',

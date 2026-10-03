@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import '../data/word_repository.dart';
@@ -16,6 +18,7 @@ class HomeScreen extends StatefulWidget {
     this.level = 1,
     this.loadWords = loadWordsForLevel,
     this.now,
+    this.random,
   });
 
   final ProgressStore store;
@@ -23,6 +26,7 @@ class HomeScreen extends StatefulWidget {
   final int level;
   final WordsLoader loadWords;
   final DateTime Function()? now;
+  final Random? random;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -73,6 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
           stats: widget.stats,
           loadWords: widget.loadWords,
           now: widget.now,
+          random: widget.random,
         ),
       ),
     );

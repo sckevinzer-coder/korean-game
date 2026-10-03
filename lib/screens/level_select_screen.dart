@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import '../data/word_repository.dart';
@@ -15,6 +17,7 @@ class LevelSelectScreen extends StatefulWidget {
     this.levels = const [1, 2, 3, 4, 5, 6],
     this.loadWords = loadWordsForLevel,
     this.now,
+    this.random,
   });
 
   final ProgressStore store;
@@ -22,6 +25,7 @@ class LevelSelectScreen extends StatefulWidget {
   final List<int> levels;
   final Future<List<Word>> Function(int level) loadWords;
   final DateTime Function()? now;
+  final Random? random;
 
   @override
   State<LevelSelectScreen> createState() => _LevelSelectScreenState();
@@ -44,12 +48,15 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
     return entries;
   }
 
+  List<Word> _shuffled(List<Word> words) =>
+      List<Word>.of(words)..shuffle(widget.random);
+
   void _startFlashcards(List<Word> words) {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => FlashcardScreen(
           store: widget.store,
-          words: words,
+          words: _shuffled(words),
           stats: widget.stats,
           now: widget.now,
         ),
@@ -69,7 +76,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => QuizScreen(
-          words: words,
+          words: _shuffled(words),
           stats: widget.stats,
           now: widget.now,
         ),

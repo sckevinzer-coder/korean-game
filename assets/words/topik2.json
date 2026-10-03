@@ -1417,7 +1417,7 @@
     "korean": "혈압",
     "reading": "hyeorap",
     "meaningJa": "血圧",
-    "exampleKo": "혈압을 잽니다.",
+    "exampleKo": "혈압을 측정합니다.",
     "exampleJa": "血圧を測ります。",
     "topikLevel": 2
   },
@@ -3730,7 +3730,7 @@
     "korean": "청소기",
     "reading": "cheongsogi",
     "meaningJa": "掃除機",
-    "exampleKo": "청소기를 밉니다.",
+    "exampleKo": "청소기를 돌립니다.",
     "exampleJa": "掃除機をかけます。",
     "topikLevel": 2
   },
@@ -3739,7 +3739,7 @@
     "korean": "세탁기",
     "reading": "setakgi",
     "meaningJa": "洗濯機",
-    "exampleKo": "세탁기가 돕니다.",
+    "exampleKo": "세탁기가 돌아갑니다.",
     "exampleJa": "洗濯機が回っています。",
     "topikLevel": 2
   },
@@ -3846,7 +3846,7 @@
     "id": "t2-428",
     "korean": "월세",
     "reading": "wolse",
-    "meaningJa": "月賦",
+    "meaningJa": "家賃",
     "exampleKo": "월세를 냅니다.",
     "exampleJa": "家賃を払います。",
     "topikLevel": 2
@@ -3855,7 +3855,7 @@
     "id": "t2-429",
     "korean": "전세",
     "reading": "jeonse",
-    "meaningJa": "チョンセ",
+    "meaningJa": "チョンセ (韓国の賃貸制度)",
     "exampleKo": "전세로 삽니다.",
     "exampleJa": "チョンセで住んでいます。",
     "topikLevel": 2
@@ -3937,7 +3937,7 @@
     "korean": "주차장",
     "reading": "juchajang",
     "meaningJa": "駐車場",
-    "exampleKo": "주차장에 댑니다.",
+    "exampleKo": "주차장에 주차합니다.",
     "exampleJa": "駐車場に停めます。",
     "topikLevel": 2
   },

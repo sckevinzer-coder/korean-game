@@ -58,4 +58,23 @@ void main() {
   test('empty store yields zero', () async {
     expect(await store.currentStreak(DateTime(2026, 10, 3)), 0);
   });
+
+  test('displayStreak keeps yesterday streak when today missing', () async {
+    await store.recordStudy(DateTime(2026, 10, 1));
+    await store.recordStudy(DateTime(2026, 10, 2));
+
+    expect(await store.displayStreak(DateTime(2026, 10, 3)), 2);
+  });
+
+  test('displayStreak prefers longer today streak', () async {
+    await store.recordStudy(DateTime(2026, 10, 1));
+    await store.recordStudy(DateTime(2026, 10, 2));
+    await store.recordStudy(DateTime(2026, 10, 3));
+
+    expect(await store.displayStreak(DateTime(2026, 10, 3)), 3);
+  });
+
+  test('displayStreak is zero with no history', () async {
+    expect(await store.displayStreak(DateTime(2026, 10, 3)), 0);
+  });
 }

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../data/word_repository.dart';
 import '../db/progress_store.dart';
 import '../models/word.dart';
+import '../stats/stats_store.dart';
+import 'level_select_screen.dart';
 
 typedef WordsLoader = Future<List<Word>> Function(int level);
 
@@ -10,15 +12,15 @@ class HomeScreen extends StatefulWidget {
   const HomeScreen({
     super.key,
     required this.store,
+    this.stats,
     this.level = 1,
-    this.streak = 0,
     this.loadWords = loadWordsForLevel,
     this.now,
   });
 
   final ProgressStore store;
+  final StatsStore? stats;
   final int level;
-  final int streak;
   final WordsLoader loadWords;
   final DateTime Function()? now;
 
@@ -27,9 +29,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _Counts {
-  const _Counts(this.due, this.total);
+  const _Counts(this.due, this.total, this.streak);
   final int due;
   final int total;
+  final int streak;
 }
 
 class _HomeScreenState extends State<HomeScreen> {
@@ -43,9 +46,30 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<_Counts> _load() async {
     final now = widget.now?.call() ?? DateTime.now();
-    final due = (await widget.store.dueCards(now)).length;
-    final total = (await widget.loadWords(widget.level)).length;
-    return _Counts(due, total);
+    // Dispatch concurrently: awaiting FFI stores one by one stalls
+    // completion inside the widget test zone.
+    final dueFuture = widget.store.dueCards(now);
+    final totalFuture = widget.loadWords(widget.level);
+    final stats = widget.stats;
+    final streakFuture =
+        stats == null ? Future<int>.value(0) : stats.displayStreak(now);
+    final due = (await dueFuture).length;
+    final total = (await totalFuture).length;
+    final streak = await streakFuture;
+    return _Counts(due, total, streak);
+  }
+
+  void _openLevels() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => LevelSelectScreen(
+          store: widget.store,
+          stats: widget.stats,
+          loadWords: widget.loadWords,
+          now: widget.now,
+        ),
+      ),
+    );
   }
 
   @override
@@ -67,7 +91,12 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: .center,
               children: [
                 Text('今日の復習: ${counts.due} / ${counts.total} 枚'),
-                Text('連続学習: ${widget.streak}日'),
+                Text('連続学習: ${counts.streak}日'),
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  onPressed: _openLevels,
+                  child: const Text('レベルを選ぶ'),
+                ),
               ],
             );
           },

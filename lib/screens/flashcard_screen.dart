@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../db/progress_store.dart';
 import '../models/word.dart';
 import '../srs/srs_scheduler.dart';
+import '../stats/stats_store.dart';
 
 typedef ScheduleFn = SrsCard Function(SrsCard card, Grade grade, DateTime now);
 
@@ -11,6 +14,7 @@ class FlashcardScreen extends StatefulWidget {
     super.key,
     required this.store,
     required this.words,
+    this.stats,
     this.initialCards = const [],
     this.now,
     this.scheduleFn = schedule,
@@ -18,6 +22,7 @@ class FlashcardScreen extends StatefulWidget {
 
   final ProgressStore store;
   final List<Word> words;
+  final StatsStore? stats;
   final List<SrsCard> initialCards;
   final DateTime Function()? now;
   final ScheduleFn scheduleFn;
@@ -30,6 +35,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   int _index = 0;
   bool _revealed = false;
   bool _saving = false;
+  bool _recorded = false;
   late final Map<String, SrsCard> _cards;
 
   @override
@@ -56,6 +62,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       final next = widget.scheduleFn(current, grade, now);
       _cards[word.id] = next;
       await widget.store.upsert(next);
+      final isLast = _index + 1 >= widget.words.length;
+      if (isLast && !_recorded) {
+        _recorded = true;
+        // Fire-and-forget: stats must not block session completion.
+        final pending = widget.stats?.recordStudy(now);
+        if (pending != null) unawaited(pending);
+      }
       if (!mounted) return;
       setState(() {
         _index += 1;

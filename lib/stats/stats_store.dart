@@ -59,6 +59,28 @@ CREATE TABLE study_days(
     return streak;
   }
 
+  /// Home display value: max(streak(today), streak(yesterday)).
+  ///
+  /// Single query round trip so the home future stays fast.
+  Future<int> displayStreak(DateTime today) async {
+    final db = await _database();
+    final rows = await db.query('study_days');
+    final days = <String>{for (final row in rows) row['day'] as String};
+    int countFrom(DateTime start) {
+      var cursor = DateTime(start.year, start.month, start.day);
+      var streak = 0;
+      while (days.contains(_dayKey(cursor))) {
+        streak++;
+        cursor = cursor.subtract(const Duration(days: 1));
+      }
+      return streak;
+    }
+
+    final a = countFrom(today);
+    final b = countFrom(today.subtract(const Duration(days: 1)));
+    return a >= b ? a : b;
+  }
+
   Future<void> close() async {
     await _db?.close();
     _db = null;

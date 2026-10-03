@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../models/word.dart';
 import '../quiz/quiz_generator.dart';
+import '../stats/stats_store.dart';
 
 typedef QuestionBuilder = QuizQuestion Function(Word target, List<Word> pool);
 
@@ -11,15 +12,19 @@ class QuizScreen extends StatefulWidget {
   const QuizScreen({
     super.key,
     required this.words,
+    this.stats,
     this.questions,
     this.rng,
     this.questionBuilder,
+    this.now,
   });
 
   final List<Word> words;
+  final StatsStore? stats;
   final List<QuizQuestion>? questions;
   final Random? rng;
   final QuestionBuilder? questionBuilder;
+  final DateTime Function()? now;
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
@@ -30,6 +35,7 @@ class _QuizScreenState extends State<QuizScreen> {
   int _index = 0;
   int _score = 0;
   int? _selected;
+  bool _recorded = false;
 
   @override
   void initState() {
@@ -59,6 +65,13 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   void _next() {
+    final isLast = _index + 1 >= _questions.length;
+    if (isLast && !_recorded) {
+      _recorded = true;
+      final day = widget.now?.call() ?? DateTime.now();
+      // Fire-and-forget: completion must not block navigation.
+      widget.stats?.recordStudy(day);
+    }
     setState(() {
       _index += 1;
       _selected = null;

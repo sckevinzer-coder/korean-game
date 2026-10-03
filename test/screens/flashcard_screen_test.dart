@@ -1,10 +1,14 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 import 'package:korean_game/db/progress_store.dart';
 import 'package:korean_game/models/word.dart';
 import 'package:korean_game/screens/flashcard_screen.dart';
+import 'package:korean_game/stats/stats_store.dart';
 
 Word word(String id, String korean, String meaningJa) => Word(
       id: id,
@@ -18,6 +22,8 @@ Word word(String id, String korean, String meaningJa) => Word(
 
 void main() {
   late ProgressStore store;
+  late StatsStore stats;
+  late Directory tmpDir;
 
   final DateTime now = DateTime(2026, 10, 3, 12);
 
@@ -27,13 +33,20 @@ void main() {
   });
 
   setUp(() async {
-    store = ProgressStore(path: inMemoryDatabasePath);
-    // Warm up the FFI database outside the widget test zone.
+    // Distinct files: sharing inMemoryDatabasePath reuses one SQLite db,
+    // so the second schema's onCreate never runs (no such table).
+    tmpDir = await Directory.systemTemp.createTemp('korean_game_flash');
+    store = ProgressStore(path: p.join(tmpDir.path, 'progress.db'));
+    stats = StatsStore(path: p.join(tmpDir.path, 'stats.db'));
+    // Warm up the FFI databases outside the widget test zone.
     await store.allCardsForLevel(1);
+    await stats.currentStreak(now);
   });
 
   tearDown(() async {
     await store.close();
+    await stats.close();
+    await tmpDir.delete(recursive: true);
   });
 
   testWidgets('tap card flips to reveal meaning; grading persists and advances',
@@ -102,5 +115,32 @@ void main() {
     await tester.pump();
 
     expect(find.text('学習する単語がありません'), findsOneWidget);
+  });
+
+  testWidgets('completing a session records study day', (tester) async {
+    final words = [
+      word('t1-001', '한국어', '韓国語'),
+    ];
+
+    await tester.pumpWidget(MaterialApp(
+      home: FlashcardScreen(
+        store: store,
+        words: words,
+        stats: stats,
+        now: () => now,
+      ),
+    ));
+    await tester.pump();
+
+    await tester.tap(find.text('한국어'));
+    await tester.pump();
+    await tester.tap(find.text('普通'));
+    await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 500)));
+    await tester.pump();
+
+    expect(find.text('学習完了！'), findsOneWidget);
+    final streak = await tester.runAsync(() => stats.currentStreak(now));
+    expect(streak, 1);
   });
 }

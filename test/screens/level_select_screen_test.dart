@@ -1,10 +1,14 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 import 'package:korean_game/db/progress_store.dart';
 import 'package:korean_game/models/word.dart';
 import 'package:korean_game/screens/level_select_screen.dart';
+import 'package:korean_game/stats/stats_store.dart';
 
 Word word(String id, int level, String korean, String meaningJa) => Word(
       id: id,
@@ -23,21 +27,31 @@ List<Word> fiveWords(int level, String prefix) => List.generate(
 
 void main() {
   late ProgressStore store;
+  late StatsStore stats;
+  late Directory tmpDir;
+
+  final DateTime now = DateTime(2026, 10, 3, 12);
 
   setUpAll(() {
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
   });
 
-  setUp(() {
-    // No DB warmup: LevelSelectScreen only reads via the injected loadWords,
-    // and its targets don't query the store on build, so no FFI call runs
-    // inside the widget test zone until a grade is saved (not covered here).
-    store = ProgressStore(path: inMemoryDatabasePath);
+  setUp(() async {
+    // Distinct files: sharing inMemoryDatabasePath reuses one SQLite db,
+    // so the second schema's onCreate never runs (no such table).
+    tmpDir = await Directory.systemTemp.createTemp('korean_game_levels');
+    store = ProgressStore(path: p.join(tmpDir.path, 'progress.db'));
+    stats = StatsStore(path: p.join(tmpDir.path, 'stats.db'));
+    // Warm up FFI databases outside the widget-test zone.
+    await store.allCardsForLevel(1);
+    await stats.currentStreak(now);
   });
 
   tearDown(() async {
     await store.close();
+    await stats.close();
+    await tmpDir.delete(recursive: true);
   });
 
   Future<void> pumpLevels(
@@ -48,9 +62,11 @@ void main() {
     await tester.pumpWidget(MaterialApp(
       home: LevelSelectScreen(
         store: store,
+        stats: stats,
         levels: levels,
         loadWords: loadWords ??
             (level) async => fiveWords(level, 't$level'),
+        now: () => now,
       ),
     ));
     await tester.pump();
@@ -116,5 +132,29 @@ void main() {
     );
 
     expect(find.text('読み込みに失敗しました'), findsOneWidget);
+  });
+
+  testWidgets('flashcard session from level select records study',
+      (tester) async {
+    await pumpLevels(
+      tester,
+      levels: const [1],
+      loadWords: (level) async => [word('t1-001', 1, '한국어', '韓国語')],
+    );
+
+    await tester.tap(find.text('学習する'));
+    await tester.pumpAndSettle();
+    expect(find.text('한국어'), findsOneWidget);
+
+    await tester.tap(find.text('한국어'));
+    await tester.pump();
+    await tester.tap(find.text('普通'));
+    await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 200)));
+    await tester.pump();
+
+    expect(find.text('学習完了！'), findsOneWidget);
+    final streak = await tester.runAsync(() => stats.currentStreak(now));
+    expect(streak, 1);
   });
 }

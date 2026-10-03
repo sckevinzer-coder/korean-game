@@ -1,0 +1,4502 @@
+[
+  {
+    "id": "t4-001",
+    "korean": "제도",
+    "reading": "jedo",
+    "meaningJa": "制度",
+    "exampleKo": "제도를 개선합니다.",
+    "exampleJa": "制度を改善します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-002",
+    "korean": "행정",
+    "reading": "haengjeong",
+    "meaningJa": "行政",
+    "exampleKo": "행정을 담당합니다.",
+    "exampleJa": "行政を担当します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-003",
+    "korean": "국회",
+    "reading": "gukhoe",
+    "meaningJa": "国会",
+    "exampleKo": "국회에서 법을 만듭니다.",
+    "exampleJa": "国会で法律を作ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-004",
+    "korean": "의원",
+    "reading": "uiwon",
+    "meaningJa": "議員",
+    "exampleKo": "의원을 뽑습니다.",
+    "exampleJa": "議員を選びます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-005",
+    "korean": "여당",
+    "reading": "yeodang",
+    "meaningJa": "与党",
+    "exampleKo": "여당이 법안을 냈습니다.",
+    "exampleJa": "与党が法案を出しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-006",
+    "korean": "야당",
+    "reading": "yadang",
+    "meaningJa": "野党",
+    "exampleKo": "야당이 반대합니다.",
+    "exampleJa": "野党が反対します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-007",
+    "korean": "내각",
+    "reading": "naegak",
+    "meaningJa": "内閣",
+    "exampleKo": "내각이 출범했습니다.",
+    "exampleJa": "内閣が発足しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-008",
+    "korean": "총리",
+    "reading": "chongri",
+    "meaningJa": "首相",
+    "exampleKo": "총리가 담화를 발표했습니다.",
+    "exampleJa": "首相が談話を発表しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-009",
+    "korean": "대통령",
+    "reading": "daetongnyeong",
+    "meaningJa": "大統領",
+    "exampleKo": "대통령을 선출합니다.",
+    "exampleJa": "大統領を選出します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-010",
+    "korean": "취임",
+    "reading": "chwiim",
+    "meaningJa": "就任",
+    "exampleKo": "대통령이 취임했습니다.",
+    "exampleJa": "大統領が就任しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-011",
+    "korean": "퇴임",
+    "reading": "toeim",
+    "meaningJa": "退任",
+    "exampleKo": "임기가 끝나 퇴임했습니다.",
+    "exampleJa": "任期が終わり退任しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-012",
+    "korean": "임기",
+    "reading": "imgi",
+    "meaningJa": "任期",
+    "exampleKo": "임기는 오 년입니다.",
+    "exampleJa": "任期は五年です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-013",
+    "korean": "연임",
+    "reading": "yeonim",
+    "meaningJa": "再任",
+    "exampleKo": "연임에 성공했습니다.",
+    "exampleJa": "再任に成功しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-014",
+    "korean": "출마",
+    "reading": "chulma",
+    "meaningJa": "出馬",
+    "exampleKo": "선거에 출마합니다.",
+    "exampleJa": "選挙に出馬します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-015",
+    "korean": "유세",
+    "reading": "yuse",
+    "meaningJa": "選挙運動",
+    "exampleKo": "거리에서 유세를 합니다.",
+    "exampleJa": "街頭で選挙運動をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-016",
+    "korean": "개표",
+    "reading": "gaepyo",
+    "meaningJa": "開票",
+    "exampleKo": "개표를 시작합니다.",
+    "exampleJa": "開票を始めます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-017",
+    "korean": "당선자",
+    "reading": "dangseonja",
+    "meaningJa": "当選者",
+    "exampleKo": "당선자가 정해졌습니다.",
+    "exampleJa": "当選者が決まりました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-018",
+    "korean": "낙선",
+    "reading": "nakseon",
+    "meaningJa": "落選",
+    "exampleKo": "아깝게 낙선했습니다.",
+    "exampleJa": "惜しくも落選しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-019",
+    "korean": "공약",
+    "reading": "gongyak",
+    "meaningJa": "公約",
+    "exampleKo": "공약을 지킵니다.",
+    "exampleJa": "公約を守ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-020",
+    "korean": "여론",
+    "reading": "yeoron",
+    "meaningJa": "世論",
+    "exampleKo": "여론을 조사합니다.",
+    "exampleJa": "世論を調査します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-021",
+    "korean": "지지율",
+    "reading": "jijiyul",
+    "meaningJa": "支持率",
+    "exampleKo": "지지율이 올랐습니다.",
+    "exampleJa": "支持率が上がりました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-022",
+    "korean": "가결",
+    "reading": "gagyeol",
+    "meaningJa": "可決",
+    "exampleKo": "법안이 가결되었습니다.",
+    "exampleJa": "法案が可決されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-023",
+    "korean": "부결",
+    "reading": "bugyeol",
+    "meaningJa": "否決",
+    "exampleKo": "예산안이 부결되었습니다.",
+    "exampleJa": "予算案が否決されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-024",
+    "korean": "합의",
+    "reading": "hapui",
+    "meaningJa": "合意",
+    "exampleKo": "양측이 합의했습니다.",
+    "exampleJa": "双方が合意しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-025",
+    "korean": "타협",
+    "reading": "tahyeop",
+    "meaningJa": "妥協",
+    "exampleKo": "타협을 시도합니다.",
+    "exampleJa": "妥協を試みます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-026",
+    "korean": "갈등",
+    "reading": "galdeung",
+    "meaningJa": "対立",
+    "exampleKo": "갈등이 깊어졌습니다.",
+    "exampleJa": "対立が深まりました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-027",
+    "korean": "대립",
+    "reading": "daerip",
+    "meaningJa": "対立",
+    "exampleKo": "의견이 대립합니다.",
+    "exampleJa": "意見が対立します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-028",
+    "korean": "연대",
+    "reading": "yeondae",
+    "meaningJa": "連帯",
+    "exampleKo": "단체와 연대합니다.",
+    "exampleJa": "団体と連帯します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-029",
+    "korean": "개혁",
+    "reading": "gaehyeok",
+    "meaningJa": "改革",
+    "exampleKo": "개혁을 추진합니다.",
+    "exampleJa": "改革を推進します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-030",
+    "korean": "진보",
+    "reading": "jinbo",
+    "meaningJa": "進歩",
+    "exampleKo": "진보적인 정책입니다.",
+    "exampleJa": "進歩的な政策です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-031",
+    "korean": "보수",
+    "reading": "bosu",
+    "meaningJa": "保守",
+    "exampleKo": "보수적인 입장입니다.",
+    "exampleJa": "保守的な立場です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-032",
+    "korean": "중립",
+    "reading": "jungnip",
+    "meaningJa": "中立",
+    "exampleKo": "중립을 지킵니다.",
+    "exampleJa": "中立を守ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-033",
+    "korean": "공정성",
+    "reading": "gongjeongseong",
+    "meaningJa": "公正性",
+    "exampleKo": "공정성이 중요합니다.",
+    "exampleJa": "公正性が重要です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-034",
+    "korean": "부패",
+    "reading": "bupae",
+    "meaningJa": "腐敗",
+    "exampleKo": "부패를 척결합니다.",
+    "exampleJa": "腐敗を撲滅します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-035",
+    "korean": "비리",
+    "reading": "biri",
+    "meaningJa": "不正",
+    "exampleKo": "비리를 폭로했습니다.",
+    "exampleJa": "不正を暴きました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-036",
+    "korean": "투명성",
+    "reading": "tumyeongseong",
+    "meaningJa": "透明性",
+    "exampleKo": "투명성을 높입니다.",
+    "exampleJa": "透明性を高めます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-037",
+    "korean": "청렴",
+    "reading": "cheongnyeom",
+    "meaningJa": "清廉",
+    "exampleKo": "청렴한 공직자입니다.",
+    "exampleJa": "清廉な公務員です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-038",
+    "korean": "국정 감사",
+    "reading": "gukjeonggamsa",
+    "meaningJa": "国政監査",
+    "exampleKo": "국정 감사를 실시합니다.",
+    "exampleJa": "国政監査を実施します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-039",
+    "korean": "감시",
+    "reading": "gamsi",
+    "meaningJa": "監視",
+    "exampleKo": "권력을 감시합니다.",
+    "exampleJa": "権力を監視します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-040",
+    "korean": "감독",
+    "reading": "gamdok",
+    "meaningJa": "監督",
+    "exampleKo": "현장을 감독합니다.",
+    "exampleJa": "現場を監督します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-041",
+    "korean": "규제",
+    "reading": "gyuje",
+    "meaningJa": "規制",
+    "exampleKo": "규제를 강화합니다.",
+    "exampleJa": "規制を強化します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-042",
+    "korean": "완화",
+    "reading": "wanhwa",
+    "meaningJa": "緩和",
+    "exampleKo": "규제를 완화합니다.",
+    "exampleJa": "規制を緩和します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-043",
+    "korean": "시행",
+    "reading": "sihaeng",
+    "meaningJa": "施行",
+    "exampleKo": "내년부터 시행합니다.",
+    "exampleJa": "来年から施行します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-044",
+    "korean": "개정",
+    "reading": "gaejeong",
+    "meaningJa": "改正",
+    "exampleKo": "법률을 개정합니다.",
+    "exampleJa": "法律を改正します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-045",
+    "korean": "제정",
+    "reading": "jejeong",
+    "meaningJa": "制定",
+    "exampleKo": "새 법을 제정합니다.",
+    "exampleJa": "新しい法律を制定します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-046",
+    "korean": "폐지",
+    "reading": "pyeji",
+    "meaningJa": "廃止",
+    "exampleKo": "구 제도를 폐지합니다.",
+    "exampleJa": "旧制度を廃止します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-047",
+    "korean": "법안",
+    "reading": "beoban",
+    "meaningJa": "法案",
+    "exampleKo": "법안을 상정합니다.",
+    "exampleJa": "法案を上程します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-048",
+    "korean": "조례",
+    "reading": "jorye",
+    "meaningJa": "条例",
+    "exampleKo": "조례를 제정합니다.",
+    "exampleJa": "条例を制定します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-049",
+    "korean": "공청회",
+    "reading": "gongcheonghoe",
+    "meaningJa": "公聴会",
+    "exampleKo": "공청회를 엽니다.",
+    "exampleJa": "公聴会を開きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-050",
+    "korean": "개헌",
+    "reading": "gaeheon",
+    "meaningJa": "改憲",
+    "exampleKo": "개헌을 논의합니다.",
+    "exampleJa": "改憲を議論します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-051",
+    "korean": "위헌",
+    "reading": "wiheon",
+    "meaningJa": "違憲",
+    "exampleKo": "위헌 판결이 났습니다.",
+    "exampleJa": "違憲判決が出ました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-052",
+    "korean": "탄핵",
+    "reading": "tanhaek",
+    "meaningJa": "弾劾",
+    "exampleKo": "탄핵안이 통과되었습니다.",
+    "exampleJa": "弾劾案が通過しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-053",
+    "korean": "청문회",
+    "reading": "cheongmunhoe",
+    "meaningJa": "聴聞会",
+    "exampleKo": "청문회가 열렸습니다.",
+    "exampleJa": "聴聞会が開かれました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-054",
+    "korean": "민원",
+    "reading": "minwon",
+    "meaningJa": "苦情",
+    "exampleKo": "민원을 접수합니다.",
+    "exampleJa": "苦情を受け付けます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-055",
+    "korean": "청원",
+    "reading": "cheongwon",
+    "meaningJa": "請願",
+    "exampleKo": "청원을 제출합니다.",
+    "exampleJa": "請願を提出します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-056",
+    "korean": "진정서",
+    "reading": "jinjeongseo",
+    "meaningJa": "陳情書",
+    "exampleKo": "진정서를 냈습니다.",
+    "exampleJa": "陳情書を出しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-057",
+    "korean": "항의",
+    "reading": "hangui",
+    "meaningJa": "抗議",
+    "exampleKo": "항의를 표명합니다.",
+    "exampleJa": "抗議を表明します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-058",
+    "korean": "집회",
+    "reading": "jiphoe",
+    "meaningJa": "集会",
+    "exampleKo": "집회에 참가합니다.",
+    "exampleJa": "集会に参加します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-059",
+    "korean": "시위",
+    "reading": "siwi",
+    "meaningJa": "デモ",
+    "exampleKo": "평화적으로 시위합니다.",
+    "exampleJa": "平和的にデモをします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-060",
+    "korean": "단체",
+    "reading": "danche",
+    "meaningJa": "団体",
+    "exampleKo": "단체를 결성합니다.",
+    "exampleJa": "団体を結成します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-061",
+    "korean": "협회",
+    "reading": "hyeophoe",
+    "meaningJa": "協会",
+    "exampleKo": "협회에 가입합니다.",
+    "exampleJa": "協会に加入します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-062",
+    "korean": "연합",
+    "reading": "yeonhap",
+    "meaningJa": "連合",
+    "exampleKo": "연합을 결성합니다.",
+    "exampleJa": "連合を結成します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-063",
+    "korean": "기구",
+    "reading": "gigu",
+    "meaningJa": "機構",
+    "exampleKo": "국제 기구입니다.",
+    "exampleJa": "国際機構です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-064",
+    "korean": "당국",
+    "reading": "dangguk",
+    "meaningJa": "当局",
+    "exampleKo": "당국이 조사합니다.",
+    "exampleJa": "当局が調べます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-065",
+    "korean": "관청",
+    "reading": "gwancheong",
+    "meaningJa": "官庁",
+    "exampleKo": "관청에서 서류를 뗍니다.",
+    "exampleJa": "官庁で書類を取ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-066",
+    "korean": "공무원",
+    "reading": "gongmuwon",
+    "meaningJa": "公務員",
+    "exampleKo": "공무원이 되었습니다.",
+    "exampleJa": "公務員になりました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-067",
+    "korean": "직무",
+    "reading": "jikmu",
+    "meaningJa": "職務",
+    "exampleKo": "직무에 충실합니다.",
+    "exampleJa": "職務に忠実です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-068",
+    "korean": "권한",
+    "reading": "gwonhan",
+    "meaningJa": "権限",
+    "exampleKo": "권한을 위임합니다.",
+    "exampleJa": "権限を委任します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-069",
+    "korean": "납세",
+    "reading": "napse",
+    "meaningJa": "納税",
+    "exampleKo": "성실히 납세합니다.",
+    "exampleJa": "誠実に納税します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-070",
+    "korean": "지위",
+    "reading": "jiwi",
+    "meaningJa": "地位",
+    "exampleKo": "지위가 올랐습니다.",
+    "exampleJa": "地位が上がりました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-071",
+    "korean": "신분",
+    "reading": "sinbun",
+    "meaningJa": "身分",
+    "exampleKo": "신분을 확인합니다.",
+    "exampleJa": "身分を確認します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-072",
+    "korean": "계층",
+    "reading": "gyecheung",
+    "meaningJa": "階層",
+    "exampleKo": "계층 간 격차입니다.",
+    "exampleJa": "階層間の格差です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-073",
+    "korean": "격차",
+    "reading": "gyeokcha",
+    "meaningJa": "格差",
+    "exampleKo": "격차를 줄입니다.",
+    "exampleJa": "格差を減らします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-074",
+    "korean": "불평등",
+    "reading": "bulpyeongdeung",
+    "meaningJa": "不平等",
+    "exampleKo": "불평등을 해소합니다.",
+    "exampleJa": "不平等を解消します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-075",
+    "korean": "빈곤층",
+    "reading": "bingoncheung",
+    "meaningJa": "貧困層",
+    "exampleKo": "빈곤층을 지원합니다.",
+    "exampleJa": "貧困層を支援します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-076",
+    "korean": "중산층",
+    "reading": "jungsancheung",
+    "meaningJa": "中産層",
+    "exampleKo": "중산층이 두텁습니다.",
+    "exampleJa": "中産層が厚いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-077",
+    "korean": "사회복지",
+    "reading": "sahoebokji",
+    "meaningJa": "社会福祉",
+    "exampleKo": "사회복지가 발달했습니다.",
+    "exampleJa": "社会福祉が発達しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-078",
+    "korean": "사회 보장",
+    "reading": "sahoebojang",
+    "meaningJa": "社会保障",
+    "exampleKo": "사회 보장을 확대합니다.",
+    "exampleJa": "社会保障を拡大します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-079",
+    "korean": "공공 요금",
+    "reading": "gonggoyogeum",
+    "meaningJa": "公共料金",
+    "exampleKo": "공공 요금이 인상되었습니다.",
+    "exampleJa": "公共料金が値上げされました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-080",
+    "korean": "주민 등록",
+    "reading": "jumindeungrok",
+    "meaningJa": "住民登録",
+    "exampleKo": "주민 등록을 이전합니다.",
+    "exampleJa": "住民登録を移します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-081",
+    "korean": "인구 조사",
+    "reading": "ingujosa",
+    "meaningJa": "国勢調査",
+    "exampleKo": "인구 조사를 실시합니다.",
+    "exampleJa": "国勢調査を実施します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-082",
+    "korean": "출산율",
+    "reading": "chulsanyul",
+    "meaningJa": "出生率",
+    "exampleKo": "출산율이 낮습니다.",
+    "exampleJa": "出生率が低いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-083",
+    "korean": "고령화",
+    "reading": "goryeonghwa",
+    "meaningJa": "高齢化",
+    "exampleKo": "고령화가 진행됩니다.",
+    "exampleJa": "高齢化が進みます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-084",
+    "korean": "저출산",
+    "reading": "jeochulsan",
+    "meaningJa": "少子化",
+    "exampleKo": "저출산이 심각합니다.",
+    "exampleJa": "少子化が深刻です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-085",
+    "korean": "다문화 가정",
+    "reading": "damunhwagajeong",
+    "meaningJa": "多文化家庭",
+    "exampleKo": "다문화 가정이 늘었습니다.",
+    "exampleJa": "多文化家庭が増えました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-086",
+    "korean": "이주 노동자",
+    "reading": "ijunodongja",
+    "meaningJa": "移住労働者",
+    "exampleKo": "이주 노동자를 보호합니다.",
+    "exampleJa": "移住労働者を保護します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-087",
+    "korean": "난민",
+    "reading": "nanmin",
+    "meaningJa": "難民",
+    "exampleKo": "난민을 수용합니다.",
+    "exampleJa": "難民を受け入れます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-088",
+    "korean": "귀화",
+    "reading": "gwihwa",
+    "meaningJa": "帰化",
+    "exampleKo": "귀화를 신청합니다.",
+    "exampleJa": "帰化を申請します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-089",
+    "korean": "복수 국적",
+    "reading": "boksugukjeok",
+    "meaningJa": "複数国籍",
+    "exampleKo": "복수 국적을 취득합니다.",
+    "exampleJa": "複数国籍を取得します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-090",
+    "korean": "전자 여권",
+    "reading": "jeonjayeogwon",
+    "meaningJa": "電子パスポート",
+    "exampleKo": "전자 여권을 발급받습니다.",
+    "exampleJa": "電子パスポートの発給を受けます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-091",
+    "korean": "취업 비자",
+    "reading": "chwieopbija",
+    "meaningJa": "就労ビザ",
+    "exampleKo": "취업 비자를 신청합니다.",
+    "exampleJa": "就労ビザを申請します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-092",
+    "korean": "통관",
+    "reading": "tonggwan",
+    "meaningJa": "通関",
+    "exampleKo": "통관 절차를 밟습니다.",
+    "exampleJa": "通関手続きを踏みます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-093",
+    "korean": "검역",
+    "reading": "geomyok",
+    "meaningJa": "検疫",
+    "exampleKo": "검역을 강화합니다.",
+    "exampleJa": "検疫を強化します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-094",
+    "korean": "시차",
+    "reading": "sicha",
+    "meaningJa": "時差",
+    "exampleKo": "시차 적응이 힘듭니다.",
+    "exampleJa": "時差適応がつらいです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-095",
+    "korean": "당선되다",
+    "reading": "dangseondoeda",
+    "meaningJa": "当選する",
+    "exampleKo": "압도적으로 당선되었습니다.",
+    "exampleJa": "圧倒的に当選しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-096",
+    "korean": "출마하다",
+    "reading": "chulmahada",
+    "meaningJa": "出馬する",
+    "exampleKo": "시장 선거에 출마합니다.",
+    "exampleJa": "市長選に出馬します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-097",
+    "korean": "합의하다",
+    "reading": "hapuihada",
+    "meaningJa": "合意する",
+    "exampleKo": "조건에 합의합니다.",
+    "exampleJa": "条件に合意します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-098",
+    "korean": "타협하다",
+    "reading": "tahyeophada",
+    "meaningJa": "妥協する",
+    "exampleKo": "서로 타협합니다.",
+    "exampleJa": "互いに妥協します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-099",
+    "korean": "항의하다",
+    "reading": "hanguihada",
+    "meaningJa": "抗議する",
+    "exampleKo": "부당함에 항의합니다.",
+    "exampleJa": "不当さに抗議します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-100",
+    "korean": "시행하다",
+    "reading": "sihaenghada",
+    "meaningJa": "施行する",
+    "exampleKo": "새 제도를 시행합니다.",
+    "exampleJa": "新制度を施行します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-101",
+    "korean": "경기",
+    "reading": "gyeonggi",
+    "meaningJa": "景気",
+    "exampleKo": "경기가 회복됩니다.",
+    "exampleJa": "景気が回復します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-102",
+    "korean": "호황",
+    "reading": "hohwang",
+    "meaningJa": "好況",
+    "exampleKo": "호황이 계속됩니다.",
+    "exampleJa": "好況が続きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-103",
+    "korean": "불황",
+    "reading": "bulhwang",
+    "meaningJa": "不況",
+    "exampleKo": "불황을 겪습니다.",
+    "exampleJa": "不況を経験します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-104",
+    "korean": "침체",
+    "reading": "chimche",
+    "meaningJa": "低迷",
+    "exampleKo": "소비가 침체되었습니다.",
+    "exampleJa": "消費が低迷しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-105",
+    "korean": "성장률",
+    "reading": "seongjangnyul",
+    "meaningJa": "成長率",
+    "exampleKo": "성장률이 둔화되었습니다.",
+    "exampleJa": "成長率が鈍化しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-106",
+    "korean": "인플레이션",
+    "reading": "inpeulleisyeon",
+    "meaningJa": "インフレ",
+    "exampleKo": "인플레이션이 심합니다.",
+    "exampleJa": "インフレがひどいです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-107",
+    "korean": "물가 상승",
+    "reading": "mulgasangseung",
+    "meaningJa": "物価上昇",
+    "exampleKo": "물가 상승이 계속됩니다.",
+    "exampleJa": "物価上昇が続きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-108",
+    "korean": "금리 인상",
+    "reading": "geumriinsang",
+    "meaningJa": "利上げ",
+    "exampleKo": "금리 인상을 단행했습니다.",
+    "exampleJa": "利上げを断行しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-109",
+    "korean": "금리 인하",
+    "reading": "geumriinha",
+    "meaningJa": "利下げ",
+    "exampleKo": "금리 인하를 기대합니다.",
+    "exampleJa": "利下げを期待します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-110",
+    "korean": "환율",
+    "reading": "hwanyul",
+    "meaningJa": "為替レート",
+    "exampleKo": "환율이 급등했습니다.",
+    "exampleJa": "為替レートが急騰しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-111",
+    "korean": "환율 변동",
+    "reading": "hwanyulbyeondong",
+    "meaningJa": "為替変動",
+    "exampleKo": "환율 변동에 대비합니다.",
+    "exampleJa": "為替変動に備えます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-112",
+    "korean": "주식 시장",
+    "reading": "jusiksijang",
+    "meaningJa": "株式市場",
+    "exampleKo": "주식 시장이 활황입니다.",
+    "exampleJa": "株式市場が活況です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-113",
+    "korean": "채권",
+    "reading": "chaegwon",
+    "meaningJa": "債券",
+    "exampleKo": "채권에 투자합니다.",
+    "exampleJa": "債券に投資します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-114",
+    "korean": "펀드",
+    "reading": "peondeu",
+    "meaningJa": "ファンド",
+    "exampleKo": "펀드에 가입합니다.",
+    "exampleJa": "ファンドに加入します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-115",
+    "korean": "투자 유치",
+    "reading": "tujayuchi",
+    "meaningJa": "投資誘致",
+    "exampleKo": "해외 투자 유치에 나섭니다.",
+    "exampleJa": "海外の投資誘致に乗り出します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-116",
+    "korean": "투기",
+    "reading": "tugi",
+    "meaningJa": "投機",
+    "exampleKo": "부동산 투기가 성행합니다.",
+    "exampleJa": "不動産投機が横行します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-117",
+    "korean": "수익률",
+    "reading": "suikryul",
+    "meaningJa": "収益率",
+    "exampleKo": "수익률이 높습니다.",
+    "exampleJa": "収益率が高いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-118",
+    "korean": "순이익",
+    "reading": "sunik",
+    "meaningJa": "純利益",
+    "exampleKo": "순이익이 증가했습니다.",
+    "exampleJa": "純利益が増えました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-119",
+    "korean": "적자",
+    "reading": "jeokja",
+    "meaningJa": "赤字",
+    "exampleKo": "적자를 기록했습니다.",
+    "exampleJa": "赤字を記録しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-120",
+    "korean": "흑자",
+    "reading": "heukja",
+    "meaningJa": "黒字",
+    "exampleKo": "흑자로 전환되었습니다.",
+    "exampleJa": "黒字に転換しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-121",
+    "korean": "결산",
+    "reading": "gyeolsan",
+    "meaningJa": "決算",
+    "exampleKo": "연말 결산을 합니다.",
+    "exampleJa": "年末決算をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-122",
+    "korean": "세율",
+    "reading": "seyul",
+    "meaningJa": "税率",
+    "exampleKo": "세율을 조정합니다.",
+    "exampleJa": "税率を調整します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-123",
+    "korean": "관세",
+    "reading": "gwanse",
+    "meaningJa": "関税",
+    "exampleKo": "관세를 부과합니다.",
+    "exampleJa": "関税を課します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-124",
+    "korean": "보조금",
+    "reading": "bojogeum",
+    "meaningJa": "補助金",
+    "exampleKo": "보조금을 지급합니다.",
+    "exampleJa": "補助金を支給します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-125",
+    "korean": "지원금",
+    "reading": "jiwongeum",
+    "meaningJa": "支援金",
+    "exampleKo": "지원금을 신청합니다.",
+    "exampleJa": "支援金を申請します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-126",
+    "korean": "임금 인상",
+    "reading": "imgeuminsang",
+    "meaningJa": "賃上げ",
+    "exampleKo": "임금 인상을 요구합니다.",
+    "exampleJa": "賃上げを求めます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-127",
+    "korean": "상여금",
+    "reading": "sangyeogeum",
+    "meaningJa": "賞与",
+    "exampleKo": "상여금을 받았습니다.",
+    "exampleJa": "賞与をもらいました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-128",
+    "korean": "퇴직금",
+    "reading": "toejikgeum",
+    "meaningJa": "退職金",
+    "exampleKo": "퇴직금을 정산합니다.",
+    "exampleJa": "退職金を精算します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-129",
+    "korean": "최저 임금",
+    "reading": "choejeoimgeum",
+    "meaningJa": "最低賃金",
+    "exampleKo": "최저 임금이 인상되었습니다.",
+    "exampleJa": "最低賃金が引き上げられました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-130",
+    "korean": "고용률",
+    "reading": "goyongryul",
+    "meaningJa": "雇用率",
+    "exampleKo": "고용률이 개선되었습니다.",
+    "exampleJa": "雇用率が改善しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-131",
+    "korean": "실업률",
+    "reading": "sileopryul",
+    "meaningJa": "失業率",
+    "exampleKo": "실업률이 하락했습니다.",
+    "exampleJa": "失業率が下がりました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-132",
+    "korean": "구직",
+    "reading": "gujik",
+    "meaningJa": "求職",
+    "exampleKo": "구직 활동을 합니다.",
+    "exampleJa": "求職活動をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-133",
+    "korean": "구인",
+    "reading": "guin",
+    "meaningJa": "求人",
+    "exampleKo": "구인 광고를 냅니다.",
+    "exampleJa": "求人広告を出します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-134",
+    "korean": "해고",
+    "reading": "haego",
+    "meaningJa": "解雇",
+    "exampleKo": "부당 해고에 항의합니다.",
+    "exampleJa": "不当解雇に抗議します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-135",
+    "korean": "명예퇴직",
+    "reading": "myeongyetoajik",
+    "meaningJa": "名誉退職",
+    "exampleKo": "명예퇴직을 신청합니다.",
+    "exampleJa": "名誉退職を申請します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-136",
+    "korean": "정년",
+    "reading": "jeongnyeon",
+    "meaningJa": "定年",
+    "exampleKo": "정년이 연장되었습니다.",
+    "exampleJa": "定年が延長されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-137",
+    "korean": "정년 연장",
+    "reading": "jeongnyeonyeonjang",
+    "meaningJa": "定年延長",
+    "exampleKo": "정년 연장을 추진합니다.",
+    "exampleJa": "定年延長を進めます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-138",
+    "korean": "의료 보험",
+    "reading": "uiryoboheom",
+    "meaningJa": "医療保険",
+    "exampleKo": "의료 보험에 가입합니다.",
+    "exampleJa": "医療保険に加入します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-139",
+    "korean": "단체 교섭",
+    "reading": "danchegyoseop",
+    "meaningJa": "団体交渉",
+    "exampleKo": "단체 교섭을 재개합니다.",
+    "exampleJa": "団体交渉を再開します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-140",
+    "korean": "교섭 결렬",
+    "reading": "gyoseopgyeolyeol",
+    "meaningJa": "交渉決裂",
+    "exampleKo": "교섭 결렬을 선언했습니다.",
+    "exampleJa": "交渉決裂を宣言しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-141",
+    "korean": "타결",
+    "reading": "tagyeol",
+    "meaningJa": "妥結",
+    "exampleKo": "협상이 타결되었습니다.",
+    "exampleJa": "交渉が妥結しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-142",
+    "korean": "쟁의 행위",
+    "reading": "jaenguihaengwi",
+    "meaningJa": "争議行為",
+    "exampleKo": "쟁의 행위에 돌입합니다.",
+    "exampleJa": "争議行為に突入します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-143",
+    "korean": "기업",
+    "reading": "gieop",
+    "meaningJa": "企業",
+    "exampleKo": "기업을 운영합니다.",
+    "exampleJa": "企業を運営します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-144",
+    "korean": "대기업",
+    "reading": "daegieop",
+    "meaningJa": "大企業",
+    "exampleKo": "대기업에 취업합니다.",
+    "exampleJa": "大企業に就職します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-145",
+    "korean": "중소기업",
+    "reading": "jungsogieop",
+    "meaningJa": "中小企業",
+    "exampleKo": "중소기업을 육성합니다.",
+    "exampleJa": "中小企業を育てます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-146",
+    "korean": "벤처 기업",
+    "reading": "bencheogieop",
+    "meaningJa": "ベンチャー企業",
+    "exampleKo": "벤처 기업을 창업합니다.",
+    "exampleJa": "ベンチャー企業を創業します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-147",
+    "korean": "창업",
+    "reading": "changeop",
+    "meaningJa": "創業",
+    "exampleKo": "창업에 도전합니다.",
+    "exampleJa": "創業に挑みます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-148",
+    "korean": "경영권",
+    "reading": "gyeongyeonggwon",
+    "meaningJa": "経営権",
+    "exampleKo": "경영권 분쟁이 벌어졌습니다.",
+    "exampleJa": "経営権争いが起きました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-149",
+    "korean": "마케팅",
+    "reading": "maketing",
+    "meaningJa": "マーケティング",
+    "exampleKo": "마케팅 전략을 짭니다.",
+    "exampleJa": "マーケティング戦略を立てます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-150",
+    "korean": "판촉",
+    "reading": "panchok",
+    "meaningJa": "販促",
+    "exampleKo": "판촉 행사를 엽니다.",
+    "exampleJa": "販促イベントを開きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-151",
+    "korean": "수요",
+    "reading": "suyo",
+    "meaningJa": "需要",
+    "exampleKo": "수요가 급증했습니다.",
+    "exampleJa": "需要が急増しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-152",
+    "korean": "공급",
+    "reading": "gonggeup",
+    "meaningJa": "供給",
+    "exampleKo": "공급이 부족합니다.",
+    "exampleJa": "供給が足りません。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-153",
+    "korean": "물류",
+    "reading": "mullyu",
+    "meaningJa": "物流",
+    "exampleKo": "물류 비용이 올랐습니다.",
+    "exampleJa": "物流コストが上がりました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-154",
+    "korean": "재고 관리",
+    "reading": "jaegogwanri",
+    "meaningJa": "在庫管理",
+    "exampleKo": "재고 관리를 철저히 합니다.",
+    "exampleJa": "在庫管理を徹底します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-155",
+    "korean": "납품",
+    "reading": "nappum",
+    "meaningJa": "納品",
+    "exampleKo": "기한 내 납품합니다.",
+    "exampleJa": "期限内に納品します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-156",
+    "korean": "수주",
+    "reading": "suju",
+    "meaningJa": "受注",
+    "exampleKo": "대형 공사를 수주했습니다.",
+    "exampleJa": "大型工事を受注しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-157",
+    "korean": "발주",
+    "reading": "balju",
+    "meaningJa": "発注",
+    "exampleKo": "자재를 발주합니다.",
+    "exampleJa": "資材を発注します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-158",
+    "korean": "계약금",
+    "reading": "gyeyakgeum",
+    "meaningJa": "契約金",
+    "exampleKo": "계약금을 입금합니다.",
+    "exampleJa": "契約金を入金します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-159",
+    "korean": "중도금",
+    "reading": "jungdogeum",
+    "meaningJa": "中途金",
+    "exampleKo": "중도금을 치릅니다.",
+    "exampleJa": "中途金を払います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-160",
+    "korean": "잔금",
+    "reading": "jangeum",
+    "meaningJa": "残金",
+    "exampleKo": "잔금을 완납합니다.",
+    "exampleJa": "残金を完納します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-161",
+    "korean": "할부",
+    "reading": "halbu",
+    "meaningJa": "分割払い",
+    "exampleKo": "할부로 결제합니다.",
+    "exampleJa": "分割払いで決済します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-162",
+    "korean": "일시불",
+    "reading": "ilsibul",
+    "meaningJa": "一括払い",
+    "exampleKo": "일시불로 냅니다.",
+    "exampleJa": "一括払いで払います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-163",
+    "korean": "계좌 이체",
+    "reading": "gyejwaiche",
+    "meaningJa": "口座振替",
+    "exampleKo": "계좌 이체로 보냅니다.",
+    "exampleJa": "口座振替で送ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-164",
+    "korean": "송금",
+    "reading": "songgeum",
+    "meaningJa": "送金",
+    "exampleKo": "해외로 송금합니다.",
+    "exampleJa": "海外へ送金します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-165",
+    "korean": "상환",
+    "reading": "sanghwan",
+    "meaningJa": "返済",
+    "exampleKo": "대출금을 상환합니다.",
+    "exampleJa": "借入金を返済します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-166",
+    "korean": "연체",
+    "reading": "yeonche",
+    "meaningJa": "延滞",
+    "exampleKo": "연체료가 붙습니다.",
+    "exampleJa": "延滞料が付きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-167",
+    "korean": "신용 등급",
+    "reading": "sinyongdeunggeup",
+    "meaningJa": "信用等級",
+    "exampleKo": "신용 등급이 올랐습니다.",
+    "exampleJa": "信用等級が上がりました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-168",
+    "korean": "담보",
+    "reading": "dambo",
+    "meaningJa": "担保",
+    "exampleKo": "담보를 제공합니다.",
+    "exampleJa": "担保を提供します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-169",
+    "korean": "보증",
+    "reading": "bojeung",
+    "meaningJa": "保証",
+    "exampleKo": "보증을 섭니다.",
+    "exampleJa": "保証を立てます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-170",
+    "korean": "파산",
+    "reading": "pasan",
+    "meaningJa": "破産",
+    "exampleKo": "파산을 선고받았습니다.",
+    "exampleJa": "破産を宣告されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-171",
+    "korean": "부도",
+    "reading": "budo",
+    "meaningJa": "不渡り",
+    "exampleKo": "부도가 났습니다.",
+    "exampleJa": "不渡りが出ました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-172",
+    "korean": "합병",
+    "reading": "hapbyeong",
+    "meaningJa": "合併",
+    "exampleKo": "합병을 승인합니다.",
+    "exampleJa": "合併を承認します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-173",
+    "korean": "인수 합병",
+    "reading": "insuhapbyeong",
+    "meaningJa": "M&A",
+    "exampleKo": "인수 합병을 추진합니다.",
+    "exampleJa": "M&Aを進めます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-174",
+    "korean": "상장",
+    "reading": "sangjang",
+    "meaningJa": "上場",
+    "exampleKo": "상장을 준비합니다.",
+    "exampleJa": "上場を準備します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-175",
+    "korean": "폐업",
+    "reading": "pyeeop",
+    "meaningJa": "廃業",
+    "exampleKo": "폐업을 신고합니다.",
+    "exampleJa": "廃業を届け出ます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-176",
+    "korean": "매출액",
+    "reading": "maechulaek",
+    "meaningJa": "売上高",
+    "exampleKo": "매출액이 사상 최대입니다.",
+    "exampleJa": "売上高が過去最大です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-177",
+    "korean": "분기 실적",
+    "reading": "bungisiljeok",
+    "meaningJa": "四半期業績",
+    "exampleKo": "분기 실적을 발표합니다.",
+    "exampleJa": "四半期業績を発表します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-178",
+    "korean": "영업 이익",
+    "reading": "yeongeopik",
+    "meaningJa": "営業利益",
+    "exampleKo": "영업 이익이 개선되었습니다.",
+    "exampleJa": "営業利益が改善しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-179",
+    "korean": "부채",
+    "reading": "buchae",
+    "meaningJa": "負債",
+    "exampleKo": "부채를 상환합니다.",
+    "exampleJa": "負債を返済します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-180",
+    "korean": "자산",
+    "reading": "jasan",
+    "meaningJa": "資産",
+    "exampleKo": "자산을 운용합니다.",
+    "exampleJa": "資産を運用します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-181",
+    "korean": "자본금",
+    "reading": "jabongeum",
+    "meaningJa": "資本金",
+    "exampleKo": "자본금을 증자합니다.",
+    "exampleJa": "資本金を増資します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-182",
+    "korean": "주주",
+    "reading": "juju",
+    "meaningJa": "株主",
+    "exampleKo": "주주 총회를 엽니다.",
+    "exampleJa": "株主総会を開きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-183",
+    "korean": "배당금",
+    "reading": "baedanggeum",
+    "meaningJa": "配当金",
+    "exampleKo": "배당금을 지급합니다.",
+    "exampleJa": "配当金を支給します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-184",
+    "korean": "이사회",
+    "reading": "isahoe",
+    "meaningJa": "理事会",
+    "exampleKo": "이사회를 소집합니다.",
+    "exampleJa": "理事会を招集します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-185",
+    "korean": "대표이사",
+    "reading": "daepyoisa",
+    "meaningJa": "代表取締役",
+    "exampleKo": "대표이사가 취임했습니다.",
+    "exampleJa": "代表取締役が就任しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-186",
+    "korean": "임원",
+    "reading": "imwon",
+    "meaningJa": "役員",
+    "exampleKo": "임원으로 승진했습니다.",
+    "exampleJa": "役員に昇進しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-187",
+    "korean": "사외 이사",
+    "reading": "saoeeisa",
+    "meaningJa": "社外取締役",
+    "exampleKo": "사외 이사를 선임합니다.",
+    "exampleJa": "社外取締役を選任します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-188",
+    "korean": "정규직",
+    "reading": "jeonggyujik",
+    "meaningJa": "正規職",
+    "exampleKo": "정규직으로 전환되었습니다.",
+    "exampleJa": "正規職に転換しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-189",
+    "korean": "비정규직",
+    "reading": "bijeonggyujik",
+    "meaningJa": "非正規職",
+    "exampleKo": "비정규직을 정규직화합니다.",
+    "exampleJa": "非正規職を正規化します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-190",
+    "korean": "육아 휴직",
+    "reading": "yugahyujik",
+    "meaningJa": "育児休職",
+    "exampleKo": "육아 휴직을 사용합니다.",
+    "exampleJa": "育児休職を使います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-191",
+    "korean": "탄력 근무",
+    "reading": "tallyeokgeunmu",
+    "meaningJa": "フレックス勤務",
+    "exampleKo": "탄력 근무를 도입합니다.",
+    "exampleJa": "フレックス勤務を導入します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-192",
+    "korean": "재택근무",
+    "reading": "jaetaekgeunmu",
+    "meaningJa": "在宅勤務",
+    "exampleKo": "재택근무를 실시합니다.",
+    "exampleJa": "在宅勤務を実施します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-193",
+    "korean": "성과급",
+    "reading": "seonggwageup",
+    "meaningJa": "成果給",
+    "exampleKo": "성과급을 지급합니다.",
+    "exampleJa": "成果給を支給します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-194",
+    "korean": "연공서열",
+    "reading": "yeongongseoyeol",
+    "meaningJa": "年功序列",
+    "exampleKo": "연공서열이 강한 조직입니다.",
+    "exampleJa": "年功序列の強い組織です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-195",
+    "korean": "능력주의",
+    "reading": "neungnyeokjuui",
+    "meaningJa": "能力主義",
+    "exampleKo": "능력주의 인사를 합니다.",
+    "exampleJa": "能力主義の人事をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-196",
+    "korean": "출자하다",
+    "reading": "chuljahada",
+    "meaningJa": "出資する",
+    "exampleKo": "신규 사업에 출자합니다.",
+    "exampleJa": "新規事業に出資します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-197",
+    "korean": "변제하다",
+    "reading": "byeonjehada",
+    "meaningJa": "弁済する",
+    "exampleKo": "빚을 변제합니다.",
+    "exampleJa": "借金を弁済します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-198",
+    "korean": "파산하다",
+    "reading": "pasanhada",
+    "meaningJa": "破産する",
+    "exampleKo": "회사가 파산했습니다.",
+    "exampleJa": "会社が破産しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-199",
+    "korean": "합병하다",
+    "reading": "hapbyeonghada",
+    "meaningJa": "合併する",
+    "exampleKo": "두 회사가 합병합니다.",
+    "exampleJa": "二社が合併します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-200",
+    "korean": "창업하다",
+    "reading": "changeophada",
+    "meaningJa": "創業する",
+    "exampleKo": "청년이 창업합니다.",
+    "exampleJa": "若者が創業します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-201",
+    "korean": "종강",
+    "reading": "jonggang",
+    "meaningJa": "終講",
+    "exampleKo": "종강 파티를 합니다.",
+    "exampleJa": "終講パーティーをします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-202",
+    "korean": "개강",
+    "reading": "gaegang",
+    "meaningJa": "開講",
+    "exampleKo": "개강 첫날입니다.",
+    "exampleJa": "開講初日です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-203",
+    "korean": "편입",
+    "reading": "pyeonip",
+    "meaningJa": "編入",
+    "exampleKo": "편입에 성공했습니다.",
+    "exampleJa": "編入に成功しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-204",
+    "korean": "어학연수",
+    "reading": "eohagyeonsu",
+    "meaningJa": "語学研修",
+    "exampleKo": "어학연수를 다녀왔습니다.",
+    "exampleJa": "語学研修に行ってきました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-205",
+    "korean": "수업료",
+    "reading": "sueomnyo",
+    "meaningJa": "授業料",
+    "exampleKo": "수업료가 인상되었습니다.",
+    "exampleJa": "授業料が値上げされました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-206",
+    "korean": "학업 성취도",
+    "reading": "hageopseongchwido",
+    "meaningJa": "学業達成度",
+    "exampleKo": "학업 성취도를 평가합니다.",
+    "exampleJa": "学業達成度を評価します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-207",
+    "korean": "학술지",
+    "reading": "haksulji",
+    "meaningJa": "学術誌",
+    "exampleKo": "학술지에 투고합니다.",
+    "exampleJa": "学術誌に投稿します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-208",
+    "korean": "투고",
+    "reading": "tugo",
+    "meaningJa": "投稿",
+    "exampleKo": "논문을 투고합니다.",
+    "exampleJa": "論文を投稿します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-209",
+    "korean": "장학 재단",
+    "reading": "janghakjaedan",
+    "meaningJa": "奨学財団",
+    "exampleKo": "장학 재단의 지원을 받습니다.",
+    "exampleJa": "奨学財団の支援を受けます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-210",
+    "korean": "임상 실험",
+    "reading": "imsangsilheom",
+    "meaningJa": "臨床実験",
+    "exampleKo": "임상 실험에 참가합니다.",
+    "exampleJa": "臨床実験に参加します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-211",
+    "korean": "비판적 사고",
+    "reading": "bipanjeoksago",
+    "meaningJa": "批判的思考",
+    "exampleKo": "비판적 사고가 필요합니다.",
+    "exampleJa": "批判的思考が必要です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-212",
+    "korean": "개념 정의",
+    "reading": "gaenyeomjeongui",
+    "meaningJa": "概念定義",
+    "exampleKo": "개념 정의부터 합니다.",
+    "exampleJa": "概念定義からします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-213",
+    "korean": "잠재력",
+    "reading": "jamjaeryeok",
+    "meaningJa": "潜在力",
+    "exampleKo": "잠재력이 큽니다.",
+    "exampleJa": "潜在力が大きいです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-214",
+    "korean": "교환 학생",
+    "reading": "gyohwanhaksaeng",
+    "meaningJa": "交換学生",
+    "exampleKo": "교환 학생으로 갑니다.",
+    "exampleJa": "交換学生として行きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-215",
+    "korean": "복수 전공",
+    "reading": "boksujeongong",
+    "meaningJa": "複数専攻",
+    "exampleKo": "복수 전공을 합니다.",
+    "exampleJa": "複数専攻をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-216",
+    "korean": "교양 과목",
+    "reading": "gyoyanggwamok",
+    "meaningJa": "教養科目",
+    "exampleKo": "교양 과목을 듣습니다.",
+    "exampleJa": "教養科目を聞きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-217",
+    "korean": "교육 과정",
+    "reading": "gyoyukgwajeong",
+    "meaningJa": "教育課程",
+    "exampleKo": "교육 과정을 개편합니다.",
+    "exampleJa": "教育課程を改編します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-218",
+    "korean": "세미나",
+    "reading": "semina",
+    "meaningJa": "ゼミ",
+    "exampleKo": "세미나에서 발표합니다.",
+    "exampleJa": "ゼミで発表します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-219",
+    "korean": "석사",
+    "reading": "seoksa",
+    "meaningJa": "修士",
+    "exampleKo": "석사를 마쳤습니다.",
+    "exampleJa": "修士を終えました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-220",
+    "korean": "박사",
+    "reading": "baksa",
+    "meaningJa": "博士",
+    "exampleKo": "박사 학위를 땄습니다.",
+    "exampleJa": "博士学位を取りました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-221",
+    "korean": "학위",
+    "reading": "hagwi",
+    "meaningJa": "学位",
+    "exampleKo": "학위를 받았습니다.",
+    "exampleJa": "学位をもらいました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-222",
+    "korean": "연구소",
+    "reading": "yeonguso",
+    "meaningJa": "研究所",
+    "exampleKo": "연구소에서 일합니다.",
+    "exampleJa": "研究所で働きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-223",
+    "korean": "관측",
+    "reading": "gwancheuk",
+    "meaningJa": "観測",
+    "exampleKo": "변화를 관측합니다.",
+    "exampleJa": "変化を観測します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-224",
+    "korean": "사례 연구",
+    "reading": "saryeyeongu",
+    "meaningJa": "事例研究",
+    "exampleKo": "사례 연구를 수행합니다.",
+    "exampleJa": "事例研究を行います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-225",
+    "korean": "종합",
+    "reading": "jonghap",
+    "meaningJa": "総合",
+    "exampleKo": "의견을 종합합니다.",
+    "exampleJa": "意見を総合します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-226",
+    "korean": "비평",
+    "reading": "bipyeong",
+    "meaningJa": "批評",
+    "exampleKo": "영화를 비평합니다.",
+    "exampleJa": "映画を批評します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-227",
+    "korean": "추론",
+    "reading": "churon",
+    "meaningJa": "推論",
+    "exampleKo": "추론을 펼칩니다.",
+    "exampleJa": "推論を展開します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-228",
+    "korean": "가설",
+    "reading": "gaseol",
+    "meaningJa": "仮説",
+    "exampleKo": "가설을 세웁니다.",
+    "exampleJa": "仮説を立てます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-229",
+    "korean": "검증",
+    "reading": "geomjeung",
+    "meaningJa": "検証",
+    "exampleKo": "가설을 검증합니다.",
+    "exampleJa": "仮説を検証します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-230",
+    "korean": "증명",
+    "reading": "jeungmyeong",
+    "meaningJa": "証明",
+    "exampleKo": "정리를 증명합니다.",
+    "exampleJa": "定理を証明します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-231",
+    "korean": "반박",
+    "reading": "banbak",
+    "meaningJa": "反駁",
+    "exampleKo": "주장을 반박합니다.",
+    "exampleJa": "主張に反駁します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-232",
+    "korean": "학설",
+    "reading": "hakseol",
+    "meaningJa": "学説",
+    "exampleKo": "유력한 학설입니다.",
+    "exampleJa": "有力な学説です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-233",
+    "korean": "이론",
+    "reading": "iron",
+    "meaningJa": "理論",
+    "exampleKo": "이론을 적용합니다.",
+    "exampleJa": "理論を適用します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-234",
+    "korean": "용어",
+    "reading": "yongeo",
+    "meaningJa": "用語",
+    "exampleKo": "용어를 정리합니다.",
+    "exampleJa": "用語を整理します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-235",
+    "korean": "의식",
+    "reading": "uisik",
+    "meaningJa": "意識",
+    "exampleKo": "의식이 또렷합니다.",
+    "exampleJa": "意識がはっきりしています。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-236",
+    "korean": "무의식",
+    "reading": "muuisik",
+    "meaningJa": "無意識",
+    "exampleKo": "무의식중에 그랬습니다.",
+    "exampleJa": "無意識のうちにそうしました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-237",
+    "korean": "정서",
+    "reading": "jeongseo",
+    "meaningJa": "情緒",
+    "exampleKo": "정서가 불안합니다.",
+    "exampleJa": "情緒が不安定です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-238",
+    "korean": "자존감",
+    "reading": "jajongam",
+    "meaningJa": "自尊感",
+    "exampleKo": "자존감이 높습니다.",
+    "exampleJa": "自尊感が高いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-239",
+    "korean": "동기 부여",
+    "reading": "donggibuyeo",
+    "meaningJa": "動機付け",
+    "exampleKo": "동기 부여가 됩니다.",
+    "exampleJa": "動機付けになります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-240",
+    "korean": "의욕",
+    "reading": "uiyok",
+    "meaningJa": "意欲",
+    "exampleKo": "의욕이 넘칩니다.",
+    "exampleJa": "意欲にあふれています。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-241",
+    "korean": "집중력",
+    "reading": "jipjungnyeok",
+    "meaningJa": "集中力",
+    "exampleKo": "집중력이 흐트러졌습니다.",
+    "exampleJa": "集中力が乱れました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-242",
+    "korean": "기억력",
+    "reading": "gieongnyeok",
+    "meaningJa": "記憶力",
+    "exampleKo": "기억력이 좋습니다.",
+    "exampleJa": "記憶力が良いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-243",
+    "korean": "창의력",
+    "reading": "changuiryeok",
+    "meaningJa": "創造力",
+    "exampleKo": "창의력을 기릅니다.",
+    "exampleJa": "創造力を育てます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-244",
+    "korean": "판단력",
+    "reading": "pandanryeok",
+    "meaningJa": "判断力",
+    "exampleKo": "판단력이 흐립니다.",
+    "exampleJa": "判断力が鈍ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-245",
+    "korean": "분별력",
+    "reading": "bunbyeolryeok",
+    "meaningJa": "分別力",
+    "exampleKo": "분별력을 기릅니다.",
+    "exampleJa": "分別力を養います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-246",
+    "korean": "통찰력",
+    "reading": "tongchalryeok",
+    "meaningJa": "洞察力",
+    "exampleKo": "통찰력이 뛰어납니다.",
+    "exampleJa": "洞察力が優れています。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-247",
+    "korean": "직관",
+    "reading": "jikgwan",
+    "meaningJa": "直観",
+    "exampleKo": "직관에 따릅니다.",
+    "exampleJa": "直観に従います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-248",
+    "korean": "이성",
+    "reading": "iseong",
+    "meaningJa": "理性",
+    "exampleKo": "이성적으로 판단합니다.",
+    "exampleJa": "理性的に判断します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-249",
+    "korean": "기질",
+    "reading": "gijil",
+    "meaningJa": "気質",
+    "exampleKo": "온순한 기질입니다.",
+    "exampleJa": "温順な気質です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-250",
+    "korean": "도출하다",
+    "reading": "dochulhada",
+    "meaningJa": "導出する",
+    "exampleKo": "결론을 도출합니다.",
+    "exampleJa": "結論を導出します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-251",
+    "korean": "비평하다",
+    "reading": "bipyeonghada",
+    "meaningJa": "批評する",
+    "exampleKo": "작품을 비평합니다.",
+    "exampleJa": "作品を批評します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-252",
+    "korean": "관측하다",
+    "reading": "gwancheukhada",
+    "meaningJa": "観測する",
+    "exampleKo": "기상을 관측합니다.",
+    "exampleJa": "気象を観測します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-253",
+    "korean": "승화하다",
+    "reading": "seunghwahada",
+    "meaningJa": "昇華する",
+    "exampleKo": "슬픔을 예술로 승화합니다.",
+    "exampleJa": "悲しみを芸術に昇華します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-254",
+    "korean": "규정하다",
+    "reading": "gyujeonghada",
+    "meaningJa": "規定する",
+    "exampleKo": "법으로 규정합니다.",
+    "exampleJa": "法律で規定します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-255",
+    "korean": "종합하다",
+    "reading": "jonghaphada",
+    "meaningJa": "総合する",
+    "exampleKo": "자료를 종합합니다.",
+    "exampleJa": "資料を総合します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-256",
+    "korean": "추론하다",
+    "reading": "churonhada",
+    "meaningJa": "推論する",
+    "exampleKo": "원인을 추론합니다.",
+    "exampleJa": "原因を推論します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-257",
+    "korean": "검증하다",
+    "reading": "geomjeunghada",
+    "meaningJa": "検証する",
+    "exampleKo": "효과를 검증합니다.",
+    "exampleJa": "効果を検証します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-258",
+    "korean": "증명하다",
+    "reading": "jeungmyeonghada",
+    "meaningJa": "証明する",
+    "exampleKo": "무죄를 증명합니다.",
+    "exampleJa": "無罪を証明します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-259",
+    "korean": "반박하다",
+    "reading": "banbakhada",
+    "meaningJa": "反駁する",
+    "exampleKo": "상대의 논리를 반박합니다.",
+    "exampleJa": "相手の論理に反駁します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-260",
+    "korean": "집중하다",
+    "reading": "jipjunghada",
+    "meaningJa": "集中する",
+    "exampleKo": "공부에 집중합니다.",
+    "exampleJa": "勉強に集中します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-261",
+    "korean": "인식하다",
+    "reading": "insikhada",
+    "meaningJa": "認識する",
+    "exampleKo": "문제를 인식합니다.",
+    "exampleJa": "問題を認識します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-262",
+    "korean": "암기하다",
+    "reading": "amgihada",
+    "meaningJa": "暗記する",
+    "exampleKo": "단어를 암기합니다.",
+    "exampleJa": "単語を暗記します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-263",
+    "korean": "자각하다",
+    "reading": "jagakhada",
+    "meaningJa": "自覚する",
+    "exampleKo": "책임을 자각합니다.",
+    "exampleJa": "責任を自覚します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-264",
+    "korean": "심화 학습",
+    "reading": "simhwahakseup",
+    "meaningJa": "深化学習",
+    "exampleKo": "심화 학습을 합니다.",
+    "exampleJa": "深化学習をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-265",
+    "korean": "선행 학습",
+    "reading": "seonhaenghakseup",
+    "meaningJa": "先行学習",
+    "exampleKo": "선행 학습을 합니다.",
+    "exampleJa": "先行学習をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-266",
+    "korean": "모의고사",
+    "reading": "mouigosa",
+    "meaningJa": "模擬試験",
+    "exampleKo": "모의고사를 봅니다.",
+    "exampleJa": "模擬試験を受けます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-267",
+    "korean": "수시 전형",
+    "reading": "susijeonhyeong",
+    "meaningJa": "随時選考",
+    "exampleKo": "수시 전형으로 지원합니다.",
+    "exampleJa": "随時選考で出願します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-268",
+    "korean": "정시 전형",
+    "reading": "jeongsijeonhyeong",
+    "meaningJa": "定時選考",
+    "exampleKo": "정시 전형을 준비합니다.",
+    "exampleJa": "定時選考を準備します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-269",
+    "korean": "내신",
+    "reading": "naesin",
+    "meaningJa": "内申",
+    "exampleKo": "내신을 관리합니다.",
+    "exampleJa": "内申を管理します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-270",
+    "korean": "수석",
+    "reading": "suseok",
+    "meaningJa": "首席",
+    "exampleKo": "수석으로 졸업했습니다.",
+    "exampleJa": "首席で卒業しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-271",
+    "korean": "심리 상담",
+    "reading": "simrisangdam",
+    "meaningJa": "心理相談",
+    "exampleKo": "심리 상담을 받습니다.",
+    "exampleJa": "心理相談を受けます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-272",
+    "korean": "트라우마",
+    "reading": "teurauma",
+    "meaningJa": "トラウマ",
+    "exampleKo": "트라우마를 극복하고 있습니다.",
+    "exampleJa": "トラウマを克服しています。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-273",
+    "korean": "콤플렉스",
+    "reading": "kompeulseu",
+    "meaningJa": "コンプレックス",
+    "exampleKo": "콤플렉스를 털어냈습니다.",
+    "exampleJa": "コンプレックスを振り払いました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-274",
+    "korean": "강박",
+    "reading": "gangbak",
+    "meaningJa": "強迫",
+    "exampleKo": "완벽에 대한 강박이 있습니다.",
+    "exampleJa": "完璧への強迫があります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-275",
+    "korean": "완벽주의",
+    "reading": "wanbyeokjuui",
+    "meaningJa": "完璧主義",
+    "exampleKo": "완벽주의를 버렸습니다.",
+    "exampleJa": "完璧主義を捨てました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-276",
+    "korean": "열등감",
+    "reading": "yeoldeunggam",
+    "meaningJa": "劣等感",
+    "exampleKo": "열등감에 시달립니다.",
+    "exampleJa": "劣等感に悩まされます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-277",
+    "korean": "우월감",
+    "reading": "uwolgam",
+    "meaningJa": "優越感",
+    "exampleKo": "우월감에 빠졌습니다.",
+    "exampleJa": "優越感に陥りました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-278",
+    "korean": "공감 능력",
+    "reading": "gonggamneungnyeok",
+    "meaningJa": "共感能力",
+    "exampleKo": "공감 능력이 뛰어납니다.",
+    "exampleJa": "共感能力に優れています。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-279",
+    "korean": "소통 능력",
+    "reading": "sotongneungnyeok",
+    "meaningJa": "疎通能力",
+    "exampleKo": "소통 능력을 키웁니다.",
+    "exampleJa": "疎通能力を育てます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-280",
+    "korean": "리더십",
+    "reading": "rideosip",
+    "meaningJa": "リーダーシップ",
+    "exampleKo": "리더십이 강합니다.",
+    "exampleJa": "リーダーシップが強いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-281",
+    "korean": "팀워크",
+    "reading": "timwokeu",
+    "meaningJa": "チームワーク",
+    "exampleKo": "팀워크가 좋습니다.",
+    "exampleJa": "チームワークが良いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-282",
+    "korean": "멘토",
+    "reading": "mento",
+    "meaningJa": "メンター",
+    "exampleKo": "멘토를 만났습니다.",
+    "exampleJa": "メンターに出会いました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-283",
+    "korean": "좌절",
+    "reading": "jwajeol",
+    "meaningJa": "挫折",
+    "exampleKo": "좌절을 맛보았습니다.",
+    "exampleJa": "挫折を味わいました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-284",
+    "korean": "재기",
+    "reading": "jaegi",
+    "meaningJa": "再起",
+    "exampleKo": "재기에 성공했습니다.",
+    "exampleJa": "再起に成功しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-285",
+    "korean": "성취감",
+    "reading": "seongchwigam",
+    "meaningJa": "達成感",
+    "exampleKo": "성취감을 느낍니다.",
+    "exampleJa": "達成感を感じます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-286",
+    "korean": "보람",
+    "reading": "boram",
+    "meaningJa": "やりがい",
+    "exampleKo": "보람을 느낍니다.",
+    "exampleJa": "やりがいを感じます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-287",
+    "korean": "자아",
+    "reading": "jaa",
+    "meaningJa": "自我",
+    "exampleKo": "자아를 찾습니다.",
+    "exampleJa": "自我を探します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-288",
+    "korean": "자아실현",
+    "reading": "jaasilhyeon",
+    "meaningJa": "自己実現",
+    "exampleKo": "자아실현을 꿈꿉니다.",
+    "exampleJa": "自己実現を夢見ます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-289",
+    "korean": "개성",
+    "reading": "gaeseong",
+    "meaningJa": "個性",
+    "exampleKo": "개성이 뚜렷합니다.",
+    "exampleJa": "個性がはっきりしています。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-290",
+    "korean": "적성",
+    "reading": "jeokseong",
+    "meaningJa": "適性",
+    "exampleKo": "적성에 맞습니다.",
+    "exampleJa": "適性に合います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-291",
+    "korean": "소질",
+    "reading": "sojil",
+    "meaningJa": "素質",
+    "exampleKo": "음악적 소질이 있습니다.",
+    "exampleJa": "音楽的素質があります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-292",
+    "korean": "인내",
+    "reading": "innae",
+    "meaningJa": "忍耐",
+    "exampleKo": "인내가 필요합니다.",
+    "exampleJa": "忍耐が必要です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-293",
+    "korean": "끈기",
+    "reading": "kkeungi",
+    "meaningJa": "根気",
+    "exampleKo": "끈기가 대단합니다.",
+    "exampleJa": "根気がすごいです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-294",
+    "korean": "집념",
+    "reading": "jimnyeom",
+    "meaningJa": "執念",
+    "exampleKo": "집념으로 해냈습니다.",
+    "exampleJa": "執念でやり遂げました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-295",
+    "korean": "승부욕",
+    "reading": "seungbuyok",
+    "meaningJa": "勝負欲",
+    "exampleKo": "승부욕이 강합니다.",
+    "exampleJa": "勝負欲が強いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-296",
+    "korean": "호기심",
+    "reading": "hogisim",
+    "meaningJa": "好奇心",
+    "exampleKo": "호기심이 많습니다.",
+    "exampleJa": "好奇心が多いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-297",
+    "korean": "탐구심",
+    "reading": "tamgusim",
+    "meaningJa": "探究心",
+    "exampleKo": "탐구심이 강합니다.",
+    "exampleJa": "探究心が強いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-298",
+    "korean": "학구열",
+    "reading": "hakguyeol",
+    "meaningJa": "向学心",
+    "exampleKo": "학구열이 대단합니다.",
+    "exampleJa": "向学心がすごいです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-299",
+    "korean": "수료",
+    "reading": "suryo",
+    "meaningJa": "修了",
+    "exampleKo": "과정을 수료했습니다.",
+    "exampleJa": "課程を修了しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-300",
+    "korean": "논술",
+    "reading": "nonsul",
+    "meaningJa": "論述",
+    "exampleKo": "논술을 준비합니다.",
+    "exampleJa": "論述を準備します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-301",
+    "korean": "중의적이다",
+    "reading": "junguijeokida",
+    "meaningJa": "多義的だ",
+    "exampleKo": "중의적인 표현입니다.",
+    "exampleJa": "多義的な表現です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-302",
+    "korean": "명백하다",
+    "reading": "myeongbaekhada",
+    "meaningJa": "明白だ",
+    "exampleKo": "명백한 사실입니다.",
+    "exampleJa": "明白な事実です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-303",
+    "korean": "뚜렷하다",
+    "reading": "tturyeothada",
+    "meaningJa": "はっきりしている",
+    "exampleKo": "뚜렷한 차이가 있습니다.",
+    "exampleJa": "はっきりした差があります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-304",
+    "korean": "미묘하다",
+    "reading": "mimyohada",
+    "meaningJa": "微妙だ",
+    "exampleKo": "미묘한 뉘앙스입니다.",
+    "exampleJa": "微妙なニュアンスです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-305",
+    "korean": "정교하다",
+    "reading": "jeonggyohada",
+    "meaningJa": "精巧だ",
+    "exampleKo": "정교한 작업입니다.",
+    "exampleJa": "精巧な作業です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-306",
+    "korean": "치밀하다",
+    "reading": "chimilhada",
+    "meaningJa": "緻密だ",
+    "exampleKo": "치밀한 계획입니다.",
+    "exampleJa": "緻密な計画です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-307",
+    "korean": "허술하다",
+    "reading": "heosulhada",
+    "meaningJa": "ずさんだ",
+    "exampleKo": "허술한 관리입니다.",
+    "exampleJa": "ずさんな管理です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-308",
+    "korean": "엄밀하다",
+    "reading": "eommilhada",
+    "meaningJa": "厳密だ",
+    "exampleKo": "엄밀한 검증입니다.",
+    "exampleJa": "厳密な検証です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-309",
+    "korean": "너그럽다",
+    "reading": "neogeureopda",
+    "meaningJa": "寛大だ",
+    "exampleKo": "너그러운 마음입니다.",
+    "exampleJa": "寛大な心です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-310",
+    "korean": "겸허하다",
+    "reading": "gyeomheohada",
+    "meaningJa": "謙虚だ",
+    "exampleKo": "겸허한 자세입니다.",
+    "exampleJa": "謙虚な姿勢です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-311",
+    "korean": "소박하다",
+    "reading": "sobakhada",
+    "meaningJa": "素朴だ",
+    "exampleKo": "소박한 밥상입니다.",
+    "exampleJa": "素朴な食卓です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-312",
+    "korean": "검소하다",
+    "reading": "geomsohada",
+    "meaningJa": "倹約だ",
+    "exampleKo": "검소한 생활입니다.",
+    "exampleJa": "倹約な生活です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-313",
+    "korean": "사치스럽다",
+    "reading": "sachiseureopda",
+    "meaningJa": "贅沢だ",
+    "exampleKo": "사치스러운 소비입니다.",
+    "exampleJa": "贅沢な消費です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-314",
+    "korean": "온화하다",
+    "reading": "onhwahada",
+    "meaningJa": "穏やかだ",
+    "exampleKo": "온화한 성품입니다.",
+    "exampleJa": "穏やかな人柄です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-315",
+    "korean": "냉정하다",
+    "reading": "naengjeonghada",
+    "meaningJa": "冷静だ",
+    "exampleKo": "냉정한 판단입니다.",
+    "exampleJa": "冷静な判断です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-316",
+    "korean": "침착하다",
+    "reading": "chimchakhada",
+    "meaningJa": "沈着だ",
+    "exampleKo": "침착하게 대응합니다.",
+    "exampleJa": "沈着に対応します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-317",
+    "korean": "당혹스럽다",
+    "reading": "danghokseureopda",
+    "meaningJa": "当惑する",
+    "exampleKo": "당혹스러운 질문입니다.",
+    "exampleJa": "当惑する質問です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-318",
+    "korean": "황당하다",
+    "reading": "hwangdanghada",
+    "meaningJa": "あきれる",
+    "exampleKo": "황당한 주장입니다.",
+    "exampleJa": "あきれる主張です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-319",
+    "korean": "막막하다",
+    "reading": "makmakhada",
+    "meaningJa": "途方に暮れる",
+    "exampleKo": "앞이 막막합니다.",
+    "exampleJa": "先が見えず途方に暮れます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-320",
+    "korean": "답답하다",
+    "reading": "dapdaphada",
+    "meaningJa": "もどかしい",
+    "exampleKo": "가슴이 답답합니다.",
+    "exampleJa": "胸がもどかしいです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-321",
+    "korean": "홀가분하다",
+    "reading": "holgabunhada",
+    "meaningJa": "すっきりする",
+    "exampleKo": "마음이 홀가분합니다.",
+    "exampleJa": "心がすっきりします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-322",
+    "korean": "개운하다",
+    "reading": "gaeunhada",
+    "meaningJa": "すっきりする",
+    "exampleKo": "속이 개운합니다.",
+    "exampleJa": "胸がすっきりします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-323",
+    "korean": "청량하다",
+    "reading": "cheongnyanghada",
+    "meaningJa": "清涼だ",
+    "exampleKo": "청량한 바람입니다.",
+    "exampleJa": "清涼な風です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-324",
+    "korean": "우직하다",
+    "reading": "ujikhada",
+    "meaningJa": "実直だ",
+    "exampleKo": "우직한 성품입니다.",
+    "exampleJa": "実直な人柄です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-325",
+    "korean": "꼼꼼하다",
+    "reading": "kkomkkomhada",
+    "meaningJa": "几帳面だ",
+    "exampleKo": "꼼꼼한 성격입니다.",
+    "exampleJa": "几帳面な性格です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-326",
+    "korean": "까다롭다",
+    "reading": "kkadaropda",
+    "meaningJa": "気難しい",
+    "exampleKo": "까다로운 입맛입니다.",
+    "exampleJa": "気難しい口です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-327",
+    "korean": "다정하다",
+    "reading": "dajeonghada",
+    "meaningJa": "優しい",
+    "exampleKo": "다정한 말투입니다.",
+    "exampleJa": "優しい口調です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-328",
+    "korean": "무뚝뚝하다",
+    "reading": "muttukttukhada",
+    "meaningJa": "ぶっきらぼうだ",
+    "exampleKo": "무뚝뚝한 말투입니다.",
+    "exampleJa": "ぶっきらぼうな口調です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-329",
+    "korean": "오만하다",
+    "reading": "omanhada",
+    "meaningJa": "傲慢だ",
+    "exampleKo": "오만한 태도입니다.",
+    "exampleJa": "傲慢な態度です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-330",
+    "korean": "무심하다",
+    "reading": "musimhada",
+    "meaningJa": "無関心だ",
+    "exampleKo": "무심한 척합니다.",
+    "exampleJa": "無関心なふりをします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-331",
+    "korean": "세심하다",
+    "reading": "sesimhada",
+    "meaningJa": "細心だ",
+    "exampleKo": "세심한 배려입니다.",
+    "exampleJa": "細心な配慮です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-332",
+    "korean": "끈질기다",
+    "reading": "kkeunjilgida",
+    "meaningJa": "しつこい",
+    "exampleKo": "끈질긴 설득입니다.",
+    "exampleJa": "しつこい説得です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-333",
+    "korean": "집요하다",
+    "reading": "jibyohada",
+    "meaningJa": "執拗だ",
+    "exampleKo": "집요한 추궁입니다.",
+    "exampleJa": "執拗な追及です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-334",
+    "korean": "대담하다",
+    "reading": "daedamhada",
+    "meaningJa": "大胆だ",
+    "exampleKo": "대담한 시도입니다.",
+    "exampleJa": "大胆な試みです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-335",
+    "korean": "소심하다",
+    "reading": "sosimhada",
+    "meaningJa": "小心だ",
+    "exampleKo": "소심한 성격입니다.",
+    "exampleJa": "小心な性格です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-336",
+    "korean": "용감하다",
+    "reading": "yonggamhada",
+    "meaningJa": "勇敢だ",
+    "exampleKo": "용감한 행동입니다.",
+    "exampleJa": "勇敢な行動です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-337",
+    "korean": "비겁하다",
+    "reading": "bigeophada",
+    "meaningJa": "卑怯だ",
+    "exampleKo": "비겁한 변명입니다.",
+    "exampleJa": "卑怯な言い訳です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-338",
+    "korean": "불성실하다",
+    "reading": "bulseongsilhada",
+    "meaningJa": "不誠実だ",
+    "exampleKo": "불성실한 태도입니다.",
+    "exampleJa": "不誠実な態度です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-339",
+    "korean": "근면하다",
+    "reading": "geunmyeonhada",
+    "meaningJa": "勤勉だ",
+    "exampleKo": "근면한 일꾼입니다.",
+    "exampleJa": "勤勉な働き手です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-340",
+    "korean": "야박하다",
+    "reading": "yabakhada",
+    "meaningJa": "薄情だ",
+    "exampleKo": "야박한 대우입니다.",
+    "exampleJa": "薄情な仕打ちです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-341",
+    "korean": "가급적",
+    "reading": "gageupjeok",
+    "meaningJa": "できるだけ",
+    "exampleKo": "가급적 빨리 옵니다.",
+    "exampleJa": "できるだけ早く来ます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-342",
+    "korean": "되도록",
+    "reading": "doedorok",
+    "meaningJa": "できるだけ",
+    "exampleKo": "되도록 조용히 합니다.",
+    "exampleJa": "できるだけ静かにします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-343",
+    "korean": "모처럼",
+    "reading": "mocheoreom",
+    "meaningJa": "せっかく",
+    "exampleKo": "모처럼의 휴가입니다.",
+    "exampleJa": "せっかくの休暇です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-344",
+    "korean": "문득",
+    "reading": "mundeuk",
+    "meaningJa": "ふと",
+    "exampleKo": "문득 떠올랐습니다.",
+    "exampleJa": "ふと思い出しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-345",
+    "korean": "불현듯",
+    "reading": "bulhyeondeut",
+    "meaningJa": "不意に",
+    "exampleKo": "불현듯 생각났습니다.",
+    "exampleJa": "不意に思い出しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-346",
+    "korean": "차츰",
+    "reading": "chacheum",
+    "meaningJa": "次第に",
+    "exampleKo": "차츰 나아집니다.",
+    "exampleJa": "次第に良くなります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-347",
+    "korean": "점차",
+    "reading": "jeomcha",
+    "meaningJa": "徐々に",
+    "exampleKo": "점차 확대됩니다.",
+    "exampleJa": "徐々に拡大します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-348",
+    "korean": "꾸준히",
+    "reading": "kkujunhi",
+    "meaningJa": "着実に",
+    "exampleKo": "꾸준히 노력합니다.",
+    "exampleJa": "着実に努力します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-349",
+    "korean": "끊임없이",
+    "reading": "kkeunimeopsi",
+    "meaningJa": "絶えず",
+    "exampleKo": "끊임없이 도전합니다.",
+    "exampleJa": "絶えず挑戦します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-350",
+    "korean": "마침내",
+    "reading": "machimnae",
+    "meaningJa": "ついに",
+    "exampleKo": "마침내 해냈습니다.",
+    "exampleJa": "ついにやり遂げました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-351",
+    "korean": "드디어",
+    "reading": "deudieo",
+    "meaningJa": "いよいよ",
+    "exampleKo": "드디어 완성되었습니다.",
+    "exampleJa": "いよいよ完成しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-352",
+    "korean": "결국",
+    "reading": "gyeolguk",
+    "meaningJa": "結局",
+    "exampleKo": "결국 포기했습니다.",
+    "exampleJa": "結局諦めました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-353",
+    "korean": "도리어",
+    "reading": "dorieo",
+    "meaningJa": "かえって",
+    "exampleKo": "도리어 잘되었습니다.",
+    "exampleJa": "かえって良かったです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-354",
+    "korean": "오히려",
+    "reading": "ohiryeo",
+    "meaningJa": "むしろ",
+    "exampleKo": "오히려 좋습니다.",
+    "exampleJa": "むしろ良いです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-355",
+    "korean": "설령",
+    "reading": "seolryeong",
+    "meaningJa": "たとえ",
+    "exampleKo": "설령 실패하더라도 도전합니다.",
+    "exampleJa": "たとえ失敗しても挑みます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-356",
+    "korean": "만일",
+    "reading": "manil",
+    "meaningJa": "万一",
+    "exampleKo": "만일에 대비합니다.",
+    "exampleJa": "万一に備えます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-357",
+    "korean": "가령",
+    "reading": "garyeong",
+    "meaningJa": "例えば",
+    "exampleKo": "가령 이런 경우입니다.",
+    "exampleJa": "例えばこんな場合です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-358",
+    "korean": "즉",
+    "reading": "jeuk",
+    "meaningJa": "すなわち",
+    "exampleKo": "즉 포기한 셈입니다.",
+    "exampleJa": "すなわち諦めたも同然です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-359",
+    "korean": "다시 말해",
+    "reading": "dasimalhae",
+    "meaningJa": "言い換えれば",
+    "exampleKo": "다시 말해 전면 개편입니다.",
+    "exampleJa": "言い換えれば全面改編です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-360",
+    "korean": "하물며",
+    "reading": "hamulmyeo",
+    "meaningJa": "まして",
+    "exampleKo": "하물며 어린아이인데요.",
+    "exampleJa": "まして幼い子なのに。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-361",
+    "korean": "대기 오염",
+    "reading": "daegioyeom",
+    "meaningJa": "大気汚染",
+    "exampleKo": "대기 오염이 심각합니다.",
+    "exampleJa": "大気汚染が深刻です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-362",
+    "korean": "수질 오염",
+    "reading": "sujiloyeom",
+    "meaningJa": "水質汚染",
+    "exampleKo": "수질 오염을 막습니다.",
+    "exampleJa": "水質汚染を防ぎます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-363",
+    "korean": "토양 오염",
+    "reading": "toyangoyeom",
+    "meaningJa": "土壌汚染",
+    "exampleKo": "토양 오염을 정화합니다.",
+    "exampleJa": "土壌汚染を浄化します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-364",
+    "korean": "미세 먼지",
+    "reading": "misaemeonji",
+    "meaningJa": "微細粉塵",
+    "exampleKo": "미세 먼지가 심합니다.",
+    "exampleJa": "微細粉塵がひどいです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-365",
+    "korean": "온실가스",
+    "reading": "onsilgaseu",
+    "meaningJa": "温室効果ガス",
+    "exampleKo": "온실가스를 줄입니다.",
+    "exampleJa": "温室効果ガスを減らします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-366",
+    "korean": "지구 온난화",
+    "reading": "jiguonnanhwa",
+    "meaningJa": "地球温暖化",
+    "exampleKo": "지구 온난화가 진행됩니다.",
+    "exampleJa": "地球温暖化が進みます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-367",
+    "korean": "기후 변화",
+    "reading": "gihubyeonhwa",
+    "meaningJa": "気候変動",
+    "exampleKo": "기후 변화에 대응합니다.",
+    "exampleJa": "気候変動に対応します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-368",
+    "korean": "사막화",
+    "reading": "samakhwa",
+    "meaningJa": "砂漠化",
+    "exampleKo": "사막화가 확산됩니다.",
+    "exampleJa": "砂漠化が広がります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-369",
+    "korean": "해수면 상승",
+    "reading": "haesumyeonsangseung",
+    "meaningJa": "海面上昇",
+    "exampleKo": "해수면 상승이 우려됩니다.",
+    "exampleJa": "海面上昇が懸念されます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-370",
+    "korean": "생태계",
+    "reading": "saengtaegye",
+    "meaningJa": "生態系",
+    "exampleKo": "생태계를 보호합니다.",
+    "exampleJa": "生態系を守ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-371",
+    "korean": "생물 다양성",
+    "reading": "saengmundayangseong",
+    "meaningJa": "生物多様性",
+    "exampleKo": "생물 다양성을 지킵니다.",
+    "exampleJa": "生物多様性を守ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-372",
+    "korean": "멸종 위기",
+    "reading": "myeoljongwigi",
+    "meaningJa": "絶滅危惧",
+    "exampleKo": "멸종 위기종입니다.",
+    "exampleJa": "絶滅危惧種です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-373",
+    "korean": "천연자원",
+    "reading": "cheonyeonjawon",
+    "meaningJa": "天然資源",
+    "exampleKo": "천연자원이 풍부합니다.",
+    "exampleJa": "天然資源が豊富です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-374",
+    "korean": "재생 에너지",
+    "reading": "jaesaengeneoji",
+    "meaningJa": "再生エネルギー",
+    "exampleKo": "재생 에너지를 확대합니다.",
+    "exampleJa": "再生エネルギーを拡大します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-375",
+    "korean": "태양광",
+    "reading": "taeyanggwang",
+    "meaningJa": "太陽光",
+    "exampleKo": "태양광 발전을 합니다.",
+    "exampleJa": "太陽光発電をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-376",
+    "korean": "풍력",
+    "reading": "pungnyeok",
+    "meaningJa": "風力",
+    "exampleKo": "풍력 발전을 합니다.",
+    "exampleJa": "風力発電をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-377",
+    "korean": "원자력",
+    "reading": "wonjaryeok",
+    "meaningJa": "原子力",
+    "exampleKo": "원자력 발전을 합니다.",
+    "exampleJa": "原子力発電をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-378",
+    "korean": "방사능",
+    "reading": "bangsaneung",
+    "meaningJa": "放射能",
+    "exampleKo": "방사능이 유출되었습니다.",
+    "exampleJa": "放射能が漏れました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-379",
+    "korean": "백신",
+    "reading": "baeksin",
+    "meaningJa": "ワクチン",
+    "exampleKo": "백신을 접종합니다.",
+    "exampleJa": "ワクチンを接種します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-380",
+    "korean": "면역",
+    "reading": "myeonyeok",
+    "meaningJa": "免疫",
+    "exampleKo": "면역이 생겼습니다.",
+    "exampleJa": "免疫ができました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-381",
+    "korean": "면역력",
+    "reading": "myeonyeokryeok",
+    "meaningJa": "免疫力",
+    "exampleKo": "면역력을 키웁니다.",
+    "exampleJa": "免疫力を育てます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-382",
+    "korean": "전염병",
+    "reading": "jeonyeombyeong",
+    "meaningJa": "伝染病",
+    "exampleKo": "전염병이 유행합니다.",
+    "exampleJa": "伝染病が流行します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-383",
+    "korean": "격리",
+    "reading": "gyeongni",
+    "meaningJa": "隔離",
+    "exampleKo": "환자를 격리합니다.",
+    "exampleJa": "患者を隔離します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-384",
+    "korean": "방역",
+    "reading": "bangyeok",
+    "meaningJa": "防疫",
+    "exampleKo": "방역을 강화합니다.",
+    "exampleJa": "防疫を強化します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-385",
+    "korean": "소독",
+    "reading": "sodok",
+    "meaningJa": "消毒",
+    "exampleKo": "손을 소독합니다.",
+    "exampleJa": "手を消毒します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-386",
+    "korean": "금연 구역",
+    "reading": "geumnyeonguyeok",
+    "meaningJa": "禁煙区域",
+    "exampleKo": "금연 구역이 확대되었습니다.",
+    "exampleJa": "禁煙区域が拡大しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-387",
+    "korean": "영양소",
+    "reading": "yeongyangso",
+    "meaningJa": "栄養素",
+    "exampleKo": "영양소를 골고루 섭취합니다.",
+    "exampleJa": "栄養素をまんべんなく摂ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-388",
+    "korean": "위생 관리",
+    "reading": "wisaenggwanri",
+    "meaningJa": "衛生管理",
+    "exampleKo": "위생 관리를 철저히 합니다.",
+    "exampleJa": "衛生管理を徹底します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-389",
+    "korean": "직무 스트레스",
+    "reading": "jikmusuteureseu",
+    "meaningJa": "職務ストレス",
+    "exampleKo": "직무 스트레스가 큽니다.",
+    "exampleJa": "職務ストレスが大きいです。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-390",
+    "korean": "균형 잡힌 식사",
+    "reading": "gyunhyeongjapinsiksa",
+    "meaningJa": "バランスの取れた食事",
+    "exampleKo": "균형 잡힌 식사를 합니다.",
+    "exampleJa": "バランスの取れた食事をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-391",
+    "korean": "과로",
+    "reading": "gwaro",
+    "meaningJa": "過労",
+    "exampleKo": "과로로 쓰러졌습니다.",
+    "exampleJa": "過労で倒れました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-392",
+    "korean": "과로사",
+    "reading": "gwarosa",
+    "meaningJa": "過労死",
+    "exampleKo": "과로사를 막습니다.",
+    "exampleJa": "過労死を防ぎます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-393",
+    "korean": "금주",
+    "reading": "geumju",
+    "meaningJa": "禁酒",
+    "exampleKo": "금주 중입니다.",
+    "exampleJa": "禁酒中です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-394",
+    "korean": "절주",
+    "reading": "jeolju",
+    "meaningJa": "節酒",
+    "exampleKo": "절주를 결심했습니다.",
+    "exampleJa": "節酒を決心しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-395",
+    "korean": "폭식",
+    "reading": "poksik",
+    "meaningJa": "暴食",
+    "exampleKo": "폭식을 삼가합니다.",
+    "exampleJa": "暴食を控えます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-396",
+    "korean": "소식지",
+    "reading": "sosikji",
+    "meaningJa": "広報紙",
+    "exampleKo": "소식지를 발행합니다.",
+    "exampleJa": "広報紙を発行します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-397",
+    "korean": "불면증",
+    "reading": "bulmyeonjeung",
+    "meaningJa": "不眠症",
+    "exampleKo": "불면증에 시달립니다.",
+    "exampleJa": "不眠症に悩まされます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-398",
+    "korean": "만성 피로",
+    "reading": "manseongpiro",
+    "meaningJa": "慢性疲労",
+    "exampleKo": "만성 피로에 시달립니다.",
+    "exampleJa": "慢性疲労に悩まされます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-399",
+    "korean": "유행어",
+    "reading": "yuhaengeo",
+    "meaningJa": "流行語",
+    "exampleKo": "유행어가 생겼습니다.",
+    "exampleJa": "流行語が生まれました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-400",
+    "korean": "에너지 절약",
+    "reading": "eneojijeoryak",
+    "meaningJa": "省エネ",
+    "exampleKo": "에너지 절약을 실천합니다.",
+    "exampleJa": "省エネを実践します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-401",
+    "korean": "문화유산",
+    "reading": "munhwayusan",
+    "meaningJa": "文化遺産",
+    "exampleKo": "문화유산을 답사합니다.",
+    "exampleJa": "文化遺産を訪ねます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-402",
+    "korean": "세계유산",
+    "reading": "segyeyusan",
+    "meaningJa": "世界遺産",
+    "exampleKo": "세계유산에 등재되었습니다.",
+    "exampleJa": "世界遺産に登録されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-403",
+    "korean": "국보",
+    "reading": "gukbo",
+    "meaningJa": "国宝",
+    "exampleKo": "국보로 지정되었습니다.",
+    "exampleJa": "国宝に指定されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-404",
+    "korean": "보물",
+    "reading": "bomul",
+    "meaningJa": "宝物",
+    "exampleKo": "보물로 지정되었습니다.",
+    "exampleJa": "宝物に指定されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-405",
+    "korean": "사적",
+    "reading": "sajeok",
+    "meaningJa": "史跡",
+    "exampleKo": "사적을 둘러봅니다.",
+    "exampleJa": "史跡を巡ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-406",
+    "korean": "고인돌",
+    "reading": "goindol",
+    "meaningJa": "支石墓",
+    "exampleKo": "고인돌을 견학합니다.",
+    "exampleJa": "支石墓を見学します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-407",
+    "korean": "발굴",
+    "reading": "balgul",
+    "meaningJa": "発掘",
+    "exampleKo": "유적을 발굴합니다.",
+    "exampleJa": "遺跡を発掘します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-408",
+    "korean": "복원",
+    "reading": "bogwon",
+    "meaningJa": "復元",
+    "exampleKo": "궁궐을 복원합니다.",
+    "exampleJa": "宮殿を復元します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-409",
+    "korean": "보존",
+    "reading": "bojon",
+    "meaningJa": "保存",
+    "exampleKo": "원형을 보존합니다.",
+    "exampleJa": "原形を保存します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-410",
+    "korean": "가면극",
+    "reading": "gamyeongeuk",
+    "meaningJa": "仮面劇",
+    "exampleKo": "가면극을 관람합니다.",
+    "exampleJa": "仮面劇を見ます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-411",
+    "korean": "관습",
+    "reading": "gwanseup",
+    "meaningJa": "慣習",
+    "exampleKo": "관습을 따릅니다.",
+    "exampleJa": "慣習に従います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-412",
+    "korean": "풍습",
+    "reading": "pungseup",
+    "meaningJa": "風習",
+    "exampleKo": "풍습이 남아 있습니다.",
+    "exampleJa": "風習が残っています。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-413",
+    "korean": "예절",
+    "reading": "yejeol",
+    "meaningJa": "礼節",
+    "exampleKo": "예절을 지킵니다.",
+    "exampleJa": "礼節を守ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-414",
+    "korean": "제사",
+    "reading": "jesa",
+    "meaningJa": "祭祀",
+    "exampleKo": "제사를 지냅니다.",
+    "exampleJa": "祭祀を行います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-415",
+    "korean": "세시 풍속",
+    "reading": "sesipungsok",
+    "meaningJa": "歳時風俗",
+    "exampleKo": "세시 풍속을 전합니다.",
+    "exampleJa": "歳時風俗を伝えます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-416",
+    "korean": "민속",
+    "reading": "minsok",
+    "meaningJa": "民俗",
+    "exampleKo": "민속을 연구합니다.",
+    "exampleJa": "民俗を研究します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-417",
+    "korean": "설화",
+    "reading": "seolhwa",
+    "meaningJa": "説話",
+    "exampleKo": "설화를 채록합니다.",
+    "exampleJa": "説話を採録します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-418",
+    "korean": "전설",
+    "reading": "jeonseol",
+    "meaningJa": "伝説",
+    "exampleKo": "전설이 전해집니다.",
+    "exampleJa": "伝説が伝わります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-419",
+    "korean": "신화",
+    "reading": "sinhwa",
+    "meaningJa": "神話",
+    "exampleKo": "신화를 모았습니다.",
+    "exampleJa": "神話を集めました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-420",
+    "korean": "속담",
+    "reading": "sokdam",
+    "meaningJa": "ことわざ",
+    "exampleKo": "속담을 인용합니다.",
+    "exampleJa": "ことわざを引用します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-421",
+    "korean": "사자성어",
+    "reading": "sajaseongeo",
+    "meaningJa": "四字成語",
+    "exampleKo": "사자성어를 외웁니다.",
+    "exampleJa": "四字成語を覚えます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-422",
+    "korean": "서예",
+    "reading": "seoye",
+    "meaningJa": "書芸",
+    "exampleKo": "서예를 배웁니다.",
+    "exampleJa": "書芸を習います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-423",
+    "korean": "도자기",
+    "reading": "dojagi",
+    "meaningJa": "陶磁器",
+    "exampleKo": "도자기를 굽습니다.",
+    "exampleJa": "陶磁器を焼きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-424",
+    "korean": "공예",
+    "reading": "gongye",
+    "meaningJa": "工芸",
+    "exampleKo": "공예를 체험합니다.",
+    "exampleJa": "工芸を体験します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-425",
+    "korean": "자수",
+    "reading": "jasu",
+    "meaningJa": "刺繍",
+    "exampleKo": "자수를 놓습니다.",
+    "exampleJa": "刺繍をします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-426",
+    "korean": "한옥",
+    "reading": "hanok",
+    "meaningJa": "韓屋",
+    "exampleKo": "한옥에 묵습니다.",
+    "exampleJa": "韓屋に泊まります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-427",
+    "korean": "궁궐",
+    "reading": "gunggwol",
+    "meaningJa": "宮殿",
+    "exampleKo": "궁궐을 거닙니다.",
+    "exampleJa": "宮殿を歩きます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-428",
+    "korean": "사찰",
+    "reading": "sachal",
+    "meaningJa": "寺刹",
+    "exampleKo": "사찰을 참배합니다.",
+    "exampleJa": "寺を参拝します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-429",
+    "korean": "탑",
+    "reading": "tap",
+    "meaningJa": "塔",
+    "exampleKo": "탑을 올려다봅니다.",
+    "exampleJa": "塔を見上げます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-430",
+    "korean": "고문서",
+    "reading": "gomunseo",
+    "meaningJa": "古文書",
+    "exampleKo": "고문서를 해독합니다.",
+    "exampleJa": "古文書を解読します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-431",
+    "korean": "왕조",
+    "reading": "wangjo",
+    "meaningJa": "王朝",
+    "exampleKo": "왕조가 바뀌었습니다.",
+    "exampleJa": "王朝が変わりました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-432",
+    "korean": "건국",
+    "reading": "geonguk",
+    "meaningJa": "建国",
+    "exampleKo": "국가를 건국합니다.",
+    "exampleJa": "国家を建国します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-433",
+    "korean": "멸망",
+    "reading": "myeolmang",
+    "meaningJa": "滅亡",
+    "exampleKo": "왕조가 멸망했습니다.",
+    "exampleJa": "王朝が滅亡しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-434",
+    "korean": "점령",
+    "reading": "jeomnyeong",
+    "meaningJa": "占領",
+    "exampleKo": "수도를 점령했습니다.",
+    "exampleJa": "首都を占領しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-435",
+    "korean": "식민지",
+    "reading": "sikminji",
+    "meaningJa": "植民地",
+    "exampleKo": "식민지가 되었습니다.",
+    "exampleJa": "植民地になりました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-436",
+    "korean": "독립",
+    "reading": "dongnip",
+    "meaningJa": "独立",
+    "exampleKo": "독립을 쟁취했습니다.",
+    "exampleJa": "独立を勝ち取りました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-437",
+    "korean": "광복",
+    "reading": "gwangbok",
+    "meaningJa": "光復",
+    "exampleKo": "광복을 맞았습니다.",
+    "exampleJa": "光復を迎えました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-438",
+    "korean": "휴전",
+    "reading": "hyujeon",
+    "meaningJa": "休戦",
+    "exampleKo": "휴전에 합의했습니다.",
+    "exampleJa": "休戦に合意しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-439",
+    "korean": "분단",
+    "reading": "bundan",
+    "meaningJa": "分断",
+    "exampleKo": "분단이 장기화됩니다.",
+    "exampleJa": "分断が長期化します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-440",
+    "korean": "통일",
+    "reading": "tongil",
+    "meaningJa": "統一",
+    "exampleKo": "통일을 염원합니다.",
+    "exampleJa": "統一を願います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-441",
+    "korean": "외교",
+    "reading": "oegyo",
+    "meaningJa": "外交",
+    "exampleKo": "외교로 해결합니다.",
+    "exampleJa": "外交で解決します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-442",
+    "korean": "대사",
+    "reading": "daesa",
+    "meaningJa": "大使",
+    "exampleKo": "대사로 부임했습니다.",
+    "exampleJa": "大使として赴任しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-443",
+    "korean": "영사",
+    "reading": "yeongsa",
+    "meaningJa": "領事",
+    "exampleKo": "영사를 만났습니다.",
+    "exampleJa": "領事に会いました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-444",
+    "korean": "조약",
+    "reading": "joyak",
+    "meaningJa": "条約",
+    "exampleKo": "조약을 체결합니다.",
+    "exampleJa": "条約を締結します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-445",
+    "korean": "협정",
+    "reading": "hyeopjeong",
+    "meaningJa": "協定",
+    "exampleKo": "협정을 맺습니다.",
+    "exampleJa": "協定を結びます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-446",
+    "korean": "동맹",
+    "reading": "dongmaeng",
+    "meaningJa": "同盟",
+    "exampleKo": "동맹을 강화합니다.",
+    "exampleJa": "同盟を強化します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-447",
+    "korean": "중재",
+    "reading": "jungjae",
+    "meaningJa": "仲裁",
+    "exampleKo": "분쟁을 중재합니다.",
+    "exampleJa": "紛争を仲裁します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-448",
+    "korean": "제재",
+    "reading": "jejae",
+    "meaningJa": "制裁",
+    "exampleKo": "제재를 가합니다.",
+    "exampleJa": "制裁を加えます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-449",
+    "korean": "원조",
+    "reading": "wonjo",
+    "meaningJa": "援助",
+    "exampleKo": "원조를 요청합니다.",
+    "exampleJa": "援助を求めます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-450",
+    "korean": "망명",
+    "reading": "mangmyeong",
+    "meaningJa": "亡命",
+    "exampleKo": "망명을 신청합니다.",
+    "exampleJa": "亡命を申請します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-451",
+    "korean": "소송",
+    "reading": "sosong",
+    "meaningJa": "訴訟",
+    "exampleKo": "소송을 제기합니다.",
+    "exampleJa": "訴訟を提起します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-452",
+    "korean": "원고",
+    "reading": "wongo",
+    "meaningJa": "原告",
+    "exampleKo": "원고가 승소했습니다.",
+    "exampleJa": "原告が勝訴しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-453",
+    "korean": "피고",
+    "reading": "pigo",
+    "meaningJa": "被告",
+    "exampleKo": "피고가 출석했습니다.",
+    "exampleJa": "被告が出席しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-454",
+    "korean": "증언",
+    "reading": "jeungeon",
+    "meaningJa": "証言",
+    "exampleKo": "증언을 번복했습니다.",
+    "exampleJa": "証言を翻しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-455",
+    "korean": "판결",
+    "reading": "pangyeol",
+    "meaningJa": "判決",
+    "exampleKo": "판결이 확정되었습니다.",
+    "exampleJa": "判決が確定しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-456",
+    "korean": "선고",
+    "reading": "seongo",
+    "meaningJa": "宣告",
+    "exampleKo": "실형을 선고받았습니다.",
+    "exampleJa": "実刑を宣告されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-457",
+    "korean": "항소",
+    "reading": "hangso",
+    "meaningJa": "控訴",
+    "exampleKo": "항소했습니다.",
+    "exampleJa": "控訴しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-458",
+    "korean": "상고",
+    "reading": "sanggo",
+    "meaningJa": "上告",
+    "exampleKo": "상고했습니다.",
+    "exampleJa": "上告しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-459",
+    "korean": "무죄",
+    "reading": "mujoe",
+    "meaningJa": "無罪",
+    "exampleKo": "무죄 판결을 받았습니다.",
+    "exampleJa": "無罪判決を受けました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-460",
+    "korean": "유죄",
+    "reading": "yujoe",
+    "meaningJa": "有罪",
+    "exampleKo": "유죄 판결이 났습니다.",
+    "exampleJa": "有罪判決が出ました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-461",
+    "korean": "형벌",
+    "reading": "hyeongbeol",
+    "meaningJa": "刑罰",
+    "exampleKo": "형벌을 받았습니다.",
+    "exampleJa": "刑罰を受けました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-462",
+    "korean": "과태료",
+    "reading": "gwataeryo",
+    "meaningJa": "過料",
+    "exampleKo": "과태료를 부과받았습니다.",
+    "exampleJa": "過料を科されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-463",
+    "korean": "징역",
+    "reading": "jingyeok",
+    "meaningJa": "懲役",
+    "exampleKo": "징역 삼 년입니다.",
+    "exampleJa": "懲役三年です。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-464",
+    "korean": "집행 유예",
+    "reading": "jiphaengyuye",
+    "meaningJa": "執行猶予",
+    "exampleKo": "집행 유예를 선고받았습니다.",
+    "exampleJa": "執行猶予を宣告されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-465",
+    "korean": "가석방",
+    "reading": "gaseokbang",
+    "meaningJa": "仮釈放",
+    "exampleKo": "가석방되었습니다.",
+    "exampleJa": "仮釈放されました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-466",
+    "korean": "변호",
+    "reading": "byeonho",
+    "meaningJa": "弁護",
+    "exampleKo": "피고인을 변호합니다.",
+    "exampleJa": "被告人を弁護します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-467",
+    "korean": "변호사",
+    "reading": "byeonhosa",
+    "meaningJa": "弁護士",
+    "exampleKo": "변호사를 선임합니다.",
+    "exampleJa": "弁護士を選任します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-468",
+    "korean": "검사",
+    "reading": "geomsa",
+    "meaningJa": "検事",
+    "exampleKo": "검사가 기소합니다.",
+    "exampleJa": "検事が起訴します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-469",
+    "korean": "판사",
+    "reading": "pansa",
+    "meaningJa": "判事",
+    "exampleKo": "판사가 판결합니다.",
+    "exampleJa": "判事が判決します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-470",
+    "korean": "법정",
+    "reading": "beopjeong",
+    "meaningJa": "法廷",
+    "exampleKo": "법정에 섭니다.",
+    "exampleJa": "法廷に立ちます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-471",
+    "korean": "헌법",
+    "reading": "heonbeop",
+    "meaningJa": "憲法",
+    "exampleKo": "헌법에 보장되어 있습니다.",
+    "exampleJa": "憲法に保障されています。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-472",
+    "korean": "민법",
+    "reading": "minbeop",
+    "meaningJa": "民法",
+    "exampleKo": "민법을 적용합니다.",
+    "exampleJa": "民法を適用します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-473",
+    "korean": "형법",
+    "reading": "hyeongbeop",
+    "meaningJa": "刑法",
+    "exampleKo": "형법으로 처벌합니다.",
+    "exampleJa": "刑法で処罰します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-474",
+    "korean": "저작권",
+    "reading": "jeojakgwon",
+    "meaningJa": "著作権",
+    "exampleKo": "저작권을 침해했습니다.",
+    "exampleJa": "著作権を侵害しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-475",
+    "korean": "특허",
+    "reading": "teukheo",
+    "meaningJa": "特許",
+    "exampleKo": "특허를 출원합니다.",
+    "exampleJa": "特許を出願します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-476",
+    "korean": "상표권",
+    "reading": "sangpyogwon",
+    "meaningJa": "商標権",
+    "exampleKo": "상표권을 등록합니다.",
+    "exampleJa": "商標権を登録します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-477",
+    "korean": "초상권",
+    "reading": "chosanggwon",
+    "meaningJa": "肖像権",
+    "exampleKo": "초상권을 주장합니다.",
+    "exampleJa": "肖像権を主張します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-478",
+    "korean": "개인정보",
+    "reading": "gaeinjeongbo",
+    "meaningJa": "個人情報",
+    "exampleKo": "개인정보를 보호합니다.",
+    "exampleJa": "個人情報を守ります。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-479",
+    "korean": "사생활",
+    "reading": "sasaenghwal",
+    "meaningJa": "私生活",
+    "exampleKo": "사생활을 존중합니다.",
+    "exampleJa": "私生活を尊重します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-480",
+    "korean": "명예훼손",
+    "reading": "myeongyehweson",
+    "meaningJa": "名誉毀損",
+    "exampleKo": "명예훼손으로 고발했습니다.",
+    "exampleJa": "名誉毀損で告発しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-481",
+    "korean": "손해 배상",
+    "reading": "sonhaebaesang",
+    "meaningJa": "損害賠償",
+    "exampleKo": "손해 배상을 청구합니다.",
+    "exampleJa": "損害賠償を請求します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-482",
+    "korean": "위자료",
+    "reading": "wijaryo",
+    "meaningJa": "慰謝料",
+    "exampleKo": "위자료를 지급합니다.",
+    "exampleJa": "慰謝料を支払います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-483",
+    "korean": "유언",
+    "reading": "yueon",
+    "meaningJa": "遺言",
+    "exampleKo": "유언을 남겼습니다.",
+    "exampleJa": "遺言を残しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-484",
+    "korean": "상속",
+    "reading": "sangsok",
+    "meaningJa": "相続",
+    "exampleKo": "재산을 상속합니다.",
+    "exampleJa": "財産を相続します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-485",
+    "korean": "증여",
+    "reading": "jeungyeo",
+    "meaningJa": "贈与",
+    "exampleKo": "증여세를 냅니다.",
+    "exampleJa": "贈与税を払います。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-486",
+    "korean": "혼인 신고",
+    "reading": "honinsingo",
+    "meaningJa": "婚姻届",
+    "exampleKo": "혼인 신고를 합니다.",
+    "exampleJa": "婚姻届を出します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-487",
+    "korean": "이혼",
+    "reading": "ihon",
+    "meaningJa": "離婚",
+    "exampleKo": "이혼을 결심했습니다.",
+    "exampleJa": "離婚を決心しました。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-488",
+    "korean": "양육권",
+    "reading": "yangyukgwon",
+    "meaningJa": "養育権",
+    "exampleKo": "양육권을 가집니다.",
+    "exampleJa": "養育権を持ちます。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-489",
+    "korean": "친권",
+    "reading": "chingwon",
+    "meaningJa": "親権",
+    "exampleKo": "친권을 행사합니다.",
+    "exampleJa": "親権を行使します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-490",
+    "korean": "입양",
+    "reading": "ibyang",
+    "meaningJa": "養子縁組",
+    "exampleKo": "아이를 입양합니다.",
+    "exampleJa": "子を養子にします。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-491",
+    "korean": "발굴하다",
+    "reading": "balgulhada",
+    "meaningJa": "発掘する",
+    "exampleKo": "유물을 발굴합니다.",
+    "exampleJa": "遺物を発掘します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-492",
+    "korean": "복원하다",
+    "reading": "bogwonhada",
+    "meaningJa": "復元する",
+    "exampleKo": "벽화를 복원합니다.",
+    "exampleJa": "壁画を復元します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-493",
+    "korean": "보존하다",
+    "reading": "bojonhada",
+    "meaningJa": "保存する",
+    "exampleKo": "기록을 보존합니다.",
+    "exampleJa": "記録を保存します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-494",
+    "korean": "고발하다",
+    "reading": "gobalhada",
+    "meaningJa": "告発する",
+    "exampleKo": "비리를 고발합니다.",
+    "exampleJa": "不正を告発します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-495",
+    "korean": "항소하다",
+    "reading": "hangsohada",
+    "meaningJa": "控訴する",
+    "exampleKo": "판결에 항소합니다.",
+    "exampleJa": "判決に控訴します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-496",
+    "korean": "선고하다",
+    "reading": "seongohada",
+    "meaningJa": "宣告する",
+    "exampleKo": "무죄를 선고합니다.",
+    "exampleJa": "無罪を宣告します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-497",
+    "korean": "독립하다",
+    "reading": "dongniphada",
+    "meaningJa": "独立する",
+    "exampleKo": "식민지에서 독립합니다.",
+    "exampleJa": "植民地から独立します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-498",
+    "korean": "통일하다",
+    "reading": "tongilhada",
+    "meaningJa": "統一する",
+    "exampleKo": "나라를 통일합니다.",
+    "exampleJa": "国を統一します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-499",
+    "korean": "중재하다",
+    "reading": "jungjaehada",
+    "meaningJa": "仲裁する",
+    "exampleKo": "분쟁을 중재합니다.",
+    "exampleJa": "紛争を仲裁します。",
+    "topikLevel": 4
+  },
+  {
+    "id": "t4-500",
+    "korean": "제재하다",
+    "reading": "jejaehada",
+    "meaningJa": "制裁する",
+    "exampleKo": "위반국을 제재합니다.",
+    "exampleJa": "違反国を制裁します。",
+    "topikLevel": 4
+  }
+]

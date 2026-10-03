@@ -1,0 +1,4502 @@
+[
+  {
+    "id": "t3-001",
+    "korean": "회의",
+    "reading": "hoeui",
+    "meaningJa": "会議",
+    "exampleKo": "회의에 참석합니다.",
+    "exampleJa": "会議に出席します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-002",
+    "korean": "계약",
+    "reading": "gyeyak",
+    "meaningJa": "契約",
+    "exampleKo": "계약을 맺습니다.",
+    "exampleJa": "契約を結びます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-003",
+    "korean": "출근",
+    "reading": "chulgeun",
+    "meaningJa": "出勤",
+    "exampleKo": "아침에 출근합니다.",
+    "exampleJa": "朝に出勤します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-004",
+    "korean": "퇴근",
+    "reading": "toegeun",
+    "meaningJa": "退勤",
+    "exampleKo": "저녁에 퇴근합니다.",
+    "exampleJa": "夜に退勤します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-005",
+    "korean": "야근",
+    "reading": "yageun",
+    "meaningJa": "残業",
+    "exampleKo": "오늘은 야근을 합니다.",
+    "exampleJa": "今日は残業をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-006",
+    "korean": "승진",
+    "reading": "seungjin",
+    "meaningJa": "昇進",
+    "exampleKo": "승진을 축하합니다.",
+    "exampleJa": "昇進をお祝いします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-007",
+    "korean": "연봉",
+    "reading": "yeonbong",
+    "meaningJa": "年俸",
+    "exampleKo": "연봉이 올랐습니다.",
+    "exampleJa": "年俸が上がりました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-008",
+    "korean": "복지",
+    "reading": "bokji",
+    "meaningJa": "福利厚生",
+    "exampleKo": "복지가 좋습니다.",
+    "exampleJa": "福利厚生が良いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-009",
+    "korean": "노조",
+    "reading": "nojo",
+    "meaningJa": "労働組合",
+    "exampleKo": "노조에 가입합니다.",
+    "exampleJa": "労組に加入します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-010",
+    "korean": "파업",
+    "reading": "paeop",
+    "meaningJa": "ストライキ",
+    "exampleKo": "파업이 끝났습니다.",
+    "exampleJa": "ストが終わりました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-011",
+    "korean": "채용",
+    "reading": "chaeyong",
+    "meaningJa": "採用",
+    "exampleKo": "신입을 채용합니다.",
+    "exampleJa": "新人を採用します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-012",
+    "korean": "면접",
+    "reading": "myeonjeop",
+    "meaningJa": "面接",
+    "exampleKo": "면접을 봅니다.",
+    "exampleJa": "面接を受けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-013",
+    "korean": "이력서",
+    "reading": "iryeokseo",
+    "meaningJa": "履歴書",
+    "exampleKo": "이력서를 제출합니다.",
+    "exampleJa": "履歴書を提出します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-014",
+    "korean": "경력",
+    "reading": "gyeongnyeok",
+    "meaningJa": "経歴",
+    "exampleKo": "경력이 풍부합니다.",
+    "exampleJa": "経歴が豊富です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-015",
+    "korean": "신입",
+    "reading": "sinip",
+    "meaningJa": "新人",
+    "exampleKo": "신입을 환영합니다.",
+    "exampleJa": "新人を歓迎します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-016",
+    "korean": "부서",
+    "reading": "buseo",
+    "meaningJa": "部署",
+    "exampleKo": "부서를 옮겼습니다.",
+    "exampleJa": "部署を移りました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-017",
+    "korean": "회의실",
+    "reading": "hoeuisil",
+    "meaningJa": "会議室",
+    "exampleKo": "회의실에서 만납니다.",
+    "exampleJa": "会議室で会います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-018",
+    "korean": "결재",
+    "reading": "gyeoljae",
+    "meaningJa": "決裁",
+    "exampleKo": "결재를 받습니다.",
+    "exampleJa": "決裁をもらいます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-019",
+    "korean": "서류",
+    "reading": "seoryu",
+    "meaningJa": "書類",
+    "exampleKo": "서류를 준비합니다.",
+    "exampleJa": "書類を用意します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-020",
+    "korean": "보고서",
+    "reading": "bogoseo",
+    "meaningJa": "報告書",
+    "exampleKo": "보고서를 작성합니다.",
+    "exampleJa": "報告書を書きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-021",
+    "korean": "매출",
+    "reading": "maechul",
+    "meaningJa": "売上",
+    "exampleKo": "매출이 늘었습니다.",
+    "exampleJa": "売上が増えました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-022",
+    "korean": "이익",
+    "reading": "iik",
+    "meaningJa": "利益",
+    "exampleKo": "이익이 생겼습니다.",
+    "exampleJa": "利益が出ました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-023",
+    "korean": "손실",
+    "reading": "sonsil",
+    "meaningJa": "損失",
+    "exampleKo": "손실이 줄었습니다.",
+    "exampleJa": "損失が減りました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-024",
+    "korean": "투자",
+    "reading": "tuja",
+    "meaningJa": "投資",
+    "exampleKo": "투자를 결정합니다.",
+    "exampleJa": "投資を決めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-025",
+    "korean": "주식",
+    "reading": "jusik",
+    "meaningJa": "株式",
+    "exampleKo": "주식을 삽니다.",
+    "exampleJa": "株を買います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-026",
+    "korean": "금리",
+    "reading": "geumri",
+    "meaningJa": "金利",
+    "exampleKo": "금리가 올랐습니다.",
+    "exampleJa": "金利が上がりました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-027",
+    "korean": "물가",
+    "reading": "mulga",
+    "meaningJa": "物価",
+    "exampleKo": "물가가 비쌉니다.",
+    "exampleJa": "物価が高いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-028",
+    "korean": "세금",
+    "reading": "segeum",
+    "meaningJa": "税金",
+    "exampleKo": "세금을 냅니다.",
+    "exampleJa": "税金を払います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-029",
+    "korean": "예산",
+    "reading": "yesan",
+    "meaningJa": "予算",
+    "exampleKo": "예산을 짭니다.",
+    "exampleJa": "予算を組みます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-030",
+    "korean": "지출",
+    "reading": "jichul",
+    "meaningJa": "支出",
+    "exampleKo": "지출을 줄입니다.",
+    "exampleJa": "支出を減らします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-031",
+    "korean": "소득",
+    "reading": "sodeuk",
+    "meaningJa": "所得",
+    "exampleKo": "소득이 늘었습니다.",
+    "exampleJa": "所得が増えました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-032",
+    "korean": "저축",
+    "reading": "jeochuk",
+    "meaningJa": "貯蓄",
+    "exampleKo": "저축을 시작합니다.",
+    "exampleJa": "貯蓄を始めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-033",
+    "korean": "대출",
+    "reading": "daechul",
+    "meaningJa": "融資",
+    "exampleKo": "대출을 신청합니다.",
+    "exampleJa": "融資を申し込みます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-034",
+    "korean": "이자",
+    "reading": "ija",
+    "meaningJa": "利子",
+    "exampleKo": "이자를 냅니다.",
+    "exampleJa": "利子を払います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-035",
+    "korean": "보험",
+    "reading": "boheom",
+    "meaningJa": "保険",
+    "exampleKo": "보험에 가입합니다.",
+    "exampleJa": "保険に入ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-036",
+    "korean": "연금",
+    "reading": "yeongeum",
+    "meaningJa": "年金",
+    "exampleKo": "연금을 받습니다.",
+    "exampleJa": "年金をもらいます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-037",
+    "korean": "경쟁",
+    "reading": "gyeongjaeng",
+    "meaningJa": "競争",
+    "exampleKo": "경쟁이 치열합니다.",
+    "exampleJa": "競争が激しいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-038",
+    "korean": "협력",
+    "reading": "hyeopnyeok",
+    "meaningJa": "協力",
+    "exampleKo": "협력을 요청합니다.",
+    "exampleJa": "協力を求めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-039",
+    "korean": "협상",
+    "reading": "hyeopsang",
+    "meaningJa": "交渉",
+    "exampleKo": "협상을 시작합니다.",
+    "exampleJa": "交渉を始めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-040",
+    "korean": "거래",
+    "reading": "georae",
+    "meaningJa": "取引",
+    "exampleKo": "거래가 성사되었습니다.",
+    "exampleJa": "取引が成立しました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-041",
+    "korean": "수출",
+    "reading": "suchul",
+    "meaningJa": "輸出",
+    "exampleKo": "수출이 늘었습니다.",
+    "exampleJa": "輸出が増えました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-042",
+    "korean": "수입",
+    "reading": "suip",
+    "meaningJa": "輸入",
+    "exampleKo": "수입이 줄었습니다.",
+    "exampleJa": "輸入が減りました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-043",
+    "korean": "무역",
+    "reading": "muyeok",
+    "meaningJa": "貿易",
+    "exampleKo": "무역을 합니다.",
+    "exampleJa": "貿易をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-044",
+    "korean": "시장",
+    "reading": "sijang",
+    "meaningJa": "市場",
+    "exampleKo": "시장에 갑니다.",
+    "exampleJa": "市場へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-045",
+    "korean": "소비자",
+    "reading": "sobija",
+    "meaningJa": "消費者",
+    "exampleKo": "소비자를 보호합니다.",
+    "exampleJa": "消費者を守ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-046",
+    "korean": "생산",
+    "reading": "saengsan",
+    "meaningJa": "生産",
+    "exampleKo": "생산을 늘립니다.",
+    "exampleJa": "生産を増やします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-047",
+    "korean": "소비",
+    "reading": "sobi",
+    "meaningJa": "消費",
+    "exampleKo": "소비를 줄입니다.",
+    "exampleJa": "消費を減らします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-048",
+    "korean": "유통",
+    "reading": "yutong",
+    "meaningJa": "流通",
+    "exampleKo": "유통이 빠릅니다.",
+    "exampleJa": "流通が速いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-049",
+    "korean": "광고",
+    "reading": "gwanggo",
+    "meaningJa": "広告",
+    "exampleKo": "광고를 봅니다.",
+    "exampleJa": "広告を見ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-050",
+    "korean": "홍보",
+    "reading": "hongbo",
+    "meaningJa": "広報",
+    "exampleKo": "홍보를 합니다.",
+    "exampleJa": "広報をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-051",
+    "korean": "브랜드",
+    "reading": "beuraendeu",
+    "meaningJa": "ブランド",
+    "exampleKo": "브랜드가 유명합니다.",
+    "exampleJa": "ブランドが有名です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-052",
+    "korean": "품질",
+    "reading": "pumjil",
+    "meaningJa": "品質",
+    "exampleKo": "품질이 좋습니다.",
+    "exampleJa": "品質が良いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-053",
+    "korean": "가격",
+    "reading": "gagyeok",
+    "meaningJa": "価格",
+    "exampleKo": "가격이 착합니다.",
+    "exampleJa": "値段が手頃です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-054",
+    "korean": "할인",
+    "reading": "harin",
+    "meaningJa": "割引",
+    "exampleKo": "할인을 받습니다.",
+    "exampleJa": "割引を受けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-055",
+    "korean": "환불",
+    "reading": "hwanbul",
+    "meaningJa": "返金",
+    "exampleKo": "환불을 요청합니다.",
+    "exampleJa": "返金を求めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-056",
+    "korean": "교환",
+    "reading": "gyohwan",
+    "meaningJa": "交換",
+    "exampleKo": "교환을 원합니다.",
+    "exampleJa": "交換を希望します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-057",
+    "korean": "배송",
+    "reading": "baesong",
+    "meaningJa": "配送",
+    "exampleKo": "배송이 빠릅니다.",
+    "exampleJa": "配送が速いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-058",
+    "korean": "포장",
+    "reading": "pojang",
+    "meaningJa": "包装",
+    "exampleKo": "포장이 깔끔합니다.",
+    "exampleJa": "包装がきれいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-059",
+    "korean": "재고",
+    "reading": "jaego",
+    "meaningJa": "在庫",
+    "exampleKo": "재고가 없습니다.",
+    "exampleJa": "在庫がありません。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-060",
+    "korean": "매장",
+    "reading": "maejang",
+    "meaningJa": "店舗",
+    "exampleKo": "매장에 갑니다.",
+    "exampleJa": "店舗へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-061",
+    "korean": "손님",
+    "reading": "sonnim",
+    "meaningJa": "お客",
+    "exampleKo": "손님이 많습니다.",
+    "exampleJa": "お客が多いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-062",
+    "korean": "고객",
+    "reading": "gogaek",
+    "meaningJa": "顧客",
+    "exampleKo": "고객을 응대합니다.",
+    "exampleJa": "顧客に対応します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-063",
+    "korean": "예약",
+    "reading": "yeyak",
+    "meaningJa": "予約",
+    "exampleKo": "예약을 합니다.",
+    "exampleJa": "予約をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-064",
+    "korean": "주문",
+    "reading": "jumun",
+    "meaningJa": "注文",
+    "exampleKo": "주문을 합니다.",
+    "exampleJa": "注文をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-065",
+    "korean": "결제",
+    "reading": "gyeolje",
+    "meaningJa": "決済",
+    "exampleKo": "결제를 마쳤습니다.",
+    "exampleJa": "決済を終えました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-066",
+    "korean": "영수증",
+    "reading": "yeongsujeung",
+    "meaningJa": "領収書",
+    "exampleKo": "영수증을 받습니다.",
+    "exampleJa": "領収書をもらいます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-067",
+    "korean": "현금",
+    "reading": "hyeongeum",
+    "meaningJa": "現金",
+    "exampleKo": "현금으로 냅니다.",
+    "exampleJa": "現金で払います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-068",
+    "korean": "카드",
+    "reading": "kadeu",
+    "meaningJa": "カード",
+    "exampleKo": "카드로 결제합니다.",
+    "exampleJa": "カードで決済します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-069",
+    "korean": "계좌",
+    "reading": "gyejwa",
+    "meaningJa": "口座",
+    "exampleKo": "계좌를 엽니다.",
+    "exampleJa": "口座を開きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-070",
+    "korean": "은행",
+    "reading": "eunhaeng",
+    "meaningJa": "銀行",
+    "exampleKo": "은행에 갑니다.",
+    "exampleJa": "銀行へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-071",
+    "korean": "선거",
+    "reading": "seongeo",
+    "meaningJa": "選挙",
+    "exampleKo": "선거에 참여합니다.",
+    "exampleJa": "選挙に参加します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-072",
+    "korean": "투표",
+    "reading": "tupyo",
+    "meaningJa": "投票",
+    "exampleKo": "투표를 합니다.",
+    "exampleJa": "投票をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-073",
+    "korean": "정부",
+    "reading": "jeongbu",
+    "meaningJa": "政府",
+    "exampleKo": "정부가 발표했습니다.",
+    "exampleJa": "政府が発表しました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-074",
+    "korean": "정책",
+    "reading": "jeongchaek",
+    "meaningJa": "政策",
+    "exampleKo": "정책이 바뀌었습니다.",
+    "exampleJa": "政策が変わりました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-075",
+    "korean": "법률",
+    "reading": "beomnyul",
+    "meaningJa": "法律",
+    "exampleKo": "법률을 지킵니다.",
+    "exampleJa": "法律を守ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-076",
+    "korean": "규칙",
+    "reading": "gyuchik",
+    "meaningJa": "規則",
+    "exampleKo": "규칙을 따릅니다.",
+    "exampleJa": "規則に従います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-077",
+    "korean": "위반",
+    "reading": "wiban",
+    "meaningJa": "違反",
+    "exampleKo": "위반을 삼가합니다.",
+    "exampleJa": "違反を控えます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-078",
+    "korean": "벌금",
+    "reading": "beolgeum",
+    "meaningJa": "罰金",
+    "exampleKo": "벌금을 냅니다.",
+    "exampleJa": "罰金を払います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-079",
+    "korean": "안전",
+    "reading": "anjeon",
+    "meaningJa": "安全",
+    "exampleKo": "안전이 중요합니다.",
+    "exampleJa": "安全が大切です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-080",
+    "korean": "사고",
+    "reading": "sago",
+    "meaningJa": "事故",
+    "exampleKo": "사고를 예방합니다.",
+    "exampleJa": "事故を防ぎます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-081",
+    "korean": "재판",
+    "reading": "jaepan",
+    "meaningJa": "裁判",
+    "exampleKo": "재판이 열렸습니다.",
+    "exampleJa": "裁判が開かれました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-082",
+    "korean": "증인",
+    "reading": "jeungin",
+    "meaningJa": "証人",
+    "exampleKo": "증인이 출석했습니다.",
+    "exampleJa": "証人が出席しました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-083",
+    "korean": "증거",
+    "reading": "jeunggeo",
+    "meaningJa": "証拠",
+    "exampleKo": "증거를 제출합니다.",
+    "exampleJa": "証拠を出します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-084",
+    "korean": "정의",
+    "reading": "jeongui",
+    "meaningJa": "正義",
+    "exampleKo": "정의를 지킵니다.",
+    "exampleJa": "正義を守ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-085",
+    "korean": "평등",
+    "reading": "pyeongdeung",
+    "meaningJa": "平等",
+    "exampleKo": "평등을 바랍니다.",
+    "exampleJa": "平等を願います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-086",
+    "korean": "차별",
+    "reading": "chabyeol",
+    "meaningJa": "差別",
+    "exampleKo": "차별을 없앱니다.",
+    "exampleJa": "差別をなくします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-087",
+    "korean": "인권",
+    "reading": "ingwon",
+    "meaningJa": "人権",
+    "exampleKo": "인권을 존중합니다.",
+    "exampleJa": "人権を尊重します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-088",
+    "korean": "환경",
+    "reading": "hwangyeong",
+    "meaningJa": "環境",
+    "exampleKo": "환경을 보호합니다.",
+    "exampleJa": "環境を守ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-089",
+    "korean": "오염",
+    "reading": "oyeom",
+    "meaningJa": "汚染",
+    "exampleKo": "오염이 심합니다.",
+    "exampleJa": "汚染がひどいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-090",
+    "korean": "재활용",
+    "reading": "jaehwaryong",
+    "meaningJa": "リサイクル",
+    "exampleKo": "재활용을 합니다.",
+    "exampleJa": "リサイクルをします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-091",
+    "korean": "분리수거",
+    "reading": "bunrisugeo",
+    "meaningJa": "分別回収",
+    "exampleKo": "분리수거를 합니다.",
+    "exampleJa": "分別回収をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-092",
+    "korean": "사회",
+    "reading": "sahoe",
+    "meaningJa": "社会",
+    "exampleKo": "사회가 변합니다.",
+    "exampleJa": "社会が変わります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-093",
+    "korean": "공동체",
+    "reading": "gongdongche",
+    "meaningJa": "共同体",
+    "exampleKo": "공동체에 참여합니다.",
+    "exampleJa": "共同体に参加します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-094",
+    "korean": "봉사",
+    "reading": "bongsa",
+    "meaningJa": "奉仕",
+    "exampleKo": "봉사를 합니다.",
+    "exampleJa": "奉仕をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-095",
+    "korean": "기부",
+    "reading": "gibu",
+    "meaningJa": "寄付",
+    "exampleKo": "기부를 합니다.",
+    "exampleJa": "寄付をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-096",
+    "korean": "후원",
+    "reading": "huwon",
+    "meaningJa": "後援",
+    "exampleKo": "후원을 받습니다.",
+    "exampleJa": "後援を受けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-097",
+    "korean": "행사",
+    "reading": "haengsa",
+    "meaningJa": "行事",
+    "exampleKo": "행사에 갑니다.",
+    "exampleJa": "行事へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-098",
+    "korean": "참여",
+    "reading": "chamyeo",
+    "meaningJa": "参加",
+    "exampleKo": "행사에 참여합니다.",
+    "exampleJa": "行事に参加します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-099",
+    "korean": "신청",
+    "reading": "sincheong",
+    "meaningJa": "申請",
+    "exampleKo": "신청을 합니다.",
+    "exampleJa": "申請をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-100",
+    "korean": "취소",
+    "reading": "chwiso",
+    "meaningJa": "取消",
+    "exampleKo": "예약을 취소합니다.",
+    "exampleJa": "予約を取り消します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-101",
+    "korean": "유치원",
+    "reading": "yuchiwon",
+    "meaningJa": "幼稚園",
+    "exampleKo": "유치원에 다닙니다.",
+    "exampleJa": "幼稚園に通います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-102",
+    "korean": "초등학교",
+    "reading": "chodeunghakgyo",
+    "meaningJa": "小学校",
+    "exampleKo": "초등학교에 다닙니다.",
+    "exampleJa": "小学校に通います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-103",
+    "korean": "중학교",
+    "reading": "junghakgyo",
+    "meaningJa": "中学校",
+    "exampleKo": "중학교에 입학했습니다.",
+    "exampleJa": "中学校に入学しました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-104",
+    "korean": "고등학교",
+    "reading": "godeunghakgyo",
+    "meaningJa": "高校",
+    "exampleKo": "고등학교를 졸업했습니다.",
+    "exampleJa": "高校を卒業しました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-105",
+    "korean": "대학교",
+    "reading": "daehakgyo",
+    "meaningJa": "大学",
+    "exampleKo": "대학교에 합격했습니다.",
+    "exampleJa": "大学に合格しました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-106",
+    "korean": "대학원",
+    "reading": "daehagwon",
+    "meaningJa": "大学院",
+    "exampleKo": "대학원에 진학합니다.",
+    "exampleJa": "大学院に進学します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-107",
+    "korean": "학기",
+    "reading": "hakgi",
+    "meaningJa": "学期",
+    "exampleKo": "학기가 시작되었습니다.",
+    "exampleJa": "学期が始まりました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-108",
+    "korean": "방학",
+    "reading": "banghak",
+    "meaningJa": "休み",
+    "exampleKo": "방학에 여행을 갑니다.",
+    "exampleJa": "休みに旅行へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-109",
+    "korean": "수업",
+    "reading": "sueop",
+    "meaningJa": "授業",
+    "exampleKo": "수업에 집중합니다.",
+    "exampleJa": "授業に集中します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-110",
+    "korean": "강의",
+    "reading": "gangui",
+    "meaningJa": "講義",
+    "exampleKo": "강의를 듣습니다.",
+    "exampleJa": "講義を聞きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-111",
+    "korean": "교수",
+    "reading": "gyosu",
+    "meaningJa": "教授",
+    "exampleKo": "교수에게 질문합니다.",
+    "exampleJa": "教授に質問します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-112",
+    "korean": "교재",
+    "reading": "gyojae",
+    "meaningJa": "教材",
+    "exampleKo": "교재를 펼칩니다.",
+    "exampleJa": "教材を開きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-113",
+    "korean": "과제",
+    "reading": "gwaje",
+    "meaningJa": "課題",
+    "exampleKo": "과제를 제출합니다.",
+    "exampleJa": "課題を出します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-114",
+    "korean": "시험",
+    "reading": "siheom",
+    "meaningJa": "試験",
+    "exampleKo": "시험을 준비합니다.",
+    "exampleJa": "試験の準備をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-115",
+    "korean": "성적",
+    "reading": "seongjeok",
+    "meaningJa": "成績",
+    "exampleKo": "성적이 올랐습니다.",
+    "exampleJa": "成績が上がりました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-116",
+    "korean": "학점",
+    "reading": "hakjeom",
+    "meaningJa": "単位",
+    "exampleKo": "학점을 이수합니다.",
+    "exampleJa": "単位を取ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-117",
+    "korean": "졸업",
+    "reading": "joreop",
+    "meaningJa": "卒業",
+    "exampleKo": "졸업을 축하합니다.",
+    "exampleJa": "卒業をお祝いします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-118",
+    "korean": "입학",
+    "reading": "iphak",
+    "meaningJa": "入学",
+    "exampleKo": "입학을 환영합니다.",
+    "exampleJa": "入学を歓迎します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-119",
+    "korean": "장학금",
+    "reading": "janghakgeum",
+    "meaningJa": "奨学金",
+    "exampleKo": "장학금을 받습니다.",
+    "exampleJa": "奨学金をもらいます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-120",
+    "korean": "등록금",
+    "reading": "deungnokgeum",
+    "meaningJa": "授業料",
+    "exampleKo": "등록금을 냅니다.",
+    "exampleJa": "授業料を払います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-121",
+    "korean": "기숙사",
+    "reading": "gisuksa",
+    "meaningJa": "寮",
+    "exampleKo": "기숙사에서 삽니다.",
+    "exampleJa": "寮で暮らします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-122",
+    "korean": "도서관",
+    "reading": "doseogwan",
+    "meaningJa": "図書館",
+    "exampleKo": "도서관에서 공부합니다.",
+    "exampleJa": "図書館で勉強します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-123",
+    "korean": "실험",
+    "reading": "silheom",
+    "meaningJa": "実験",
+    "exampleKo": "실험을 진행합니다.",
+    "exampleJa": "実験を進めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-124",
+    "korean": "연구",
+    "reading": "yeongu",
+    "meaningJa": "研究",
+    "exampleKo": "연구를 계속합니다.",
+    "exampleJa": "研究を続けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-125",
+    "korean": "논문",
+    "reading": "nonmun",
+    "meaningJa": "論文",
+    "exampleKo": "논문을 씁니다.",
+    "exampleJa": "論文を書きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-126",
+    "korean": "발표",
+    "reading": "balpyo",
+    "meaningJa": "発表",
+    "exampleKo": "발표를 준비합니다.",
+    "exampleJa": "発表を用意します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-127",
+    "korean": "토론",
+    "reading": "toron",
+    "meaningJa": "討論",
+    "exampleKo": "토론에 참여합니다.",
+    "exampleJa": "討論に参加します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-128",
+    "korean": "질문",
+    "reading": "jilmun",
+    "meaningJa": "質問",
+    "exampleKo": "질문을 합니다.",
+    "exampleJa": "質問をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-129",
+    "korean": "대답",
+    "reading": "daedap",
+    "meaningJa": "返答",
+    "exampleKo": "바로 대답합니다.",
+    "exampleJa": "すぐ返答します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-130",
+    "korean": "이해",
+    "reading": "ihae",
+    "meaningJa": "理解",
+    "exampleKo": "내용을 이해합니다.",
+    "exampleJa": "内容を理解します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-131",
+    "korean": "기억",
+    "reading": "gieok",
+    "meaningJa": "記憶",
+    "exampleKo": "기억이 생생합니다.",
+    "exampleJa": "記憶が鮮明です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-132",
+    "korean": "암기",
+    "reading": "amgi",
+    "meaningJa": "暗記",
+    "exampleKo": "단어를 암기합니다.",
+    "exampleJa": "単語を暗記します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-133",
+    "korean": "복습",
+    "reading": "bokseup",
+    "meaningJa": "復習",
+    "exampleKo": "복습을 철저히 합니다.",
+    "exampleJa": "復習をしっかりします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-134",
+    "korean": "예습",
+    "reading": "yeseup",
+    "meaningJa": "予習",
+    "exampleKo": "예습을 미리 합니다.",
+    "exampleJa": "予習を します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-135",
+    "korean": "집중",
+    "reading": "jipjung",
+    "meaningJa": "集中",
+    "exampleKo": "집중이 잘 됩니다.",
+    "exampleJa": "集中がよくできます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-136",
+    "korean": "노력",
+    "reading": "noryeok",
+    "meaningJa": "努力",
+    "exampleKo": "노력이 필요합니다.",
+    "exampleJa": "努力が必要です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-137",
+    "korean": "습관",
+    "reading": "seupgwan",
+    "meaningJa": "習慣",
+    "exampleKo": "습관이 중요합니다.",
+    "exampleJa": "習慣が大切です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-138",
+    "korean": "성격",
+    "reading": "seonggyeok",
+    "meaningJa": "性格",
+    "exampleKo": "성격이 밝습니다.",
+    "exampleJa": "性格が明るいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-139",
+    "korean": "감정",
+    "reading": "gamjeong",
+    "meaningJa": "感情",
+    "exampleKo": "감정을 표현합니다.",
+    "exampleJa": "感情を表します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-140",
+    "korean": "기분",
+    "reading": "gibun",
+    "meaningJa": "気分",
+    "exampleKo": "기분이 좋습니다.",
+    "exampleJa": "気分が良いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-141",
+    "korean": "스트레스",
+    "reading": "seuteureseu",
+    "meaningJa": "ストレス",
+    "exampleKo": "스트레스를 풉니다.",
+    "exampleJa": "ストレスを解消します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-142",
+    "korean": "휴식",
+    "reading": "hyusik",
+    "meaningJa": "休息",
+    "exampleKo": "휴식이 필요합니다.",
+    "exampleJa": "休息が必要です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-143",
+    "korean": "수면",
+    "reading": "sumyeon",
+    "meaningJa": "睡眠",
+    "exampleKo": "수면이 부족합니다.",
+    "exampleJa": "睡眠が不足しています。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-144",
+    "korean": "꿈",
+    "reading": "kkum",
+    "meaningJa": "夢",
+    "exampleKo": "꿈을 꿉니다.",
+    "exampleJa": "夢を見ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-145",
+    "korean": "악몽",
+    "reading": "angmong",
+    "meaningJa": "悪夢",
+    "exampleKo": "악몽을 꿉니다.",
+    "exampleJa": "悪夢を見ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-146",
+    "korean": "피로",
+    "reading": "piro",
+    "meaningJa": "疲労",
+    "exampleKo": "피로가 쌓였습니다.",
+    "exampleJa": "疲れがたまりました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-147",
+    "korean": "두통",
+    "reading": "dutong",
+    "meaningJa": "頭痛",
+    "exampleKo": "두통이 있습니다.",
+    "exampleJa": "頭痛があります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-148",
+    "korean": "발열",
+    "reading": "baryeol",
+    "meaningJa": "発熱",
+    "exampleKo": "발열이 있습니다.",
+    "exampleJa": "熱があります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-149",
+    "korean": "기침",
+    "reading": "gichim",
+    "meaningJa": "咳",
+    "exampleKo": "기침이 납니다.",
+    "exampleJa": "咳が出ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-150",
+    "korean": "콧물",
+    "reading": "konmul",
+    "meaningJa": "鼻水",
+    "exampleKo": "콧물이 납니다.",
+    "exampleJa": "鼻水が出ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-151",
+    "korean": "감기",
+    "reading": "gamgi",
+    "meaningJa": "風邪",
+    "exampleKo": "감기에 걸렸습니다.",
+    "exampleJa": "風邪を引きました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-152",
+    "korean": "독감",
+    "reading": "dokgam",
+    "meaningJa": "インフルエンザ",
+    "exampleKo": "독감 주사를 맞습니다.",
+    "exampleJa": "インフルの注射を打ちます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-153",
+    "korean": "알레르기",
+    "reading": "allereugi",
+    "meaningJa": "アレルギー",
+    "exampleKo": "알레르기가 있습니다.",
+    "exampleJa": "アレルギーがあります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-154",
+    "korean": "천식",
+    "reading": "cheonsik",
+    "meaningJa": "喘息",
+    "exampleKo": "천식이 있습니다.",
+    "exampleJa": "喘息があります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-155",
+    "korean": "혈압",
+    "reading": "hyeorap",
+    "meaningJa": "血圧",
+    "exampleKo": "혈압을 측정합니다.",
+    "exampleJa": "血圧を測ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-156",
+    "korean": "혈액",
+    "reading": "hyeoraek",
+    "meaningJa": "血液",
+    "exampleKo": "혈액 검사를 합니다.",
+    "exampleJa": "血液検査をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-157",
+    "korean": "심장",
+    "reading": "simjang",
+    "meaningJa": "心臓",
+    "exampleKo": "심장이 뜁니다.",
+    "exampleJa": "心臓がどきどきします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-158",
+    "korean": "폐",
+    "reading": "pye",
+    "meaningJa": "肺",
+    "exampleKo": "폐가 건강합니다.",
+    "exampleJa": "肺が健康です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-159",
+    "korean": "간",
+    "reading": "gan",
+    "meaningJa": "肝臓",
+    "exampleKo": "간이 안 좋습니다.",
+    "exampleJa": "肝臓が良くありません。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-160",
+    "korean": "위",
+    "reading": "wi",
+    "meaningJa": "胃",
+    "exampleKo": "위가 아픕니다.",
+    "exampleJa": "胃が痛いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-161",
+    "korean": "뼈",
+    "reading": "ppyeo",
+    "meaningJa": "骨",
+    "exampleKo": "뼈가 튼튼합니다.",
+    "exampleJa": "骨が丈夫です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-162",
+    "korean": "근육",
+    "reading": "geunyuk",
+    "meaningJa": "筋肉",
+    "exampleKo": "근육이 생겼습니다.",
+    "exampleJa": "筋肉がつきました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-163",
+    "korean": "피부",
+    "reading": "pibu",
+    "meaningJa": "肌",
+    "exampleKo": "피부가 좋습니다.",
+    "exampleJa": "肌が良いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-164",
+    "korean": "상처",
+    "reading": "sangcheo",
+    "meaningJa": "傷",
+    "exampleKo": "상처가 났습니다.",
+    "exampleJa": "傷ができました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-165",
+    "korean": "붕대",
+    "reading": "bungdae",
+    "meaningJa": "包帯",
+    "exampleKo": "붕대를 감습니다.",
+    "exampleJa": "包帯を巻きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-166",
+    "korean": "약",
+    "reading": "yak",
+    "meaningJa": "薬",
+    "exampleKo": "약을 먹습니다.",
+    "exampleJa": "薬を飲みます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-167",
+    "korean": "처방",
+    "reading": "cheobang",
+    "meaningJa": "処方",
+    "exampleKo": "처방을 받습니다.",
+    "exampleJa": "処方を受けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-168",
+    "korean": "주사",
+    "reading": "jusa",
+    "meaningJa": "注射",
+    "exampleKo": "주사를 맞습니다.",
+    "exampleJa": "注射を打ちます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-169",
+    "korean": "수술",
+    "reading": "susul",
+    "meaningJa": "手術",
+    "exampleKo": "수술을 받습니다.",
+    "exampleJa": "手術を受けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-170",
+    "korean": "입원",
+    "reading": "ibwon",
+    "meaningJa": "入院",
+    "exampleKo": "입원을 합니다.",
+    "exampleJa": "入院をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-171",
+    "korean": "퇴원",
+    "reading": "toewon",
+    "meaningJa": "退院",
+    "exampleKo": "퇴원을 합니다.",
+    "exampleJa": "退院をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-172",
+    "korean": "진료",
+    "reading": "jinryo",
+    "meaningJa": "診療",
+    "exampleKo": "진료를 받습니다.",
+    "exampleJa": "診療を受けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-173",
+    "korean": "진단",
+    "reading": "jindan",
+    "meaningJa": "診断",
+    "exampleKo": "진단을 받습니다.",
+    "exampleJa": "診断を受けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-174",
+    "korean": "예방",
+    "reading": "yebang",
+    "meaningJa": "予防",
+    "exampleKo": "예방이 중요합니다.",
+    "exampleJa": "予防が大切です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-175",
+    "korean": "접종",
+    "reading": "jeopjong",
+    "meaningJa": "接種",
+    "exampleKo": "접종을 마쳤습니다.",
+    "exampleJa": "接種を終えました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-176",
+    "korean": "위생",
+    "reading": "wisaeng",
+    "meaningJa": "衛生",
+    "exampleKo": "위생을 지킵니다.",
+    "exampleJa": "衛生を守ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-177",
+    "korean": "영양",
+    "reading": "yeongyang",
+    "meaningJa": "栄養",
+    "exampleKo": "영양이 풍부합니다.",
+    "exampleJa": "栄養が豊富です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-178",
+    "korean": "식단",
+    "reading": "sikdan",
+    "meaningJa": "献立",
+    "exampleKo": "식단을 짭니다.",
+    "exampleJa": "献立を組みます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-179",
+    "korean": "운동",
+    "reading": "undong",
+    "meaningJa": "運動",
+    "exampleKo": "운동을 꾸준히 합니다.",
+    "exampleJa": "運動を続けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-180",
+    "korean": "산책",
+    "reading": "sanchaek",
+    "meaningJa": "散歩",
+    "exampleKo": "산책을 나갑니다.",
+    "exampleJa": "散歩に出ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-181",
+    "korean": "조깅",
+    "reading": "joging",
+    "meaningJa": "ジョギング",
+    "exampleKo": "조깅을 합니다.",
+    "exampleJa": "ジョギングをします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-182",
+    "korean": "수영",
+    "reading": "suyeong",
+    "meaningJa": "水泳",
+    "exampleKo": "수영을 배웁니다.",
+    "exampleJa": "水泳を習います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-183",
+    "korean": "등산",
+    "reading": "deungsan",
+    "meaningJa": "登山",
+    "exampleKo": "등산을 갑니다.",
+    "exampleJa": "登山へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-184",
+    "korean": "자전거",
+    "reading": "jajeongeo",
+    "meaningJa": "自転車",
+    "exampleKo": "자전거를 탑니다.",
+    "exampleJa": "自転車に乗ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-185",
+    "korean": "미세먼지",
+    "reading": "misemeonji",
+    "meaningJa": "微小粉塵",
+    "exampleKo": "미세먼지가 심합니다.",
+    "exampleJa": "微小粉塵がひどいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-186",
+    "korean": "황사",
+    "reading": "hwangsa",
+    "meaningJa": "黄砂",
+    "exampleKo": "황사가 불어옵니다.",
+    "exampleJa": "黄砂が飛んできます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-187",
+    "korean": "소음",
+    "reading": "soeum",
+    "meaningJa": "騒音",
+    "exampleKo": "소음이 심합니다.",
+    "exampleJa": "騒音がひどいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-188",
+    "korean": "진동",
+    "reading": "jindong",
+    "meaningJa": "振動",
+    "exampleKo": "진동이 느껴집니다.",
+    "exampleJa": "振動を感じます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-189",
+    "korean": "냄새",
+    "reading": "naemsae",
+    "meaningJa": "匂い",
+    "exampleKo": "냄새가 납니다.",
+    "exampleJa": "匂いがします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-190",
+    "korean": "연기",
+    "reading": "yeongi",
+    "meaningJa": "煙",
+    "exampleKo": "연기가 납니다.",
+    "exampleJa": "煙が出ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-191",
+    "korean": "쓰레기",
+    "reading": "sseuregi",
+    "meaningJa": "ごみ",
+    "exampleKo": "쓰레기를 버립니다.",
+    "exampleJa": "ごみを捨てます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-192",
+    "korean": "음식물 쓰레기",
+    "reading": "eumsikmulsseuregi",
+    "meaningJa": "生ごみ",
+    "exampleKo": "음식물 쓰레기를 버립니다.",
+    "exampleJa": "生ごみを捨てます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-193",
+    "korean": "종량제",
+    "reading": "jongnyangje",
+    "meaningJa": "従量制",
+    "exampleKo": "종량제 봉투를 씁니다.",
+    "exampleJa": "従量制の袋を使います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-194",
+    "korean": "절약",
+    "reading": "jeoryak",
+    "meaningJa": "節約",
+    "exampleKo": "절약을 실천합니다.",
+    "exampleJa": "節約を実行します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-195",
+    "korean": "낭비",
+    "reading": "nangbi",
+    "meaningJa": "浪費",
+    "exampleKo": "낭비를 줄입니다.",
+    "exampleJa": "浪費を減らします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-196",
+    "korean": "고장",
+    "reading": "gojang",
+    "meaningJa": "故障",
+    "exampleKo": "고장이 났습니다.",
+    "exampleJa": "故障しました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-197",
+    "korean": "수리",
+    "reading": "suri",
+    "meaningJa": "修理",
+    "exampleKo": "수리를 맡깁니다.",
+    "exampleJa": "修理を頼みます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-198",
+    "korean": "점검",
+    "reading": "jeomgeom",
+    "meaningJa": "点検",
+    "exampleKo": "점검을 받습니다.",
+    "exampleJa": "点検を受けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-199",
+    "korean": "청소",
+    "reading": "cheongso",
+    "meaningJa": "掃除",
+    "exampleKo": "청소를 합니다.",
+    "exampleJa": "掃除をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-200",
+    "korean": "정리",
+    "reading": "jeongni",
+    "meaningJa": "整理",
+    "exampleKo": "정리를 합니다.",
+    "exampleJa": "整理をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-201",
+    "korean": "발전하다",
+    "reading": "baljeonhada",
+    "meaningJa": "発展する",
+    "exampleKo": "나라가 발전합니다.",
+    "exampleJa": "国が発展します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-202",
+    "korean": "변화하다",
+    "reading": "byeonhwahada",
+    "meaningJa": "変化する",
+    "exampleKo": "날씨가 변화합니다.",
+    "exampleJa": "天気が変わります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-203",
+    "korean": "성장하다",
+    "reading": "seongjanghada",
+    "meaningJa": "成長する",
+    "exampleKo": "아이가 성장합니다.",
+    "exampleJa": "子どもが成長します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-204",
+    "korean": "확대하다",
+    "reading": "hwakdaehada",
+    "meaningJa": "拡大する",
+    "exampleKo": "사업을 확대합니다.",
+    "exampleJa": "事業を拡大します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-205",
+    "korean": "축소하다",
+    "reading": "chuksohada",
+    "meaningJa": "縮小する",
+    "exampleKo": "규모를 축소합니다.",
+    "exampleJa": "規模を縮小します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-206",
+    "korean": "증가하다",
+    "reading": "jeungghahada",
+    "meaningJa": "増加する",
+    "exampleKo": "인구가 증가합니다.",
+    "exampleJa": "人口が増えます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-207",
+    "korean": "감소하다",
+    "reading": "gamsohada",
+    "meaningJa": "減少する",
+    "exampleKo": "비용이 감소합니다.",
+    "exampleJa": "費用が減ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-208",
+    "korean": "유지하다",
+    "reading": "yujihada",
+    "meaningJa": "維持する",
+    "exampleKo": "건강을 유지합니다.",
+    "exampleJa": "健康を保ちます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-209",
+    "korean": "지속하다",
+    "reading": "jisokhada",
+    "meaningJa": "持続する",
+    "exampleKo": "노력을 지속합니다.",
+    "exampleJa": "努力を続けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-210",
+    "korean": "중단하다",
+    "reading": "jungdanhada",
+    "meaningJa": "中断する",
+    "exampleKo": "공사를 중단합니다.",
+    "exampleJa": "工事を中断します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-211",
+    "korean": "시작하다",
+    "reading": "sijakhada",
+    "meaningJa": "始める",
+    "exampleKo": "수업을 시작합니다.",
+    "exampleJa": "授業を始めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-212",
+    "korean": "종료하다",
+    "reading": "jongnyohada",
+    "meaningJa": "終了する",
+    "exampleKo": "행사를 종료합니다.",
+    "exampleJa": "行事を終えます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-213",
+    "korean": "진행하다",
+    "reading": "jinhaenghada",
+    "meaningJa": "進める",
+    "exampleKo": "회의를 진행합니다.",
+    "exampleJa": "会議を進めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-214",
+    "korean": "처리하다",
+    "reading": "cheorihada",
+    "meaningJa": "処理する",
+    "exampleKo": "문제를 처리합니다.",
+    "exampleJa": "問題を処理します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-215",
+    "korean": "해결하다",
+    "reading": "haegyeolhada",
+    "meaningJa": "解決する",
+    "exampleKo": "문제를 해결합니다.",
+    "exampleJa": "問題を解決します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-216",
+    "korean": "결정하다",
+    "reading": "gyeoljeonghada",
+    "meaningJa": "決める",
+    "exampleKo": "일정을 결정합니다.",
+    "exampleJa": "日程を決めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-217",
+    "korean": "선택하다",
+    "reading": "seontaekhada",
+    "meaningJa": "選ぶ",
+    "exampleKo": "과목을 선택합니다.",
+    "exampleJa": "科目を選びます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-218",
+    "korean": "고민하다",
+    "reading": "gominhada",
+    "meaningJa": "悩む",
+    "exampleKo": "진로를 고민합니다.",
+    "exampleJa": "進路に悩みます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-219",
+    "korean": "망설이다",
+    "reading": "mangseorida",
+    "meaningJa": "躊躇する",
+    "exampleKo": "망설이지 마십시오.",
+    "exampleJa": "躊躇しないでください。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-220",
+    "korean": "포기하다",
+    "reading": "pogihada",
+    "meaningJa": "諦める",
+    "exampleKo": "포기하지 마십시오.",
+    "exampleJa": "諦めないでください。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-221",
+    "korean": "도전하다",
+    "reading": "dojeonhada",
+    "meaningJa": "挑戦する",
+    "exampleKo": "새 일에 도전합니다.",
+    "exampleJa": "新しい仕事に挑みます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-222",
+    "korean": "시도하다",
+    "reading": "sidohada",
+    "meaningJa": "試みる",
+    "exampleKo": "방법을 시도합니다.",
+    "exampleJa": "方法を試します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-223",
+    "korean": "실패하다",
+    "reading": "silpaehada",
+    "meaningJa": "失敗する",
+    "exampleKo": "시험에 실패했습니다.",
+    "exampleJa": "試験に落ちました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-224",
+    "korean": "성공하다",
+    "reading": "seonggonghada",
+    "meaningJa": "成功する",
+    "exampleKo": "계획이 성공했습니다.",
+    "exampleJa": "計画が成功しました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-225",
+    "korean": "달성하다",
+    "reading": "dalseonghada",
+    "meaningJa": "達成する",
+    "exampleKo": "목표를 달성합니다.",
+    "exampleJa": "目標を達成します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-226",
+    "korean": "완료하다",
+    "reading": "wanryohada",
+    "meaningJa": "完了する",
+    "exampleKo": "과제를 완료합니다.",
+    "exampleJa": "課題を終えます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-227",
+    "korean": "준비하다",
+    "reading": "junbihada",
+    "meaningJa": "準備する",
+    "exampleKo": "발표를 준비합니다.",
+    "exampleJa": "発表を用意します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-228",
+    "korean": "계획하다",
+    "reading": "gyehoekhada",
+    "meaningJa": "計画する",
+    "exampleKo": "여행을 계획합니다.",
+    "exampleJa": "旅行を計画します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-229",
+    "korean": "예상하다",
+    "reading": "yesanghada",
+    "meaningJa": "予想する",
+    "exampleKo": "결과를 예상합니다.",
+    "exampleJa": "結果を予想します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-230",
+    "korean": "추측하다",
+    "reading": "chucheukada",
+    "meaningJa": "推測する",
+    "exampleKo": "이유를 추측합니다.",
+    "exampleJa": "理由を推測します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-231",
+    "korean": "판단하다",
+    "reading": "pandanhada",
+    "meaningJa": "判断する",
+    "exampleKo": "상황을 판단합니다.",
+    "exampleJa": "状況を判断します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-232",
+    "korean": "평가하다",
+    "reading": "pyeonggahada",
+    "meaningJa": "評価する",
+    "exampleKo": "성과를 평가합니다.",
+    "exampleJa": "成果を評価します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-233",
+    "korean": "비교하다",
+    "reading": "bigyohada",
+    "meaningJa": "比べる",
+    "exampleKo": "가격을 비교합니다.",
+    "exampleJa": "値段を比べます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-234",
+    "korean": "분석하다",
+    "reading": "bunseokhada",
+    "meaningJa": "分析する",
+    "exampleKo": "자료를 분석합니다.",
+    "exampleJa": "資料を分析します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-235",
+    "korean": "조사하다",
+    "reading": "josahada",
+    "meaningJa": "調べる",
+    "exampleKo": "원인을 조사합니다.",
+    "exampleJa": "原因を調べます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-236",
+    "korean": "연구하다",
+    "reading": "yeonguhada",
+    "meaningJa": "研究する",
+    "exampleKo": "역사를 연구합니다.",
+    "exampleJa": "歴史を研究します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-237",
+    "korean": "관찰하다",
+    "reading": "gwanchalhada",
+    "meaningJa": "観察する",
+    "exampleKo": "변화를 관찰합니다.",
+    "exampleJa": "変化を観察します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-238",
+    "korean": "발견하다",
+    "reading": "balgyeonhada",
+    "meaningJa": "発見する",
+    "exampleKo": "문제를 발견합니다.",
+    "exampleJa": "問題を見つけます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-239",
+    "korean": "발명하다",
+    "reading": "balmyeonghada",
+    "meaningJa": "発明する",
+    "exampleKo": "기계를 발명합니다.",
+    "exampleJa": "機械を発明します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-240",
+    "korean": "개발하다",
+    "reading": "gaebalhada",
+    "meaningJa": "開発する",
+    "exampleKo": "제품을 개발합니다.",
+    "exampleJa": "製品を開発します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-241",
+    "korean": "개선하다",
+    "reading": "gaeseonhada",
+    "meaningJa": "改善する",
+    "exampleKo": "제도를 개선합니다.",
+    "exampleJa": "制度を改善します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-242",
+    "korean": "개혁하다",
+    "reading": "gaehyeokhada",
+    "meaningJa": "改革する",
+    "exampleKo": "제도를 개혁합니다.",
+    "exampleJa": "制度を改革します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-243",
+    "korean": "혁신하다",
+    "reading": "hyeoksinhada",
+    "meaningJa": "革新する",
+    "exampleKo": "기술을 혁신합니다.",
+    "exampleJa": "技術を革新します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-244",
+    "korean": "창조하다",
+    "reading": "changjohada",
+    "meaningJa": "創造する",
+    "exampleKo": "문화를 창조합니다.",
+    "exampleJa": "文化を創造します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-245",
+    "korean": "표현하다",
+    "reading": "pyohyeonhada",
+    "meaningJa": "表現する",
+    "exampleKo": "마음을 표현합니다.",
+    "exampleJa": "気持ちを表します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-246",
+    "korean": "설명하다",
+    "reading": "seolmyeonghada",
+    "meaningJa": "説明する",
+    "exampleKo": "방법을 설명합니다.",
+    "exampleJa": "方法を説明します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-247",
+    "korean": "소개하다",
+    "reading": "sogaehada",
+    "meaningJa": "紹介する",
+    "exampleKo": "친구를 소개합니다.",
+    "exampleJa": "友達を紹介します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-248",
+    "korean": "안내하다",
+    "reading": "annaehada",
+    "meaningJa": "案内する",
+    "exampleKo": "길을 안내합니다.",
+    "exampleJa": "道を案内します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-249",
+    "korean": "제안하다",
+    "reading": "jeanhada",
+    "meaningJa": "提案する",
+    "exampleKo": "의견을 제안합니다.",
+    "exampleJa": "意見を提案します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-250",
+    "korean": "주장하다",
+    "reading": "jujanghada",
+    "meaningJa": "主張する",
+    "exampleKo": "의견을 주장합니다.",
+    "exampleJa": "意見を主張します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-251",
+    "korean": "강조하다",
+    "reading": "gangjohada",
+    "meaningJa": "強調する",
+    "exampleKo": "중요성을 강조합니다.",
+    "exampleJa": "重要性を強調します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-252",
+    "korean": "비판하다",
+    "reading": "bipanhada",
+    "meaningJa": "批判する",
+    "exampleKo": "정책을 비판합니다.",
+    "exampleJa": "政策を批判します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-253",
+    "korean": "칭찬하다",
+    "reading": "chingchanhada",
+    "meaningJa": "褒める",
+    "exampleKo": "노력을 칭찬합니다.",
+    "exampleJa": "努力を褒めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-254",
+    "korean": "격려하다",
+    "reading": "gyeongnyeohada",
+    "meaningJa": "励ます",
+    "exampleKo": "친구를 격려합니다.",
+    "exampleJa": "友達を励まします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-255",
+    "korean": "위로하다",
+    "reading": "wirohada",
+    "meaningJa": "慰める",
+    "exampleKo": "친구를 위로합니다.",
+    "exampleJa": "友達を慰めます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-256",
+    "korean": "사과하다",
+    "reading": "sagwahada",
+    "meaningJa": "謝る",
+    "exampleKo": "실수를 사과합니다.",
+    "exampleJa": "ミスを謝ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-257",
+    "korean": "용서하다",
+    "reading": "yongseohada",
+    "meaningJa": "許す",
+    "exampleKo": "실수를 용서합니다.",
+    "exampleJa": "ミスを許します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-258",
+    "korean": "감사하다",
+    "reading": "gamsahada",
+    "meaningJa": "感謝する",
+    "exampleKo": "도움에 감사합니다.",
+    "exampleJa": "助けに感謝します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-259",
+    "korean": "축하하다",
+    "reading": "chukhahada",
+    "meaningJa": "祝う",
+    "exampleKo": "합격을 축하합니다.",
+    "exampleJa": "合格を祝います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-260",
+    "korean": "환영하다",
+    "reading": "hwanyeonghada",
+    "meaningJa": "歓迎する",
+    "exampleKo": "방문을 환영합니다.",
+    "exampleJa": "訪問を歓迎します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-261",
+    "korean": "초대하다",
+    "reading": "chodaehada",
+    "meaningJa": "招待する",
+    "exampleKo": "집에 초대합니다.",
+    "exampleJa": "家に招待します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-262",
+    "korean": "방문하다",
+    "reading": "bangmunhada",
+    "meaningJa": "訪問する",
+    "exampleKo": "친척을 방문합니다.",
+    "exampleJa": "親戚を訪ねます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-263",
+    "korean": "참석하다",
+    "reading": "chamseokhada",
+    "meaningJa": "出席する",
+    "exampleKo": "회의에 참석합니다.",
+    "exampleJa": "会議に出席します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-264",
+    "korean": "참여하다",
+    "reading": "chamyeohada",
+    "meaningJa": "参加する",
+    "exampleKo": "행사에 참여합니다.",
+    "exampleJa": "行事に参加します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-265",
+    "korean": "신청하다",
+    "reading": "sincheonghada",
+    "meaningJa": "申し込む",
+    "exampleKo": "수강을 신청합니다.",
+    "exampleJa": "受講を申し込みます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-266",
+    "korean": "접수하다",
+    "reading": "jeopsuhada",
+    "meaningJa": "受け付ける",
+    "exampleKo": "서류를 접수합니다.",
+    "exampleJa": "書類を受け付けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-267",
+    "korean": "등록하다",
+    "reading": "deungnokhada",
+    "meaningJa": "登録する",
+    "exampleKo": "회원으로 등록합니다.",
+    "exampleJa": "会員として登録します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-268",
+    "korean": "예약하다",
+    "reading": "yeyakada",
+    "meaningJa": "予約する",
+    "exampleKo": "식당을 예약합니다.",
+    "exampleJa": "店を予約します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-269",
+    "korean": "주문하다",
+    "reading": "jumunhada",
+    "meaningJa": "注文する",
+    "exampleKo": "음식을 주문합니다.",
+    "exampleJa": "料理を注文します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-270",
+    "korean": "취소하다",
+    "reading": "chwisohada",
+    "meaningJa": "取り消す",
+    "exampleKo": "약속을 취소합니다.",
+    "exampleJa": "約束を取り消します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-271",
+    "korean": "연기하다",
+    "reading": "yeongihada",
+    "meaningJa": "延期する",
+    "exampleKo": "일정을 연기합니다.",
+    "exampleJa": "日程を延ばします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-272",
+    "korean": "연장하다",
+    "reading": "yeonjanghada",
+    "meaningJa": "延長する",
+    "exampleKo": "기간을 연장합니다.",
+    "exampleJa": "期間を延ばします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-273",
+    "korean": "단축하다",
+    "reading": "danchukada",
+    "meaningJa": "短縮する",
+    "exampleKo": "시간을 단축합니다.",
+    "exampleJa": "時間を短くします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-274",
+    "korean": "절약하다",
+    "reading": "jeoryakada",
+    "meaningJa": "節約する",
+    "exampleKo": "전기를 절약합니다.",
+    "exampleJa": "電気を節約します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-275",
+    "korean": "낭비하다",
+    "reading": "nangbihada",
+    "meaningJa": "浪費する",
+    "exampleKo": "시간을 낭비합니다.",
+    "exampleJa": "時間を浪費します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-276",
+    "korean": "소비하다",
+    "reading": "sobihada",
+    "meaningJa": "消費する",
+    "exampleKo": "에너지를 소비합니다.",
+    "exampleJa": "エネルギーを消費します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-277",
+    "korean": "생산하다",
+    "reading": "saengsanhada",
+    "meaningJa": "生産する",
+    "exampleKo": "쌀을 생산합니다.",
+    "exampleJa": "米を生産します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-278",
+    "korean": "수출하다",
+    "reading": "suchulhada",
+    "meaningJa": "輸出する",
+    "exampleKo": "차를 수출합니다.",
+    "exampleJa": "車を輸出します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-279",
+    "korean": "수입하다",
+    "reading": "suiphada",
+    "meaningJa": "輸入する",
+    "exampleKo": "과일을 수입합니다.",
+    "exampleJa": "果物を輸入します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-280",
+    "korean": "투자하다",
+    "reading": "tujahada",
+    "meaningJa": "投資する",
+    "exampleKo": "사업에 투자합니다.",
+    "exampleJa": "事業に投資します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-281",
+    "korean": "저축하다",
+    "reading": "jeochukada",
+    "meaningJa": "貯金する",
+    "exampleKo": "매달 저축합니다.",
+    "exampleJa": "毎月貯金します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-282",
+    "korean": "대출하다",
+    "reading": "daechulhada",
+    "meaningJa": "借りる",
+    "exampleKo": "돈을 대출합니다.",
+    "exampleJa": "お金を借ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-283",
+    "korean": "상환하다",
+    "reading": "sanghwanhada",
+    "meaningJa": "返済する",
+    "exampleKo": "빚을 상환합니다.",
+    "exampleJa": "借金を返します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-284",
+    "korean": "지불하다",
+    "reading": "jibulhada",
+    "meaningJa": "支払う",
+    "exampleKo": "대금을 지불합니다.",
+    "exampleJa": "代金を払います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-285",
+    "korean": "환불하다",
+    "reading": "hwanbulhada",
+    "meaningJa": "返金する",
+    "exampleKo": "대금을 환불합니다.",
+    "exampleJa": "代金を返金します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-286",
+    "korean": "할인하다",
+    "reading": "harinhada",
+    "meaningJa": "割り引く",
+    "exampleKo": "가격을 할인합니다.",
+    "exampleJa": "値段を割り引きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-287",
+    "korean": "포장하다",
+    "reading": "pojanghada",
+    "meaningJa": "包む",
+    "exampleKo": "선물을 포장합니다.",
+    "exampleJa": "贈り物を包みます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-288",
+    "korean": "배송하다",
+    "reading": "baesonghada",
+    "meaningJa": "配送する",
+    "exampleKo": "택배를 배송합니다.",
+    "exampleJa": "宅配を届けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-289",
+    "korean": "수리하다",
+    "reading": "surihada",
+    "meaningJa": "修理する",
+    "exampleKo": "시계를 수리합니다.",
+    "exampleJa": "時計を直します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-290",
+    "korean": "점검하다",
+    "reading": "jeomgeomhada",
+    "meaningJa": "点検する",
+    "exampleKo": "시설을 점검합니다.",
+    "exampleJa": "施設を点検します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-291",
+    "korean": "청소하다",
+    "reading": "cheongsohada",
+    "meaningJa": "掃除する",
+    "exampleKo": "방을 청소합니다.",
+    "exampleJa": "部屋を掃除します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-292",
+    "korean": "정리하다",
+    "reading": "jeongnihada",
+    "meaningJa": "片付ける",
+    "exampleKo": "책상을 정리합니다.",
+    "exampleJa": "机を片付けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-293",
+    "korean": "분리하다",
+    "reading": "bunrihada",
+    "meaningJa": "分ける",
+    "exampleKo": "쓰레기를 분리합니다.",
+    "exampleJa": "ごみを分けます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-294",
+    "korean": "섞다",
+    "reading": "seokda",
+    "meaningJa": "混ぜる",
+    "exampleKo": "재료를 섞습니다.",
+    "exampleJa": "材料を混ぜます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-295",
+    "korean": "묶다",
+    "reading": "mukkda",
+    "meaningJa": "束ねる",
+    "exampleKo": "짐을 묶습니다.",
+    "exampleJa": "荷物を束ねます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-296",
+    "korean": "풀다",
+    "reading": "pulda",
+    "meaningJa": "解く",
+    "exampleKo": "문제를 풉니다.",
+    "exampleJa": "問題を解きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-297",
+    "korean": "끼우다",
+    "reading": "kkiuda",
+    "meaningJa": "はめる",
+    "exampleKo": "퍼즐을 끼웁니다.",
+    "exampleJa": "パズルをはめます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-298",
+    "korean": "빼다",
+    "reading": "ppaeda",
+    "meaningJa": "抜く",
+    "exampleKo": "책을 빼냅니다.",
+    "exampleJa": "本を取り出します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-299",
+    "korean": "넣다",
+    "reading": "neoda",
+    "meaningJa": "入れる",
+    "exampleKo": "가방에 넣습니다.",
+    "exampleJa": "かばんに入れます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-300",
+    "korean": "꺼내다",
+    "reading": "kkeonaeda",
+    "meaningJa": "取り出す",
+    "exampleKo": "지갑을 꺼냅니다.",
+    "exampleJa": "財布を取り出します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-301",
+    "korean": "넓다",
+    "reading": "neolda",
+    "meaningJa": "広い",
+    "exampleKo": "거실이 넓습니다.",
+    "exampleJa": "居間が広いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-302",
+    "korean": "좁다",
+    "reading": "jopda",
+    "meaningJa": "狭い",
+    "exampleKo": "골목이 좁습니다.",
+    "exampleJa": "路地が狭いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-303",
+    "korean": "깊다",
+    "reading": "gipda",
+    "meaningJa": "深い",
+    "exampleKo": "강이 깊습니다.",
+    "exampleJa": "川が深いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-304",
+    "korean": "얕다",
+    "reading": "yatda",
+    "meaningJa": "浅い",
+    "exampleKo": "물이 얕습니다.",
+    "exampleJa": "水が浅いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-305",
+    "korean": "높다",
+    "reading": "nopda",
+    "meaningJa": "高い",
+    "exampleKo": "산이 높습니다.",
+    "exampleJa": "山が高いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-306",
+    "korean": "낮다",
+    "reading": "natda",
+    "meaningJa": "低い",
+    "exampleKo": "목소리가 낮습니다.",
+    "exampleJa": "声が低いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-307",
+    "korean": "길다",
+    "reading": "gilda",
+    "meaningJa": "長い",
+    "exampleKo": "터널이 깁니다.",
+    "exampleJa": "トンネルが長いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-308",
+    "korean": "짧다",
+    "reading": "jjalda",
+    "meaningJa": "短い",
+    "exampleKo": "치마가 짧습니다.",
+    "exampleJa": "スカートが短いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-309",
+    "korean": "굵다",
+    "reading": "gukda",
+    "meaningJa": "太い",
+    "exampleKo": "밧줄이 굵습니다.",
+    "exampleJa": "縄が太いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-310",
+    "korean": "가늘다",
+    "reading": "ganeulda",
+    "meaningJa": "細い",
+    "exampleKo": "실이 가늘습니다.",
+    "exampleJa": "糸が細いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-311",
+    "korean": "무겁다",
+    "reading": "mugeopda",
+    "meaningJa": "重い",
+    "exampleKo": "가방이 무겁습니다.",
+    "exampleJa": "かばんが重いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-312",
+    "korean": "가볍다",
+    "reading": "gabyeopda",
+    "meaningJa": "軽い",
+    "exampleKo": "짐이 가볍습니다.",
+    "exampleJa": "荷物が軽いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-313",
+    "korean": "단단하다",
+    "reading": "dandanhada",
+    "meaningJa": "硬い",
+    "exampleKo": "의자가 단단합니다.",
+    "exampleJa": "椅子が硬いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-314",
+    "korean": "부드럽다",
+    "reading": "budeureopda",
+    "meaningJa": "柔らかい",
+    "exampleKo": "이불이 부드럽습니다.",
+    "exampleJa": "布団が柔らかいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-315",
+    "korean": "거칠다",
+    "reading": "geochilda",
+    "meaningJa": "荒い",
+    "exampleKo": "손이 거칠습니다.",
+    "exampleJa": "手が荒れています。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-316",
+    "korean": "매끄럽다",
+    "reading": "maekkeureopda",
+    "meaningJa": "滑らかだ",
+    "exampleKo": "표면이 매끄럽습니다.",
+    "exampleJa": "表面が滑らかです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-317",
+    "korean": "차갑다",
+    "reading": "chagapda",
+    "meaningJa": "冷たい",
+    "exampleKo": "물이 차갑습니다.",
+    "exampleJa": "水が冷たいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-318",
+    "korean": "시원하다",
+    "reading": "siwonhada",
+    "meaningJa": "涼しい",
+    "exampleKo": "바람이 시원합니다.",
+    "exampleJa": "風が涼しいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-319",
+    "korean": "따뜻하다",
+    "reading": "ttatteuthada",
+    "meaningJa": "暖かい",
+    "exampleKo": "방이 따뜻합니다.",
+    "exampleJa": "部屋が暖かいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-320",
+    "korean": "뜨겁다",
+    "reading": "tteugeopda",
+    "meaningJa": "熱い",
+    "exampleKo": "국이 뜨겁습니다.",
+    "exampleJa": "スープが熱いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-321",
+    "korean": "미지근하다",
+    "reading": "mijigeunhada",
+    "meaningJa": "ぬるい",
+    "exampleKo": "물이 미지근합니다.",
+    "exampleJa": "水がぬるいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-322",
+    "korean": "달다",
+    "reading": "dalda",
+    "meaningJa": "甘い",
+    "exampleKo": "사과가 답니다.",
+    "exampleJa": "りんごが甘いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-323",
+    "korean": "쓰다",
+    "reading": "sseuda",
+    "meaningJa": "苦い",
+    "exampleKo": "약이 씁니다.",
+    "exampleJa": "薬が苦いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-324",
+    "korean": "시다",
+    "reading": "sida",
+    "meaningJa": "酸っぱい",
+    "exampleKo": "귤이 십니다.",
+    "exampleJa": "みかんが酸っぱいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-325",
+    "korean": "짜다",
+    "reading": "jjada",
+    "meaningJa": "しょっぱい",
+    "exampleKo": "찌개가 짭니다.",
+    "exampleJa": "チゲがしょっぱいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-326",
+    "korean": "맵다",
+    "reading": "maepda",
+    "meaningJa": "辛い",
+    "exampleKo": "떡볶이가 맵습니다.",
+    "exampleJa": "トッポギが辛いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-327",
+    "korean": "싱겁다",
+    "reading": "singgeopda",
+    "meaningJa": "薄味だ",
+    "exampleKo": "국이 싱겁습니다.",
+    "exampleJa": "スープが薄味です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-328",
+    "korean": "고소하다",
+    "reading": "gosohada",
+    "meaningJa": "香ばしい",
+    "exampleKo": "깨가 고소합니다.",
+    "exampleJa": "ごまが香ばしいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-329",
+    "korean": "상하다",
+    "reading": "sanghada",
+    "meaningJa": "傷む",
+    "exampleKo": "음식이 상했습니다.",
+    "exampleJa": "食べ物が傷みました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-330",
+    "korean": "신선하다",
+    "reading": "sinseonhada",
+    "meaningJa": "新鮮だ",
+    "exampleKo": "생선이 신선합니다.",
+    "exampleJa": "魚が新鮮です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-331",
+    "korean": "풍부하다",
+    "reading": "pungbuhada",
+    "meaningJa": "豊富だ",
+    "exampleKo": "경험이 풍부합니다.",
+    "exampleJa": "経験が豊富です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-332",
+    "korean": "부족하다",
+    "reading": "bujokhada",
+    "meaningJa": "不足する",
+    "exampleKo": "시간이 부족합니다.",
+    "exampleJa": "時間が足りません。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-333",
+    "korean": "충분하다",
+    "reading": "chungbunhada",
+    "meaningJa": "十分だ",
+    "exampleKo": "설명이 충분합니다.",
+    "exampleJa": "説明が十分です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-334",
+    "korean": "남다",
+    "reading": "namda",
+    "meaningJa": "残る",
+    "exampleKo": "음식이 남았습니다.",
+    "exampleJa": "食べ物が残りました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-335",
+    "korean": "모자라다",
+    "reading": "mojarada",
+    "meaningJa": "足りない",
+    "exampleKo": "예산이 모자랍니다.",
+    "exampleJa": "予算が足りません。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-336",
+    "korean": "넘치다",
+    "reading": "neomchida",
+    "meaningJa": "あふれる",
+    "exampleKo": "자신감이 넘칩니다.",
+    "exampleJa": "自信にあふれています。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-337",
+    "korean": "비다",
+    "reading": "bida",
+    "meaningJa": "空く",
+    "exampleKo": "좌석이 비었습니다.",
+    "exampleJa": "席が空きました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-338",
+    "korean": "가득하다",
+    "reading": "gadeukada",
+    "meaningJa": "いっぱいだ",
+    "exampleKo": "기대가 가득합니다.",
+    "exampleJa": "期待でいっぱいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-339",
+    "korean": "비어 있다",
+    "reading": "bieoissda",
+    "meaningJa": "空いている",
+    "exampleKo": "방이 비어 있습니다.",
+    "exampleJa": "部屋が空いています。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-340",
+    "korean": "복잡하다",
+    "reading": "bokjaphada",
+    "meaningJa": "複雑だ",
+    "exampleKo": "절차가 복잡합니다.",
+    "exampleJa": "手続きが複雑です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-341",
+    "korean": "단순하다",
+    "reading": "dansunhada",
+    "meaningJa": "単純だ",
+    "exampleKo": "구조가 단순합니다.",
+    "exampleJa": "構造が単純です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-342",
+    "korean": "다양하다",
+    "reading": "dayanghada",
+    "meaningJa": "多様だ",
+    "exampleKo": "취향이 다양합니다.",
+    "exampleJa": "好みが様々です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-343",
+    "korean": "평범하다",
+    "reading": "pyeongbeomhada",
+    "meaningJa": "平凡だ",
+    "exampleKo": "하루가 평범합니다.",
+    "exampleJa": "一日が平凡です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-344",
+    "korean": "특별하다",
+    "reading": "teukbyeolhada",
+    "meaningJa": "特別だ",
+    "exampleKo": "오늘이 특별합니다.",
+    "exampleJa": "今日が特別です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-345",
+    "korean": "일반적이다",
+    "reading": "ilbanjeogida",
+    "meaningJa": "一般的だ",
+    "exampleKo": "현상이 일반적입니다.",
+    "exampleJa": "現象が一般的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-346",
+    "korean": "구체적이다",
+    "reading": "guchejeogida",
+    "meaningJa": "具体的だ",
+    "exampleKo": "계획이 구체적입니다.",
+    "exampleJa": "計画が具体的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-347",
+    "korean": "추상적이다",
+    "reading": "chusangjeogida",
+    "meaningJa": "抽象的だ",
+    "exampleKo": "개념이 추상적입니다.",
+    "exampleJa": "概念が抽象的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-348",
+    "korean": "긍정적이다",
+    "reading": "geungjeongjeogida",
+    "meaningJa": "肯定的だ",
+    "exampleKo": "반응이 긍정적입니다.",
+    "exampleJa": "反応が肯定的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-349",
+    "korean": "부정적이다",
+    "reading": "bujeongjeogida",
+    "meaningJa": "否定的だ",
+    "exampleKo": "의견이 부정적입니다.",
+    "exampleJa": "意見が否定的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-350",
+    "korean": "적극적이다",
+    "reading": "jeokgeukjeogida",
+    "meaningJa": "積極的だ",
+    "exampleKo": "태도가 적극적입니다.",
+    "exampleJa": "態度が積極的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-351",
+    "korean": "소극적이다",
+    "reading": "sogeukjeogida",
+    "meaningJa": "消極的だ",
+    "exampleKo": "반응이 소극적입니다.",
+    "exampleJa": "反応が消極的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-352",
+    "korean": "낙관적이다",
+    "reading": "nakgwanjeogida",
+    "meaningJa": "楽観的だ",
+    "exampleKo": "전망이 낙관적입니다.",
+    "exampleJa": "見通しが楽観的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-353",
+    "korean": "비관적이다",
+    "reading": "bigwanjeogida",
+    "meaningJa": "悲観的だ",
+    "exampleKo": "전망이 비관적입니다.",
+    "exampleJa": "見通しが悲観的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-354",
+    "korean": "이성적이다",
+    "reading": "iseongjeogida",
+    "meaningJa": "理性的だ",
+    "exampleKo": "판단이 이성적입니다.",
+    "exampleJa": "判断が理性的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-355",
+    "korean": "감성적이다",
+    "reading": "gamseongjeogida",
+    "meaningJa": "感性的だ",
+    "exampleKo": "노래가 감성적입니다.",
+    "exampleJa": "歌が感性的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-356",
+    "korean": "객관적이다",
+    "reading": "gaekgwanjeogida",
+    "meaningJa": "客観的だ",
+    "exampleKo": "평가가 객관적입니다.",
+    "exampleJa": "評価が客観的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-357",
+    "korean": "주관적이다",
+    "reading": "jugwanjeogida",
+    "meaningJa": "主観的だ",
+    "exampleKo": "감상이 주관적입니다.",
+    "exampleJa": "感想が主観的です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-358",
+    "korean": "공정하다",
+    "reading": "gongjeonghada",
+    "meaningJa": "公正だ",
+    "exampleKo": "심사가 공정합니다.",
+    "exampleJa": "審査が公正です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-359",
+    "korean": "불공평하다",
+    "reading": "bulgongpyeonghada",
+    "meaningJa": "不公平だ",
+    "exampleKo": "대우가 불공평합니다.",
+    "exampleJa": "待遇が不公平です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-360",
+    "korean": "평등하다",
+    "reading": "pyeongdeunghada",
+    "meaningJa": "平等だ",
+    "exampleKo": "기회가 평등합니다.",
+    "exampleJa": "機会が平等です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-361",
+    "korean": "자유롭다",
+    "reading": "jayuropda",
+    "meaningJa": "自由だ",
+    "exampleKo": "분위기가 자유롭습니다.",
+    "exampleJa": "雰囲気が自由です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-362",
+    "korean": "독립적이다",
+    "reading": "dongnipjeogida",
+    "meaningJa": "独立的だ",
+    "exampleKo": "생활이 독립적입니다.",
+    "exampleJa": "生活が自立しています。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-363",
+    "korean": "의존하다",
+    "reading": "uijonhada",
+    "meaningJa": "依存する",
+    "exampleKo": "부모에게 의존합니다.",
+    "exampleJa": "親に頼っています。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-364",
+    "korean": "익숙하다",
+    "reading": "iksukhada",
+    "meaningJa": "慣れている",
+    "exampleKo": "길이 익숙합니다.",
+    "exampleJa": "道に慣れています。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-365",
+    "korean": "낯설다",
+    "reading": "natseolda",
+    "meaningJa": "見慣れない",
+    "exampleKo": "동네가 낯설습니다.",
+    "exampleJa": "町が見慣れません。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-366",
+    "korean": "분명하다",
+    "reading": "bunmyeonghada",
+    "meaningJa": "明確だ",
+    "exampleKo": "목적이 분명합니다.",
+    "exampleJa": "目的が明確です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-367",
+    "korean": "모호하다",
+    "reading": "mohohada",
+    "meaningJa": "曖昧だ",
+    "exampleKo": "표현이 모호합니다.",
+    "exampleJa": "表現が曖昧です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-368",
+    "korean": "정확하다",
+    "reading": "jeonghwakhada",
+    "meaningJa": "正確だ",
+    "exampleKo": "정보가 정확합니다.",
+    "exampleJa": "情報が正確です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-369",
+    "korean": "틀리다",
+    "reading": "teullida",
+    "meaningJa": "間違っている",
+    "exampleKo": "답이 틀렸습니다.",
+    "exampleJa": "答えが間違っていました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-370",
+    "korean": "올바르다",
+    "reading": "olbareuda",
+    "meaningJa": "正しい",
+    "exampleKo": "선택이 올바릅니다.",
+    "exampleJa": "選択が正しいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-371",
+    "korean": "솔직하다",
+    "reading": "soljikhada",
+    "meaningJa": "率直だ",
+    "exampleKo": "말이 솔직합니다.",
+    "exampleJa": "言葉が率直です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-372",
+    "korean": "정직하다",
+    "reading": "jeongjikhada",
+    "meaningJa": "正直だ",
+    "exampleKo": "사람이 정직합니다.",
+    "exampleJa": "人が正直です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-373",
+    "korean": "친절하다",
+    "reading": "chinjeolhada",
+    "meaningJa": "親切だ",
+    "exampleKo": "직원이 친절합니다.",
+    "exampleJa": "店員が親切です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-374",
+    "korean": "불친절하다",
+    "reading": "bulchinjeolhada",
+    "meaningJa": "不親切だ",
+    "exampleKo": "응대가 불친절합니다.",
+    "exampleJa": "対応が不親切です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-375",
+    "korean": "예의 바르다",
+    "reading": "yeuibareuda",
+    "meaningJa": "礼儀正しい",
+    "exampleKo": "태도가 예의 바릅니다.",
+    "exampleJa": "態度が礼儀正しいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-376",
+    "korean": "무례하다",
+    "reading": "muryehada",
+    "meaningJa": "無礼だ",
+    "exampleKo": "말투가 무례합니다.",
+    "exampleJa": "口調が無礼です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-377",
+    "korean": "겸손하다",
+    "reading": "gyeomsonhada",
+    "meaningJa": "謙虚だ",
+    "exampleKo": "태도가 겸손합니다.",
+    "exampleJa": "態度が謙虚です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-378",
+    "korean": "자신감",
+    "reading": "jasinam",
+    "meaningJa": "自信",
+    "exampleKo": "자신감이 생겼습니다.",
+    "exampleJa": "自信がつきました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-379",
+    "korean": "자만심",
+    "reading": "jamansim",
+    "meaningJa": "うぬぼれ",
+    "exampleKo": "자만심을 버립니다.",
+    "exampleJa": "うぬぼれを捨てます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-380",
+    "korean": "자부심",
+    "reading": "jabusim",
+    "meaningJa": "誇り",
+    "exampleKo": "자부심을 느낍니다.",
+    "exampleJa": "誇りを感じます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-381",
+    "korean": "자존심",
+    "reading": "jajonsim",
+    "meaningJa": "自尊心",
+    "exampleKo": "자존심이 강합니다.",
+    "exampleJa": "自尊心が強いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-382",
+    "korean": "욕심",
+    "reading": "yoksim",
+    "meaningJa": "欲",
+    "exampleKo": "욕심이 많습니다.",
+    "exampleJa": "欲が多いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-383",
+    "korean": "질투",
+    "reading": "jiltu",
+    "meaningJa": "嫉妬",
+    "exampleKo": "질투를 느낍니다.",
+    "exampleJa": "嫉妬を感じます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-384",
+    "korean": "후회",
+    "reading": "huhoe",
+    "meaningJa": "後悔",
+    "exampleKo": "선택을 후회합니다.",
+    "exampleJa": "選択を後悔します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-385",
+    "korean": "반성",
+    "reading": "banseong",
+    "meaningJa": "反省",
+    "exampleKo": "실수를 반성합니다.",
+    "exampleJa": "ミスを反省します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-386",
+    "korean": "깨닫다",
+    "reading": "kkaedatda",
+    "meaningJa": "悟る",
+    "exampleKo": "중요성을 깨닫습니다.",
+    "exampleJa": "大切さに気づきます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-387",
+    "korean": "놀라다",
+    "reading": "nollada",
+    "meaningJa": "驚く",
+    "exampleKo": "소식에 놀랐습니다.",
+    "exampleJa": "知らせに驚きました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-388",
+    "korean": "당황하다",
+    "reading": "danghwanghada",
+    "meaningJa": "戸惑う",
+    "exampleKo": "질문에 당황합니다.",
+    "exampleJa": "質問に戸惑います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-389",
+    "korean": "안심하다",
+    "reading": "ansimhada",
+    "meaningJa": "安心する",
+    "exampleKo": "연락에 안심합니다.",
+    "exampleJa": "連絡に安心します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-390",
+    "korean": "긴장하다",
+    "reading": "ginjanghada",
+    "meaningJa": "緊張する",
+    "exampleKo": "발표에 긴장합니다.",
+    "exampleJa": "発表に緊張します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-391",
+    "korean": "진정하다",
+    "reading": "jinjeonghada",
+    "meaningJa": "落ち着く",
+    "exampleKo": "심호흡하고 진정합니다.",
+    "exampleJa": "深呼吸して落ち着きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-392",
+    "korean": "흥분하다",
+    "reading": "heungbunhada",
+    "meaningJa": "興奮する",
+    "exampleKo": "경기에 흥분합니다.",
+    "exampleJa": "試合に興奮します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-393",
+    "korean": "실망하다",
+    "reading": "silmanghada",
+    "meaningJa": "がっかりする",
+    "exampleKo": "결과에 실망합니다.",
+    "exampleJa": "結果にがっかりします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-394",
+    "korean": "만족하다",
+    "reading": "manjokhada",
+    "meaningJa": "満足する",
+    "exampleKo": "서비스에 만족합니다.",
+    "exampleJa": "サービスに満足します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-395",
+    "korean": "불만",
+    "reading": "bulman",
+    "meaningJa": "不満",
+    "exampleKo": "불만을 말합니다.",
+    "exampleJa": "不満を言います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-396",
+    "korean": "기대",
+    "reading": "gidae",
+    "meaningJa": "期待",
+    "exampleKo": "내일을 기대합니다.",
+    "exampleJa": "明日を期待します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-397",
+    "korean": "희망",
+    "reading": "huimang",
+    "meaningJa": "希望",
+    "exampleKo": "희망을 품습니다.",
+    "exampleJa": "希望を抱きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-398",
+    "korean": "절망",
+    "reading": "jeolmang",
+    "meaningJa": "絶望",
+    "exampleKo": "절망을 이겨냅니다.",
+    "exampleJa": "絶望を乗り越えます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-399",
+    "korean": "용기",
+    "reading": "yonggi",
+    "meaningJa": "勇気",
+    "exampleKo": "용기를 냅니다.",
+    "exampleJa": "勇気を出します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-400",
+    "korean": "두려움",
+    "reading": "duryeoum",
+    "meaningJa": "恐れ",
+    "exampleKo": "두려움을 느낍니다.",
+    "exampleJa": "恐れを感じます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-401",
+    "korean": "아침",
+    "reading": "achim",
+    "meaningJa": "朝",
+    "exampleKo": "아침을 먹습니다.",
+    "exampleJa": "朝ごはんを食べます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-402",
+    "korean": "점심",
+    "reading": "jeomsim",
+    "meaningJa": "昼",
+    "exampleKo": "점심을 먹습니다.",
+    "exampleJa": "昼ごはんを食べます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-403",
+    "korean": "저녁",
+    "reading": "jeonyeok",
+    "meaningJa": "夜",
+    "exampleKo": "저녁을 먹습니다.",
+    "exampleJa": "夜ごはんを食べます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-404",
+    "korean": "새벽",
+    "reading": "saebyeok",
+    "meaningJa": "夜明け",
+    "exampleKo": "새벽에 일어납니다.",
+    "exampleJa": "夜明けに起きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-405",
+    "korean": "한밤중",
+    "reading": "hanbamjung",
+    "meaningJa": "真夜中",
+    "exampleKo": "한밤중에 깼습니다.",
+    "exampleJa": "真夜中に起きました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-406",
+    "korean": "일상",
+    "reading": "ilsang",
+    "meaningJa": "日常",
+    "exampleKo": "일상이 바쁩니다.",
+    "exampleJa": "日常が忙しいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-407",
+    "korean": "여가",
+    "reading": "yeoga",
+    "meaningJa": "余暇",
+    "exampleKo": "여가를 즐깁니다.",
+    "exampleJa": "余暇を楽しみます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-408",
+    "korean": "취미",
+    "reading": "chwimi",
+    "meaningJa": "趣味",
+    "exampleKo": "취미가 독서입니다.",
+    "exampleJa": "趣味は読書です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-409",
+    "korean": "특기",
+    "reading": "teukgi",
+    "meaningJa": "特技",
+    "exampleKo": "특기가 수영입니다.",
+    "exampleJa": "特技は水泳です。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-410",
+    "korean": "재능",
+    "reading": "jaeneung",
+    "meaningJa": "才能",
+    "exampleKo": "재능이 있습니다.",
+    "exampleJa": "才能があります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-411",
+    "korean": "운동회",
+    "reading": "undonghoe",
+    "meaningJa": "運動会",
+    "exampleKo": "운동회에 나갑니다.",
+    "exampleJa": "運動会に出ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-412",
+    "korean": "소풍",
+    "reading": "sopung",
+    "meaningJa": "遠足",
+    "exampleKo": "소풍을 갑니다.",
+    "exampleJa": "遠足へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-413",
+    "korean": "캠핑",
+    "reading": "kaemping",
+    "meaningJa": "キャンプ",
+    "exampleKo": "캠핑을 떠납니다.",
+    "exampleJa": "キャンプへ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-414",
+    "korean": "낚시",
+    "reading": "nakksi",
+    "meaningJa": "釣り",
+    "exampleKo": "낚시를 합니다.",
+    "exampleJa": "釣りをします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-415",
+    "korean": "바비큐",
+    "reading": "babikyu",
+    "meaningJa": "バーベキュー",
+    "exampleKo": "바비큐를 합니다.",
+    "exampleJa": "バーベキューをします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-416",
+    "korean": "파티",
+    "reading": "pati",
+    "meaningJa": "パーティー",
+    "exampleKo": "파티를 엽니다.",
+    "exampleJa": "パーティーを開きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-417",
+    "korean": "모임",
+    "reading": "moim",
+    "meaningJa": "集まり",
+    "exampleKo": "모임에 나갑니다.",
+    "exampleJa": "集まりに出ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-418",
+    "korean": "동창회",
+    "reading": "dongchanghoe",
+    "meaningJa": "同窓会",
+    "exampleKo": "동창회에 갑니다.",
+    "exampleJa": "同窓会へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-419",
+    "korean": "결혼식",
+    "reading": "gyeolhonsik",
+    "meaningJa": "結婚式",
+    "exampleKo": "결혼식에 갑니다.",
+    "exampleJa": "結婚式へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-420",
+    "korean": "장례식",
+    "reading": "jangnyesik",
+    "meaningJa": "葬式",
+    "exampleKo": "장례식에 갑니다.",
+    "exampleJa": "葬式へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-421",
+    "korean": "생일",
+    "reading": "saengil",
+    "meaningJa": "誕生日",
+    "exampleKo": "생일을 축하합니다.",
+    "exampleJa": "誕生日を祝います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-422",
+    "korean": "기념일",
+    "reading": "ginyeomil",
+    "meaningJa": "記念日",
+    "exampleKo": "기념일을 챙깁니다.",
+    "exampleJa": "記念日を祝います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-423",
+    "korean": "명절",
+    "reading": "myeongjeol",
+    "meaningJa": "祝日",
+    "exampleKo": "명절에 모입니다.",
+    "exampleJa": "祝日に集まります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-424",
+    "korean": "설날",
+    "reading": "seolnal",
+    "meaningJa": "旧正月",
+    "exampleKo": "설날에 세배합니다.",
+    "exampleJa": "旧正月に挨拶します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-425",
+    "korean": "추석",
+    "reading": "chuseok",
+    "meaningJa": "秋夕",
+    "exampleKo": "추석에 고향에 갑니다.",
+    "exampleJa": "秋夕に故郷へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-426",
+    "korean": "연휴",
+    "reading": "yeonhyu",
+    "meaningJa": "連休",
+    "exampleKo": "연휴에 쉽니다.",
+    "exampleJa": "連休に休みます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-427",
+    "korean": "휴가",
+    "reading": "hyuga",
+    "meaningJa": "休暇",
+    "exampleKo": "휴가를 냅니다.",
+    "exampleJa": "休暇を取ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-428",
+    "korean": "출장",
+    "reading": "chuljang",
+    "meaningJa": "出張",
+    "exampleKo": "출장을 갑니다.",
+    "exampleJa": "出張へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-429",
+    "korean": "여행",
+    "reading": "yeohaeng",
+    "meaningJa": "旅行",
+    "exampleKo": "여행을 떠납니다.",
+    "exampleJa": "旅行へ出ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-430",
+    "korean": "관광",
+    "reading": "gwangwang",
+    "meaningJa": "観光",
+    "exampleKo": "관광을 합니다.",
+    "exampleJa": "観光をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-431",
+    "korean": "유적",
+    "reading": "yujeok",
+    "meaningJa": "遺跡",
+    "exampleKo": "유적을 둘러봅니다.",
+    "exampleJa": "遺跡を見て回ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-432",
+    "korean": "유물",
+    "reading": "yumul",
+    "meaningJa": "遺物",
+    "exampleKo": "유물을 관람합니다.",
+    "exampleJa": "遺物を見学します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-433",
+    "korean": "박물관",
+    "reading": "bangmulgwan",
+    "meaningJa": "博物館",
+    "exampleKo": "박물관에 갑니다.",
+    "exampleJa": "博物館へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-434",
+    "korean": "미술관",
+    "reading": "misulgwan",
+    "meaningJa": "美術館",
+    "exampleKo": "미술관에 갑니다.",
+    "exampleJa": "美術館へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-435",
+    "korean": "서점",
+    "reading": "seojeom",
+    "meaningJa": "書店",
+    "exampleKo": "서점에 들릅니다.",
+    "exampleJa": "書店に寄ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-436",
+    "korean": "영화관",
+    "reading": "yeonghwagwan",
+    "meaningJa": "映画館",
+    "exampleKo": "영화관에 갑니다.",
+    "exampleJa": "映画館へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-437",
+    "korean": "공연장",
+    "reading": "gongyeonjang",
+    "meaningJa": "公演場",
+    "exampleKo": "공연장에 갑니다.",
+    "exampleJa": "公演場へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-438",
+    "korean": "경기장",
+    "reading": "gyeonggijang",
+    "meaningJa": "競技場",
+    "exampleKo": "경기장에 모입니다.",
+    "exampleJa": "競技場に集まります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-439",
+    "korean": "수영장",
+    "reading": "suyeongjang",
+    "meaningJa": "プール",
+    "exampleKo": "수영장에 갑니다.",
+    "exampleJa": "プールへ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-440",
+    "korean": "놀이공원",
+    "reading": "norrigongwon",
+    "meaningJa": "遊園地",
+    "exampleKo": "놀이공원에 갑니다.",
+    "exampleJa": "遊園地へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-441",
+    "korean": "동물원",
+    "reading": "dongmurwon",
+    "meaningJa": "動物園",
+    "exampleKo": "동물원에 갑니다.",
+    "exampleJa": "動物園へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-442",
+    "korean": "식물원",
+    "reading": "singmurwon",
+    "meaningJa": "植物園",
+    "exampleKo": "식물원에 갑니다.",
+    "exampleJa": "植物園へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-443",
+    "korean": "강",
+    "reading": "gang",
+    "meaningJa": "川",
+    "exampleKo": "강을 건넙니다.",
+    "exampleJa": "川を渡ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-444",
+    "korean": "호수",
+    "reading": "hosu",
+    "meaningJa": "湖",
+    "exampleKo": "호수를 산책합니다.",
+    "exampleJa": "湖を散歩します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-445",
+    "korean": "바다",
+    "reading": "bada",
+    "meaningJa": "海",
+    "exampleKo": "바다에 갑니다.",
+    "exampleJa": "海へ行きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-446",
+    "korean": "해변",
+    "reading": "haebyeon",
+    "meaningJa": "浜辺",
+    "exampleKo": "해변을 걷습니다.",
+    "exampleJa": "浜辺を歩きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-447",
+    "korean": "섬",
+    "reading": "seom",
+    "meaningJa": "島",
+    "exampleKo": "섬에 들어갑니다.",
+    "exampleJa": "島へ渡ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-448",
+    "korean": "산",
+    "reading": "san",
+    "meaningJa": "山",
+    "exampleKo": "산에 오릅니다.",
+    "exampleJa": "山に登ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-449",
+    "korean": "계곡",
+    "reading": "gyegok",
+    "meaningJa": "渓谷",
+    "exampleKo": "계곡에 발을 담급니다.",
+    "exampleJa": "渓谷に足をつけます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-450",
+    "korean": "폭포",
+    "reading": "pokpo",
+    "meaningJa": "滝",
+    "exampleKo": "폭포를 구경합니다.",
+    "exampleJa": "滝を見物します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-451",
+    "korean": "들판",
+    "reading": "deulpan",
+    "meaningJa": "野原",
+    "exampleKo": "들판을 달립니다.",
+    "exampleJa": "野原を走ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-452",
+    "korean": "논",
+    "reading": "non",
+    "meaningJa": "田んぼ",
+    "exampleKo": "논에서 일합니다.",
+    "exampleJa": "田んぼで働きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-453",
+    "korean": "밭",
+    "reading": "bat",
+    "meaningJa": "畑",
+    "exampleKo": "밭을 일굽니다.",
+    "exampleJa": "畑を耕します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-454",
+    "korean": "농사",
+    "reading": "nongsa",
+    "meaningJa": "農作業",
+    "exampleKo": "농사를 짓습니다.",
+    "exampleJa": "農作業をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-455",
+    "korean": "수확",
+    "reading": "suhwak",
+    "meaningJa": "収穫",
+    "exampleKo": "수확을 합니다.",
+    "exampleJa": "収穫をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-456",
+    "korean": "계절",
+    "reading": "gyejeol",
+    "meaningJa": "季節",
+    "exampleKo": "계절이 바뀝니다.",
+    "exampleJa": "季節が変わります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-457",
+    "korean": "봄",
+    "reading": "bom",
+    "meaningJa": "春",
+    "exampleKo": "봄이 왔습니다.",
+    "exampleJa": "春が来ました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-458",
+    "korean": "여름",
+    "reading": "yeoreum",
+    "meaningJa": "夏",
+    "exampleKo": "여름이 덥습니다.",
+    "exampleJa": "夏が暑いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-459",
+    "korean": "가을",
+    "reading": "gaul",
+    "meaningJa": "秋",
+    "exampleKo": "가을이 깊습니다.",
+    "exampleJa": "秋が深いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-460",
+    "korean": "겨울",
+    "reading": "gyeoul",
+    "meaningJa": "冬",
+    "exampleKo": "겨울이 춥습니다.",
+    "exampleJa": "冬が寒いです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-461",
+    "korean": "장마",
+    "reading": "jangma",
+    "meaningJa": "梅雨",
+    "exampleKo": "장마가 시작되었습니다.",
+    "exampleJa": "梅雨が始まりました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-462",
+    "korean": "태풍",
+    "reading": "taepung",
+    "meaningJa": "台風",
+    "exampleKo": "태풍이 옵니다.",
+    "exampleJa": "台風が来ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-463",
+    "korean": "지진",
+    "reading": "jijin",
+    "meaningJa": "地震",
+    "exampleKo": "지진이 났습니다.",
+    "exampleJa": "地震がありました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-464",
+    "korean": "홍수",
+    "reading": "hongsu",
+    "meaningJa": "洪水",
+    "exampleKo": "홍수가 났습니다.",
+    "exampleJa": "洪水がありました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-465",
+    "korean": "가뭄",
+    "reading": "gamum",
+    "meaningJa": "日照り",
+    "exampleKo": "가뭄이 듭니다.",
+    "exampleJa": "日照りです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-466",
+    "korean": "눈보라",
+    "reading": "nunbora",
+    "meaningJa": "吹雪",
+    "exampleKo": "눈보라가 칩니다.",
+    "exampleJa": "吹雪が吹きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-467",
+    "korean": "무지개",
+    "reading": "mujigae",
+    "meaningJa": "虹",
+    "exampleKo": "무지개가 떴습니다.",
+    "exampleJa": "虹が出ました。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-468",
+    "korean": "일출",
+    "reading": "ilchul",
+    "meaningJa": "日の出",
+    "exampleKo": "일출을 봅니다.",
+    "exampleJa": "日の出を見ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-469",
+    "korean": "일몰",
+    "reading": "ilmol",
+    "meaningJa": "日没",
+    "exampleKo": "일몰을 봅니다.",
+    "exampleJa": "日没を見ます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-470",
+    "korean": "야경",
+    "reading": "yagyeong",
+    "meaningJa": "夜景",
+    "exampleKo": "야경이 아름답습니다.",
+    "exampleJa": "夜景が美しいです。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-471",
+    "korean": "산책로",
+    "reading": "sanchaekro",
+    "meaningJa": "散歩道",
+    "exampleKo": "산책로를 걷습니다.",
+    "exampleJa": "散歩道を歩きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-472",
+    "korean": "자전거 도로",
+    "reading": "jajeongeodoro",
+    "meaningJa": "自転車道",
+    "exampleKo": "자전거 도로를 달립니다.",
+    "exampleJa": "自転車道を走ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-473",
+    "korean": "지하철",
+    "reading": "jihacheol",
+    "meaningJa": "地下鉄",
+    "exampleKo": "지하철을 탑니다.",
+    "exampleJa": "地下鉄に乗ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-474",
+    "korean": "버스",
+    "reading": "beoseu",
+    "meaningJa": "バス",
+    "exampleKo": "버스를 탑니다.",
+    "exampleJa": "バスに乗ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-475",
+    "korean": "택시",
+    "reading": "taeksi",
+    "meaningJa": "タクシー",
+    "exampleKo": "택시를 잡습니다.",
+    "exampleJa": "タクシーを拾います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-476",
+    "korean": "기차",
+    "reading": "gicha",
+    "meaningJa": "列車",
+    "exampleKo": "기차를 탑니다.",
+    "exampleJa": "列車に乗ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-477",
+    "korean": "고속버스",
+    "reading": "gosokbeoseu",
+    "meaningJa": "高速バス",
+    "exampleKo": "고속버스를 탑니다.",
+    "exampleJa": "高速バスに乗ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-478",
+    "korean": "비행기",
+    "reading": "bihaenggi",
+    "meaningJa": "飛行機",
+    "exampleKo": "비행기를 탑니다.",
+    "exampleJa": "飛行機に乗ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-479",
+    "korean": "공항",
+    "reading": "gonghang",
+    "meaningJa": "空港",
+    "exampleKo": "공항에 도착합니다.",
+    "exampleJa": "空港に着きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-480",
+    "korean": "항구",
+    "reading": "hanggu",
+    "meaningJa": "港",
+    "exampleKo": "항구에 도착합니다.",
+    "exampleJa": "港に着きます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-481",
+    "korean": "역",
+    "reading": "yeok",
+    "meaningJa": "駅",
+    "exampleKo": "역에서 만납니다.",
+    "exampleJa": "駅で会います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-482",
+    "korean": "정류장",
+    "reading": "jeongnyujang",
+    "meaningJa": "停留所",
+    "exampleKo": "정류장에서 기다립니다.",
+    "exampleJa": "停留所で待ちます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-483",
+    "korean": "환승",
+    "reading": "hwanseung",
+    "meaningJa": "乗換",
+    "exampleKo": "환승을 합니다.",
+    "exampleJa": "乗り換えをします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-484",
+    "korean": "지각",
+    "reading": "jigak",
+    "meaningJa": "遅刻",
+    "exampleKo": "지각을 합니다.",
+    "exampleJa": "遅刻をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-485",
+    "korean": "정시",
+    "reading": "jeongsi",
+    "meaningJa": "定時",
+    "exampleKo": "정시에 출발합니다.",
+    "exampleJa": "定時に出発します。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-486",
+    "korean": "왕복",
+    "reading": "wangbok",
+    "meaningJa": "往復",
+    "exampleKo": "왕복으로 끊습니다.",
+    "exampleJa": "往復で切ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-487",
+    "korean": "편도",
+    "reading": "pyeondo",
+    "meaningJa": "片道",
+    "exampleKo": "편도로 끊습니다.",
+    "exampleJa": "片道で切ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-488",
+    "korean": "요금",
+    "reading": "yogeum",
+    "meaningJa": "料金",
+    "exampleKo": "요금을 냅니다.",
+    "exampleJa": "料金を払います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-489",
+    "korean": "표",
+    "reading": "pyo",
+    "meaningJa": "切符",
+    "exampleKo": "표를 삽니다.",
+    "exampleJa": "切符を買います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-490",
+    "korean": "좌석",
+    "reading": "jwaseok",
+    "meaningJa": "座席",
+    "exampleKo": "좌석에 앉습니다.",
+    "exampleJa": "座席に座ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-491",
+    "korean": "창가",
+    "reading": "changga",
+    "meaningJa": "窓側",
+    "exampleKo": "창가에 앉습니다.",
+    "exampleJa": "窓側に座ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-492",
+    "korean": "통로",
+    "reading": "tongno",
+    "meaningJa": "通路",
+    "exampleKo": "통로에 섭니다.",
+    "exampleJa": "通路に立ちます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-493",
+    "korean": "수하물",
+    "reading": "suhamul",
+    "meaningJa": "手荷物",
+    "exampleKo": "수하물을 찾습니다.",
+    "exampleJa": "手荷物を受け取ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-494",
+    "korean": "여권",
+    "reading": "yeogwon",
+    "meaningJa": "パスポート",
+    "exampleKo": "여권을 챙깁니다.",
+    "exampleJa": "パスポートを持ちます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-495",
+    "korean": "비자",
+    "reading": "bija",
+    "meaningJa": "ビザ",
+    "exampleKo": "비자를 받습니다.",
+    "exampleJa": "ビザを取ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-496",
+    "korean": "환전",
+    "reading": "hwanjeon",
+    "meaningJa": "両替",
+    "exampleKo": "환전을 합니다.",
+    "exampleJa": "両替をします。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-497",
+    "korean": "기념품",
+    "reading": "ginyeompum",
+    "meaningJa": "お土産",
+    "exampleKo": "기념품을 삽니다.",
+    "exampleJa": "お土産を買います。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-498",
+    "korean": "사진 찍다",
+    "reading": "sajinjikda",
+    "meaningJa": "写真を撮る",
+    "exampleKo": "공원에서 사진을 찍습니다.",
+    "exampleJa": "公園で写真を撮ります。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-499",
+    "korean": "전화 걸다",
+    "reading": "jeonhwageolda",
+    "meaningJa": "電話をかける",
+    "exampleKo": "친구에게 전화를 겁니다.",
+    "exampleJa": "友達に電話をかけます。",
+    "topikLevel": 3
+  },
+  {
+    "id": "t3-500",
+    "korean": "작별 인사",
+    "reading": "jakbyeorinsa",
+    "meaningJa": "別れの挨拶",
+    "exampleKo": "작별 인사를 나눕니다.",
+    "exampleJa": "別れの挨拶を交わします。",
+    "topikLevel": 3
+  }
+]

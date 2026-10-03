@@ -7,12 +7,12 @@ import 'package:korean_game/models/word.dart';
 import 'package:korean_game/quiz/quiz_generator.dart';
 import 'package:korean_game/screens/quiz_screen.dart';
 
-Word word(String id, String korean, String meaningJa) => Word(
+Word word(String id, String korean, String meaningJa, {String? exampleKo}) => Word(
       id: id,
       korean: korean,
       reading: 'reading-$id',
       meaningJa: meaningJa,
-      exampleKo: '예문-$id',
+      exampleKo: exampleKo ?? '예문-$id',
       exampleJa: '例文-$id',
       topikLevel: 1,
     );
@@ -20,7 +20,7 @@ Word word(String id, String korean, String meaningJa) => Word(
 List<Word> pool() => [
       word('t1-001', '한국어', '韓国語'),
       word('t1-002', '사랑', '愛'),
-      word('t1-003', '학교', '学校'),
+      word('t1-003', '학교', '학교'),
       word('t1-004', '친구', '友達'),
       word('t1-005', '음식', '食べ物'),
     ];
@@ -79,6 +79,102 @@ void main() {
       final words = [word('t1-001', '한국어', '韓国語')];
       expect(
         () => makeQuestion(words.first, words, QuizKind.wordToMeaning, Random()),
+        throwsArgumentError,
+      );
+    });
+
+    test('listeningWord: audioText is target.korean, prompt contains 듣기, options are Korean', () {
+      final words = pool();
+      final target = words[0];
+      final question = makeQuestion(target, words, QuizKind.listeningWord, Random(1));
+
+      expect(question.kind, QuizKind.listeningWord);
+      expect(question.audioText, target.korean);
+      expect(question.prompt, contains('듣기'));
+      expect(question.options, hasLength(4));
+      expect(question.options.toSet(), hasLength(4));
+      expect(question.options[question.correctIndex], target.korean);
+      final poolKoreans = words.map((w) => w.korean).toSet();
+      for (final option in question.options) {
+        expect(poolKoreans, contains(option));
+      }
+    });
+
+    test('listeningMeaning: audioText is target.korean, prompt contains 듣기, options are meanings', () {
+      final words = pool();
+      final target = words[1];
+      final question = makeQuestion(target, words, QuizKind.listeningMeaning, Random(2));
+
+      expect(question.kind, QuizKind.listeningMeaning);
+      expect(question.audioText, target.korean);
+      expect(question.prompt, contains('듣기'));
+      expect(question.options, hasLength(4));
+      expect(question.options.toSet(), hasLength(4));
+      expect(question.options[question.correctIndex], target.meaningJa);
+      final poolMeanings = words.map((w) => w.meaningJa).toSet();
+      for (final option in question.options) {
+        expect(poolMeanings, contains(option));
+      }
+    });
+  });
+
+  group('makeBlankQuestion', () {
+    test('blank: prompt contains ＿＿ and not the word, correct is korean, options are Korean', () {
+      final words = pool();
+      final target = word('t1-006', '한국어', '韓国語', exampleKo: '한국어를 공부합니다');
+      final allWords = [...words, target];
+      final question = makeBlankQuestion(target, allWords, Random(3));
+
+      expect(question, isNotNull);
+      expect(question!.kind, QuizKind.blank);
+      expect(question.audioText, isNull);
+      expect(question.prompt, contains('＿＿'));
+      expect(question.prompt, isNot(contains('한국어')));
+      expect(question.options, hasLength(4));
+      expect(question.options.toSet(), hasLength(4));
+      expect(question.options[question.correctIndex], target.korean);
+      final poolKoreans = allWords.map((w) => w.korean).toSet();
+      for (final option in question.options) {
+        expect(poolKoreans, contains(option));
+      }
+    });
+
+    test('blank: replaces first occurrence only', () {
+      final words = pool();
+      final target = word('t1-006', '사랑', '愛', exampleKo: '사랑은 사랑입니다');
+      final allWords = [...words, target];
+      final question = makeBlankQuestion(target, allWords, Random(4));
+
+      expect(question, isNotNull);
+      expect(question!.prompt, contains('＿＿'));
+      expect(question.prompt.split('＿＿').length, 2);
+      expect(question.prompt, contains('사랑입니다'));
+    });
+
+    test('blank: returns null when word absent from exampleKo', () {
+      final words = pool();
+      final target = word('t1-006', '없는단어', '意味', exampleKo: '완전히 다른 문장');
+      final allWords = [...words, target];
+      final question = makeBlankQuestion(target, allWords, Random(5));
+
+      expect(question, isNull);
+    });
+
+    test('blank: tries 다-stripped stem when full word not found', () {
+      final words = pool();
+      final target = word('t1-006', '가다', '行く', exampleKo: '학교에 가요');
+      final allWords = [...words, target];
+      final question = makeBlankQuestion(target, allWords, Random(6));
+
+      expect(question, isNotNull);
+      expect(question!.prompt, contains('＿＿'));
+    });
+
+    test('blank: throws when pool too small for 4 distinct options', () {
+      final words = [word('t1-001', '한국어', '韓国語', exampleKo: '한국어를 배웁니다')];
+      final target = words.first;
+      expect(
+        () => makeBlankQuestion(target, words, Random()),
         throwsArgumentError,
       );
     });

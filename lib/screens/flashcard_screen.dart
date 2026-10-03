@@ -43,24 +43,27 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   Future<void> _grade(Grade grade) async {
     if (_saving || _index >= widget.words.length) return;
     setState(() => _saving = true);
-    final word = widget.words[_index];
-    final now = _now();
-    final current = _cards[word.id] ??
-        SrsCard(
-          wordId: word.id,
-          interval: Duration.zero,
-          ease: 2.5,
-          dueDate: now,
-        );
-    final next = widget.scheduleFn(current, grade, now);
-    _cards[word.id] = next;
-    await widget.store.upsert(next);
-    if (!mounted) return;
-    setState(() {
-      _index += 1;
-      _revealed = false;
-      _saving = false;
-    });
+    try {
+      final word = widget.words[_index];
+      final now = _now();
+      final current = _cards[word.id] ??
+          SrsCard(
+            wordId: word.id,
+            interval: Duration.zero,
+            ease: 2.5,
+            dueDate: now,
+          );
+      final next = widget.scheduleFn(current, grade, now);
+      _cards[word.id] = next;
+      await widget.store.upsert(next);
+      if (!mounted) return;
+      setState(() {
+        _index += 1;
+        _revealed = false;
+      });
+    } finally {
+      if (mounted) setState(() => _saving = false);
+    }
   }
 
   @override

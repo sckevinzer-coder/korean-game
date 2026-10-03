@@ -1,1 +1,25 @@
 .superpowers/
+
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.metadata
+!pubspec.lock
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# macOS
+.DS_Store
+
+# Misc
+*.log
+.flutter-plugins
+.flutter-plugins-dependencies

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "t1-001",
+    "korean": "안녕하세요",
+    "reading": "annyeonghaseyo",
+    "meaningJa": "こんにちは",
+    "exampleKo": "안녕하세요, 저는 민수입니다.",
+    "exampleJa": "こんにちは、私はミンスです。",
+    "topikLevel": 1
+  },
+  {
+    "id": "t1-002",
+    "korean": "감사합니다",
+    "reading": "gamsahamnida",
+    "meaningJa": "ありがとうございます",
+    "exampleKo": "도와주셔서 감사합니다.",
+    "exampleJa": "助けてくださりありがとうございます。",
+    "topikLevel": 1
+  },
+  {
+    "id": "t1-003",
+    "korean": "물",
+    "reading": "mul",
+    "meaningJa": "水",
+    "exampleKo": "물을 마십니다.",
+    "exampleJa": "水を飲みます。",
+    "topikLevel": 1
+  },
+  {
+    "id": "t1-004",
+    "korean": "학교",
+    "reading": "hakgyo",
+    "meaningJa": "学校",
+    "exampleKo": "학교에 갑니다.",
+    "exampleJa": "学校へ行きます。",
+    "topikLevel": 1
+  },
+  {
+    "id": "t1-005",
+    "korean": "친구",
+    "reading": "chingu",
+    "meaningJa": "友達",
+    "exampleKo": "친구를 만납니다.",
+    "exampleJa": "友達に会います。",
+    "topikLevel": 1
+  }
+]

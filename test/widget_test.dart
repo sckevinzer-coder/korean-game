@@ -65,9 +65,9 @@ void main() {
   // zone, so the cycle test below injects its word list instead.
   testWidgets('app boots to home screen', (tester) async {
     await tester.pumpWidget(MyApp(store: store, stats: stats));
-    await pumpUntil(tester, find.text('今日の復習: 5 / 5 枚'));
+    await pumpUntil(tester, find.text('今日の復習: 500 / 500 枚'));
 
-    expect(find.text('今日の復習: 5 / 5 枚'), findsOneWidget);
+    expect(find.text('今日の復習: 500 / 500 枚'), findsOneWidget);
     expect(find.text('連続学習: 0日'), findsOneWidget);
     expect(find.text('レベルを選ぶ'), findsOneWidget);
   });

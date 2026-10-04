@@ -1,11 +1,11 @@
 {
-    "name": "korean_game",
-    "short_name": "korean_game",
+    "name": "한국어학습",
+    "short_name": "한국어학습",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#1a237e",
+    "theme_color": "#1a237e",
+    "description": "한국어 단어 학습 게임 - Korean vocabulary with TTS, SRS, quizzes and mini-games",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

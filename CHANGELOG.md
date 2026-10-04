@@ -1,5 +1,32 @@
 # Changelog
 
+## 1.2.0
+
+### Quiz improvements
+- Time attack mode (10 seconds per question) via 出題設定 menu or
+  `timeAttack` flag, with countdown bar, timeout-as-wrong handling,
+  and average answer time on the result screen.
+- Confusable-first distractors: error-prone words are prioritized as
+  answer options when error data exists (toggleable, default on,
+  session regenerates on toggle).
+- Streak freeze: a single missed day is bridged once per week
+  (Monday-based), shown on Home as remaining uses.
+
+### Stats dashboard
+- 30-day activity bar chart (月間レポート) reusing `study_days`.
+- Accuracy trend line over the last 10 sessions with average rate,
+  recorded automatically on quiz completion (`sessions` table).
+- Six achievement badges (初クイズ, 3日連続, 7日連続, 正答率80%,
+  100問正解, 全レベル制覇) with unlock dialog, haptics, and a badge
+  grid on the stats screen.
+
+### Database
+- `stats.db` v2 migration (freezes, sessions with level, achievements),
+  preserving v1 study days.
+
+### Tests
+- 133 tests passing (`flutter test`).
+
 ## 1.1.0
 
 ### Vocabulary & levels

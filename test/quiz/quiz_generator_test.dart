@@ -25,6 +25,10 @@ List<Word> pool() => [
       word('t1-005', '음식', '食べ物'),
     ];
 
+List<Word> bigPool() => [
+      for (var i = 0; i < 8; i++) word('t1-10$i', '단어$i', '意味$i'),
+    ];
+
 void main() {
   group('makeQuestion', () {
     test('exactly 4 distinct options, one correct, distractors from pool',
@@ -116,6 +120,35 @@ void main() {
         expect(poolMeanings, contains(option));
       }
     });
+
+    test('weakRates prioritizes error-prone words as distractors', () {
+      final words = bigPool();
+      final target = words[0];
+      final question = makeQuestion(
+        target,
+        words,
+        QuizKind.meaningToWord,
+        Random(42),
+        weakRates: {'t1-105': 0.9, 't1-107': 0.8},
+      );
+
+      expect(question.options, contains('단어5'));
+      expect(question.options, contains('단어7'));
+    });
+
+    test('null weakRates keeps legacy random behavior', () {
+      final words = bigPool();
+      final target = words[0];
+      final question = makeQuestion(
+        target,
+        words,
+        QuizKind.meaningToWord,
+        Random(42),
+      );
+
+      expect(question.options, hasLength(4));
+      expect(question.options.toSet(), hasLength(4));
+    });
   });
 
   group('makeBlankQuestion', () {
@@ -177,6 +210,26 @@ void main() {
         () => makeBlankQuestion(target, words, Random()),
         throwsArgumentError,
       );
+    });
+
+    test('blank: weakRates prioritizes error-prone words as distractors', () {
+      final words = bigPool().map((w) => word(
+            w.id,
+            w.korean,
+            w.meaningJa,
+            exampleKo: '이것은 ${w.korean}입니다',
+          )).toList();
+      final target = words[0];
+      final question = makeBlankQuestion(
+        target,
+        words,
+        Random(42),
+        weakRates: {'t1-105': 0.9, 't1-107': 0.8},
+      );
+
+      expect(question, isNotNull);
+      expect(question!.options, contains('단어5'));
+      expect(question.options, contains('단어7'));
     });
   });
 

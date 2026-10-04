@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter_test/flutter_test.dart';
+import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 import 'package:korean_game/stats/stats_store.dart';
@@ -94,5 +97,126 @@ void main() {
       await store.last7Days(DateTime(2026, 10, 3)),
       [false, false, false, false, false, false, false],
     );
+  });
+
+  test('last30Days marks studied days oldest first', () async {
+    await store.recordStudy(DateTime(2026, 9, 4));
+    await store.recordStudy(DateTime(2026, 10, 3));
+
+    final days = await store.last30Days(DateTime(2026, 10, 3));
+    expect(days.length, 30);
+    expect(days.first, isTrue); // Sep 4
+    expect(days.last, isTrue); // Oct 3
+    expect(days.where((d) => d).length, 2);
+  });
+
+  test('recordSession and recentSessions return chronological rates', () async {
+    await store.recordSession(DateTime(2026, 10, 1), 10, 7);
+    await store.recordSession(DateTime(2026, 10, 2), 10, 9);
+    await store.recordSession(DateTime(2026, 10, 3), 10, 5);
+
+    final sessions = await store.recentSessions(10);
+    expect(sessions.map((s) => s.correct).toList(), [7, 9, 5]);
+    expect(sessions.map((s) => s.rate).toList(), [0.7, 0.9, 0.5]);
+  });
+
+  test('recentSessions respects limit with newest kept', () async {
+    for (var i = 1; i <= 5; i++) {
+      await store.recordSession(DateTime(2026, 10, i), 10, i);
+    }
+
+    final sessions = await store.recentSessions(3);
+    expect(sessions.map((s) => s.correct).toList(), [3, 4, 5]);
+  });
+
+  test('achievements unlock once and list unlocked ids', () async {
+    expect(await store.unlockedAchievements(), isEmpty);
+
+    await store.unlockAchievement('first_quiz', DateTime(2026, 10, 3));
+    await store.unlockAchievement('first_quiz', DateTime(2026, 10, 4));
+
+    expect(await store.unlockedAchievements(), {'first_quiz'});
+  });
+
+  test('weekly freeze grants one use per week', () async {
+    final monday = DateTime(2026, 9, 28); // Monday
+    expect(await store.freezesLeft(monday), 1);
+
+    expect(await store.useFreeze(monday), isTrue);
+    expect(await store.freezesLeft(monday), 0);
+    expect(await store.useFreeze(monday), isFalse);
+
+    // New week grants a fresh freeze.
+    expect(await store.freezesLeft(DateTime(2026, 10, 5)), 1);
+  });
+
+  test('protectedStreak without gap consumes nothing', () async {
+    await store.recordStudy(DateTime(2026, 10, 1));
+    await store.recordStudy(DateTime(2026, 10, 2));
+    await store.recordStudy(DateTime(2026, 10, 3));
+
+    final result = await store.protectedStreak(DateTime(2026, 10, 3));
+    expect(result.streak, 3);
+    expect(result.freezeUsed, isFalse);
+    expect(await store.freezesLeft(DateTime(2026, 10, 3)), 1);
+  });
+
+  test('protectedStreak bridges a single missed day using freeze', () async {
+    await store.recordStudy(DateTime(2026, 10, 1));
+    await store.recordStudy(DateTime(2026, 10, 2));
+    // Missed Oct 3, studied today Oct 4.
+    await store.recordStudy(DateTime(2026, 10, 4));
+
+    final result = await store.protectedStreak(DateTime(2026, 10, 4));
+    expect(result.streak, 3);
+    expect(result.freezeUsed, isTrue);
+    expect(await store.freezesLeft(DateTime(2026, 10, 4)), 0);
+  });
+
+  test('protectedStreak cannot bridge a two-day gap', () async {
+    await store.recordStudy(DateTime(2026, 10, 1));
+    await store.recordStudy(DateTime(2026, 10, 4));
+
+    final result = await store.protectedStreak(DateTime(2026, 10, 4));
+    expect(result.streak, 1);
+    expect(result.freezeUsed, isFalse);
+    expect(await store.freezesLeft(DateTime(2026, 10, 4)), 1);
+  });
+
+  test('protectedStreak does not burn freeze when today unstudied', () async {
+    await store.recordStudy(DateTime(2026, 10, 1));
+    await store.recordStudy(DateTime(2026, 10, 2));
+
+    final result = await store.protectedStreak(DateTime(2026, 10, 3));
+    expect(result.freezeUsed, isFalse);
+    expect(await store.freezesLeft(DateTime(2026, 10, 3)), 1);
+  });
+
+  test('v1 database upgrades to v2 preserving study days', () async {
+    final dir = await Directory.systemTemp.createTemp('stats_v1_');
+    try {
+      final dbPath = p.join(dir.path, 'stats.db');
+      final v1 = await databaseFactoryFfi.openDatabase(
+        dbPath,
+        options: OpenDatabaseOptions(
+          version: 1,
+          onCreate: (db, version) =>
+              db.execute('CREATE TABLE study_days(day TEXT PRIMARY KEY)'),
+        ),
+      );
+      await v1.insert('study_days', {'day': '2026-10-01'});
+      await v1.close();
+
+      final upgraded = StatsStore(path: dbPath);
+      expect(await upgraded.currentStreak(DateTime(2026, 10, 1)), 1);
+      await upgraded.recordSession(DateTime(2026, 10, 1), 10, 8);
+      expect((await upgraded.recentSessions(10)).length, 1);
+      await upgraded.unlockAchievement('first_quiz', DateTime(2026, 10, 1));
+      expect(await upgraded.unlockedAchievements(), {'first_quiz'});
+      expect(await upgraded.freezesLeft(DateTime(2026, 10, 1)), 1);
+      await upgraded.close();
+    } finally {
+      await dir.delete(recursive: true);
+    }
   });
 }

@@ -9,6 +9,7 @@ import '../models/word.dart';
 import '../quiz/adaptive_selector.dart';
 import '../quiz/quiz_generator.dart';
 import '../quiz/writing_grader.dart';
+import '../stats/achievements.dart';
 import '../stats/bookmark_store.dart';
 import '../stats/error_stats.dart';
 import '../stats/learning_analytics.dart';
@@ -31,6 +32,7 @@ class QuizScreen extends StatefulWidget {
     this.errors,
     this.bookmarks,
     this.weakRates,
+    this.timeAttack = false,
   });
 
   final List<Word> words;
@@ -44,6 +46,7 @@ class QuizScreen extends StatefulWidget {
   final ErrorStatsStore? errors;
   final BookmarkStore? bookmarks;
   final Map<String, double>? weakRates;
+  final bool timeAttack;
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
@@ -51,7 +54,14 @@ class QuizScreen extends StatefulWidget {
 
 class _QuizScreenState extends State<QuizScreen>
     with SingleTickerProviderStateMixin {
-  late final List<QuizQuestion> _questions;
+  List<QuizQuestion> _questions = const [];
+  bool _confusableFirst = true;
+  static const double _timeLimitSeconds = 10.0;
+  late bool _timeAttack;
+  Timer? _questionTimer;
+  double _timeLeft = _timeLimitSeconds;
+  DateTime? _questionStart;
+  final List<double> _answerDurations = [];
   int _index = 0;
   int _score = 0;
   int? _selected;
@@ -78,8 +88,10 @@ class _QuizScreenState extends State<QuizScreen>
   @override
   void initState() {
     super.initState();
+    _timeAttack = widget.timeAttack;
     _tts = widget.tts ?? createTtsService();
     _questions = widget.questions ?? _generate(widget.rng ?? Random());
+    _startQuestionTimer();
     _celebrationController = AnimationController(
       duration: const Duration(milliseconds: 800),
       vsync: this,
@@ -117,9 +129,11 @@ class _QuizScreenState extends State<QuizScreen>
         _bonusPoints = 0.0;
         _hintsUsed = 0;
         _showLevelBanner = true;
+        _answerDurations.clear();
       });
       _speakIfListening();
       _showLevelBannerTimer();
+      _startQuestionTimer();
     }
   }
 
@@ -128,6 +142,7 @@ class _QuizScreenState extends State<QuizScreen>
     _tts.stop();
     _celebrationController.dispose();
     _bannerTimer?.cancel();
+    _questionTimer?.cancel();
     super.dispose();
   }
 
@@ -175,17 +190,25 @@ class _QuizScreenState extends State<QuizScreen>
             words: widget.words,
             errorRate: widget.weakRates!,
           );
+    final weakForOptions =
+        _confusableFirst ? widget.weakRates : null;
     final questions = <QuizQuestion>[];
     for (var i = 0; i < orderedWords.length; i++) {
       final kind = kinds[i % kinds.length];
       late QuizQuestion q;
       if (kind == QuizKind.blank) {
-        q = makeBlankQuestion(orderedWords[i], widget.words, rng) ??
+        q = makeBlankQuestion(
+              orderedWords[i],
+              widget.words,
+              rng,
+              weakRates: weakForOptions,
+            ) ??
             makeQuestion(
               orderedWords[i],
               widget.words,
               QuizKind.wordToMeaning,
               rng,
+              weakRates: weakForOptions,
             );
       } else if (kind == QuizKind.writing) {
         q = makeQuestion(
@@ -193,6 +216,7 @@ class _QuizScreenState extends State<QuizScreen>
           widget.words,
           QuizKind.meaningToWord,
           rng,
+          weakRates: weakForOptions,
         );
         q = QuizQuestion(
           prompt: '쓰기: ${q.prompt}の韓国語を書きなさい',
@@ -203,11 +227,95 @@ class _QuizScreenState extends State<QuizScreen>
           wordId: orderedWords[i].id,
         );
       } else {
-        q = makeQuestion(orderedWords[i], widget.words, kind, rng);
+        q = makeQuestion(
+          orderedWords[i],
+          widget.words,
+          kind,
+          rng,
+          weakRates: weakForOptions,
+        );
       }
       questions.add(q);
     }
     return questions;
+  }
+
+  void _regenerateQuestions() {
+    _questionTimer?.cancel();
+    setState(() {
+      _questions = widget.questions ?? _generate(widget.rng ?? Random());
+      _index = 0;
+      _score = 0;
+      _selected = null;
+      _recorded = false;
+      _showFallbackText = false;
+      _writingInput = null;
+      _lastWritingAnalysis = null;
+      _results.clear();
+      _bonusPoints = 0.0;
+      _hintsUsed = 0;
+      _showLevelBanner = true;
+      _answerDurations.clear();
+    });
+    _speakIfListening();
+    _showLevelBannerTimer();
+    _startQuestionTimer();
+  }
+
+  void _startQuestionTimer() {
+    _questionTimer?.cancel();
+    _questionStart = null;
+    _timeLeft = _timeLimitSeconds;
+    if (!_timeAttack || _index >= _questions.length) return;
+    _questionStart = DateTime.now();
+    _questionTimer = Timer.periodic(const Duration(milliseconds: 100), (t) {
+      if (!mounted || _index >= _questions.length || _selected != null) {
+        t.cancel();
+        return;
+      }
+      setState(() {
+        _timeLeft -= 0.1;
+      });
+      if (_timeLeft <= 0) {
+        t.cancel();
+        _onTimeout();
+      }
+    });
+  }
+
+  void _stopTimerAndRecordDuration() {
+    _questionTimer?.cancel();
+    final start = _questionStart;
+    _questionStart = null;
+    if (start != null) {
+      final elapsed = DateTime.now().difference(start).inMilliseconds / 1000.0;
+      _answerDurations.add(elapsed.clamp(0.0, _timeLimitSeconds));
+    }
+  }
+
+  double get _averageDuration {
+    if (_answerDurations.isEmpty) return 0.0;
+    return _answerDurations.reduce((a, b) => a + b) / _answerDurations.length;
+  }
+
+  void _onTimeout() {
+    if (_index >= _questions.length || _selected != null) return;
+    final question = _questions[_index];
+    _recordError(question, false, question.correctAnswer);
+    _answerDurations.add(_timeLimitSeconds);
+    setState(() {
+      _selected = -1;
+      _results.add(false);
+    });
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('時間切れ！'),
+          duration: Duration(seconds: 2),
+        ),
+      );
+    }
+    _next();
   }
 
   void _speakIfListening() {
@@ -259,6 +367,7 @@ class _QuizScreenState extends State<QuizScreen>
 
   void _answer(int selected) {
     if (_selected != null) return;
+    _stopTimerAndRecordDuration();
     final question = _questions[_index];
     final isCorrect = selected == question.correctIndex;
     _recordError(question, isCorrect, question.correctAnswer);
@@ -269,12 +378,70 @@ class _QuizScreenState extends State<QuizScreen>
     });
   }
 
+  /// Records the finished session, then evaluates achievements in order.
+  Future<void> _finishSession(DateTime day) async {
+    final stats = widget.stats;
+    if (stats != null) {
+      try {
+        await stats.recordStudy(day);
+        await stats.recordSession(
+          day,
+          _questions.length,
+          _score,
+          level: widget.level,
+        );
+      } catch (_) {}
+    }
+    await _checkAchievements(day);
+  }
+
+  /// Evaluates achievement conditions after a session and celebrates news.
+  Future<void> _checkAchievements(DateTime day) async {
+    final stats = widget.stats;
+    if (stats == null) return;
+    List<String> fresh;
+    try {
+      fresh = await evaluateNewAchievements(stats: stats, today: day);
+    } catch (_) {
+      return;
+    }
+    if (fresh.isEmpty || !mounted) return;
+    final defs = {
+      for (final d in allAchievements) d.id: d,
+    };
+    if (await Vibration.hasVibrator()) {
+      Vibration.vibrate(duration: 50);
+    }
+    if (!mounted) return;
+    await showDialog<void>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('実績解除！'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (final id in fresh)
+              Text('🏅 ${defs[id]?.title ?? id}'),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('閉じる'),
+          ),
+        ],
+      ),
+    );
+  }
+
   void _speakModelAnswer(String answer) {
     _tts.speak(answer, rate: _ttsSpeed).catchError((_) {});
   }
 
   void _submitWriting() {
     if (_selected != null || _writingInput == null) return;
+    _stopTimerAndRecordDuration();
     final question = _questions[_index];
     final analysis =
         WritingGrader.analyze(_writingInput!, question.correctAnswer);
@@ -300,7 +467,7 @@ class _QuizScreenState extends State<QuizScreen>
     if (isLast && !_recorded) {
       _recorded = true;
       final day = widget.now?.call() ?? DateTime.now();
-      widget.stats?.recordStudy(day);
+      _finishSession(day);
     }
     setState(() {
       _index += 1;
@@ -311,6 +478,7 @@ class _QuizScreenState extends State<QuizScreen>
       _hintsUsed = 0;
     });
     _speakIfListening();
+    _startQuestionTimer();
   }
 
   Widget _buildSessionAnalysis(SessionAnalysis analysis) {
@@ -400,6 +568,50 @@ class _QuizScreenState extends State<QuizScreen>
               tooltip: 'ヒント ($_hintsUsed/$_maxHints)',
               onPressed: _useWritingHint,
             ),
+          PopupMenuButton<String>(
+            tooltip: '出題設定',
+            onSelected: (value) {
+              if (value == 'confusable') {
+                setState(() => _confusableFirst = !_confusableFirst);
+                _regenerateQuestions();
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        _confusableFirst ? 'まぎらわしい選択肢を優先します' : 'ランダム出題に戻しました',
+                      ),
+                      duration: const Duration(seconds: 2),
+                    ),
+                  );
+                }
+              } else if (value == 'timeattack') {
+                setState(() => _timeAttack = !_timeAttack);
+                _regenerateQuestions();
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        _timeAttack ? 'タイムアタック開始（10秒）' : '通常モードに戻しました',
+                      ),
+                      duration: const Duration(seconds: 2),
+                    ),
+                  );
+                }
+              }
+            },
+            itemBuilder: (context) => [
+              CheckedPopupMenuItem(
+                value: 'confusable',
+                checked: _confusableFirst,
+                child: const Text('まぎらわしい選択肢を優先'),
+              ),
+              CheckedPopupMenuItem(
+                value: 'timeattack',
+                checked: _timeAttack,
+                child: const Text('タイムアタック（10秒）'),
+              ),
+            ],
+          ),
         ],
       ),
       body: Center(child: _buildBody()),
@@ -422,6 +634,10 @@ class _QuizScreenState extends State<QuizScreen>
           children: [
             const Text('クイズ完了！'),
             Text('$_score / ${_questions.length} 正解'),
+            if (_timeAttack && _answerDurations.isNotEmpty)
+              Text(
+                '平均回答時間: ${_averageDuration.toStringAsFixed(1)}秒',
+              ),
             const Text('お疲れさまでした'),
             if (_bonusPoints > 0)
               Text('惜しいボーナス: +${_bonusPoints.toStringAsFixed(1)}'),
@@ -442,6 +658,19 @@ class _QuizScreenState extends State<QuizScreen>
         children: [
           Text('${_index + 1} / ${_questions.length} 問'),
           Text('正解: $_score'),
+          if (_timeAttack && !answered) ...[
+            const SizedBox(height: 8),
+            Text('残り ${_timeLeft.toStringAsFixed(0)}秒'),
+            const SizedBox(height: 4),
+            LinearProgressIndicator(
+              value: (_timeLeft / _timeLimitSeconds).clamp(0.0, 1.0),
+              minHeight: 6,
+              backgroundColor: Colors.grey[300],
+              valueColor: AlwaysStoppedAnimation<Color>(
+                _timeLeft <= 3 ? Colors.red : Colors.green,
+              ),
+            ),
+          ],
           const SizedBox(height: 12),
           _buildQuestionCard(question, answered),
           const SizedBox(height: 16),

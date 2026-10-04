@@ -31,6 +31,11 @@ class FakeStatsStore extends StatsStore {
   Future<void> recordStudy(DateTime day) async {}
   @override
   Future<int> currentStreak(DateTime today) async => streak;
+  @override
+  Future<ProtectedStreak> protectedStreak(DateTime today) async =>
+      ProtectedStreak(streak: streak, freezeUsed: false);
+  @override
+  Future<int> freezesLeft(DateTime today) async => 1;
 }
 
 Word word(String id) => Word(
@@ -133,6 +138,26 @@ void main() {
     await pumpHome(tester);
 
     expect(find.text('連続学習: 0日'), findsOneWidget);
+  });
+
+  testWidgets('shows remaining streak freezes', (tester) async {
+    final fakeProgress = FakeProgressStore(cards: []);
+    final fakeStats = FakeStatsStore(streak: 2);
+    await tester.pumpWidget(MaterialApp(
+      home: HomeScreen(
+        store: fakeProgress,
+        stats: fakeStats,
+        levelSelectStats: fakeStats,
+        now: () => now,
+        loadWords: (level) async => List.generate(
+            10, (i) => word('t1-${(i + 1).toString().padLeft(3, '0')}')),
+      ),
+    ));
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.pump(const Duration(milliseconds: 500));
+    await tester.pump(const Duration(milliseconds: 500));
+
+    expect(find.text('🛡️ 連続保護: 残り1回'), findsOneWidget);
   });
 
 testWidgets('tapping level button opens level select', (tester) async {

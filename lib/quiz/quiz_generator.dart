@@ -24,12 +24,47 @@ class QuizQuestion {
   String get correctAnswer => options[correctIndex];
 }
 
+/// Picks 3 distractor answers, preferring error-prone words first.
+///
+/// [weakRates] maps Word.id to an error rate in 0.0..1.0. When provided,
+/// candidates with higher rates are taken first; ties keep shuffled order.
+/// Null preserves the legacy purely-random behavior.
+List<String> pickDistractors({
+  required Word target,
+  required List<Word> pool,
+  required String Function(Word) answerOf,
+  required String correct,
+  required Random rng,
+  Map<String, double>? weakRates,
+}) {
+  final shuffled = pool.where((w) => w.id != target.id).toList()
+    ..shuffle(rng);
+  final seen = <String>{};
+  final candidates = <({String answer, double rate})>[];
+  for (final w in shuffled) {
+    final answer = answerOf(w);
+    if (answer == correct || !seen.add(answer)) continue;
+    candidates.add((answer: answer, rate: weakRates?[w.id] ?? 0.0));
+  }
+  if (candidates.length < 3) {
+    throw ArgumentError(
+      'Not enough distinct distractors in pool '
+      '(need 3, found ${candidates.length})',
+    );
+  }
+  if (weakRates != null) {
+    candidates.sort((a, b) => b.rate.compareTo(a.rate));
+  }
+  return [for (final c in candidates.take(3)) c.answer];
+}
+
 QuizQuestion makeQuestion(
   Word target,
   List<Word> pool,
   QuizKind kind,
-  Random rng,
-) {
+  Random rng, {
+  Map<String, double>? weakRates,
+}) {
   final String prompt;
   final String correct;
   final String Function(Word) answerOf;
@@ -61,21 +96,16 @@ QuizQuestion makeQuestion(
       throw ArgumentError('Writing kind handled separately in QuizScreen');
   }
 
-  final distractors = pool
-      .where((w) => w.id != target.id)
-      .map(answerOf)
-      .where((a) => a != correct)
-      .toSet()
-      .toList()
-    ..shuffle(rng);
-  if (distractors.length < 3) {
-    throw ArgumentError(
-      'Not enough distinct distractors in pool '
-      '(need 3, found ${distractors.length})',
-    );
-  }
+  final distractors = pickDistractors(
+    target: target,
+    pool: pool,
+    answerOf: answerOf,
+    correct: correct,
+    rng: rng,
+    weakRates: weakRates,
+  );
 
-  final options = <String>[correct, ...distractors.take(3)]..shuffle(rng);
+  final options = <String>[correct, ...distractors]..shuffle(rng);
   return QuizQuestion(
     prompt: prompt,
     options: options,
@@ -89,8 +119,9 @@ QuizQuestion makeQuestion(
 QuizQuestion? makeBlankQuestion(
   Word target,
   List<Word> pool,
-  Random rng,
-) {
+  Random rng, {
+  Map<String, double>? weakRates,
+}) {
   String searchWord = target.korean;
   String example = target.exampleKo;
   int index = example.indexOf(searchWord);
@@ -108,21 +139,16 @@ QuizQuestion? makeBlankQuestion(
   final correct = target.korean;
   String answerOf(Word w) => w.korean;
 
-  final distractors = pool
-      .where((w) => w.id != target.id)
-      .map(answerOf)
-      .where((a) => a != correct)
-      .toSet()
-      .toList()
-    ..shuffle(rng);
-  if (distractors.length < 3) {
-    throw ArgumentError(
-      'Not enough distinct distractors in pool '
-      '(need 3, found ${distractors.length})',
-    );
-  }
+  final distractors = pickDistractors(
+    target: target,
+    pool: pool,
+    answerOf: answerOf,
+    correct: correct,
+    rng: rng,
+    weakRates: weakRates,
+  );
 
-  final options = <String>[correct, ...distractors.take(3)]..shuffle(rng);
+  final options = <String>[correct, ...distractors]..shuffle(rng);
   return QuizQuestion(
     prompt: prompt,
     options: options,

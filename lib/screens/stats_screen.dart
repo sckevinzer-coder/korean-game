@@ -5,6 +5,7 @@ import '../db/progress_store.dart';
 import '../models/word.dart';
 import '../quiz/adaptive_selector.dart';
 import '../srs/srs_scheduler.dart';
+import '../stats/achievements.dart';
 import '../stats/bookmark_store.dart';
 import '../stats/error_stats.dart';
 import '../stats/learning_analytics.dart';
@@ -41,6 +42,9 @@ class _StatsData {
   final int streak;
   final List<WeakItem> weak;
   final List<bool> week;
+  final List<bool> month;
+  final List<SessionRecord> sessions;
+  final Set<String> achievements;
 
   const _StatsData({
     required this.totalByLevel,
@@ -48,7 +52,51 @@ class _StatsData {
     required this.streak,
     required this.weak,
     required this.week,
+    this.month = const [],
+    this.sessions = const [],
+    this.achievements = const {},
   });
+}
+
+double _averageRate(List<SessionRecord> sessions) {
+  if (sessions.isEmpty) return 0.0;
+  return sessions.map((s) => s.rate).reduce((a, b) => a + b) /
+      sessions.length;
+}
+
+/// Line chart of recent session accuracy rates (0.0..1.0, oldest first).
+class _TrendPainter extends CustomPainter {
+  _TrendPainter(this.rates);
+  final List<double> rates;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    if (rates.isEmpty) return;
+    final line = Paint()
+      ..color = Colors.blue
+      ..strokeWidth = 2
+      ..style = PaintingStyle.stroke;
+    final dot = Paint()..color = Colors.blue;
+    double x(int i) =>
+        rates.length == 1 ? size.width / 2 : i * size.width / (rates.length - 1);
+    double y(double r) => size.height - (r.clamp(0.0, 1.0) * size.height);
+    final path = Path();
+    for (var i = 0; i < rates.length; i++) {
+      final p = Offset(x(i), y(rates[i]));
+      if (i == 0) {
+        path.moveTo(p.dx, p.dy);
+      } else {
+        path.lineTo(p.dx, p.dy);
+      }
+    }
+    canvas.drawPath(path, line);
+    for (var i = 0; i < rates.length; i++) {
+      canvas.drawCircle(Offset(x(i), y(rates[i])), 3, dot);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _TrendPainter old) => old.rates != rates;
 }
 
 class _StatsScreenState extends State<StatsScreen> {
@@ -107,12 +155,42 @@ class _StatsScreenState extends State<StatsScreen> {
     } catch (_) {
       week = const [false, false, false, false, false, false, false];
     }
+    var month = const <bool>[];
+    try {
+      month = await (widget.stats
+              ?.last30Days(widget.now?.call() ?? DateTime.now())
+              .timeout(const Duration(seconds: 2), onTimeout: () => month) ??
+          Future.value(month));
+    } catch (_) {
+      month = const <bool>[];
+    }
+    var sessions = const <SessionRecord>[];
+    try {
+      sessions = await (widget.stats
+              ?.recentSessions(10)
+              .timeout(const Duration(seconds: 2), onTimeout: () => sessions) ??
+          Future.value(sessions));
+    } catch (_) {
+      sessions = const <SessionRecord>[];
+    }
+    var achievements = const <String>{};
+    try {
+      achievements = await (widget.stats
+              ?.unlockedAchievements()
+              .timeout(const Duration(seconds: 2), onTimeout: () => achievements) ??
+          Future.value(achievements));
+    } catch (_) {
+      achievements = const <String>{};
+    }
     return _StatsData(
       totalByLevel: totalByLevel,
       learnedByLevel: learnedByLevel,
       streak: streak,
       weak: weak,
       week: week,
+      month: month,
+      sessions: sessions,
+      achievements: achievements,
     );
   }
 
@@ -220,6 +298,98 @@ class _StatsScreenState extends State<StatsScreen> {
                 ),
                 Text(
                     '今週: ${data.week.where((d) => d).length} / 7 日学習'),
+                const SizedBox(height: 16),
+                const Text('月間レポート',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                const SizedBox(height: 8),
+                if (data.month.isNotEmpty) ...[
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      for (final studied in data.month)
+                        Expanded(
+                          child: Container(
+                            height: studied ? 40 : 8,
+                            margin: const EdgeInsets.symmetric(horizontal: 1),
+                            decoration: BoxDecoration(
+                              color: studied
+                                  ? Colors.green[400]
+                                  : Colors.grey[300],
+                              borderRadius: BorderRadius.circular(2),
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                      '30日: ${data.month.where((d) => d).length} / 30 日学習'),
+                  const SizedBox(height: 16),
+                ],
+                const Text('正答率の推移',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                const SizedBox(height: 8),
+                if (data.sessions.length < 2)
+                  const Text('セッション記録はまだありません')
+                else ...[
+                  SizedBox(
+                    height: 80,
+                    width: double.infinity,
+                    child: CustomPaint(
+                      painter: _TrendPainter(
+                        [for (final s in data.sessions) s.rate],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    '直近${data.sessions.length}回平均: '
+                    '${(_averageRate(data.sessions) * 100).round()}%',
+                  ),
+                  const SizedBox(height: 16),
+                ],
+                const Text('実績バッジ',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                const SizedBox(height: 8),
+                GridView.count(
+                  crossAxisCount: 3,
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  mainAxisSpacing: 8,
+                  crossAxisSpacing: 8,
+                  children: [
+                    for (final def in allAchievements)
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: data.achievements.contains(def.id)
+                              ? Colors.amber[100]
+                              : Colors.grey[200],
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              data.achievements.contains(def.id)
+                                  ? '🏅'
+                                  : '🔒',
+                              style: const TextStyle(fontSize: 24),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              def.title,
+                              style: const TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                      ),
+                  ],
+                ),
                 const SizedBox(height: 16),
                 const Text('レベル別進捗',
                     style: TextStyle(fontWeight: FontWeight.bold)),

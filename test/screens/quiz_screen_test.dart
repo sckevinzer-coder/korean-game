@@ -20,6 +20,20 @@ class FakeStatsStore extends StatsStore {
   Future<void> recordStudy(DateTime day) async {}
   @override
   Future<int> currentStreak(DateTime today) async => streak;
+  @override
+  Future<void> recordSession(DateTime day, int total, int correct,
+      {int level = 0}) async {}
+  @override
+  Future<Set<String>> unlockedAchievements() async => {};
+  @override
+  Future<void> unlockAchievement(String id, DateTime when) async {}
+  @override
+  Future<List<SessionRecord>> recentSessions(int limit) async => [];
+  @override
+  Future<({int total, int correct})> lifetimeTotals() async =>
+      (total: 0, correct: 0);
+  @override
+  Future<Set<int>> completedLevels() async => {};
 }
 
 Word word(String id, String korean, String meaningJa, {String? exampleKo}) => Word(
@@ -150,6 +164,103 @@ void main() {
     expect(find.text('クイズ完了！'), findsOneWidget);
     final streak = await tester.runAsync(() => stats.currentStreak(now));
     expect(streak, 1);
+  });
+
+  testWidgets('completing a quiz records the session result', (tester) async {
+    const questions = [
+      QuizQuestion(
+        prompt: '愛',
+        options: ['사랑', '학교', '친구', '음식'],
+        correctIndex: 0,
+        kind: QuizKind.meaningToWord,
+      ),
+      QuizQuestion(
+        prompt: '学校',
+        options: ['사랑', '학교', '친구', '음식'],
+        correctIndex: 1,
+        kind: QuizKind.meaningToWord,
+      ),
+    ];
+    final words = [
+      word('t1-001', '사랑', '愛'),
+      word('t1-002', '학교', '学校'),
+      word('t1-003', '친구', '友達'),
+      word('t1-004', '음식', '食べ物'),
+    ];
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        questions: questions,
+        stats: stats,
+        now: () => now,
+      ),
+    ));
+    await tester.pump();
+
+    await tester.tap(find.text('사랑'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byType(ElevatedButton).last);
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.text('친구'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byType(ElevatedButton).last);
+    await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 200)));
+    await tester.pumpAndSettle();
+
+    expect(find.text('クイズ完了！'), findsOneWidget);
+    final sessions =
+        await tester.runAsync(() => stats.recentSessions(10)) ?? [];
+    expect(sessions, hasLength(1));
+    expect(sessions.first.total, 2);
+    expect(sessions.first.correct, 1);
+  });
+
+  testWidgets('first completion shows achievement dialog', (tester) async {
+    const questions = [
+      QuizQuestion(
+        prompt: '愛',
+        options: ['사랑', '학교', '친구', '음식'],
+        correctIndex: 0,
+        kind: QuizKind.meaningToWord,
+      ),
+    ];
+    final words = [
+      word('t1-001', '사랑', '愛'),
+      word('t1-002', '학교', '学校'),
+      word('t1-003', '친구', '友達'),
+      word('t1-004', '음식', '食べ物'),
+    ];
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        questions: questions,
+        stats: stats,
+        now: () => now,
+      ),
+    ));
+    await tester.pump();
+
+    await tester.tap(find.text('사랑'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byType(ElevatedButton).last);
+    // Poll with real time: FFI store futures resolve outside fake async.
+    for (var i = 0;
+        i < 10 && find.text('実績解除！').evaluate().isEmpty;
+        i++) {
+      await tester.runAsync(
+          () => Future<void>.delayed(const Duration(milliseconds: 300)));
+      await tester.pump();
+    }
+
+    expect(find.text('実績解除！'), findsOneWidget);
+    expect(find.textContaining('初クイズ'), findsOneWidget);
+    await tester.tap(find.text('閉じる'));
+    await tester.pumpAndSettle();
+    expect(find.text('クイズ完了！'), findsOneWidget);
   });
 
   testWidgets('empty quiz does not record study day', (tester) async {
@@ -628,6 +739,93 @@ testWidgets('writing question shows TextField and 回答する button, grades co
 
     expect(find.text('不正解…'), findsOneWidget);
     expect(find.textContaining('惜しい'), findsOneWidget);
+  });
+
+  testWidgets('confusable-first toggle regenerates with notice', (tester) async {
+    final words = List.generate(
+      6,
+      (i) => word('w$i', '단어$i', '意味$i'),
+    );
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        stats: FakeStatsStore(),
+        now: () => now,
+        level: 1,
+        tts: FakeTtsService(),
+        weakRates: const {'w4': 0.9, 'w5': 0.8},
+      ),
+    ));
+    await tester.pump();
+
+    await tester.tap(find.byTooltip('出題設定'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('まぎらわしい選択肢を優先'));
+    await tester.pump();
+
+    expect(find.text('ランダム出題に戻しました'), findsOneWidget);
+  });
+
+  testWidgets('timeAttack shows countdown and times out as wrong', (tester) async {
+    final words = List.generate(
+      6,
+      (i) => word('w$i', '단어$i', '意味$i'),
+    );
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        stats: FakeStatsStore(),
+        now: () => now,
+        level: 1,
+        tts: FakeTtsService(),
+        timeAttack: true,
+      ),
+    ));
+    await tester.pump();
+
+    expect(find.textContaining('残り'), findsOneWidget);
+    final state = tester.state(find.byType(QuizScreen)) as dynamic;
+    final questions = state.questionsForTesting as List<QuizQuestion>;
+    expect(find.text(questions[0].prompt), findsOneWidget);
+
+    await tester.pump(const Duration(seconds: 11));
+    expect(find.text('時間切れ！'), findsOneWidget);
+    // Advanced to the second question (its prompt is a Korean word,
+    // which never appears among meaning options).
+    expect(find.text(questions[1].prompt), findsOneWidget);
+  });
+
+  testWidgets('timeAttack completion shows average answer time', (tester) async {
+    final words = List.generate(
+      6,
+      (i) => word('w$i', '단어$i', '意味$i'),
+    );
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        stats: FakeStatsStore(),
+        now: () => now,
+        level: 1,
+        tts: FakeTtsService(),
+        timeAttack: true,
+      ),
+    ));
+    await tester.pump();
+
+    final state = tester.state(find.byType(QuizScreen)) as dynamic;
+    final questions = state.questionsForTesting as List<QuizQuestion>;
+    for (final q in questions) {
+      await tester.tap(find.text(q.correctAnswer).first);
+      await tester.pump();
+      await tester.tap(find.byType(ElevatedButton).last);
+      await tester.pump();
+    }
+
+    expect(find.text('クイズ完了！'), findsOneWidget);
+    expect(find.textContaining('平均回答時間'), findsOneWidget);
   });
 
   testWidgets('level 3 mixed session covers all five kinds', (tester) async {

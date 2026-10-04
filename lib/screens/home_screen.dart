@@ -41,10 +41,13 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _Counts {
-  const _Counts(this.due, this.total, this.streak);
+  const _Counts(this.due, this.total, this.streak,
+      {this.freezesLeft = 0, this.freezeUsed = false});
   final int due;
   final int total;
   final int streak;
+  final int freezesLeft;
+  final bool freezeUsed;
 }
 
 class _HomeScreenState extends State<HomeScreen> {
@@ -64,8 +67,14 @@ class _HomeScreenState extends State<HomeScreen> {
     final wordsFuture = widget.loadWords(widget.level);
     final knownFuture = widget.store.allCardsForLevel(widget.level);
     final stats = widget.stats;
-    final streakFuture =
+    final streakFuture = stats == null
+        ? Future<ProtectedStreak>.value(
+            const ProtectedStreak(streak: 0, freezeUsed: false))
+        : stats.protectedStreak(now);
+    final displayFuture =
         stats == null ? Future<int>.value(0) : stats.displayStreak(now);
+    final freezesFuture =
+        stats == null ? Future<int>.value(0) : stats.freezesLeft(now);
     final dueCards = await dueFuture;
     final words = await wordsFuture;
     final knownIds =
@@ -73,8 +82,17 @@ class _HomeScreenState extends State<HomeScreen> {
     final total = words.length;
     final unstudied = words.where((w) => !knownIds.contains(w.id)).length;
     final due = dueCards.length + unstudied;
-    final streak = await streakFuture;
-    return _Counts(due, total, streak);
+    final protected = await streakFuture;
+    final display = await displayFuture;
+    final streak = protected.streak >= display ? protected.streak : display;
+    final freezes = await freezesFuture;
+    return _Counts(
+      due,
+      total,
+      streak,
+      freezesLeft: freezes,
+      freezeUsed: protected.freezeUsed,
+    );
   }
 
   void _openLevels() {
@@ -115,6 +133,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Text('今日の復習: ${counts.due} / ${counts.total} 枚'),
                   Text('連続学習: ${counts.streak}日'),
+                  if (counts.freezeUsed)
+                    const Text('🛡️ 連続保護を使用しました'),
+                  Text('🛡️ 連続保護: 残り${counts.freezesLeft}回'),
                   const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: _openLevels,

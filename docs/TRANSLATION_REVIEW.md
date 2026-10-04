@@ -236,6 +236,27 @@
 | perfect_levels.title | 全レベル完全制覇 | 전 레벨 완전 제패 | Perfect all levels |
 | perfect_levels.desc | 1〜6級すべてで満点クイズを達成する | 1〜6급 모두에서 만점 퀴즈 달성하기 | Score perfectly in every level 1-6 |
 
+## game (5)
+
+| key | JA | KO | EN |
+| --- | --- | --- | --- |
+| title | ミニゲーム: ペア探し | 미니게임: 짝 찾기 | Mini-game: Match pairs |
+| empty | 遊べる単語がありません | 놀 수 있는 단어가 없습니다 | No words available |
+| score | スコア: {n} | 점수: {n} | Score: {n} |
+| mistakes | ミス: {n} | 미스: {n} | Mistakes: {n} |
+| clear | クリア！ スコア {n} | 클리어! 점수 {n} | Clear! Score {n} |
+
+## game2 (6)
+
+| key | JA | KO | EN |
+| --- | --- | --- | --- |
+| title | ミニゲーム: 文の空欄 | 미니게임: 문장 빈칸 | Mini-game: Fill the blank |
+| empty | 遊べる問題がありません | 놀 수 있는 문제가 없습니다 | No questions available |
+| progress | 問題 {i} / {n} | 문제 {i} / {n} | Q {i} / {n} |
+| score | スコア: {n} | 점수: {n} | Score: {n} |
+| next | 次へ | 다음 | Next |
+| clear | クリア！ スコア {s} / ミス {m} | 클리어! 점수 {s} / 미스 {m} | Clear! Score {s} / Mistakes {m} |
+
 ## notify (2)
 
 | key | JA | KO | EN |

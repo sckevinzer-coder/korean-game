@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.8.0
+
+### Second mini-game: sentence fill-in
+- New `SentenceFillScreen` (Home 📄 icon): reuses the blank-question
+  generator — pick the word completing the example sentence from four
+  options, +100 per correct, mistake counter, progress header,
+  localized (JA/KO/EN).
+
+### Tests
+- 186 tests passing (`flutter test`), `flutter analyze` zero issues.
+
 ## 1.7.0
 
 ### Mini-game

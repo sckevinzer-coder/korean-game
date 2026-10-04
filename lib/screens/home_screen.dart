@@ -9,6 +9,7 @@ import '../i18n/app_strings.dart';
 import '../models/word.dart';
 import '../notify/review_notify.dart';
 import 'mini_game_screen.dart';
+import 'sentence_fill_screen.dart';
 import '../stats/bookmark_store.dart';
 import '../stats/error_stats.dart';
 import '../stats/stats_store.dart';
@@ -224,6 +225,21 @@ class _HomeScreenState extends State<HomeScreen> {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (_) => MiniGameScreen(
+                    locale: _locale,
+                    loadWords: widget.loadWords,
+                    level: widget.level,
+                  ),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.text_snippet_outlined),
+            tooltip: tr(locale, 'game2.title'),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => SentenceFillScreen(
                     locale: _locale,
                     loadWords: widget.loadWords,
                     level: widget.level,

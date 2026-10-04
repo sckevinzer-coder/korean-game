@@ -121,6 +121,8 @@ void main() {
     await tester.pump();
     await tester.pumpAndSettle();
 
+    expect(find.text('音声キャッシュ削除'), findsOneWidget);
+
     await tester.ensureVisible(find.text('エクスポート'));
     await tester.pumpAndSettle();
     await tester.tap(find.text('エクスポート'));

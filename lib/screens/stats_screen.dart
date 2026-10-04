@@ -11,6 +11,7 @@ import '../srs/srs_scheduler.dart';
 import '../stats/achievements.dart';
 import '../stats/bookmark_store.dart';
 import '../stats/data_transfer.dart';
+import '../tts/tts_cache.dart';
 import '../stats/error_stats.dart';
 import '../stats/learning_analytics.dart';
 import '../stats/stats_store.dart';
@@ -278,6 +279,17 @@ class _StatsScreenState extends State<StatsScreen> {
               ),
       );
     });
+  }
+
+  Future<void> _clearTtsCache(BuildContext context) async {
+    final removed = await CachedTtsService.clearDefaultCache();
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+            trParams(widget.locale, 'cache.cleared', {'n': removed})),
+      ),
+    );
   }
 
   void _openReview(BuildContext context) {
@@ -594,6 +606,15 @@ class _StatsScreenState extends State<StatsScreen> {
                       ),
                     ),
                   ],
+                ),
+                const SizedBox(height: 8),
+                SizedBox(
+                  width: double.infinity,
+                  child: OutlinedButton.icon(
+                    icon: const Icon(Icons.cleaning_services, size: 18),
+                    label: Text(tr(locale, 'cache.clear')),
+                    onPressed: () => _clearTtsCache(context),
+                  ),
                 ),
               ],
             ),

@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.6.0
+
+### Offline TTS cache
+- `CachedTtsService` synthesizes repeated words to wav on mobile/desktop
+  (via `flutter_tts.synthesizeToFile` + `audioplayers`), keyed by
+  text/rate/pitch/voice with an LRU cap (200), eviction, and per-playback
+  fallback to live speech when synthesis fails or the cache is cold.
+- Web keeps live `speechSynthesis` (passthrough) — browsers cannot capture
+  synthesized audio.
+- SSML bypasses the cache. "音声キャッシュ削除" button in the stats
+  データ管理 section; hit playback reports a full-span progress event.
+
+### Translation review
+- `docs/TRANSLATION_REVIEW.md` contains all 203 keys with JA source and
+  KO/EN draft columns for review.
+
+### Tests
+- 179 tests passing (`flutter test`), `flutter analyze` zero issues.
+
 ## 1.5.0
 
 ### i18n (JA/KO/EN)

@@ -1,5 +1,6 @@
 import 'package:flutter_tts/flutter_tts.dart';
 
+import 'tts_cache.dart';
 import 'tts_service.dart';
 
 /// Mobile/desktop implementation backed by flutter_tts.
@@ -101,5 +102,5 @@ class FlutterTtsService implements TtsService {
 }
 
 TtsService createTtsService() {
-  return FlutterTtsService();
+  return CachedTtsService(FlutterTtsService());
 }

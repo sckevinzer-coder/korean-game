@@ -199,6 +199,13 @@ void main() {
     expect(await store.getDailyGoal(), 30);
   });
 
+  test('lenient grading defaults to false and persists', () async {
+    expect(await store.getLenientGrading(), isFalse);
+
+    await store.setLenientGrading(true);
+    expect(await store.getLenientGrading(), isTrue);
+  });
+
   test('todaySolvedCount sums session totals for the day', () async {
     await store.recordSession(DateTime(2026, 10, 2), 10, 7, level: 1);
     await store.recordSession(DateTime(2026, 10, 3), 10, 5, level: 1);
@@ -226,6 +233,7 @@ void main() {
 
       final upgraded = StatsStore(path: dbPath);
       expect(await upgraded.currentStreak(DateTime(2026, 10, 1)), 1);
+      expect(await upgraded.getDailyGoal(), 10);
       await upgraded.recordSession(DateTime(2026, 10, 1), 10, 8);
       expect((await upgraded.recentSessions(10)).length, 1);
       await upgraded.unlockAchievement('first_quiz', DateTime(2026, 10, 1));

@@ -40,6 +40,10 @@ class FakeStatsStore extends StatsStore {
   Future<int> getDailyGoal() async => 10;
   @override
   Future<int> todaySolvedCount(DateTime today) async => 4;
+  @override
+  Future<bool> getLenientGrading() async => false;
+  @override
+  Future<void> setLenientGrading(bool value) async {}
 }
 
 Word word(String id) => Word(

@@ -92,9 +92,16 @@ void main() {
         random: random,
       ),
     ));
-    await tester.pump(const Duration(milliseconds: 100));
-    await tester.pump(const Duration(milliseconds: 500));
-    await tester.pump(const Duration(milliseconds: 500));
+    // Poll with real time: FFI store futures resolve outside fake async.
+    for (var i = 0; i < 10; i++) {
+      await tester.runAsync(
+          () => Future<void>.delayed(const Duration(milliseconds: 300)));
+      await tester.pump();
+      if (find.text('TOPIK 1級').evaluate().isNotEmpty ||
+          find.text('読み込みに失敗しました').evaluate().isNotEmpty) {
+        return;
+      }
+    }
   }
 
 testWidgets('lists TOPIK levels with word counts', (tester) async {

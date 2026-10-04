@@ -195,7 +195,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
                             const SizedBox(height: 4),
                             Text(
                               [
-                                if (kindLabel != null) kindLabel,
+                                ?kindLabel,
                                 '正答率 ${100 - rate}%',
                               ].join(' · '),
                               style: TextStyle(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../data/word_repository.dart';
 import '../db/progress_store.dart';
@@ -7,6 +8,7 @@ import '../quiz/adaptive_selector.dart';
 import '../srs/srs_scheduler.dart';
 import '../stats/achievements.dart';
 import '../stats/bookmark_store.dart';
+import '../stats/data_transfer.dart';
 import '../stats/error_stats.dart';
 import '../stats/learning_analytics.dart';
 import '../stats/stats_store.dart';
@@ -195,6 +197,83 @@ class _StatsScreenState extends State<StatsScreen> {
     );
   }
 
+  Future<void> _exportData(BuildContext context) async {
+    final stats = widget.stats;
+    if (stats == null) return;
+    String json;
+    try {
+      json = await exportJson(
+        stats: stats,
+        errors: widget.errors,
+        bookmarks: widget.bookmarks,
+      );
+    } catch (_) {
+      if (!context.mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('エクスポートに失敗しました')),
+      );
+      return;
+    }
+    if (!context.mounted) return;
+    await showDialog<void>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('データをエクスポート'),
+        content: SizedBox(
+          width: double.maxFinite,
+          child: SingleChildScrollView(child: Text(json)),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () async {
+              await Clipboard.setData(ClipboardData(text: json));
+              if (context.mounted) Navigator.of(context).pop();
+            },
+            child: const Text('コピー'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('閉じる'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _importData(BuildContext context) async {
+    final stats = widget.stats;
+    if (stats == null) return;
+    final json = await showDialog<String>(
+      context: context,
+      builder: (context) => const _ImportDialog(),
+    );
+    if (json == null || json.trim().isEmpty) return;
+    TransferSummary? summary;
+    try {
+      summary = await importJson(
+        json,
+        stats: stats,
+        errors: widget.errors,
+        bookmarks: widget.bookmarks,
+      );
+    } catch (_) {
+      summary = null;
+    }
+    // Defer past the dialog pop transition to avoid overlay races.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!context.mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        summary == null
+            ? const SnackBar(content: Text('無効なバックアップデータです'))
+            : SnackBar(
+                content: Text(
+                  '取り込み完了: 学習日${summary.days}・セッション${summary.sessions}',
+                ),
+              ),
+      );
+    });
+  }
+
   void _openReview(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute(
@@ -233,6 +312,15 @@ class _StatsScreenState extends State<StatsScreen> {
       words: words,
       weakRates: weak.map((w) => (key: w.key, rate: w.errorRate)).toList(),
     );
+    var lenientGrading = false;
+    try {
+      lenientGrading = await (widget.stats
+              ?.getLenientGrading()
+              .timeout(const Duration(seconds: 2), onTimeout: () => false) ??
+          Future.value(false));
+    } catch (_) {
+      lenientGrading = false;
+    }
     if (!context.mounted) return;
     Navigator.of(context).push(
       MaterialPageRoute(
@@ -243,6 +331,7 @@ class _StatsScreenState extends State<StatsScreen> {
           bookmarks: widget.bookmarks,
           weakRates: rates.isEmpty ? null : rates,
           level: level,
+          lenientGrading: lenientGrading,
           now: widget.now,
         ),
       ),
@@ -462,11 +551,77 @@ class _StatsScreenState extends State<StatsScreen> {
                       child: Text(
                           '${w.key}（ミス ${w.errors}/${w.attempts}）'),
                     ),
+                const SizedBox(height: 16),
+                const Text('データ管理',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    Expanded(
+                      child: OutlinedButton.icon(
+                        icon: const Icon(Icons.upload, size: 18),
+                        label: const Text('エクスポート'),
+                        onPressed: () => _exportData(context),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: OutlinedButton.icon(
+                        icon: const Icon(Icons.download, size: 18),
+                        label: const Text('インポート'),
+                        onPressed: () => _importData(context),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           );
         },
       ),
+    );
+  }
+}
+
+/// Import dialog owning its TextEditingController lifecycle.
+class _ImportDialog extends StatefulWidget {
+  const _ImportDialog();
+
+  @override
+  State<_ImportDialog> createState() => _ImportDialogState();
+}
+
+class _ImportDialogState extends State<_ImportDialog> {
+  final TextEditingController _controller = TextEditingController();
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text('データをインポート'),
+      content: TextField(
+        controller: _controller,
+        maxLines: 6,
+        decoration: const InputDecoration(
+          hintText: 'バックアップJSONを貼り付け',
+          border: OutlineInputBorder(),
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(),
+          child: const Text('キャンセル'),
+        ),
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(_controller.text),
+          child: const Text('取り込む'),
+        ),
+      ],
     );
   }
 }

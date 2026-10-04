@@ -16,7 +16,7 @@ class StatsStore {
     _db = await _factory.openDatabase(
       dbPath,
       options: OpenDatabaseOptions(
-        version: 2,
+        version: 3,
         onCreate: (db, version) async {
           await db.execute('''
 CREATE TABLE study_days(
@@ -24,10 +24,14 @@ CREATE TABLE study_days(
 )
 ''');
           await _createV2Tables(db);
+          await _createV3Tables(db);
         },
         onUpgrade: (db, oldVersion, newVersion) async {
           if (oldVersion < 2) {
             await _createV2Tables(db);
+          }
+          if (oldVersion < 3) {
+            await _createV3Tables(db);
           }
         },
       ),
@@ -54,6 +58,15 @@ CREATE TABLE IF NOT EXISTS achievements(
     await db.execute('''
 CREATE TABLE IF NOT EXISTS freezes(
   week TEXT PRIMARY KEY
+)
+''');
+  }
+
+  static Future<void> _createV3Tables(Database db) async {
+    await db.execute('''
+CREATE TABLE IF NOT EXISTS settings(
+  key TEXT PRIMARY KEY,
+  value TEXT NOT NULL
 )
 ''');
   }
@@ -189,8 +202,104 @@ CREATE TABLE IF NOT EXISTS freezes(
           day: row['day'] as String,
           total: row['total'] as int,
           correct: row['correct'] as int,
+          level: (row['level'] as int?) ?? 0,
         ),
     ];
+  }
+
+  /// All study-day keys for export.
+  Future<List<String>> allStudyDays() async {
+    final db = await _database();
+    final rows = await db.query('study_days');
+    return [for (final row in rows) row['day'] as String];
+  }
+
+  /// Merges study-day keys (insert-ignore).
+  Future<void> importStudyDays(List<String> days) async {
+    final db = await _database();
+    final batch = db.batch();
+    for (final day in days) {
+      batch.insert(
+        'study_days',
+        {'day': day},
+        conflictAlgorithm: ConflictAlgorithm.ignore,
+      );
+    }
+    await batch.commit(noResult: true);
+  }
+
+  /// All sessions oldest-first for export.
+  Future<List<SessionRecord>> allSessions() async {
+    final db = await _database();
+    final rows = await db.query('sessions', orderBy: 'id ASC');
+    return [
+      for (final row in rows)
+        SessionRecord(
+          day: row['day'] as String,
+          total: row['total'] as int,
+          correct: row['correct'] as int,
+          level: (row['level'] as int?) ?? 0,
+        ),
+    ];
+  }
+
+  /// Appends sessions for import.
+  Future<void> importSessions(List<SessionRecord> sessions) async {
+    final db = await _database();
+    final batch = db.batch();
+    for (final s in sessions) {
+      batch.insert('sessions', {
+        'day': s.day,
+        'total': s.total,
+        'correct': s.correct,
+        'level': s.level,
+      });
+    }
+    await batch.commit(noResult: true);
+  }
+
+  /// All used freeze week keys for export.
+  Future<List<String>> allFreezeWeeks() async {
+    final db = await _database();
+    final rows = await db.query('freezes');
+    return [for (final row in rows) row['week'] as String];
+  }
+
+  /// Merges freeze weeks (insert-ignore).
+  Future<void> importFreezeWeeks(List<String> weeks) async {
+    final db = await _database();
+    final batch = db.batch();
+    for (final week in weeks) {
+      batch.insert(
+        'freezes',
+        {'week': week},
+        conflictAlgorithm: ConflictAlgorithm.ignore,
+      );
+    }
+    await batch.commit(noResult: true);
+  }
+
+  /// All settings entries for export.
+  Future<Map<String, String>> allSettings() async {
+    final db = await _database();
+    final rows = await db.query('settings');
+    return {
+      for (final row in rows) row['key'] as String: row['value'] as String,
+    };
+  }
+
+  /// Merges settings (replace on conflict).
+  Future<void> importSettings(Map<String, String> settings) async {
+    final db = await _database();
+    final batch = db.batch();
+    for (final entry in settings.entries) {
+      batch.insert(
+        'settings',
+        {'key': entry.key, 'value': entry.value},
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
+    }
+    await batch.commit(noResult: true);
   }
 
   /// Unlocks an achievement once; repeat calls are ignored.
@@ -274,18 +383,7 @@ CREATE TABLE IF NOT EXISTS freezes(
   /// Daily question goal. Defaults to 10.
   static const int defaultDailyGoal = 10;
 
-  Future<void> _ensureSettingsTable() async {
-    final db = await _database();
-    await db.execute('''
-CREATE TABLE IF NOT EXISTS settings(
-  key TEXT PRIMARY KEY,
-  value TEXT NOT NULL
-)
-''');
-  }
-
   Future<int> getDailyGoal() async {
-    await _ensureSettingsTable();
     final db = await _database();
     final rows = await db.query(
       'settings',
@@ -298,11 +396,58 @@ CREATE TABLE IF NOT EXISTS settings(
   }
 
   Future<void> setDailyGoal(int goal) async {
-    await _ensureSettingsTable();
     final db = await _database();
     await db.insert(
       'settings',
       {'key': 'daily_goal', 'value': goal.toString()},
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  /// Marks a level as perfectly completed (100% session, 5+ questions).
+  Future<void> markPerfectLevel(int level) async {
+    final db = await _database();
+    await db.insert(
+      'settings',
+      {'key': 'perfect_level_$level', 'value': '1'},
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  /// Levels with a recorded perfect session.
+  Future<Set<int>> perfectLevels() async {
+    final db = await _database();
+    final rows = await db.query(
+      'settings',
+      where: 'key LIKE ?',
+      whereArgs: ['perfect_level_%'],
+    );
+    final levels = <int>{};
+    for (final row in rows) {
+      final key = row['key'] as String;
+      final level = int.tryParse(key.replaceFirst('perfect_level_', ''));
+      if (level != null) levels.add(level);
+    }
+    return levels;
+  }
+
+  /// Lenient writing grading (verb-ending variations accepted).
+  Future<bool> getLenientGrading() async {
+    final db = await _database();
+    final rows = await db.query(
+      'settings',
+      where: 'key = ?',
+      whereArgs: ['lenient_grading'],
+    );
+    if (rows.isEmpty) return false;
+    return (rows.first['value'] as String?) == '1';
+  }
+
+  Future<void> setLenientGrading(bool value) async {
+    final db = await _database();
+    await db.insert(
+      'settings',
+      {'key': 'lenient_grading', 'value': value ? '1' : '0'},
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
   }
@@ -337,11 +482,13 @@ class SessionRecord {
     required this.day,
     required this.total,
     required this.correct,
+    this.level = 0,
   });
 
   final String day;
   final int total;
   final int correct;
+  final int level;
 
   double get rate => total == 0 ? 0.0 : correct / total;
 }

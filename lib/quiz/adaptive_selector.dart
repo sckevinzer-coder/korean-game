@@ -27,7 +27,7 @@ double errorRateFor({required int attempts, required int errors}) {
   return (errors / attempts).clamp(0.0, 1.0);
 }
 
-/// Builds Word.id -> error rate from weak items keyed as "<kind>:<answer>".
+/// Builds Word.id -> error rate from weak items keyed as `<kind>:<answer>`.
 ///
 /// Matches when the weak key's answer equals the word's Korean or Japanese
 /// meaning. Keeps the max rate on multiple matches.

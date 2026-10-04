@@ -36,6 +36,23 @@ void main() {
       expect(gradeWriting('마시다', '먹다'), isFalse);
     });
 
+    test('strict mode rejects verb-ending variations', () {
+      expect(gradeWriting('먹어요', '먹다'), isFalse);
+      expect(gradeWriting('먹다', '먹어요'), isFalse);
+    });
+
+    test('lenient mode accepts verb-ending variations', () {
+      expect(gradeWriting('먹어요', '먹다', lenient: true), isTrue);
+      expect(gradeWriting('먹다', '먹어요', lenient: true), isTrue);
+      expect(gradeWriting('학교에 가요', '학교에 가다', lenient: true), isTrue);
+      expect(gradeWriting('사랑해', '사랑해요', lenient: true), isTrue);
+    });
+
+    test('lenient mode still rejects different stems', () {
+      expect(gradeWriting('마셔요', '먹다', lenient: true), isFalse);
+      expect(gradeWriting('학교', '먹다', lenient: true), isFalse);
+    });
+
     test('empty input returns false', () {
       expect(gradeWriting('', '먹다'), isFalse);
       expect(gradeWriting('   ', '먹다'), isFalse);

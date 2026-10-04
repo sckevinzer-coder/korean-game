@@ -32,10 +32,10 @@ extension type _Synthesis(JSObject _) implements JSObject {
 external _Synthesis get _speechSynthesis;
 
 /// Converts a JSArray to a Dart List.
-List<T> _jsArrayToList<T>(JSArray<JSObject> array) {
-  final list = <T>[];
+List<JSObject> _jsArrayToList(JSArray<JSObject> array) {
+  final list = <JSObject>[];
   for (var i = 0; i < array.length; i++) {
-    list.add(array[i] as T);
+    list.add(array[i]);
   }
   return list;
 }
@@ -57,7 +57,7 @@ class WebTtsService implements TtsService {
     }
     if (_selectedVoice != null && _selectedVoice!.uri != null) {
       // Find the voice object by name/uri and set it
-      final voices = _jsArrayToList<JSObject>(_speechSynthesis.getVoices());
+      final voices = _jsArrayToList(_speechSynthesis.getVoices());
       for (final v in voices) {
         final voice = _Voice(v);
         if (voice.name.toDart == _selectedVoice!.uri) {
@@ -85,12 +85,12 @@ class WebTtsService implements TtsService {
   @override
   Future<List<TtsVoice>> getVoices() async {
     // Ensure voices are loaded (they may load asynchronously)
-    var voices = _jsArrayToList<JSObject>(_speechSynthesis.getVoices());
+    var voices = _jsArrayToList(_speechSynthesis.getVoices());
     if (voices.isEmpty) {
       // Wait a bit for voices to load
       await Future<void>.delayed(const Duration(milliseconds: 100));
     }
-    final voices2 = _jsArrayToList<JSObject>(_speechSynthesis.getVoices());
+    final voices2 = _jsArrayToList(_speechSynthesis.getVoices());
     return voices2
         .map((v) => _Voice(v))
         .map((v) => TtsVoice(

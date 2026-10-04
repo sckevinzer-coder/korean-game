@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:vibration/vibration.dart';
 
 import '../models/word.dart';
@@ -33,6 +32,7 @@ class QuizScreen extends StatefulWidget {
     this.bookmarks,
     this.weakRates,
     this.timeAttack = false,
+    this.lenientGrading = false,
   });
 
   final List<Word> words;
@@ -47,15 +47,16 @@ class QuizScreen extends StatefulWidget {
   final BookmarkStore? bookmarks;
   final Map<String, double>? weakRates;
   final bool timeAttack;
+  final bool lenientGrading;
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
 }
 
-class _QuizScreenState extends State<QuizScreen>
-    with SingleTickerProviderStateMixin {
+class _QuizScreenState extends State<QuizScreen> {
   List<QuizQuestion> _questions = const [];
   bool _confusableFirst = true;
+  late bool _lenientGrading;
   static const double _timeLimitSeconds = 10.0;
   late bool _timeAttack;
   Timer? _questionTimer;
@@ -71,16 +72,11 @@ class _QuizScreenState extends State<QuizScreen>
   WritingAnalysisResult? _lastWritingAnalysis;
   final List<bool> _results = [];
   late final TtsService _tts;
-  late final AnimationController _celebrationController;
-  late final Animation<double> _celebrationScale;
   int _hintsUsed = 0;
   static const int _maxHints = 3;
-  bool _showLevelBanner = true;
-  Timer? _bannerTimer;
   int _sessionStreak = 0;
   int _maxSessionStreak = 0;
-  bool _showKeyboard = false;
-  double _ttsSpeed = 1.0;
+  final double _ttsSpeed = 1.0;
   double _bonusPoints = 0.0;
 
   List<QuizQuestion> get questionsForTesting => _questions;
@@ -89,25 +85,11 @@ class _QuizScreenState extends State<QuizScreen>
   void initState() {
     super.initState();
     _timeAttack = widget.timeAttack;
+    _lenientGrading = widget.lenientGrading;
     _tts = widget.tts ?? createTtsService();
     _questions = widget.questions ?? _generate(widget.rng ?? Random());
     _startQuestionTimer();
-    _celebrationController = AnimationController(
-      duration: const Duration(milliseconds: 800),
-      vsync: this,
-    );
-    _celebrationScale = Tween<double>(begin: 0.5, end: 1.0).animate(
-      CurvedAnimation(parent: _celebrationController, curve: Curves.elasticOut),
-    );
     _speakIfListening();
-    _showLevelBannerTimer();
-  }
-
-  void _showLevelBannerTimer() {
-    _bannerTimer?.cancel();
-    _bannerTimer = Timer(const Duration(seconds: 3), () {
-      if (mounted) setState(() => _showLevelBanner = false);
-    });
   }
 
   @override
@@ -128,11 +110,11 @@ class _QuizScreenState extends State<QuizScreen>
         _results.clear();
         _bonusPoints = 0.0;
         _hintsUsed = 0;
-        _showLevelBanner = true;
         _answerDurations.clear();
+        _sessionStreak = 0;
+        _maxSessionStreak = 0;
       });
       _speakIfListening();
-      _showLevelBannerTimer();
       _startQuestionTimer();
     }
   }
@@ -140,8 +122,6 @@ class _QuizScreenState extends State<QuizScreen>
   @override
   void dispose() {
     _tts.stop();
-    _celebrationController.dispose();
-    _bannerTimer?.cancel();
     _questionTimer?.cancel();
     super.dispose();
   }
@@ -240,6 +220,19 @@ class _QuizScreenState extends State<QuizScreen>
     return questions;
   }
 
+  /// Loads the persisted lenient-grading preference on demand.
+  ///
+  /// Called when the settings menu opens and before writing answers are
+  /// graded, so no store read happens during screen build or tests.
+  Future<void> _loadLenientGrading() async {
+    final stats = widget.stats;
+    if (stats == null) return;
+    try {
+      final value = await stats.getLenientGrading();
+      if (mounted) setState(() => _lenientGrading = value);
+    } catch (_) {}
+  }
+
   void _regenerateQuestions() {
     _questionTimer?.cancel();
     setState(() {
@@ -254,11 +247,11 @@ class _QuizScreenState extends State<QuizScreen>
       _results.clear();
       _bonusPoints = 0.0;
       _hintsUsed = 0;
-      _showLevelBanner = true;
       _answerDurations.clear();
+      _sessionStreak = 0;
+      _maxSessionStreak = 0;
     });
     _speakIfListening();
-    _showLevelBannerTimer();
     _startQuestionTimer();
   }
 
@@ -302,6 +295,7 @@ class _QuizScreenState extends State<QuizScreen>
     if (_index >= _questions.length || _selected != null) return;
     final question = _questions[_index];
     _recordError(question, false, question.correctAnswer);
+    _trackStreak(false);
     _answerDurations.add(_timeLimitSeconds);
     setState(() {
       _selected = -1;
@@ -365,12 +359,24 @@ class _QuizScreenState extends State<QuizScreen>
     ).catchError((_) {});
   }
 
+  void _trackStreak(bool isCorrect) {
+    if (isCorrect) {
+      _sessionStreak += 1;
+      if (_sessionStreak > _maxSessionStreak) {
+        _maxSessionStreak = _sessionStreak;
+      }
+    } else {
+      _sessionStreak = 0;
+    }
+  }
+
   void _answer(int selected) {
     if (_selected != null) return;
     _stopTimerAndRecordDuration();
     final question = _questions[_index];
     final isCorrect = selected == question.correctIndex;
     _recordError(question, isCorrect, question.correctAnswer);
+    _trackStreak(isCorrect);
     setState(() {
       _selected = selected;
       _results.add(isCorrect);
@@ -401,7 +407,11 @@ class _QuizScreenState extends State<QuizScreen>
     if (stats == null) return;
     List<String> fresh;
     try {
-      fresh = await evaluateNewAchievements(stats: stats, today: day);
+      fresh = await evaluateNewAchievements(
+        stats: stats,
+        today: day,
+        sessionBestStreak: _maxSessionStreak,
+      );
     } catch (_) {
       return;
     }
@@ -439,16 +449,22 @@ class _QuizScreenState extends State<QuizScreen>
     _tts.speak(answer, rate: _ttsSpeed).catchError((_) {});
   }
 
-  void _submitWriting() {
+  Future<void> _submitWriting() async {
     if (_selected != null || _writingInput == null) return;
+    await _loadLenientGrading();
+    if (_selected != null) return;
     _stopTimerAndRecordDuration();
     final question = _questions[_index];
-    final analysis =
-        WritingGrader.analyze(_writingInput!, question.correctAnswer);
+    final analysis = WritingGrader.analyze(
+      _writingInput!,
+      question.correctAnswer,
+      lenient: _lenientGrading,
+    );
     final bonus = WritingGrader.bonusFor(analysis);
     final bucket =
         '${analysis.errorType.name}:${(analysis.similarityScore * 10).round()}';
     _recordError(question, analysis.isCorrect, bucket);
+    _trackStreak(analysis.isCorrect);
     setState(() {
       _lastWritingAnalysis = analysis;
       _results.add(analysis.isCorrect);
@@ -570,11 +586,14 @@ class _QuizScreenState extends State<QuizScreen>
             ),
           PopupMenuButton<String>(
             tooltip: '出題設定',
-            onSelected: (value) {
+            onOpened: () {
+              _loadLenientGrading();
+            },
+            onSelected: (value) async {
               if (value == 'confusable') {
                 setState(() => _confusableFirst = !_confusableFirst);
                 _regenerateQuestions();
-                if (mounted) {
+                if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text(
@@ -587,11 +606,27 @@ class _QuizScreenState extends State<QuizScreen>
               } else if (value == 'timeattack') {
                 setState(() => _timeAttack = !_timeAttack);
                 _regenerateQuestions();
-                if (mounted) {
+                if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text(
                         _timeAttack ? 'タイムアタック開始（10秒）' : '通常モードに戻しました',
+                      ),
+                      duration: const Duration(seconds: 2),
+                    ),
+                  );
+                }
+              } else if (value == 'lenient') {
+                setState(() => _lenientGrading = !_lenientGrading);
+                try {
+                  await widget.stats
+                      ?.setLenientGrading(_lenientGrading);
+                } catch (_) {}
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        _lenientGrading ? 'やさしい採点: ON' : 'やさしい採点: OFF',
                       ),
                       duration: const Duration(seconds: 2),
                     ),
@@ -609,6 +644,11 @@ class _QuizScreenState extends State<QuizScreen>
                 value: 'timeattack',
                 checked: _timeAttack,
                 child: const Text('タイムアタック（10秒）'),
+              ),
+              CheckedPopupMenuItem(
+                value: 'lenient',
+                checked: _lenientGrading,
+                child: const Text('やさしい採点（語尾OK）'),
               ),
             ],
           ),
@@ -757,7 +797,11 @@ class _QuizScreenState extends State<QuizScreen>
             liveInput.trim().isNotEmpty &&
             _selected == null;
         final live = showLive
-            ? WritingGrader.analyze(liveInput, question.correctAnswer)
+            ? WritingGrader.analyze(
+                liveInput,
+                question.correctAnswer,
+                lenient: _lenientGrading,
+              )
             : null;
         return [
           TextField(

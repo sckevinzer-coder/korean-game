@@ -82,8 +82,31 @@ class WritingGrader {
     '처럼', '같이', '만큼', '까지', '부터', '마다', '조차', '마저',
   ];
 
-  /// Analyze writing input with detailed feedback
-  static WritingAnalysisResult analyze(String input, String answer, {bool ignoreParticles = true}) {
+  /// Verb/adjective endings ignored in lenient mode, longest first.
+  static const List<String> _lenientEndings = [
+    '습니다',
+    '입니다',
+    '합니다',
+    '해요',
+    '어요',
+    '아요',
+    '여요',
+    '예요',
+    '이에요',
+    '해',
+    '요',
+    '다',
+    '임',
+    '함',
+  ];
+
+  /// Analyze writing input with detailed feedback.
+  ///
+  /// [lenient] additionally ignores verb/adjective ending variations
+  /// (e.g. 먹어요 vs 먹다) by comparing stems. Stem differences are still
+  /// rejected.
+  static WritingAnalysisResult analyze(String input, String answer,
+      {bool ignoreParticles = true, bool lenient = false}) {
     if (input.trim().isEmpty) {
       return WritingAnalysisResult(
         isCorrect: false,
@@ -93,6 +116,18 @@ class WritingGrader {
         feedback: '入力が空です',
         characterAnalysis: [],
         similarityScore: 0.0,
+      );
+    }
+
+    if (lenient && _matchesLenient(input, answer, ignoreParticles)) {
+      return WritingAnalysisResult(
+        isCorrect: true,
+        errorType: WritingErrorType.correct,
+        userInput: input,
+        correctAnswer: answer,
+        feedback: '正解です！',
+        characterAnalysis: _analyzeCharacters(input, answer),
+        similarityScore: 1.0,
       );
     }
 
@@ -352,10 +387,41 @@ class WritingGrader {
     }
     return s;
   }
+
+  static bool _matchesLenient(String input, String answer, bool ignoreParticles) {
+    final a = _stripLenient(_normalize(input, false), ignoreParticles);
+    final b = _stripLenient(_normalize(answer, false), ignoreParticles);
+    return a.isNotEmpty && b.isNotEmpty && a == b;
+  }
+
+  static String _stripLenient(String s, bool ignoreParticles) {
+    var cur = s;
+    while (true) {
+      var next = cur;
+      if (ignoreParticles) {
+        for (final particle in _particles) {
+          if (next.endsWith(particle) && next.length > particle.length) {
+            next = next.substring(0, next.length - particle.length);
+            break;
+          }
+        }
+      }
+      for (final ending in _lenientEndings) {
+        if (next.endsWith(ending) && next.length > ending.length) {
+          next = next.substring(0, next.length - ending.length);
+          break;
+        }
+      }
+      if (next == cur) return cur;
+      cur = next;
+    }
+  }
 }
 
 /// Backward compatibility
 /// Backward compatibility - simple boolean grade
-bool gradeWriting(String input, String answer, {bool ignoreParticles = true}) {
-  return WritingGrader.analyze(input, answer, ignoreParticles: ignoreParticles).isCorrect;
+bool gradeWriting(String input, String answer,
+    {bool ignoreParticles = true, bool lenient = false}) {
+  return WritingGrader.analyze(input, answer,
+      ignoreParticles: ignoreParticles, lenient: lenient).isCorrect;
 }

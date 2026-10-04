@@ -171,10 +171,15 @@ class _FlashcardScreenState extends State<FlashcardScreen>
         });
       }
     } else {
-      if (event.logicalKey == LogicalKeyboardKey.digit1) _grade(Grade.again);
-      else if (event.logicalKey == LogicalKeyboardKey.digit2) _grade(Grade.hard);
-      else if (event.logicalKey == LogicalKeyboardKey.digit3) _grade(Grade.good);
-      else if (event.logicalKey == LogicalKeyboardKey.digit4) _grade(Grade.easy);
+      if (event.logicalKey == LogicalKeyboardKey.digit1) {
+        _grade(Grade.again);
+      } else if (event.logicalKey == LogicalKeyboardKey.digit2) {
+        _grade(Grade.hard);
+      } else if (event.logicalKey == LogicalKeyboardKey.digit3) {
+        _grade(Grade.good);
+      } else if (event.logicalKey == LogicalKeyboardKey.digit4) {
+        _grade(Grade.easy);
+      }
       else if (event.logicalKey == LogicalKeyboardKey.space) {
         if (_index + 1 < widget.words.length) {
           setState(() {

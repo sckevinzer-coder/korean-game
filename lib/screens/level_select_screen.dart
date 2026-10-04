@@ -6,7 +6,6 @@ import 'package:vibration/vibration.dart';
 import '../data/word_repository.dart';
 import '../db/progress_store.dart';
 import '../models/word.dart';
-import '../quiz/adaptive_selector.dart';
 import '../srs/srs_scheduler.dart';
 import '../stats/bookmark_store.dart';
 import '../stats/error_stats.dart';

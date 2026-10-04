@@ -45,13 +45,27 @@ const List<AchievementDef> allAchievements = [
     title: '全レベル制覇',
     description: '1〜6級すべてのクイズを完了する',
   ),
+  AchievementDef(
+    id: 'combo_10',
+    title: '10連続正解',
+    description: '1回のクイズで10連続正解する',
+  ),
+  AchievementDef(
+    id: 'perfect_levels',
+    title: '全レベル完全制覇',
+    description: '1〜6級すべてで満点クイズを達成する',
+  ),
 ];
+
+/// Minimum questions for a perfect-level session to count.
+const int perfectLevelMinQuestions = 5;
 
 /// Evaluates achievement conditions, unlocks newly earned ones, and returns
 /// their ids. Uses displayStreak (no freeze side effects).
 Future<List<String>> evaluateNewAchievements({
   required StatsStore stats,
   required DateTime today,
+  int sessionBestStreak = 0,
 }) async {
   final unlocked = await stats.unlockedAchievements();
   final fresh = <String>[];
@@ -78,6 +92,22 @@ Future<List<String>> evaluateNewAchievements({
   final levels = await stats.completedLevels();
   if (const {1, 2, 3, 4, 5, 6}.difference(levels).isEmpty) {
     grant('all_levels');
+  }
+  if (sessionBestStreak >= 10) {
+    grant('combo_10');
+  }
+  if (sessions.isNotEmpty) {
+    final last = sessions.first;
+    if (last.rate == 1.0 &&
+        last.total >= perfectLevelMinQuestions &&
+        last.level >= 1 &&
+        last.level <= 6) {
+      await stats.markPerfectLevel(last.level);
+    }
+  }
+  final perfect = await stats.perfectLevels();
+  if (const {1, 2, 3, 4, 5, 6}.difference(perfect).isEmpty) {
+    grant('perfect_levels');
   }
 
   for (final id in fresh) {

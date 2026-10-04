@@ -34,6 +34,14 @@ class FakeStatsStore extends StatsStore {
       (total: 0, correct: 0);
   @override
   Future<Set<int>> completedLevels() async => {};
+  @override
+  Future<bool> getLenientGrading() async => false;
+  @override
+  Future<void> setLenientGrading(bool value) async {}
+  @override
+  Future<void> markPerfectLevel(int level) async {}
+  @override
+  Future<Set<int>> perfectLevels() async => {};
 }
 
 Word word(String id, String korean, String meaningJa, {String? exampleKo}) => Word(
@@ -89,17 +97,7 @@ class FakeTtsService implements TtsService {
   }
 
   @override
-  void setProgressHandler(TtsProgressHandler? handler) {
-    _progressHandler = handler;
-  }
-
-  void _simulateProgress(int start, int end, String? text) {
-    if (_progressHandler != null) {
-      _progressHandler!(TtsProgress(start: start, end: end, text: text));
-    }
-  }
-
-  TtsProgressHandler? _progressHandler;
+  void setProgressHandler(TtsProgressHandler? handler) {}
 }
 
 void main() {
@@ -249,7 +247,7 @@ void main() {
     await tester.tap(find.byType(ElevatedButton).last);
     // Poll with real time: FFI store futures resolve outside fake async.
     for (var i = 0;
-        i < 10 && find.text('実績解除！').evaluate().isEmpty;
+        i < 20 && find.text('実績解除！').evaluate().isEmpty;
         i++) {
       await tester.runAsync(
           () => Future<void>.delayed(const Duration(milliseconds: 300)));
@@ -385,7 +383,6 @@ testWidgets('level 6 includes writing kind', (tester) async {
     // Check internal questions list for writing kind
     final state = tester.state(find.byType(QuizScreen)) as dynamic;
     final questions = state.questionsForTesting;
-    bool hasWriting = false;
     for (final q in questions) {
       if (q.kind == QuizKind.writing) {
         expect(q.prompt, contains('쓰기:'));
@@ -554,7 +551,7 @@ testWidgets('writing question shows TextField and 回答する button, grades co
       home: QuizScreen(
         words: words,
         questions: questions,
-        stats: stats,
+        stats: FakeStatsStore(),
         now: () => now,
         tts: fakeTts,
       ),
@@ -593,7 +590,7 @@ testWidgets('writing question shows TextField and 回答する button, grades co
       home: QuizScreen(
         words: words,
         questions: questions,
-        stats: stats,
+        stats: FakeStatsStore(),
         now: () => now,
         tts: fakeTts,
       ),
@@ -826,6 +823,31 @@ testWidgets('writing question shows TextField and 回答する button, grades co
 
     expect(find.text('クイズ完了！'), findsOneWidget);
     expect(find.textContaining('平均回答時間'), findsOneWidget);
+  });
+
+  testWidgets('lenient grading toggle shows notice', (tester) async {
+    final words = List.generate(
+      6,
+      (i) => word('w$i', '단어$i', '意味$i'),
+    );
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        stats: FakeStatsStore(),
+        now: () => now,
+        level: 1,
+        tts: FakeTtsService(),
+      ),
+    ));
+    await tester.pump();
+
+    await tester.tap(find.byTooltip('出題設定'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('やさしい採点（語尾OK）'));
+    await tester.pump();
+
+    expect(find.text('やさしい採点: ON'), findsOneWidget);
   });
 
   testWidgets('level 3 mixed session covers all five kinds', (tester) async {

@@ -84,6 +84,55 @@ void main() {
     expect(fresh, contains('all_levels'));
   });
 
+  test('combo streak unlocks combo_10', () async {
+    await store.recordSession(DateTime(2026, 10, 3), 12, 10, level: 1);
+
+    final fresh = await evaluateNewAchievements(
+      stats: store,
+      today: DateTime(2026, 10, 3),
+      sessionBestStreak: 10,
+    );
+
+    expect(fresh, contains('combo_10'));
+  });
+
+  test('short combo streak does not unlock combo_10', () async {
+    await store.recordSession(DateTime(2026, 10, 3), 12, 10, level: 1);
+
+    final fresh = await evaluateNewAchievements(
+      stats: store,
+      today: DateTime(2026, 10, 3),
+      sessionBestStreak: 9,
+    );
+
+    expect(fresh, isNot(contains('combo_10')));
+  });
+
+  test('perfect sessions in all levels unlock perfect_levels', () async {
+    var fresh = <String>[];
+    for (var level = 1; level <= 6; level++) {
+      await store.recordSession(DateTime(2026, 10, 3), 5, 5, level: level);
+      fresh = await evaluateNewAchievements(
+        stats: store,
+        today: DateTime(2026, 10, 3),
+      );
+    }
+
+    expect(fresh, contains('perfect_levels'));
+    expect(await store.perfectLevels(), {1, 2, 3, 4, 5, 6});
+  });
+
+  test('imperfect session does not mark perfect level', () async {
+    await store.recordSession(DateTime(2026, 10, 3), 5, 4, level: 1);
+
+    await evaluateNewAchievements(
+      stats: store,
+      today: DateTime(2026, 10, 3),
+    );
+
+    expect(await store.perfectLevels(), isEmpty);
+  });
+
   test('already unlocked achievements are not granted twice', () async {
     await store.recordSession(DateTime(2026, 10, 3), 10, 9, level: 1);
     await evaluateNewAchievements(stats: store, today: DateTime(2026, 10, 3));

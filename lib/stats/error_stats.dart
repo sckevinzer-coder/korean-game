@@ -109,6 +109,55 @@ CREATE TABLE error_stats(
     return items.take(limit).toList();
   }
 
+  /// All entries for export.
+  Future<List<WeakItem>> allEntries() async {
+    final db = await _database();
+    final rows = await db.query('error_stats');
+    return [
+      for (final r in rows)
+        WeakItem(
+          key: r['key'] as String,
+          attempts: r['attempts'] as int,
+          errors: r['errors'] as int,
+          lastError: r['lastError'] as String,
+        ),
+    ];
+  }
+
+  /// Merges entries by summing attempts/errors for import.
+  Future<void> importEntries(List<WeakItem> items) async {
+    final db = await _database();
+    for (final item in items) {
+      final rows = await db.query(
+        'error_stats',
+        where: 'key = ?',
+        whereArgs: [item.key],
+      );
+      if (rows.isEmpty) {
+        await db.insert('error_stats', {
+          'key': item.key,
+          'attempts': item.attempts,
+          'errors': item.errors,
+          'lastError': item.lastError,
+          'updatedMs': DateTime.now().millisecondsSinceEpoch,
+        });
+      } else {
+        final row = rows.first;
+        await db.update(
+          'error_stats',
+          {
+            'attempts': (row['attempts'] as int) + item.attempts,
+            'errors': (row['errors'] as int) + item.errors,
+            'lastError': item.lastError,
+            'updatedMs': DateTime.now().millisecondsSinceEpoch,
+          },
+          where: 'key = ?',
+          whereArgs: [item.key],
+        );
+      }
+    }
+  }
+
   Future<void> clear() async {
     final db = await _database();
     await db.delete('error_stats');

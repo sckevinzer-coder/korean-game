@@ -32,11 +32,25 @@ class FakeStatsStore extends StatsStore {
       ];
   @override
   Future<Set<String>> unlockedAchievements() async => {};
+  @override
+  Future<List<String>> allStudyDays() async => [];
+  @override
+  Future<List<SessionRecord>> allSessions() async => [];
+  @override
+  Future<List<String>> allFreezeWeeks() async => [];
+  @override
+  Future<Map<String, String>> allSettings() async => {};
+  @override
+  Future<bool> getLenientGrading() async => false;
 }
 
 class FakeErrorStats extends ErrorStatsStore {
   @override
   Future<List<WeakItem>> topWeak({int limit = 5}) async => [];
+  @override
+  Future<List<WeakItem>> allEntries() async => [];
+  @override
+  Future<void> importEntries(List<WeakItem> items) async {}
 }
 
 Word word(String id) => Word(
@@ -86,5 +100,42 @@ void main() {
 
     expect(find.text('間違いノート', skipOffstage: false), findsWidgets);
     expect(find.text('間違い記録はまだありません'), findsOneWidget);
+  });
+
+  testWidgets('export opens dialog and import rejects invalid JSON',
+      (tester) async {
+    await tester.pumpWidget(MaterialApp(
+      home: StatsScreen(
+        store: FakeProgressStore(),
+        stats: FakeStatsStore(),
+        errors: FakeErrorStats(),
+        levels: const [1],
+        loadWords: (level) async => [word('t1-001')],
+        now: () => DateTime(2026, 10, 4),
+      ),
+    ));
+    await tester.pump();
+    await tester.pumpAndSettle();
+
+    await tester.ensureVisible(find.text('エクスポート'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('エクスポート'));
+    await tester.pumpAndSettle();
+    expect(find.text('データをエクスポート'), findsOneWidget);
+    await tester.tap(find.text('閉じる'));
+    await tester.pumpAndSettle();
+
+    await tester.ensureVisible(find.text('インポート'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('インポート'));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'not json');
+    await tester.pump();
+    expect(find.text('データをインポート'), findsOneWidget);
+    await tester.tap(find.text('取り込む'));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
+    await tester.pumpAndSettle();
+    expect(find.text('無効なバックアップデータです'), findsOneWidget);
   });
 }

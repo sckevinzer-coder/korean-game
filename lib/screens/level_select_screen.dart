@@ -5,6 +5,8 @@ import 'package:vibration/vibration.dart';
 
 import '../data/word_repository.dart';
 import '../db/progress_store.dart';
+import '../i18n/app_locale.dart';
+import '../i18n/app_strings.dart';
 import '../models/word.dart';
 import '../srs/srs_scheduler.dart';
 import '../stats/bookmark_store.dart';
@@ -26,12 +28,14 @@ class LevelSelectScreen extends StatefulWidget {
     this.loadWords = loadWordsForLevel,
     this.now,
     this.random,
+    this.locale = AppLocale.japanese,
   });
 
   final ProgressStore store;
   final StatsStore? stats;
   final ErrorStatsStore? errors;
   final BookmarkStore? bookmarks;
+  final AppLocale locale;
   final List<int> levels;
   final Future<List<Word>> Function(int level) loadWords;
   final DateTime Function()? now;
@@ -92,6 +96,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
           words: _shuffled(words),
           stats: widget.stats,
           bookmarks: widget.bookmarks,
+          locale: widget.locale,
           now: widget.now,
         ),
       ),
@@ -102,7 +107,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
     _lightHaptic();
     if (words.isNotEmpty && words.length < 4) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('クイズには4語以上必要です')),
+        SnackBar(content: Text(tr(widget.locale, 'level.needWords'))),
       );
       return;
     }
@@ -113,6 +118,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
           stats: widget.stats,
           errors: widget.errors,
           bookmarks: widget.bookmarks,
+          locale: widget.locale,
           now: widget.now,
         ),
       ),
@@ -130,6 +136,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
           bookmarks: widget.bookmarks,
           levels: widget.levels,
           loadWords: widget.loadWords,
+          locale: widget.locale,
           now: widget.now,
         ),
       ),
@@ -147,6 +154,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
           stats: widget.stats,
           errors: widget.errors,
           loadWords: widget.loadWords,
+          locale: widget.locale,
           now: widget.now,
         ),
       ),
@@ -155,18 +163,19 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final locale = widget.locale;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('レベル選択'),
+        title: Text(tr(locale, 'level.title')),
         actions: [
           IconButton(
             icon: const Icon(Icons.bookmark_outline),
-            tooltip: 'ブックマーク',
+            tooltip: tr(locale, 'level.bookmarks'),
             onPressed: widget.bookmarks == null ? null : _openBookmarks,
           ),
           IconButton(
             icon: const Icon(Icons.bar_chart),
-            tooltip: '学習統計',
+            tooltip: tr(locale, 'level.stats'),
             onPressed: _openStats,
           ),
         ],
@@ -179,7 +188,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
         future: _future,
         builder: (context, snapshot) {
           if (snapshot.hasError) {
-            return const Center(child: Text('読み込みに失敗しました'));
+            return Center(child: Text(tr(locale, 'level.loadError')));
           }
           if (!snapshot.hasData) {
             return const Center(child: CircularProgressIndicator());
@@ -218,7 +227,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                 Icon(Icons.local_fire_department, color: Colors.orange[700], size: 20),
                 const SizedBox(width: 8),
                 Text(
-                  '$streak日連続学習中！',
+                  trParams(widget.locale, 'level.streak', {'n': streak}),
                   style: TextStyle(
                     color: Colors.orange[800],
                     fontWeight: FontWeight.bold,
@@ -249,12 +258,15 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'TOPIK $level級',
+                trParams(widget.locale, 'level.name', {'n': level}),
                 style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 8),
               Text(
-                '$learned / $total 語 学習済み',
+                trParams(widget.locale, 'level.progress', {
+                  'learned': learned,
+                  'total': total,
+                }),
                 style: TextStyle(fontSize: 13, color: Colors.grey[600]),
               ),
               const SizedBox(height: 8),
@@ -271,7 +283,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                   Expanded(
                     child: ElevatedButton.icon(
                       icon: const Icon(Icons.menu_book, size: 18),
-                      label: const Text('学習する'),
+                      label: Text(tr(widget.locale, 'level.study')),
                       onPressed: () => _startFlashcards(words),
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.symmetric(vertical: 12),
@@ -282,7 +294,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                   Expanded(
                     child: ElevatedButton.icon(
                       icon: const Icon(Icons.quiz, size: 18),
-                      label: const Text('クイズ'),
+                      label: Text(tr(widget.locale, 'level.quiz')),
                       onPressed: () => _startQuiz(words),
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.symmetric(vertical: 12),
@@ -308,14 +320,17 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'クイズ形式:',
-              style: TextStyle(fontWeight: FontWeight.bold),
+            Text(
+              tr(widget.locale, 'level.legendTitle'),
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
-            _legendItem('1-2級', '意味⇔単語 (2種類)'),
-            _legendItem('3-4級', '+ リスニング, 空欄補充 (5種類)'),
-            _legendItem('5-6級', '+ 書き取り (6種類)'),
+            _legendItem(tr(widget.locale, 'level.legend12'),
+                tr(widget.locale, 'level.legend12desc')),
+            _legendItem(tr(widget.locale, 'level.legend34'),
+                tr(widget.locale, 'level.legend34desc')),
+            _legendItem(tr(widget.locale, 'level.legend56'),
+                tr(widget.locale, 'level.legend56desc')),
           ],
         ),
       ),

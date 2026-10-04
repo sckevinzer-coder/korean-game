@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
+import 'package:korean_game/i18n/app_locale.dart';
 import 'package:korean_game/models/word.dart';
 import 'package:korean_game/quiz/quiz_generator.dart';
 import 'package:korean_game/screens/quiz_screen.dart';
@@ -42,6 +43,10 @@ class FakeStatsStore extends StatsStore {
   Future<void> markPerfectLevel(int level) async {}
   @override
   Future<Set<int>> perfectLevels() async => {};
+  @override
+  Future<String> getLocaleCode() async => 'ja';
+  @override
+  Future<void> setLocaleCode(String code) async {}
 }
 
 Word word(String id, String korean, String meaningJa, {String? exampleKo}) => Word(
@@ -848,6 +853,32 @@ testWidgets('writing question shows TextField and 回答する button, grades co
     await tester.pump();
 
     expect(find.text('やさしい採点: ON'), findsOneWidget);
+  });
+
+  testWidgets('korean locale localizes chrome and writing prompt',
+      (tester) async {
+    final words = List.generate(
+      10,
+      (i) => word('w$i', '단어$i', '意味$i', exampleKo: '이것은 단어$i입니다'),
+    );
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        stats: FakeStatsStore(),
+        now: () => now,
+        level: 6,
+        tts: FakeTtsService(),
+        locale: AppLocale.korean,
+      ),
+    ));
+    await tester.pump();
+
+    expect(find.text('퀴즈'), findsOneWidget);
+    final state = tester.state(find.byType(QuizScreen)) as dynamic;
+    final questions = state.questionsForTesting as List<QuizQuestion>;
+    final writing = questions.firstWhere((q) => q.kind == QuizKind.writing);
+    expect(writing.prompt, contains('의 한국어를 쓰세요'));
   });
 
   testWidgets('level 3 mixed session covers all five kinds', (tester) async {

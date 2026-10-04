@@ -1,3 +1,5 @@
+import '../i18n/app_locale.dart';
+import '../i18n/app_strings.dart';
 import '../quiz/quiz_generator.dart';
 
 class KindAccuracy {
@@ -28,20 +30,20 @@ class SessionAnalysis {
   double get rate => total == 0 ? 0.0 : correct / total;
 }
 
-String kindLabel(QuizKind kind) {
+String kindLabel(QuizKind kind, [AppLocale locale = AppLocale.japanese]) {
   switch (kind) {
     case QuizKind.meaningToWord:
-      return '意味→単語';
+      return tr(locale, 'kind.meaningToWord');
     case QuizKind.wordToMeaning:
-      return '単語→意味';
+      return tr(locale, 'kind.wordToMeaning');
     case QuizKind.listeningWord:
-      return 'リスニング(単語)';
+      return tr(locale, 'kind.listeningWord');
     case QuizKind.listeningMeaning:
-      return 'リスニング(意味)';
+      return tr(locale, 'kind.listeningMeaning');
     case QuizKind.blank:
-      return '空欄補充';
+      return tr(locale, 'kind.blank');
     case QuizKind.writing:
-      return '書き取り';
+      return tr(locale, 'kind.writing');
   }
 }
 
@@ -49,6 +51,7 @@ String kindLabel(QuizKind kind) {
 SessionAnalysis analyzeSession({
   required List<QuizQuestion> questions,
   required List<bool> correct,
+  AppLocale locale = AppLocale.japanese,
 }) {
   final totals = <QuizKind, int>{};
   final hits = <QuizKind, int>{};
@@ -72,19 +75,20 @@ SessionAnalysis analyzeSession({
       byKind.where((k) => k.total > 0 && k.rate < 0.7).map((k) => k.kind).toList();
   final suggestions = <String>[];
   for (final kind in weakKinds.take(2)) {
+    final label = kindLabel(kind, locale);
     switch (kind) {
       case QuizKind.listeningWord:
       case QuizKind.listeningMeaning:
-        suggestions.add('${kindLabel(kind)}が苦手: 速度を0.85xに下げて聞き取り練習');
+        suggestions.add(trParams(locale, 'sug.listening', {'k': label}));
         break;
       case QuizKind.writing:
-        suggestions.add('${kindLabel(kind)}が苦手: 母音・받침の内訳を確認して復習');
+        suggestions.add(trParams(locale, 'sug.writing', {'k': label}));
         break;
       case QuizKind.blank:
-        suggestions.add('${kindLabel(kind)}が苦手: 文脈から品詞を推測する練習');
+        suggestions.add(trParams(locale, 'sug.blank', {'k': label}));
         break;
       default:
-        suggestions.add('${kindLabel(kind)}が苦手: フラッシュカードで復習');
+        suggestions.add(trParams(locale, 'sug.default', {'k': label}));
     }
   }
   final total = questions.length;
@@ -98,11 +102,17 @@ SessionAnalysis analyzeSession({
   );
 }
 
-/// Weekday labels (日月火水木金土) for the last 7 days, oldest first.
-List<String> last7WeekdayLabels(DateTime today) {
-  const names = ['日', '月', '火', '水', '木', '金', '土'];
+/// Weekday labels for the last 7 days, oldest first.
+List<String> last7WeekdayLabels(DateTime today,
+    [AppLocale locale = AppLocale.japanese]) {
+  const names = {
+    AppLocale.japanese: ['日', '月', '火', '水', '木', '金', '土'],
+    AppLocale.korean: ['일', '월', '화', '수', '목', '금', '토'],
+    AppLocale.english: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+  };
+  final days = names[locale] ?? names[AppLocale.japanese]!;
   final base = DateTime(today.year, today.month, today.day);
   return [
-    for (var i = 6; i >= 0; i--) names[base.subtract(Duration(days: i)).weekday % 7],
+    for (var i = 6; i >= 0; i--) days[base.subtract(Duration(days: i)).weekday % 7],
   ];
 }

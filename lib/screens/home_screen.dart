@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 import '../data/word_repository.dart';
 import '../db/progress_store.dart';
+import '../i18n/app_locale.dart';
+import '../i18n/app_strings.dart';
 import '../models/word.dart';
 import '../notify/review_notify.dart';
 import '../stats/bookmark_store.dart';
@@ -61,11 +63,13 @@ class _Counts {
 class _HomeScreenState extends State<HomeScreen> {
   late final Future<_Counts> _future;
   bool _notifyOptedIn = false;
+  AppLocale _locale = AppLocale.japanese;
 
   @override
   void initState() {
     super.initState();
     _future = _load();
+    _loadLocale();
   }
 
   Future<_Counts> _load() async {
@@ -110,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
           dueCount: due,
         );
         if (notifyState == 'notify') {
-          showReviewNotification(due).catchError((_) {});
+          showReviewNotification(due, _locale).catchError((_) {});
         }
       }
     } catch (_) {
@@ -140,12 +144,28 @@ class _HomeScreenState extends State<HomeScreen> {
     if (permission == 'granted') {
       setState(() => _notifyOptedIn = true);
       final counts = await _future;
-      showReviewNotification(counts.due).catchError((_) {});
+      showReviewNotification(counts.due, _locale).catchError((_) {});
     } else if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('通知が許可されませんでした')),
+        SnackBar(content: Text(tr(_locale, 'home.notifyDenied'))),
       );
     }
+  }
+
+  Future<void> _loadLocale() async {
+    final stats = widget.stats;
+    if (stats == null) return;
+    try {
+      final code = await stats.getLocaleCode();
+      if (mounted) setState(() => _locale = AppLocale.parse(code));
+    } catch (_) {}
+  }
+
+  Future<void> _changeLocale(AppLocale locale) async {
+    setState(() => _locale = locale);
+    try {
+      await widget.stats?.setLocaleCode(locale.code);
+    } catch (_) {}
   }
 
   void _openLevels() {
@@ -156,6 +176,7 @@ class _HomeScreenState extends State<HomeScreen> {
           stats: widget.levelSelectStats ?? widget.stats,
           errors: widget.errors,
           bookmarks: widget.bookmarks,
+          locale: _locale,
           loadWords: widget.loadWords,
           now: widget.now,
           random: widget.random,
@@ -170,12 +191,12 @@ class _HomeScreenState extends State<HomeScreen> {
     final picked = await showDialog<int>(
       context: context,
       builder: (context) => SimpleDialog(
-        title: const Text('1日の目標'),
+        title: Text(tr(_locale, 'home.goalTitle')),
         children: [
           for (final g in [5, 10, 20, 30])
             SimpleDialogOption(
               onPressed: () => Navigator.of(context).pop(g),
-              child: Text('$g問'),
+              child: Text(trParams(_locale, 'home.goalOption', {'n': g})),
             ),
         ],
       ),
@@ -190,13 +211,27 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final locale = _locale;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ホーム'),
+        title: Text(tr(locale, 'home.title')),
         actions: [
+          PopupMenuButton<AppLocale>(
+            tooltip: tr(locale, 'home.language'),
+            icon: const Icon(Icons.language),
+            onSelected: _changeLocale,
+            itemBuilder: (context) => [
+              for (final l in AppLocale.values)
+                CheckedPopupMenuItem(
+                  value: l,
+                  checked: l == locale,
+                  child: Text(l.label),
+                ),
+            ],
+          ),
           IconButton(
             icon: const Icon(Icons.flag_outlined),
-            tooltip: '目標設定',
+            tooltip: tr(locale, 'home.goalTitle'),
             onPressed: widget.stats == null ? null : _changeGoal,
           ),
         ],
@@ -206,7 +241,7 @@ class _HomeScreenState extends State<HomeScreen> {
           future: _future,
           builder: (context, snapshot) {
             if (snapshot.hasError) {
-              return const Text('読み込みに失敗しました');
+              return Text(tr(locale, 'home.loadError'));
             }
             if (!snapshot.hasData) {
               return const CircularProgressIndicator();
@@ -217,8 +252,11 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 mainAxisAlignment: .center,
                 children: [
-                  Text('今日の復習: ${counts.due} / ${counts.total} 枚'),
-                  Text('連続学習: ${counts.streak}日'),
+                  Text(trParams(locale, 'home.review', {
+                    'due': counts.due,
+                    'total': counts.total,
+                  })),
+                  Text(trParams(locale, 'home.streak', {'n': counts.streak})),
                   const SizedBox(height: 8),
                   SizedBox(
                     width: 72,
@@ -237,36 +275,41 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
-                  Text('今日の目標: ${counts.solved} / ${counts.goal}問'),
+                  Text(trParams(locale, 'home.goal', {
+                    'solved': counts.solved,
+                    'goal': counts.goal,
+                  })),
                   if (counts.freezeUsed)
-                    const Text('🛡️ 連続保護を使用しました'),
-                  Text('🛡️ 連続保護: 残り${counts.freezesLeft}回'),
+                    Text(tr(locale, 'home.freezeUsed')),
+                  Text(trParams(
+                      locale, 'home.freezeLeft', {'n': counts.freezesLeft})),
                   if (counts.notifyState == 'opt-in' && !_notifyOptedIn) ...[
                     const SizedBox(height: 8),
                     OutlinedButton(
                       onPressed: _optIntoNotifications,
-                      child: const Text('🔔 復習リマインダーを受け取る'),
+                      child: Text(tr(locale, 'home.reminderOptIn')),
                     ),
                   ],
                   const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: _openLevels,
-                    child: const Text('レベルを選ぶ'),
+                    child: Text(tr(locale, 'home.pickLevel')),
                   ),
                   const SizedBox(height: 16),
                   Card(
                     color: Colors.deepPurple[50],
-                    child: const Padding(
-                      padding: EdgeInsets.all(12),
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('はじめに',
-                              style: TextStyle(fontWeight: FontWeight.bold)),
-                          SizedBox(height: 4),
-                          Text('1. レベルを選ぶ（TOPIK 1〜6級・各500語）'),
-                          Text('2. 学習する（フラッシュカード＋音声）'),
-                          Text('3. クイズ（級別形式・ブックマーク復習）'),
+                          Text(tr(locale, 'home.introTitle'),
+                              style:
+                                  const TextStyle(fontWeight: FontWeight.bold)),
+                          const SizedBox(height: 4),
+                          Text(tr(locale, 'home.intro1')),
+                          Text(tr(locale, 'home.intro2')),
+                          Text(tr(locale, 'home.intro3')),
                         ],
                       ),
                     ),

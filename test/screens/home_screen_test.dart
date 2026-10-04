@@ -44,6 +44,10 @@ class FakeStatsStore extends StatsStore {
   Future<bool> getLenientGrading() async => false;
   @override
   Future<void> setLenientGrading(bool value) async {}
+  @override
+  Future<String> getLocaleCode() async => 'ja';
+  @override
+  Future<void> setLocaleCode(String code) async {}
 }
 
 Word word(String id) => Word(
@@ -207,6 +211,35 @@ void main() {
 
     expect(find.text('今日の目標: 4 / 10問'), findsOneWidget);
     expect(find.byType(CircularProgressIndicator), findsWidgets);
+  });
+
+  testWidgets('language menu switches UI to Korean', (tester) async {
+    final fakeProgress = FakeProgressStore(cards: []);
+    final fakeStats = FakeStatsStore(streak: 2);
+    await tester.pumpWidget(MaterialApp(
+      home: HomeScreen(
+        store: fakeProgress,
+        stats: fakeStats,
+        levelSelectStats: fakeStats,
+        now: () => now,
+        loadWords: (level) async => List.generate(
+            10, (i) => word('t1-${(i + 1).toString().padLeft(3, '0')}')),
+      ),
+    ));
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.pump(const Duration(milliseconds: 500));
+    await tester.pump(const Duration(milliseconds: 500));
+
+    expect(find.text('レベルを選ぶ'), findsOneWidget);
+
+    await tester.tap(find.byTooltip('言語'));
+    await tester.pumpAndSettle();
+    expect(find.text('한국어'), findsOneWidget);
+    await tester.tap(find.text('한국어'), warnIfMissed: false);
+    await tester.pumpAndSettle();
+
+    expect(find.text('레벨 선택'), findsOneWidget);
+    expect(find.text('レベルを選ぶ'), findsNothing);
   });
 
 testWidgets('tapping level button opens level select', (tester) async {

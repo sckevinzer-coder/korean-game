@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.5.0
+
+### i18n (JA/KO/EN)
+- Full UI localization: home, level select, stats, quiz, flashcards,
+  bookmarks, review notebook, writing feedback, achievements,
+  notifications, kind labels, suggestions, and weekday labels.
+- Japanese stays the default and fallback; Korean and English cover
+  every key with `{param}` substitution.
+- Language switcher in the Home app bar, persisted in `stats.db`
+  settings, forwarded through the navigation chain (no new queries).
+- Listening prompts stay in Korean by design (listening exercise).
+
+### Tests
+- 170 tests passing (`flutter test`), `flutter analyze` zero issues.
+
 ## 1.4.0
 
 ### Lenient writing grading

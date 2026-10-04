@@ -4,6 +4,8 @@ import 'package:flutter/services.dart';
 import '../data/word_repository.dart';
 import '../db/progress_store.dart';
 import '../models/word.dart';
+import '../i18n/app_locale.dart';
+import '../i18n/app_strings.dart';
 import '../quiz/adaptive_selector.dart';
 import '../srs/srs_scheduler.dart';
 import '../stats/achievements.dart';
@@ -25,6 +27,7 @@ class StatsScreen extends StatefulWidget {
     this.levels = const [1, 2, 3, 4, 5, 6],
     this.loadWords = loadWordsForLevel,
     this.now,
+    this.locale = AppLocale.japanese,
   });
 
   final ProgressStore store;
@@ -34,6 +37,7 @@ class StatsScreen extends StatefulWidget {
   final List<int> levels;
   final Future<List<Word>> Function(int level) loadWords;
   final DateTime Function()? now;
+  final AppLocale locale;
 
   @override
   State<StatsScreen> createState() => _StatsScreenState();
@@ -210,15 +214,16 @@ class _StatsScreenState extends State<StatsScreen> {
     } catch (_) {
       if (!context.mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('エクスポートに失敗しました')),
+        SnackBar(content: Text(tr(widget.locale, 'stats.exportError'))),
       );
       return;
     }
     if (!context.mounted) return;
+    final locale = widget.locale;
     await showDialog<void>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('データをエクスポート'),
+        title: Text(tr(locale, 'stats.exportTitle')),
         content: SizedBox(
           width: double.maxFinite,
           child: SingleChildScrollView(child: Text(json)),
@@ -229,11 +234,11 @@ class _StatsScreenState extends State<StatsScreen> {
               await Clipboard.setData(ClipboardData(text: json));
               if (context.mounted) Navigator.of(context).pop();
             },
-            child: const Text('コピー'),
+            child: Text(tr(locale, 'stats.copy')),
           ),
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('閉じる'),
+            child: Text(tr(locale, 'stats.close')),
           ),
         ],
       ),
@@ -245,7 +250,7 @@ class _StatsScreenState extends State<StatsScreen> {
     if (stats == null) return;
     final json = await showDialog<String>(
       context: context,
-      builder: (context) => const _ImportDialog(),
+      builder: (context) => _ImportDialog(locale: widget.locale),
     );
     if (json == null || json.trim().isEmpty) return;
     TransferSummary? summary;
@@ -264,11 +269,12 @@ class _StatsScreenState extends State<StatsScreen> {
       if (!context.mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         summary == null
-            ? const SnackBar(content: Text('無効なバックアップデータです'))
+            ? SnackBar(content: Text(tr(widget.locale, 'stats.importError')))
             : SnackBar(
-                content: Text(
-                  '取り込み完了: 学習日${summary.days}・セッション${summary.sessions}',
-                ),
+                content: Text(trParams(widget.locale, 'stats.importDone', {
+                  'd': summary.days,
+                  's': summary.sessions,
+                })),
               ),
       );
     });
@@ -283,6 +289,7 @@ class _StatsScreenState extends State<StatsScreen> {
           bookmarks: widget.bookmarks,
           levels: widget.levels,
           loadWords: widget.loadWords,
+          locale: widget.locale,
           now: widget.now,
         ),
       ),
@@ -297,14 +304,14 @@ class _StatsScreenState extends State<StatsScreen> {
     } catch (_) {
       if (!context.mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('単語の読み込みに失敗しました')),
+        SnackBar(content: Text(tr(widget.locale, 'stats.wordsLoadError'))),
       );
       return;
     }
     if (words.length < 4) {
       if (!context.mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('クイズには4語以上必要です')),
+        SnackBar(content: Text(tr(widget.locale, 'stats.needWords'))),
       );
       return;
     }
@@ -340,13 +347,14 @@ class _StatsScreenState extends State<StatsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final locale = widget.locale;
     return Scaffold(
-      appBar: AppBar(title: const Text('学習統計')),
+      appBar: AppBar(title: Text(tr(locale, 'stats.title'))),
       body: FutureBuilder<_StatsData>(
         future: _future,
         builder: (context, snapshot) {
           if (snapshot.hasError) {
-            return const Center(child: Text('読み込みに失敗しました'));
+            return Center(child: Text(tr(locale, 'stats.loadError')));
           }
           if (!snapshot.hasData) {
             return const Center(child: CircularProgressIndicator());
@@ -361,14 +369,17 @@ class _StatsScreenState extends State<StatsScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('連続学習: ${data.streak}日',
+                Text(trParams(locale, 'stats.streak', {'n': data.streak}),
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
-                Text('学習済み: $totalLearned / $totalWords 語'),
+                Text(trParams(locale, 'stats.total', {
+                  'a': totalLearned,
+                  'b': totalWords,
+                })),
                 const SizedBox(height: 16),
-                const Text('週間レポート',
-                    style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(tr(locale, 'stats.weekly'),
+                    style: const TextStyle(fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -387,8 +398,9 @@ class _StatsScreenState extends State<StatsScreen> {
                               borderRadius: BorderRadius.circular(18),
                             ),
                             child: Text(
-                              last7WeekdayLabels(widget.now?.call() ??
-                                  DateTime.now())[i],
+                              last7WeekdayLabels(
+                                  widget.now?.call() ?? DateTime.now(),
+                                  locale)[i],
                               style: TextStyle(
                                 color: data.week[i]
                                     ? Colors.white
@@ -401,11 +413,12 @@ class _StatsScreenState extends State<StatsScreen> {
                       ),
                   ],
                 ),
-                Text(
-                    '今週: ${data.week.where((d) => d).length} / 7 日学習'),
+                Text(trParams(locale, 'stats.weekCount', {
+                  'n': data.week.where((d) => d).length,
+                })),
                 const SizedBox(height: 16),
-                const Text('月間レポート',
-                    style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(tr(locale, 'stats.monthly'),
+                    style: const TextStyle(fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
                 if (data.month.isNotEmpty) ...[
                   Row(
@@ -427,15 +440,16 @@ class _StatsScreenState extends State<StatsScreen> {
                     ],
                   ),
                   const SizedBox(height: 4),
-                  Text(
-                      '30日: ${data.month.where((d) => d).length} / 30 日学習'),
+                  Text(trParams(locale, 'stats.monthCount', {
+                    'n': data.month.where((d) => d).length,
+                  })),
                   const SizedBox(height: 16),
                 ],
-                const Text('正答率の推移',
-                    style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(tr(locale, 'stats.trend'),
+                    style: const TextStyle(fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
                 if (data.sessions.length < 2)
-                  const Text('セッション記録はまだありません')
+                  Text(tr(locale, 'stats.noSessions'))
                 else ...[
                   SizedBox(
                     height: 80,
@@ -447,14 +461,14 @@ class _StatsScreenState extends State<StatsScreen> {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text(
-                    '直近${data.sessions.length}回平均: '
-                    '${(_averageRate(data.sessions) * 100).round()}%',
-                  ),
+                  Text(trParams(locale, 'stats.recentAvg', {
+                    'n': data.sessions.length,
+                    'p': (_averageRate(data.sessions) * 100).round(),
+                  })),
                   const SizedBox(height: 16),
                 ],
-                const Text('実績バッジ',
-                    style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(tr(locale, 'stats.badges'),
+                    style: const TextStyle(fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
                 GridView.count(
                   crossAxisCount: 3,
@@ -483,7 +497,7 @@ class _StatsScreenState extends State<StatsScreen> {
                             ),
                             const SizedBox(height: 4),
                             Text(
-                              def.title,
+                              def.titleFor(locale),
                               style: const TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.bold,
@@ -496,8 +510,8 @@ class _StatsScreenState extends State<StatsScreen> {
                   ],
                 ),
                 const SizedBox(height: 16),
-                const Text('レベル別進捗',
-                    style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(tr(locale, 'stats.levels'),
+                    style: const TextStyle(fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
                 for (final level in widget.levels)
                   Padding(
@@ -508,13 +522,16 @@ class _StatsScreenState extends State<StatsScreen> {
                         Row(
                           children: [
                             Expanded(
-                              child: Text(
-                                  'TOPIK $level級: ${data.learnedByLevel[level] ?? 0} / ${data.totalByLevel[level] ?? 0}'),
+                              child: Text(trParams(locale, 'stats.levelRow', {
+                                'l': level,
+                                'a': data.learnedByLevel[level] ?? 0,
+                                'b': data.totalByLevel[level] ?? 0,
+                              })),
                             ),
                             TextButton(
                               onPressed: () => _startLevelReview(
                                   context, level, data.weak),
-                              child: const Text('復習'),
+                              child: Text(tr(locale, 'stats.review')),
                             ),
                           ],
                         ),
@@ -532,35 +549,39 @@ class _StatsScreenState extends State<StatsScreen> {
                 const SizedBox(height: 16),
                 Row(
                   children: [
-                    const Text('苦手トップ5',
-                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    Text(tr(locale, 'stats.weak'),
+                        style:
+                            const TextStyle(fontWeight: FontWeight.bold)),
                     const Spacer(),
                     TextButton(
                       onPressed: () => _openReview(context),
-                      child: const Text('間違いノート'),
+                      child: Text(tr(locale, 'stats.notebook')),
                     ),
                   ],
                 ),
                 const SizedBox(height: 8),
                 if (data.weak.isEmpty)
-                  const Text('苦手データはまだありません')
+                  Text(tr(locale, 'stats.noWeak'))
                 else
                   for (final w in data.weak)
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 2),
-                      child: Text(
-                          '${w.key}（ミス ${w.errors}/${w.attempts}）'),
+                      child: Text(trParams(locale, 'stats.weakRow', {
+                        'key': w.key,
+                        'e': w.errors,
+                        'a': w.attempts,
+                      })),
                     ),
                 const SizedBox(height: 16),
-                const Text('データ管理',
-                    style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(tr(locale, 'stats.dataTitle'),
+                    style: const TextStyle(fontWeight: FontWeight.bold)),
                 const SizedBox(height: 8),
                 Row(
                   children: [
                     Expanded(
                       child: OutlinedButton.icon(
                         icon: const Icon(Icons.upload, size: 18),
-                        label: const Text('エクスポート'),
+                        label: Text(tr(locale, 'stats.export')),
                         onPressed: () => _exportData(context),
                       ),
                     ),
@@ -568,7 +589,7 @@ class _StatsScreenState extends State<StatsScreen> {
                     Expanded(
                       child: OutlinedButton.icon(
                         icon: const Icon(Icons.download, size: 18),
-                        label: const Text('インポート'),
+                        label: Text(tr(locale, 'stats.import')),
                         onPressed: () => _importData(context),
                       ),
                     ),
@@ -585,7 +606,9 @@ class _StatsScreenState extends State<StatsScreen> {
 
 /// Import dialog owning its TextEditingController lifecycle.
 class _ImportDialog extends StatefulWidget {
-  const _ImportDialog();
+  const _ImportDialog({required this.locale});
+
+  final AppLocale locale;
 
   @override
   State<_ImportDialog> createState() => _ImportDialogState();
@@ -602,24 +625,25 @@ class _ImportDialogState extends State<_ImportDialog> {
 
   @override
   Widget build(BuildContext context) {
+    final locale = widget.locale;
     return AlertDialog(
-      title: const Text('データをインポート'),
+      title: Text(tr(locale, 'stats.importTitle')),
       content: TextField(
         controller: _controller,
         maxLines: 6,
-        decoration: const InputDecoration(
-          hintText: 'バックアップJSONを貼り付け',
-          border: OutlineInputBorder(),
+        decoration: InputDecoration(
+          hintText: tr(locale, 'stats.importHint'),
+          border: const OutlineInputBorder(),
         ),
       ),
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: const Text('キャンセル'),
+          child: Text(tr(locale, 'stats.cancel')),
         ),
         TextButton(
           onPressed: () => Navigator.of(context).pop(_controller.text),
-          child: const Text('取り込む'),
+          child: Text(tr(locale, 'stats.doImport')),
         ),
       ],
     );

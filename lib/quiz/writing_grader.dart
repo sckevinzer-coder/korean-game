@@ -1,3 +1,6 @@
+import '../i18n/app_locale.dart';
+import '../i18n/app_strings.dart';
+
 enum WritingErrorType {
   correct,
   wrongParticle,
@@ -106,14 +109,16 @@ class WritingGrader {
   /// (e.g. 먹어요 vs 먹다) by comparing stems. Stem differences are still
   /// rejected.
   static WritingAnalysisResult analyze(String input, String answer,
-      {bool ignoreParticles = true, bool lenient = false}) {
+      {bool ignoreParticles = true,
+      bool lenient = false,
+      AppLocale locale = AppLocale.japanese}) {
     if (input.trim().isEmpty) {
       return WritingAnalysisResult(
         isCorrect: false,
         errorType: WritingErrorType.missingCharacter,
         userInput: input,
         correctAnswer: answer,
-        feedback: '入力が空です',
+        feedback: tr(locale, 'grade.empty'),
         characterAnalysis: [],
         similarityScore: 0.0,
       );
@@ -125,7 +130,7 @@ class WritingGrader {
         errorType: WritingErrorType.correct,
         userInput: input,
         correctAnswer: answer,
-        feedback: '正解です！',
+        feedback: tr(locale, 'grade.correct'),
         characterAnalysis: _analyzeCharacters(input, answer),
         similarityScore: 1.0,
       );
@@ -140,7 +145,7 @@ class WritingGrader {
         errorType: WritingErrorType.correct,
         userInput: input,
         correctAnswer: answer,
-        feedback: '正解です！',
+        feedback: tr(locale, 'grade.correct'),
         characterAnalysis: _analyzeCharacters(input, answer),
         similarityScore: 1.0,
       );
@@ -150,7 +155,8 @@ class WritingGrader {
     final charAnalysis = _analyzeCharacters(input, answer);
     final errorType = _determineErrorType(charAnalysis, input, answer, ignoreParticles);
     final similarity = _calculateSimilarity(input, answer);
-    final feedback = _generateFeedback(errorType, charAnalysis, input, answer);
+    final feedback =
+        _generateFeedback(errorType, charAnalysis, input, answer, locale);
 
     return WritingAnalysisResult(
       isCorrect: false,
@@ -319,24 +325,28 @@ class WritingGrader {
     return matches / maxLen;
   }
 
-  static String _generateFeedback(WritingErrorType errorType, List<CharacterAnalysis> analysis, String input, String answer) {
+  static String _generateFeedback(WritingErrorType errorType,
+      List<CharacterAnalysis> analysis, String input, String answer, AppLocale locale) {
     switch (errorType) {
       case WritingErrorType.wrongParticle:
-        return '助詞が違います。正しくは「${_getCorrectParticles(answer)}」です';
+        return trParams(locale, 'grade.particle',
+            {'p': _getCorrectParticles(answer)});
       case WritingErrorType.wrongVowel:
-        return '母音が違います。正しい母音を確認してください';
+        return tr(locale, 'grade.vowel');
       case WritingErrorType.wrongConsonant:
-        return '子音が違います。正しい子音を確認してください';
+        return tr(locale, 'grade.consonant');
       case WritingErrorType.missingCharacter:
-        return '文字が不足しています。${answer.length - input.length}文字足りません';
+        return trParams(locale, 'grade.missing',
+            {'n': answer.length - input.length});
       case WritingErrorType.extraCharacter:
-        return '文字が余分です。${input.length - answer.length}文字多いです';
+        return trParams(locale, 'grade.extra',
+            {'n': input.length - answer.length});
       case WritingErrorType.wrongWord:
-        return '単語が違います。正しくは「$answer」です';
+        return trParams(locale, 'grade.word', {'a': answer});
       case WritingErrorType.typo:
-        return '入力ミスがあります。正しくは「$answer」です';
+        return trParams(locale, 'grade.typo', {'a': answer});
       default:
-        return '正解は「$answer」です';
+        return trParams(locale, 'grade.other', {'a': answer});
     }
   }
 
@@ -367,8 +377,10 @@ class WritingGrader {
     return (result.similarityScore * 0.5).clamp(0.0, 0.45);
   }
 
-  static String similarityLabel(double similarity) =>
-      '類似度 ${(similarity * 100).round()}%';
+  static String similarityLabel(double similarity,
+          [AppLocale locale = AppLocale.japanese]) =>
+      trParams(locale, 'grade.similarity',
+          {'p': (similarity * 100).round()});
 
   static String _normalize(String s, bool ignoreParticles) {
     var result = s.replaceAll(RegExp(r'\s+'), '');
@@ -421,7 +433,11 @@ class WritingGrader {
 /// Backward compatibility
 /// Backward compatibility - simple boolean grade
 bool gradeWriting(String input, String answer,
-    {bool ignoreParticles = true, bool lenient = false}) {
+    {bool ignoreParticles = true,
+    bool lenient = false,
+    AppLocale locale = AppLocale.japanese}) {
   return WritingGrader.analyze(input, answer,
-      ignoreParticles: ignoreParticles, lenient: lenient).isCorrect;
+      ignoreParticles: ignoreParticles,
+      lenient: lenient,
+      locale: locale).isCorrect;
 }

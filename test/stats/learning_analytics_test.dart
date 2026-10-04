@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:korean_game/i18n/app_locale.dart';
 import 'package:korean_game/quiz/quiz_generator.dart';
 import 'package:korean_game/stats/learning_analytics.dart';
 
@@ -42,6 +43,17 @@ void main() {
     expect(
       last7WeekdayLabels(DateTime(2026, 10, 4)),
       ['月', '火', '水', '木', '金', '土', '日'],
+    );
+  });
+
+  test('last7WeekdayLabels localizes weekday names', () {
+    expect(
+      last7WeekdayLabels(DateTime(2026, 10, 4), AppLocale.korean),
+      ['월', '화', '수', '목', '금', '토', '일'],
+    );
+    expect(
+      last7WeekdayLabels(DateTime(2026, 10, 4), AppLocale.english),
+      ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
     );
   });
 }

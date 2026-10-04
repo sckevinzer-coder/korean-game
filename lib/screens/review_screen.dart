@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../data/word_repository.dart';
+import '../i18n/app_locale.dart';
+import '../i18n/app_strings.dart';
 import '../models/word.dart';
 import '../quiz/quiz_generator.dart';
 import '../stats/bookmark_store.dart';
@@ -26,6 +28,7 @@ class ReviewScreen extends StatefulWidget {
     this.loadWords = loadWordsForLevel,
     this.levels = const [1, 2, 3, 4, 5, 6],
     this.now,
+    this.locale = AppLocale.japanese,
   });
 
   final ErrorStatsStore errors;
@@ -34,6 +37,7 @@ class ReviewScreen extends StatefulWidget {
   final Future<List<Word>> Function(int level) loadWords;
   final List<int> levels;
   final DateTime Function()? now;
+  final AppLocale locale;
 
   @override
   State<ReviewScreen> createState() => _ReviewScreenState();
@@ -53,12 +57,12 @@ class _ReviewScreenState extends State<ReviewScreen> {
     return sep < 0 ? key : key.substring(sep + 1);
   }
 
-  static String? _kindLabelOf(String key) {
+  static String? _kindLabelOf(String key, AppLocale locale) {
     final sep = key.indexOf(':');
     if (sep < 0) return null;
     final kind = QuizKind.values.asNameMap()[key.substring(0, sep)];
     if (kind == null) return null;
-    return kindLabel(kind);
+    return kindLabel(kind, locale);
   }
 
   Future<List<ReviewEntry>> _load() async {
@@ -100,7 +104,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
     final words = [for (final e in entries) e.word];
     if (words.length < 4) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('クイズには4語以上必要です')),
+        SnackBar(content: Text(tr(widget.locale, 'review.needWords'))),
       );
       return;
     }
@@ -111,6 +115,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
           stats: widget.stats,
           errors: widget.errors,
           bookmarks: widget.bookmarks,
+          locale: widget.locale,
           now: widget.now,
         ),
       ),
@@ -119,20 +124,21 @@ class _ReviewScreenState extends State<ReviewScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final locale = widget.locale;
     return Scaffold(
-      appBar: AppBar(title: const Text('間違いノート')),
+      appBar: AppBar(title: Text(tr(locale, 'review.title'))),
       body: FutureBuilder<List<ReviewEntry>>(
         future: _future,
         builder: (context, snapshot) {
           if (snapshot.hasError) {
-            return const Center(child: Text('読み込みに失敗しました'));
+            return Center(child: Text(tr(locale, 'review.loadError')));
           }
           if (!snapshot.hasData) {
             return const Center(child: CircularProgressIndicator());
           }
           final entries = snapshot.data!;
           if (entries.isEmpty) {
-            return const Center(child: Text('間違い記録はまだありません'));
+            return Center(child: Text(tr(locale, 'review.empty')));
           }
           return Column(
             children: [
@@ -140,11 +146,12 @@ class _ReviewScreenState extends State<ReviewScreen> {
                 padding: const EdgeInsets.all(16),
                 child: Row(
                   children: [
-                    Text('記録: ${entries.length}語'),
+                    Text(trParams(locale, 'review.count',
+                        {'n': entries.length})),
                     const Spacer(),
                     ElevatedButton.icon(
                       icon: const Icon(Icons.quiz, size: 18),
-                      label: const Text('復習クイズ'),
+                      label: Text(tr(locale, 'review.quiz')),
                       onPressed: () => _startReviewQuiz(entries),
                     ),
                   ],
@@ -155,7 +162,8 @@ class _ReviewScreenState extends State<ReviewScreen> {
                   itemCount: entries.length,
                   itemBuilder: (context, i) {
                     final entry = entries[i];
-                    final kindLabel = _kindLabelOf(entry.weak.key);
+                    final kindLabel =
+                        _kindLabelOf(entry.weak.key, widget.locale);
                     final rate =
                         (entry.weak.errorRate * 100).round();
                     return Card(
@@ -178,7 +186,10 @@ class _ReviewScreenState extends State<ReviewScreen> {
                                   ),
                                 ),
                                 Text(
-                                  'ミス ${entry.weak.errors}/${entry.weak.attempts}',
+                                  trParams(locale, 'review.miss', {
+                                    'e': entry.weak.errors,
+                                    'a': entry.weak.attempts,
+                                  }),
                                   style: TextStyle(
                                     color: Colors.red[700],
                                     fontWeight: FontWeight.bold,
@@ -196,7 +207,8 @@ class _ReviewScreenState extends State<ReviewScreen> {
                             Text(
                               [
                                 ?kindLabel,
-                                '正答率 ${100 - rate}%',
+                                trParams(locale, 'review.accuracy',
+                                    {'p': 100 - rate}),
                               ].join(' · '),
                               style: TextStyle(
                                 fontSize: 12,

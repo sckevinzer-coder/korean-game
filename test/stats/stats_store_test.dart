@@ -199,6 +199,13 @@ void main() {
     expect(await store.getDailyGoal(), 30);
   });
 
+  test('locale code defaults to ja and persists', () async {
+    expect(await store.getLocaleCode(), 'ja');
+
+    await store.setLocaleCode('ko');
+    expect(await store.getLocaleCode(), 'ko');
+  });
+
   test('lenient grading defaults to false and persists', () async {
     expect(await store.getLenientGrading(), isFalse);
 

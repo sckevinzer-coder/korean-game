@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:vibration/vibration.dart';
 
 import '../db/progress_store.dart';
+import '../i18n/app_locale.dart';
+import '../i18n/app_strings.dart';
 import '../models/word.dart';
 import '../srs/srs_scheduler.dart';
 import '../stats/bookmark_store.dart';
@@ -24,6 +26,7 @@ class FlashcardScreen extends StatefulWidget {
     this.now,
     this.scheduleFn = schedule,
     this.level = 1,
+    this.locale = AppLocale.japanese,
   });
 
   final ProgressStore store;
@@ -34,6 +37,7 @@ class FlashcardScreen extends StatefulWidget {
   final DateTime Function()? now;
   final ScheduleFn scheduleFn;
   final int level;
+  final AppLocale locale;
 
   @override
   State<FlashcardScreen> createState() => _FlashcardScreenState();
@@ -199,7 +203,8 @@ class _FlashcardScreenState extends State<FlashcardScreen>
       onKeyEvent: _handleKeyEvent,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('学習 - TOPIK ${widget.level}級'),
+          title: Text(trParams(widget.locale, 'card.title',
+              {'n': widget.level})),
           actions: [
             if (widget.bookmarks != null &&
                 _index < widget.words.length)
@@ -212,7 +217,7 @@ class _FlashcardScreenState extends State<FlashcardScreen>
                     icon: Icon(saved
                         ? Icons.bookmark
                         : Icons.bookmark_outline),
-                    tooltip: 'ブックマーク',
+                    tooltip: tr(widget.locale, 'card.bookmarkTooltip'),
                     onPressed: () => _toggleBookmark(saved),
                   );
                 },
@@ -220,7 +225,7 @@ class _FlashcardScreenState extends State<FlashcardScreen>
             IconButton(
               icon: const Icon(Icons.volume_up),
               onPressed: _speakWord,
-              tooltip: '発音を聞く',
+              tooltip: tr(widget.locale, 'card.ttsTooltip'),
             ),
             const SizedBox(width: 8),
           ],
@@ -232,7 +237,7 @@ class _FlashcardScreenState extends State<FlashcardScreen>
 
   Widget _buildBody() {
     if (widget.words.isEmpty) {
-      return const Text('学習する単語がありません');
+      return Text(tr(widget.locale, 'card.empty'));
     }
     if (_index >= widget.words.length) {
       return _buildCompletionScreen();
@@ -318,7 +323,8 @@ class _FlashcardScreenState extends State<FlashcardScreen>
                     Icon(Icons.local_fire_department, size: 14, color: Colors.orange[700]),
                     const SizedBox(width: 4),
                     Text(
-                      '連鎖 $_currentStreak',
+                      trParams(widget.locale, 'card.chain',
+                          {'n': _currentStreak}),
                       style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
@@ -336,7 +342,10 @@ class _FlashcardScreenState extends State<FlashcardScreen>
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
-                '正 $_sessionCorrect / 誤 $_sessionIncorrect',
+                trParams(widget.locale, 'card.tally', {
+                  'c': _sessionCorrect,
+                  'i': _sessionIncorrect,
+                }),
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w500,
@@ -403,10 +412,10 @@ class _FlashcardScreenState extends State<FlashcardScreen>
                   color: Colors.blue[50],
                   borderRadius: BorderRadius.circular(24),
                 ),
-                child: const Text(
-                  'タップして意味を見る',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-                ),
+              child: Text(
+                tr(widget.locale, 'card.tapToReveal'),
+                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              ),
               ),
             ],
           ),
@@ -459,9 +468,9 @@ class _FlashcardScreenState extends State<FlashcardScreen>
         color: Colors.blue[50],
         borderRadius: BorderRadius.circular(24),
       ),
-      child: const Text(
-        'タップ または スペースキー で意味を表示',
-        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+      child: Text(
+        tr(widget.locale, 'card.tapOrSpace'),
+        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
       ),
     );
   }
@@ -472,10 +481,14 @@ class _FlashcardScreenState extends State<FlashcardScreen>
       runSpacing: 8,
       alignment: WrapAlignment.center,
       children: [
-        _buildGradeButton('もう一度 (1)', Grade.again, Colors.red, Icons.refresh),
-        _buildGradeButton('難しい (2)', Grade.hard, Colors.orange, Icons.sentiment_dissatisfied),
-        _buildGradeButton('普通 (3)', Grade.good, Colors.blue, Icons.sentiment_neutral),
-        _buildGradeButton('簡単 (4)', Grade.easy, Colors.green, Icons.sentiment_satisfied),
+        _buildGradeButton(
+            tr(widget.locale, 'card.again'), Grade.again, Colors.red, Icons.refresh),
+        _buildGradeButton(
+            tr(widget.locale, 'card.hard'), Grade.hard, Colors.orange, Icons.sentiment_dissatisfied),
+        _buildGradeButton(
+            tr(widget.locale, 'card.good'), Grade.good, Colors.blue, Icons.sentiment_neutral),
+        _buildGradeButton(
+            tr(widget.locale, 'card.easy'), Grade.easy, Colors.green, Icons.sentiment_satisfied),
       ],
     );
   }
@@ -506,7 +519,7 @@ class _FlashcardScreenState extends State<FlashcardScreen>
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '例文',
+            tr(widget.locale, 'card.example'),
             style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey[700]),
           ),
           const SizedBox(height: 8),
@@ -526,22 +539,22 @@ class _FlashcardScreenState extends State<FlashcardScreen>
     switch (_lastGrade!) {
       case Grade.again:
         color = Colors.red;
-        text = 'もう一度練習しましょう';
+        text = tr(widget.locale, 'card.fbAgain');
         icon = Icons.refresh;
         break;
       case Grade.hard:
         color = Colors.orange;
-        text = '難しかったですね、復習が早まります';
+        text = tr(widget.locale, 'card.fbHard');
         icon = Icons.trending_up;
         break;
       case Grade.good:
         color = Colors.blue;
-        text = 'よくできました！';
+        text = tr(widget.locale, 'card.fbGood');
         icon = Icons.check_circle;
         break;
       case Grade.easy:
         color = Colors.green;
-        text = '簡単でしたね、次はもっと遅く出ます';
+        text = tr(widget.locale, 'card.fbEasy');
         icon = Icons.bolt;
         break;
     }
@@ -570,20 +583,21 @@ class _FlashcardScreenState extends State<FlashcardScreen>
     String message;
     Color messageColor;
     IconData messageIcon;
+    final locale = widget.locale;
     if (percent >= 90) {
-      message = '完璧です！素晴らしい記憶力ですね';
+      message = tr(locale, 'card.msg90');
       messageColor = Colors.green[700]!;
       messageIcon = Icons.emoji_events;
     } else if (percent >= 70) {
-      message = 'よくできました！この調子で続けましょう';
+      message = tr(locale, 'card.msg70');
       messageColor = Colors.blue[700]!;
       messageIcon = Icons.thumb_up;
     } else if (percent >= 50) {
-      message = 'まずまずです。復習で定着させましょう';
+      message = tr(locale, 'card.msg50');
       messageColor = Colors.orange[700]!;
       messageIcon = Icons.trending_up;
     } else {
-      message = '次はもっと良くなりますよ！';
+      message = tr(locale, 'card.msgLow');
       messageColor = Colors.grey[700]!;
       messageIcon = Icons.favorite;
     }
@@ -594,17 +608,21 @@ class _FlashcardScreenState extends State<FlashcardScreen>
         Icon(messageIcon, size: 64, color: messageColor),
         const SizedBox(height: 16),
         Text(
-          '学習完了！',
+          tr(locale, 'card.done'),
           style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: messageColor),
         ),
         const SizedBox(height: 8),
         Text(
-          '$_sessionCorrect / $total 正解 ($percent%)',
+          trParams(locale, 'card.score', {
+            'c': _sessionCorrect,
+            't': total,
+            'p': percent,
+          }),
           style: const TextStyle(fontSize: 20),
         ),
         const SizedBox(height: 8),
         Text(
-          '最大連鎖: $_maxStreak',
+          trParams(locale, 'card.best', {'n': _maxStreak}),
           style: TextStyle(fontSize: 16, color: Colors.orange[700], fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
@@ -617,7 +635,7 @@ class _FlashcardScreenState extends State<FlashcardScreen>
           children: [
             ElevatedButton.icon(
               icon: const Icon(Icons.replay),
-              label: const Text('もう一度'),
+              label: Text(tr(locale, 'card.retry')),
               onPressed: () {
                 setState(() {
                   _index = 0;
@@ -632,7 +650,7 @@ class _FlashcardScreenState extends State<FlashcardScreen>
             ),
             ElevatedButton.icon(
               icon: const Icon(Icons.arrow_back),
-              label: const Text('レベル選択に戻る'),
+              label: Text(tr(locale, 'card.backToLevels')),
               onPressed: () => Navigator.of(context).pop(),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.grey[200],

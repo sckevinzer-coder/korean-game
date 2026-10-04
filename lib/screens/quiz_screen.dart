@@ -8,6 +8,8 @@ import '../models/word.dart';
 import '../quiz/adaptive_selector.dart';
 import '../quiz/quiz_generator.dart';
 import '../quiz/writing_grader.dart';
+import '../i18n/app_locale.dart';
+import '../i18n/app_strings.dart';
 import '../stats/achievements.dart';
 import '../stats/bookmark_store.dart';
 import '../stats/error_stats.dart';
@@ -33,6 +35,7 @@ class QuizScreen extends StatefulWidget {
     this.weakRates,
     this.timeAttack = false,
     this.lenientGrading = false,
+    this.locale = AppLocale.japanese,
   });
 
   final List<Word> words;
@@ -48,6 +51,7 @@ class QuizScreen extends StatefulWidget {
   final Map<String, double>? weakRates;
   final bool timeAttack;
   final bool lenientGrading;
+  final AppLocale locale;
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
@@ -199,7 +203,8 @@ class _QuizScreenState extends State<QuizScreen> {
           weakRates: weakForOptions,
         );
         q = QuizQuestion(
-          prompt: '쓰기: ${q.prompt}の韓国語を書きなさい',
+          prompt: trParams(widget.locale, 'quiz.writingPrompt',
+              {'m': q.prompt}),
           options: [q.correctAnswer],
           correctIndex: 0,
           kind: QuizKind.writing,
@@ -303,9 +308,9 @@ class _QuizScreenState extends State<QuizScreen> {
     });
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('時間切れ！'),
-          duration: Duration(seconds: 2),
+        SnackBar(
+          content: Text(tr(widget.locale, 'quiz.timeout')),
+          duration: const Duration(seconds: 2),
         ),
       );
     }
@@ -426,19 +431,20 @@ class _QuizScreenState extends State<QuizScreen> {
     await showDialog<void>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('実績解除！'),
+        title: Text(tr(widget.locale, 'quiz.achTitle')),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             for (final id in fresh)
-              Text('🏅 ${defs[id]?.title ?? id}'),
+              Text(
+                  '🏅 ${defs[id]?.titleFor(widget.locale) ?? id}'),
           ],
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('閉じる'),
+            child: Text(tr(widget.locale, 'quiz.close')),
           ),
         ],
       ),
@@ -459,6 +465,7 @@ class _QuizScreenState extends State<QuizScreen> {
       _writingInput!,
       question.correctAnswer,
       lenient: _lenientGrading,
+      locale: widget.locale,
     );
     final bonus = WritingGrader.bonusFor(analysis);
     final bucket =
@@ -508,13 +515,16 @@ class _QuizScreenState extends State<QuizScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('形式別正解率', style: TextStyle(fontWeight: FontWeight.bold)),
+          Text(tr(widget.locale, 'quiz.byKind'),
+              style: const TextStyle(fontWeight: FontWeight.bold)),
           const SizedBox(height: 4),
           for (final k in analysis.byKind)
-            Text('${kindLabel(k.kind)}: ${k.correct}/${k.total}'),
+            Text(
+                '${kindLabel(k.kind, widget.locale)}: ${k.correct}/${k.total}'),
           if (analysis.suggestions.isNotEmpty) ...[
             const SizedBox(height: 8),
-            for (final s in analysis.suggestions.take(2)) Text('・$s'),
+            for (final s in analysis.suggestions.take(2))
+              Text('${tr(widget.locale, 'quiz.bullet')}$s'),
           ],
         ],
       ),
@@ -529,7 +539,7 @@ class _QuizScreenState extends State<QuizScreen> {
       builder: (context, snapshot) {
         final items = snapshot.data ?? const <WeakItem>[];
         if (items.isEmpty) {
-          return const Text('苦手データはまだありません');
+          return Text(tr(widget.locale, 'quiz.noWeak'));
         }
         return Container(
           padding: const EdgeInsets.all(12),
@@ -540,10 +550,14 @@ class _QuizScreenState extends State<QuizScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('復習おすすめ', style: TextStyle(fontWeight: FontWeight.bold)),
+              Text(tr(widget.locale, 'quiz.reviewTitle'),
+                  style: const TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 4),
               for (final w in items)
-                Text('${w.key}（正答率 ${((1 - w.errorRate) * 100).round()}%）'),
+                Text(trParams(widget.locale, 'quiz.weakRow', {
+                  'key': w.key,
+                  'p': ((1 - w.errorRate) * 100).round(),
+                })),
             ],
           ),
         );
@@ -565,7 +579,12 @@ class _QuizScreenState extends State<QuizScreen> {
     final first = answer.isEmpty ? '' : answer[0];
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('ヒント ${_hintsUsed + 1}/$_maxHints: 最初「$first」・${answer.length}文字'),
+        content: Text(trParams(widget.locale, 'quiz.hintContent', {
+          'n': _hintsUsed + 1,
+          'm': _maxHints,
+          'f': first,
+          'len': answer.length,
+        })),
         duration: const Duration(seconds: 3),
       ),
     );
@@ -576,16 +595,19 @@ class _QuizScreenState extends State<QuizScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('クイズ'),
+        title: Text(tr(widget.locale, 'quiz.title')),
         actions: [
           if (_showWritingHintButton)
             IconButton(
               icon: const Icon(Icons.lightbulb_outline),
-              tooltip: 'ヒント ($_hintsUsed/$_maxHints)',
+              tooltip: trParams(widget.locale, 'quiz.hintUsed', {
+                'used': _hintsUsed,
+                'max': _maxHints,
+              }),
               onPressed: _useWritingHint,
             ),
           PopupMenuButton<String>(
-            tooltip: '出題設定',
+            tooltip: tr(widget.locale, 'quiz.settings'),
             onOpened: () {
               _loadLenientGrading();
             },
@@ -596,9 +618,8 @@ class _QuizScreenState extends State<QuizScreen> {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text(
-                        _confusableFirst ? 'まぎらわしい選択肢を優先します' : 'ランダム出題に戻しました',
-                      ),
+                      content: Text(tr(widget.locale,
+                          _confusableFirst ? 'quiz.confusableOn' : 'quiz.confusableOff')),
                       duration: const Duration(seconds: 2),
                     ),
                   );
@@ -609,9 +630,8 @@ class _QuizScreenState extends State<QuizScreen> {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text(
-                        _timeAttack ? 'タイムアタック開始（10秒）' : '通常モードに戻しました',
-                      ),
+                      content: Text(tr(widget.locale,
+                          _timeAttack ? 'quiz.timeattackOn' : 'quiz.timeattackOff')),
                       duration: const Duration(seconds: 2),
                     ),
                   );
@@ -625,9 +645,8 @@ class _QuizScreenState extends State<QuizScreen> {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text(
-                        _lenientGrading ? 'やさしい採点: ON' : 'やさしい採点: OFF',
-                      ),
+                      content: Text(tr(widget.locale,
+                          _lenientGrading ? 'quiz.lenientOn' : 'quiz.lenientOff')),
                       duration: const Duration(seconds: 2),
                     ),
                   );
@@ -638,17 +657,17 @@ class _QuizScreenState extends State<QuizScreen> {
               CheckedPopupMenuItem(
                 value: 'confusable',
                 checked: _confusableFirst,
-                child: const Text('まぎらわしい選択肢を優先'),
+                child: Text(tr(widget.locale, 'quiz.confusable')),
               ),
               CheckedPopupMenuItem(
                 value: 'timeattack',
                 checked: _timeAttack,
-                child: const Text('タイムアタック（10秒）'),
+                child: Text(tr(widget.locale, 'quiz.timeattack')),
               ),
               CheckedPopupMenuItem(
                 value: 'lenient',
                 checked: _lenientGrading,
-                child: const Text('やさしい採点（語尾OK）'),
+                child: Text(tr(widget.locale, 'quiz.lenient')),
               ),
             ],
           ),
@@ -659,28 +678,37 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   Widget _buildBody() {
+    final locale = widget.locale;
     if (widget.words.isEmpty || _questions.isEmpty) {
-      return const Text('クイズにする単語がありません');
+      return Text(tr(locale, 'quiz.empty'));
     }
     if (_index >= _questions.length) {
       final analysis = analyzeSession(
         questions: _questions,
         correct: _results,
+        locale: locale,
       );
       return SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('クイズ完了！'),
-            Text('$_score / ${_questions.length} 正解'),
+            Text(tr(locale, 'quiz.done')),
+            Text(trParams(locale, 'quiz.result', {
+              's': _score,
+              't': _questions.length,
+            })),
             if (_timeAttack && _answerDurations.isNotEmpty)
               Text(
-                '平均回答時間: ${_averageDuration.toStringAsFixed(1)}秒',
+                trParams(locale, 'quiz.avgTime', {
+                  'n': _averageDuration.toStringAsFixed(1),
+                }),
               ),
-            const Text('お疲れさまでした'),
+            Text(tr(locale, 'quiz.goodJob')),
             if (_bonusPoints > 0)
-              Text('惜しいボーナス: +${_bonusPoints.toStringAsFixed(1)}'),
+              Text(trParams(locale, 'quiz.bonus', {
+                'n': _bonusPoints.toStringAsFixed(1),
+              })),
             const SizedBox(height: 16),
             _buildSessionAnalysis(analysis),
             const SizedBox(height: 8),
@@ -696,11 +724,16 @@ class _QuizScreenState extends State<QuizScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('${_index + 1} / ${_questions.length} 問'),
-          Text('正解: $_score'),
+          Text(trParams(locale, 'quiz.progress', {
+            'i': _index + 1,
+            't': _questions.length,
+          })),
+          Text(trParams(locale, 'quiz.score', {'n': _score})),
           if (_timeAttack && !answered) ...[
             const SizedBox(height: 8),
-            Text('残り ${_timeLeft.toStringAsFixed(0)}秒'),
+            Text(trParams(locale, 'quiz.remain', {
+              'n': _timeLeft.toStringAsFixed(0),
+            })),
             const SizedBox(height: 4),
             LinearProgressIndicator(
               value: (_timeLeft / _timeLimitSeconds).clamp(0.0, 1.0),
@@ -748,7 +781,7 @@ class _QuizScreenState extends State<QuizScreen> {
                         icon: Icon(saved
                             ? Icons.bookmark
                             : Icons.bookmark_outline),
-                        tooltip: 'ブックマーク',
+                        tooltip: tr(widget.locale, 'quiz.bookmarkTooltip'),
                         onPressed: () => _toggleQuestionBookmark(
                             question, saved),
                       );
@@ -762,11 +795,12 @@ class _QuizScreenState extends State<QuizScreen> {
                       IconButton(
                         icon: const Icon(Icons.replay),
                         onPressed: _replayAudio,
-                        tooltip: '다시 듣기',
+                        tooltip: tr(widget.locale, 'quiz.replayTooltip'),
                       ),
                       TextButton(
                         onPressed: () => setState(() => _showFallbackText = !_showFallbackText),
-                        child: Text(_showFallbackText ? 'テキストを隠す' : 'テキストを見る'),
+                        child: Text(tr(widget.locale,
+                            _showFallbackText ? 'quiz.hideText' : 'quiz.showText')),
                       ),
                     ],
                   ),
@@ -801,6 +835,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 liveInput,
                 question.correctAnswer,
                 lenient: _lenientGrading,
+                locale: widget.locale,
               )
             : null;
         return [
@@ -825,13 +860,13 @@ class _QuizScreenState extends State<QuizScreen> {
                   onPressed: _writingInput?.trim().isNotEmpty == true
                       ? _submitWriting
                       : null,
-                  child: const Text('回答する'),
+                  child: Text(tr(widget.locale, 'quiz.submit')),
                 ),
               ),
               const SizedBox(width: 8),
               IconButton(
                 icon: const Icon(Icons.volume_up),
-                tooltip: 'お手本を聞く',
+                tooltip: tr(widget.locale, 'quiz.modelTooltip'),
                 onPressed: () => _speakModelAnswer(question.correctAnswer),
               ),
             ],
@@ -864,7 +899,11 @@ class _QuizScreenState extends State<QuizScreen> {
         borderRadius: BorderRadius.circular(8),
       ),
       child: Text(
-        '入力チェック: 類似度 $pct%（${live.characterAnalysis.where((c) => c.isMatch).length}/${live.characterAnalysis.length}）',
+        trParams(widget.locale, 'quiz.liveHint', {
+          'p': pct,
+          'm': live.characterAnalysis.where((c) => c.isMatch).length,
+          't': live.characterAnalysis.length,
+        }),
         style: const TextStyle(fontSize: 13),
       ),
     );
@@ -905,7 +944,9 @@ class _QuizScreenState extends State<QuizScreen> {
           if (!analysis.isCorrect &&
               analysis.characterAnalysis.isNotEmpty) ...[
             const SizedBox(height: 8),
-            const Text('詳細分析:', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold)),
+            Text(tr(widget.locale, 'quiz.detailTitle'),
+                style:
+                    const TextStyle(fontSize: 12, fontWeight: FontWeight.bold)),
             const SizedBox(height: 4),
             Wrap(
               spacing: 4,
@@ -919,27 +960,41 @@ class _QuizScreenState extends State<QuizScreen> {
                 switch (c.errorType) {
                   case CharacterErrorType.missing:
                     chipColor = Colors.orange;
-                    label = '不足: ${c.expectedChar}';
+                    label = trParams(widget.locale, 'quiz.chipMissing',
+                        {'c': c.expectedChar});
                     break;
                   case CharacterErrorType.extra:
                     chipColor = Colors.purple;
-                    label = '余分: ${c.actualChar}';
+                    label = trParams(widget.locale, 'quiz.chipExtra',
+                        {'c': c.actualChar ?? ''});
                     break;
                   case CharacterErrorType.wrongVowel:
                     chipColor = Colors.red;
-                    label = '母音: ${c.actualChar}→${c.expectedChar}';
+                    label = trParams(widget.locale, 'quiz.chipVowel', {
+                      'a': c.actualChar ?? '',
+                      'e': c.expectedChar,
+                    });
                     break;
                   case CharacterErrorType.wrongConsonant:
                     chipColor = Colors.blue;
-                    label = '子音: ${c.actualChar}→${c.expectedChar}';
+                    label = trParams(widget.locale, 'quiz.chipConsonant', {
+                      'a': c.actualChar ?? '',
+                      'e': c.expectedChar,
+                    });
                     break;
                   case CharacterErrorType.wrongParticle:
                     chipColor = Colors.teal;
-                    label = '助詞: ${c.actualChar}→${c.expectedChar}';
+                    label = trParams(widget.locale, 'quiz.chipParticle', {
+                      'a': c.actualChar ?? '',
+                      'e': c.expectedChar,
+                    });
                     break;
                   default:
                     chipColor = Colors.grey;
-                    label = '確認: ${c.actualChar}→${c.expectedChar}';
+                    label = trParams(widget.locale, 'quiz.chipOther', {
+                      'a': c.actualChar ?? '',
+                      'e': c.expectedChar,
+                    });
                 }
                 return Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
@@ -963,21 +1018,29 @@ class _QuizScreenState extends State<QuizScreen> {
 
   List<Widget> _buildResultArea(QuizQuestion question) {
     final isWriting = question.kind == QuizKind.writing;
+    final locale = widget.locale;
     return [
       const SizedBox(height: 12),
       Text(
-        _selected == question.correctIndex ? '正解！' : '不正解…',
+        tr(locale,
+            _selected == question.correctIndex ? 'quiz.correct' : 'quiz.wrong'),
         style: const TextStyle(fontSize: 20),
       ),
       if (_selected != question.correctIndex)
-        Text('正解: ${question.correctAnswer}'),
+        Text(trParams(locale, 'quiz.answerIs',
+            {'a': question.correctAnswer})),
       if (isWriting && _lastWritingAnalysis != null) ...[
         const SizedBox(height: 8),
         _buildWritingFeedback(),
         if (WritingGrader.isNearMiss(_lastWritingAnalysis!)) ...[
           const SizedBox(height: 4),
           Text(
-            '惜しい！${WritingGrader.similarityLabel(_lastWritingAnalysis!.similarityScore)}（ボーナス +${WritingGrader.bonusFor(_lastWritingAnalysis!).toStringAsFixed(1)}）',
+            trParams(locale, 'quiz.nearMiss', {
+              'label': WritingGrader.similarityLabel(
+                  _lastWritingAnalysis!.similarityScore, locale),
+              'n': WritingGrader.bonusFor(_lastWritingAnalysis!)
+                  .toStringAsFixed(1),
+            }),
             style: const TextStyle(fontSize: 13),
           ),
         ],
@@ -986,7 +1049,8 @@ class _QuizScreenState extends State<QuizScreen> {
       ElevatedButton(
         onPressed: _next,
         child: Text(
-          _index + 1 >= _questions.length ? '結果を見る' : '次へ',
+          tr(locale,
+              _index + 1 >= _questions.length ? 'quiz.seeResults' : 'quiz.next'),
         ),
       ),
     ];

@@ -42,6 +42,10 @@ class FakeStatsStore extends StatsStore {
   Future<Map<String, String>> allSettings() async => {};
   @override
   Future<bool> getLenientGrading() async => false;
+  @override
+  Future<String> getLocaleCode() async => 'ja';
+  @override
+  Future<void> setLocaleCode(String code) async {}
 }
 
 class FakeErrorStats extends ErrorStatsStore {

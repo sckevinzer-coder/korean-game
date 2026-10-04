@@ -1,6 +1,7 @@
 import 'package:sqflite/sqflite.dart';
 
 import '../db/database_init.dart';
+import '../i18n/app_locale.dart';
 
 class StatsStore {
   StatsStore({this.path, DatabaseFactory? factory})
@@ -429,6 +430,28 @@ CREATE TABLE IF NOT EXISTS settings(
       if (level != null) levels.add(level);
     }
     return levels;
+  }
+
+  /// UI locale code (ja/ko/en). Defaults to ja.
+  Future<String> getLocaleCode() async {
+    final db = await _database();
+    final rows = await db.query(
+      'settings',
+      where: 'key = ?',
+      whereArgs: ['locale'],
+    );
+    if (rows.isEmpty) return 'ja';
+    final code = rows.first['value'] as String?;
+    return AppLocale.values.any((l) => l.code == code) ? code! : 'ja';
+  }
+
+  Future<void> setLocaleCode(String code) async {
+    final db = await _database();
+    await db.insert(
+      'settings',
+      {'key': 'locale', 'value': code},
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
   }
 
   /// Lenient writing grading (verb-ending variations accepted).

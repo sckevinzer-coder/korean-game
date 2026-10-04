@@ -1,3 +1,5 @@
+import '../i18n/app_locale.dart';
+import '../i18n/app_strings.dart';
 import 'stats_store.dart';
 
 /// Definition of one achievement badge.
@@ -11,6 +13,10 @@ class AchievementDef {
   final String id;
   final String title;
   final String description;
+
+  String titleFor(AppLocale locale) => tr(locale, 'ach.$id.title');
+
+  String descriptionFor(AppLocale locale) => tr(locale, 'ach.$id.desc');
 }
 
 /// All achievement badges.

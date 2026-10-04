@@ -1,5 +1,8 @@
 import 'dart:js_interop';
 
+import '../i18n/app_locale.dart';
+import '../i18n/app_strings.dart';
+
 @JS('Notification')
 extension type _Notification._(JSObject _) implements JSObject {
   external static JSString get permission;
@@ -38,13 +41,16 @@ Future<String> requestReviewNotifyPermission() async {
   }
 }
 
-Future<void> showReviewNotification(int dueCount) async {
+Future<void> showReviewNotification(int dueCount,
+    [AppLocale locale = AppLocale.japanese]) async {
   if (!_hasNotification()) return;
   try {
     if (_Notification.permission.toDart != 'granted') return;
     _Notification(
-      '今日の復習'.toJS,
-      {'body': '$dueCount枚のカードが復習待ちです'}.jsify(),
+      tr(locale, 'notify.title').toJS,
+      {
+        'body': trParams(locale, 'notify.body', {'n': dueCount}),
+      }.jsify(),
     );
   } catch (_) {}
 }

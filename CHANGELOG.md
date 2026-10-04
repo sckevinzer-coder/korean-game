@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.7.0
+
+### Mini-game
+- Match-pairs mini-game (Home 🧩 icon): 4 Korean words paired with
+  meanings in a tappable grid, +100 per pair, -20 per mistake,
+  clear bonus + best-of score display.
+- Localized result and instructions (JA/KO/EN coverage included).
+
+### Tests
+- 183 tests passing (`flutter test`), `flutter analyze` zero issues.
+
 ## 1.6.0
 
 ### Offline TTS cache

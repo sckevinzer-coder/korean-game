@@ -8,6 +8,7 @@ import '../i18n/app_locale.dart';
 import '../i18n/app_strings.dart';
 import '../models/word.dart';
 import '../notify/review_notify.dart';
+import 'mini_game_screen.dart';
 import '../stats/bookmark_store.dart';
 import '../stats/error_stats.dart';
 import '../stats/stats_store.dart';
@@ -216,6 +217,21 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Text(tr(locale, 'home.title')),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.extension),
+            tooltip: tr(locale, 'game.title'),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => MiniGameScreen(
+                    locale: _locale,
+                    loadWords: widget.loadWords,
+                    level: widget.level,
+                  ),
+                ),
+              );
+            },
+          ),
           PopupMenuButton<AppLocale>(
             tooltip: tr(locale, 'home.language'),
             icon: const Icon(Icons.language),

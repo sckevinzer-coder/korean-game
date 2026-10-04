@@ -1,5 +1,9 @@
 # Roadmap
 
+## v1.7.0 — 미니게임 (진행 중)
+
+- [x] 매칭 짝 찾기 (홈 🧩 아이콘, JA/KO/EN 현지화)
+
 ## v1.6.0 — 오프라인 TTS 캐시 (완료)
 
 - [x] `CachedTtsService` (synthesizeToFile + audioplayers, 모바일 전용)

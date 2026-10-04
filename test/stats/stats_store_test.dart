@@ -192,6 +192,23 @@ void main() {
     expect(await store.freezesLeft(DateTime(2026, 10, 3)), 1);
   });
 
+  test('daily goal defaults to 10 and persists', () async {
+    expect(await store.getDailyGoal(), 10);
+
+    await store.setDailyGoal(30);
+    expect(await store.getDailyGoal(), 30);
+  });
+
+  test('todaySolvedCount sums session totals for the day', () async {
+    await store.recordSession(DateTime(2026, 10, 2), 10, 7, level: 1);
+    await store.recordSession(DateTime(2026, 10, 3), 10, 5, level: 1);
+    await store.recordSession(DateTime(2026, 10, 3), 6, 6, level: 2);
+
+    expect(await store.todaySolvedCount(DateTime(2026, 10, 3)), 16);
+    expect(await store.todaySolvedCount(DateTime(2026, 10, 2)), 10);
+    expect(await store.todaySolvedCount(DateTime(2026, 10, 4)), 0);
+  });
+
   test('v1 database upgrades to v2 preserving study days', () async {
     final dir = await Directory.systemTemp.createTemp('stats_v1_');
     try {

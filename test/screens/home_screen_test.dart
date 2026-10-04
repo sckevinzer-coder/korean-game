@@ -36,6 +36,10 @@ class FakeStatsStore extends StatsStore {
       ProtectedStreak(streak: streak, freezeUsed: false);
   @override
   Future<int> freezesLeft(DateTime today) async => 1;
+  @override
+  Future<int> getDailyGoal() async => 10;
+  @override
+  Future<int> todaySolvedCount(DateTime today) async => 4;
 }
 
 Word word(String id) => Word(
@@ -158,6 +162,47 @@ void main() {
     await tester.pump(const Duration(milliseconds: 500));
 
     expect(find.text('🛡️ 連続保護: 残り1回'), findsOneWidget);
+  });
+
+  testWidgets('no reminder opt-in on unsupported platform', (tester) async {
+    final fakeProgress = FakeProgressStore(cards: []);
+    final fakeStats = FakeStatsStore(streak: 2);
+    await tester.pumpWidget(MaterialApp(
+      home: HomeScreen(
+        store: fakeProgress,
+        stats: fakeStats,
+        levelSelectStats: fakeStats,
+        now: () => now,
+        loadWords: (level) async => List.generate(
+            10, (i) => word('t1-${(i + 1).toString().padLeft(3, '0')}')),
+      ),
+    ));
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.pump(const Duration(milliseconds: 500));
+    await tester.pump(const Duration(milliseconds: 500));
+
+    expect(find.text('🔔 復習リマインダーを受け取る'), findsNothing);
+  });
+
+  testWidgets('shows daily goal progress ring', (tester) async {
+    final fakeProgress = FakeProgressStore(cards: []);
+    final fakeStats = FakeStatsStore(streak: 2);
+    await tester.pumpWidget(MaterialApp(
+      home: HomeScreen(
+        store: fakeProgress,
+        stats: fakeStats,
+        levelSelectStats: fakeStats,
+        now: () => now,
+        loadWords: (level) async => List.generate(
+            10, (i) => word('t1-${(i + 1).toString().padLeft(3, '0')}')),
+      ),
+    ));
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.pump(const Duration(milliseconds: 500));
+    await tester.pump(const Duration(milliseconds: 500));
+
+    expect(find.text('今日の目標: 4 / 10問'), findsOneWidget);
+    expect(find.byType(CircularProgressIndicator), findsWidgets);
   });
 
 testWidgets('tapping level button opens level select', (tester) async {

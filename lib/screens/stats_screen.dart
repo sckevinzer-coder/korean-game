@@ -11,6 +11,7 @@ import '../stats/error_stats.dart';
 import '../stats/learning_analytics.dart';
 import '../stats/stats_store.dart';
 import 'quiz_screen.dart';
+import 'review_screen.dart';
 
 class StatsScreen extends StatefulWidget {
   const StatsScreen({
@@ -191,6 +192,21 @@ class _StatsScreenState extends State<StatsScreen> {
       month: month,
       sessions: sessions,
       achievements: achievements,
+    );
+  }
+
+  void _openReview(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => ReviewScreen(
+          errors: widget.errors ?? ErrorStatsStore(),
+          stats: widget.stats,
+          bookmarks: widget.bookmarks,
+          levels: widget.levels,
+          loadWords: widget.loadWords,
+          now: widget.now,
+        ),
+      ),
     );
   }
 
@@ -425,8 +441,17 @@ class _StatsScreenState extends State<StatsScreen> {
                     ),
                   ),
                 const SizedBox(height: 16),
-                const Text('苦手トップ5',
-                    style: TextStyle(fontWeight: FontWeight.bold)),
+                Row(
+                  children: [
+                    const Text('苦手トップ5',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    const Spacer(),
+                    TextButton(
+                      onPressed: () => _openReview(context),
+                      child: const Text('間違いノート'),
+                    ),
+                  ],
+                ),
                 const SizedBox(height: 8),
                 if (data.weak.isEmpty)
                   const Text('苦手データはまだありません')

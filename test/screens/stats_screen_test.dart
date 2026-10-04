@@ -77,5 +77,14 @@ void main() {
     expect(find.text('実績バッジ'), findsOneWidget);
     expect(find.text('初クイズ'), findsOneWidget);
     expect(find.text('全レベル制覇'), findsOneWidget);
+    expect(find.text('間違いノート'), findsOneWidget);
+
+    await tester.ensureVisible(find.text('間違いノート'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('間違いノート'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('間違いノート', skipOffstage: false), findsWidgets);
+    expect(find.text('間違い記録はまだありません'), findsOneWidget);
   });
 }

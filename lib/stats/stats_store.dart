@@ -271,6 +271,52 @@ CREATE TABLE IF NOT EXISTS freezes(
     return ProtectedStreak(streak: streak, freezeUsed: freezeUsed);
   }
 
+  /// Daily question goal. Defaults to 10.
+  static const int defaultDailyGoal = 10;
+
+  Future<void> _ensureSettingsTable() async {
+    final db = await _database();
+    await db.execute('''
+CREATE TABLE IF NOT EXISTS settings(
+  key TEXT PRIMARY KEY,
+  value TEXT NOT NULL
+)
+''');
+  }
+
+  Future<int> getDailyGoal() async {
+    await _ensureSettingsTable();
+    final db = await _database();
+    final rows = await db.query(
+      'settings',
+      where: 'key = ?',
+      whereArgs: ['daily_goal'],
+    );
+    if (rows.isEmpty) return defaultDailyGoal;
+    return int.tryParse(rows.first['value'] as String? ?? '') ??
+        defaultDailyGoal;
+  }
+
+  Future<void> setDailyGoal(int goal) async {
+    await _ensureSettingsTable();
+    final db = await _database();
+    await db.insert(
+      'settings',
+      {'key': 'daily_goal', 'value': goal.toString()},
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  /// Questions answered today (sum of session totals for the day).
+  Future<int> todaySolvedCount(DateTime today) async {
+    final db = await _database();
+    final rows = await db.rawQuery(
+      'SELECT COALESCE(SUM(total), 0) AS t FROM sessions WHERE day = ?',
+      [_dayKey(today)],
+    );
+    return (rows.first['t'] as int?) ?? 0;
+  }
+
   Future<void> close() async {
     await _db?.close();
     _db = null;

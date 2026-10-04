@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.3.0
+
+### Review reinforcement
+- Review reminders: browser Notification with due-card count on Home
+  open (web only, opt-in button when permission undecided, silent
+  no-op elsewhere).
+- Wrong-answer notebook (間違いノート): top-20 error entries with word,
+  example sentence, miss counts, and accuracy, plus a review quiz;
+  opened from the stats screen weak section.
+- Daily goal: configurable target (5/10/20/30 questions) with a
+  progress ring on Home, counted from recorded session totals.
+
+### Tests
+- 145 tests passing (`flutter test`).
+
 ## 1.2.0
 
 ### Quiz improvements

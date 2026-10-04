@@ -82,6 +82,18 @@ CREATE TABLE study_days(
     return a >= b ? a : b;
   }
 
+  /// Study-day flags for the last 7 days, oldest first, ending today.
+  Future<List<bool>> last7Days(DateTime today) async {
+    final db = await _database();
+    final rows = await db.query('study_days');
+    final days = <String>{for (final row in rows) row['day'] as String};
+    final base = DateTime(today.year, today.month, today.day);
+    return [
+      for (var i = 6; i >= 0; i--)
+        days.contains(_dayKey(base.subtract(Duration(days: i)))),
+    ];
+  }
+
   Future<void> close() async {
     await _db?.close();
     _db = null;

@@ -11,6 +11,7 @@ class QuizQuestion {
     required this.correctIndex,
     required this.kind,
     this.audioText,
+    this.wordId,
   });
 
   final String prompt;
@@ -18,6 +19,7 @@ class QuizQuestion {
   final int correctIndex;
   final QuizKind kind;
   final String? audioText;
+  final String? wordId;
 
   String get correctAnswer => options[correctIndex];
 }
@@ -80,6 +82,7 @@ QuizQuestion makeQuestion(
     correctIndex: options.indexOf(correct),
     kind: kind,
     audioText: audioText,
+    wordId: target.id,
   );
 }
 
@@ -126,5 +129,6 @@ QuizQuestion? makeBlankQuestion(
     correctIndex: options.indexOf(correct),
     kind: QuizKind.blank,
     audioText: null,
+    wordId: target.id,
   );
 }

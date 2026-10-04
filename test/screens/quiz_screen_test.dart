@@ -11,6 +11,17 @@ import 'package:korean_game/screens/quiz_screen.dart';
 import 'package:korean_game/stats/stats_store.dart';
 import 'package:korean_game/tts/tts_service.dart';
 
+class FakeStatsStore extends StatsStore {
+  final int streak;
+  FakeStatsStore({this.streak = 0});
+  @override
+  Future<int> displayStreak(DateTime today) async => streak;
+  @override
+  Future<void> recordStudy(DateTime day) async {}
+  @override
+  Future<int> currentStreak(DateTime today) async => streak;
+}
+
 Word word(String id, String korean, String meaningJa, {String? exampleKo}) => Word(
       id: id,
       korean: korean,
@@ -159,11 +170,12 @@ void main() {
   testWidgets('level 1 uses only meaningToWord and wordToMeaning', (tester) async {
     final words = List.generate(6, (i) => word('w$i', '단어$i', '意味$i'));
     final fakeTts = FakeTtsService();
+    final fakeStats = FakeStatsStore();
 
     await tester.pumpWidget(MaterialApp(
       home: QuizScreen(
         words: words,
-        stats: stats,
+        stats: fakeStats,
         now: () => now,
         level: 1,
         tts: fakeTts,
@@ -195,11 +207,12 @@ void main() {
   testWidgets('level 4 includes listening and blank kinds', (tester) async {
     final words = List.generate(10, (i) => word('w$i', '단어$i', '意味$i', exampleKo: '이것은 단어$i입니다'));
     final fakeTts = FakeTtsService();
+    final fakeStats = FakeStatsStore();
 
     await tester.pumpWidget(MaterialApp(
       home: QuizScreen(
         words: words,
-        stats: stats,
+        stats: fakeStats,
         now: () => now,
         level: 4,
         tts: fakeTts,
@@ -242,14 +255,15 @@ void main() {
     expect(seenKinds.contains('wordToMeaning'), isTrue);
   });
 
-  testWidgets('level 6 includes writing kind', (tester) async {
+testWidgets('level 6 includes writing kind', (tester) async {
     final words = List.generate(10, (i) => word('w$i', '단어$i', '意味$i', exampleKo: '이것은 단어$i입니다'));
     final fakeTts = FakeTtsService();
+    final fakeStats = FakeStatsStore();
 
     await tester.pumpWidget(MaterialApp(
       home: QuizScreen(
         words: words,
-        stats: stats,
+        stats: fakeStats,
         now: () => now,
         level: 6,
         tts: fakeTts,
@@ -257,28 +271,17 @@ void main() {
     ));
     await tester.pump();
 
-    // Check that we see writing kind by going through all questions
-    bool sawWriting = false;
-    for (int i = 0; i < words.length; i++) {
-      final promptText = tester.widget<Text>(find.byType(Text).at(2)).data ?? '';
-      if (promptText.contains('쓰기:')) {
-        sawWriting = true;
-        break;
-      }
-
-      // Answer correctly to advance
-      await tester.tap(find.byType(ElevatedButton).first);
-      await tester.pumpAndSettle();
-      if (i < words.length - 1) {
-        await tester.tap(find.byType(ElevatedButton).last);
-        await tester.pumpAndSettle();
-      } else {
-        await tester.tap(find.byType(ElevatedButton).last);
-        await tester.pumpAndSettle();
+    // Check internal questions list for writing kind
+    final state = tester.state(find.byType(QuizScreen)) as dynamic;
+    final questions = state.questionsForTesting;
+    bool hasWriting = false;
+    for (final q in questions) {
+      if (q.kind == QuizKind.writing) {
+        expect(q.prompt, contains('쓰기:'));
+        return;
       }
     }
-
-    expect(sawWriting, isTrue);
+    fail('No writing question found');
   });
 
   testWidgets('listening question shows replay button and auto-speaks on display', (tester) async {
@@ -386,12 +389,13 @@ testWidgets('writing question shows TextField and 回答する button, grades co
       word('t1-004', '음식', '食べ物'),
     ];
     final fakeTts = FakeTtsService();
+    final fakeStats = FakeStatsStore();
 
     await tester.pumpWidget(MaterialApp(
       home: QuizScreen(
         words: words,
         questions: questions,
-        stats: stats,
+        stats: fakeStats,
         now: () => now,
         tts: fakeTts,
       ),
@@ -414,7 +418,7 @@ testWidgets('writing question shows TextField and 回答する button, grades co
     // Continue to end and check score
     await tester.tap(find.byType(ElevatedButton).last);
     await tester.pumpAndSettle();
-    expect(find.textContaining('スコア: 1'), findsOneWidget);
+    expect(find.textContaining('1 正解'), findsOneWidget);
   });
 
   testWidgets('writing question grades with particle tolerance', (tester) async {
@@ -577,5 +581,150 @@ testWidgets('writing question shows TextField and 回答する button, grades co
 
     // Should not crash with defaults
     expect(find.byType(Text), findsWidgets);
+  });
+
+  testWidgets('writing near-miss shows bonus and model audio button', (tester) async {
+    const questions = [
+      QuizQuestion(
+        prompt: '쓰기: 愛の 한국어를 쓰세요',
+        options: ['사랑해요'],
+        correctIndex: 0,
+        kind: QuizKind.writing,
+        audioText: null,
+      ),
+    ];
+    final words = [
+      word('t1-001', '사랑해요', '愛しています'),
+      word('t1-002', '학교', '学校'),
+      word('t1-003', '친구', '友達'),
+      word('t1-004', '음식', '食べ物'),
+    ];
+    final fakeTts = FakeTtsService();
+    final fakeStats = FakeStatsStore();
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        questions: questions,
+        stats: fakeStats,
+        now: () => now,
+        tts: fakeTts,
+        level: 5,
+      ),
+    ));
+    await tester.pump();
+
+    expect(find.byTooltip('お手本を聞く'), findsOneWidget);
+
+    await tester.tap(find.byTooltip('お手本を聞く'));
+    await tester.pump();
+    expect(fakeTts.spoken, ['사랑해요']);
+
+    // Near-miss input: one syllable off (사랑해요 -> 사랑하요)
+    await tester.enterText(find.byType(TextField), '사랑하요');
+    await tester.pump();
+    await tester.tap(find.text('回答する'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('不正解…'), findsOneWidget);
+    expect(find.textContaining('惜しい'), findsOneWidget);
+  });
+
+  testWidgets('level 3 mixed session covers all five kinds', (tester) async {
+    final words = List.generate(
+      10,
+      (i) => word('w$i', '단어$i', '意味$i', exampleKo: '이것은 단어$i입니다'),
+    );
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        stats: FakeStatsStore(),
+        now: () => now,
+        level: 3,
+        tts: FakeTtsService(),
+      ),
+    ));
+    await tester.pump();
+
+    final state = tester.state(find.byType(QuizScreen)) as dynamic;
+    final questions = state.questionsForTesting as List<QuizQuestion>;
+    final kinds = questions.map((q) => q.kind).toSet();
+    expect(
+      kinds,
+      containsAll([
+        QuizKind.meaningToWord,
+        QuizKind.wordToMeaning,
+        QuizKind.listeningWord,
+        QuizKind.listeningMeaning,
+        QuizKind.blank,
+      ]),
+    );
+    expect(kinds, isNot(contains(QuizKind.writing)));
+  });
+
+  testWidgets('level 6 mixed session covers all six kinds', (tester) async {
+    final words = List.generate(
+      12,
+      (i) => word('w$i', '단어$i', '意味$i', exampleKo: '이것은 단어$i입니다'),
+    );
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        stats: FakeStatsStore(),
+        now: () => now,
+        level: 6,
+        tts: FakeTtsService(),
+      ),
+    ));
+    await tester.pump();
+
+    final state = tester.state(find.byType(QuizScreen)) as dynamic;
+    final questions = state.questionsForTesting as List<QuizQuestion>;
+    final kinds = questions.map((q) => q.kind).toSet();
+    expect(
+      kinds,
+      containsAll([
+        QuizKind.meaningToWord,
+        QuizKind.wordToMeaning,
+        QuizKind.listeningWord,
+        QuizKind.listeningMeaning,
+        QuizKind.blank,
+        QuizKind.writing,
+      ]),
+    );
+  });
+
+  testWidgets('level 5 writing shows hint button', (tester) async {
+    const questions = [
+      QuizQuestion(
+        prompt: '쓰기: 愛の 한국어를 쓰세요',
+        options: ['사랑해요'],
+        correctIndex: 0,
+        kind: QuizKind.writing,
+        audioText: null,
+      ),
+    ];
+    final words = [
+      word('t1-001', '사랑해요', '愛しています'),
+      word('t1-002', '학교', '学校'),
+      word('t1-003', '친구', '友達'),
+      word('t1-004', '음식', '食べ物'),
+    ];
+
+    await tester.pumpWidget(MaterialApp(
+      home: QuizScreen(
+        words: words,
+        questions: questions,
+        stats: FakeStatsStore(),
+        now: () => now,
+        tts: FakeTtsService(),
+        level: 5,
+      ),
+    ));
+    await tester.pump();
+
+    expect(find.byTooltip('ヒント (0/3)'), findsOneWidget);
   });
 }

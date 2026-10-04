@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import '../data/word_repository.dart';
 import '../db/progress_store.dart';
 import '../models/word.dart';
+import '../stats/bookmark_store.dart';
+import '../stats/error_stats.dart';
 import '../stats/stats_store.dart';
 import 'level_select_screen.dart';
 
@@ -15,6 +17,9 @@ class HomeScreen extends StatefulWidget {
     super.key,
     required this.store,
     this.stats,
+    this.errors,
+    this.bookmarks,
+    this.levelSelectStats,
     this.level = 1,
     this.loadWords = loadWordsForLevel,
     this.now,
@@ -23,6 +28,9 @@ class HomeScreen extends StatefulWidget {
 
   final ProgressStore store;
   final StatsStore? stats;
+  final ErrorStatsStore? errors;
+  final BookmarkStore? bookmarks;
+  final StatsStore? levelSelectStats;
   final int level;
   final WordsLoader loadWords;
   final DateTime Function()? now;
@@ -74,7 +82,9 @@ class _HomeScreenState extends State<HomeScreen> {
       MaterialPageRoute(
         builder: (_) => LevelSelectScreen(
           store: widget.store,
-          stats: widget.stats,
+          stats: widget.levelSelectStats ?? widget.stats,
+          errors: widget.errors,
+          bookmarks: widget.bookmarks,
           loadWords: widget.loadWords,
           now: widget.now,
           random: widget.random,
@@ -98,17 +108,38 @@ class _HomeScreenState extends State<HomeScreen> {
               return const CircularProgressIndicator();
             }
             final counts = snapshot.data!;
-            return Column(
-              mainAxisAlignment: .center,
-              children: [
-                Text('今日の復習: ${counts.due} / ${counts.total} 枚'),
-                Text('連続学習: ${counts.streak}日'),
-                const SizedBox(height: 16),
-                ElevatedButton(
-                  onPressed: _openLevels,
-                  child: const Text('レベルを選ぶ'),
-                ),
-              ],
+            return SingleChildScrollView(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                mainAxisAlignment: .center,
+                children: [
+                  Text('今日の復習: ${counts.due} / ${counts.total} 枚'),
+                  Text('連続学習: ${counts.streak}日'),
+                  const SizedBox(height: 16),
+                  ElevatedButton(
+                    onPressed: _openLevels,
+                    child: const Text('レベルを選ぶ'),
+                  ),
+                  const SizedBox(height: 16),
+                  Card(
+                    color: Colors.deepPurple[50],
+                    child: const Padding(
+                      padding: EdgeInsets.all(12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('はじめに',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          SizedBox(height: 4),
+                          Text('1. レベルを選ぶ（TOPIK 1〜6級・各500語）'),
+                          Text('2. 学習する（フラッシュカード＋音声）'),
+                          Text('3. クイズ（級別形式・ブックマーク復習）'),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             );
           },
         ),

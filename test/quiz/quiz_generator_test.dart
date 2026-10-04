@@ -180,6 +180,21 @@ void main() {
     });
   });
 
+  group('question word tracking (Level 6)', () {
+    test('makeQuestion propagates target word id', () {
+      final words = pool();
+      final q = makeQuestion(words[0], words, QuizKind.wordToMeaning, Random(1));
+      expect(q.wordId, words[0].id);
+    });
+
+    test('makeBlankQuestion propagates target word id', () {
+      final target = word('t1-006', '한국어', '韓国語', exampleKo: '한국어를 공부합니다');
+      final q = makeBlankQuestion(target, [...pool(), target], Random(3));
+      expect(q, isNotNull);
+      expect(q!.wordId, target.id);
+    });
+  });
+
   group('QuizScreen', () {
     testWidgets('answering updates score', (tester) async {
       const questions = [
@@ -202,30 +217,30 @@ void main() {
       ));
       await tester.pump();
 
-      expect(find.text('スコア: 0'), findsOneWidget);
+      expect(find.text('正解: 0'), findsOneWidget);
       expect(find.text('愛'), findsOneWidget);
 
       // Correct answer on question 1.
       await tester.tap(find.text('사랑'));
       await tester.pump();
       expect(find.text('正解！'), findsOneWidget);
-      expect(find.text('スコア: 1'), findsOneWidget);
+      expect(find.text('正解: 1'), findsOneWidget);
 
       await tester.tap(find.text('次へ'));
       await tester.pump();
       expect(find.text('愛'), findsNothing);
-      expect(find.text('학교'), findsOneWidget);
+      expect(find.text('学校'), findsOneWidget);
 
       // Wrong answer on question 2: score stays.
       await tester.tap(find.text('韓国語'));
       await tester.pump();
       expect(find.text('不正解…'), findsOneWidget);
-      expect(find.text('スコア: 1'), findsOneWidget);
+      expect(find.text('正解: 1'), findsOneWidget);
 
       await tester.tap(find.text('結果を見る'));
       await tester.pump();
       expect(find.text('クイズ完了！'), findsOneWidget);
-      expect(find.text('スコア: 1 / 2'), findsOneWidget);
+      expect(find.textContaining('1 / 2 正解'), findsOneWidget);
     });
 
     testWidgets('empty word list shows empty message', (tester) async {

@@ -77,4 +77,22 @@ void main() {
   test('displayStreak is zero with no history', () async {
     expect(await store.displayStreak(DateTime(2026, 10, 3)), 0);
   });
+
+  test('last7Days marks studied days oldest first', () async {
+    await store.recordStudy(DateTime(2026, 9, 27));
+    await store.recordStudy(DateTime(2026, 9, 29));
+    await store.recordStudy(DateTime(2026, 10, 3));
+
+    expect(
+      await store.last7Days(DateTime(2026, 10, 3)),
+      [true, false, true, false, false, false, true],
+    );
+  });
+
+  test('last7Days empty on fresh store', () async {
+    expect(
+      await store.last7Days(DateTime(2026, 10, 3)),
+      [false, false, false, false, false, false, false],
+    );
+  });
 }

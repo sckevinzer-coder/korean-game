@@ -11,6 +11,28 @@ import 'package:korean_game/screens/home_screen.dart';
 import 'package:korean_game/srs/srs_scheduler.dart';
 import 'package:korean_game/stats/stats_store.dart';
 
+class FakeProgressStore extends ProgressStore {
+  final List<SrsCard> cards;
+  FakeProgressStore({this.cards = const []});
+  @override
+  Future<List<SrsCard>> dueCards(DateTime now) async => cards;
+  @override
+  Future<List<SrsCard>> allCardsForLevel(int level) async => cards;
+  @override
+  Future<void> upsert(SrsCard card) async {}
+}
+
+class FakeStatsStore extends StatsStore {
+  final int streak;
+  FakeStatsStore({this.streak = 0});
+  @override
+  Future<int> displayStreak(DateTime today) async => streak;
+  @override
+  Future<void> recordStudy(DateTime day) async {}
+  @override
+  Future<int> currentStreak(DateTime today) async => streak;
+}
+
 Word word(String id) => Word(
       id: id,
       korean: '한국어',
@@ -69,6 +91,7 @@ void main() {
       home: HomeScreen(
         store: store,
         stats: stats,
+        levelSelectStats: FakeStatsStore(streak: 2),
         now: () => now,
         loadWords: (level) async => List.generate(
             10, (i) => word('t1-${(i + 1).toString().padLeft(3, '0')}')),
@@ -112,8 +135,24 @@ void main() {
     expect(find.text('連続学習: 0日'), findsOneWidget);
   });
 
-  testWidgets('tapping level button opens level select', (tester) async {
-    await pumpHome(tester);
+testWidgets('tapping level button opens level select', (tester) async {
+    // Use FakeProgressStore and FakeStatsStore to avoid pending DB timers
+    final fakeProgress = FakeProgressStore(cards: []);
+    final fakeStats = FakeStatsStore(streak: 2);
+    await tester.pumpWidget(MaterialApp(
+      home: HomeScreen(
+        store: fakeProgress,
+        stats: fakeStats,
+        levelSelectStats: fakeStats,
+        now: () => now,
+        loadWords: (level) async => List.generate(
+            10, (i) => word('t1-${(i + 1).toString().padLeft(3, '0')}')),
+      ),
+    ));
+    // Wait for HomeScreen to render
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.pump(const Duration(milliseconds: 500));
+    await tester.pump(const Duration(milliseconds: 500));
 
     expect(find.text('レベルを選ぶ'), findsOneWidget);
     await tester.tap(find.text('レベルを選ぶ'));

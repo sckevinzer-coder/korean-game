@@ -8,6 +8,7 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:korean_game/db/progress_store.dart';
 import 'package:korean_game/models/word.dart';
 import 'package:korean_game/screens/flashcard_screen.dart';
+import 'package:korean_game/stats/bookmark_store.dart';
 import 'package:korean_game/stats/stats_store.dart';
 
 Word word(String id, String korean, String meaningJa) => Word(
@@ -61,6 +62,7 @@ void main() {
         store: store,
         words: words,
         now: () => now,
+        level: 1,
       ),
     ));
     await tester.pump();
@@ -73,14 +75,14 @@ void main() {
     // Tap card flips to reveal meaning and grade buttons.
     await tester.tap(find.text('한국어'));
     await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
 
     expect(find.text('韓国語'), findsOneWidget);
-    expect(find.text('普通'), findsOneWidget);
+    expect(find.text('普通 (3)'), findsOneWidget);
 
     // Grade the first card; persists via ProgressStore and advances.
-    await tester.tap(find.text('普通'));
-    await tester.runAsync(
-        () => Future<void>.delayed(const Duration(milliseconds: 100)));
+    await tester.tap(find.text('普通 (3)'));
+    await tester.runAsync(() => Future.delayed(const Duration(milliseconds: 100)));
     await tester.pump();
 
     expect(find.text('사랑'), findsOneWidget);
@@ -97,9 +99,8 @@ void main() {
     await tester.pump();
     expect(find.text('愛'), findsOneWidget);
 
-    await tester.tap(find.text('簡単'));
-    await tester.runAsync(
-        () => Future<void>.delayed(const Duration(milliseconds: 100)));
+    await tester.tap(find.text('簡単 (4)'));
+    await tester.runAsync(() => Future.delayed(const Duration(milliseconds: 100)));
     await tester.pump();
 
     expect(find.text('学習完了！'), findsOneWidget);
@@ -110,7 +111,7 @@ void main() {
 
   testWidgets('empty word list shows empty message', (tester) async {
     await tester.pumpWidget(MaterialApp(
-      home: FlashcardScreen(store: store, words: const [], now: () => now),
+      home: FlashcardScreen(store: store, words: const [], now: () => now, level: 1),
     ));
     await tester.pump();
 
@@ -128,19 +129,56 @@ void main() {
         words: words,
         stats: stats,
         now: () => now,
+        level: 1,
       ),
     ));
     await tester.pump();
 
     await tester.tap(find.text('한국어'));
     await tester.pump();
-    await tester.tap(find.text('普通'));
+    await tester.tap(find.text('普通 (3)'));
     await tester.runAsync(
-        () => Future<void>.delayed(const Duration(milliseconds: 500)));
+        () => Future.delayed(const Duration(milliseconds: 500)));
     await tester.pump();
 
     expect(find.text('学習完了！'), findsOneWidget);
     final streak = await tester.runAsync(() => stats.currentStreak(now));
     expect(streak, 1);
+  });
+
+  testWidgets('bookmark toggle saves and removes the word', (tester) async {
+    final bookmarks =
+        BookmarkStore(path: p.join(tmpDir.path, 'bookmarks.db'));
+    final words = [word('t1-001', '한국어', '韓国語')];
+    addTearDown(bookmarks.close);
+
+    await tester.pumpWidget(MaterialApp(
+      home: FlashcardScreen(
+        store: store,
+        words: words,
+        bookmarks: bookmarks,
+        now: () => now,
+        level: 1,
+      ),
+    ));
+    Future<void> settle() async {
+      for (var i = 0; i < 3; i++) {
+        await tester.pump();
+        await tester.runAsync(
+            () => Future<void>.delayed(const Duration(milliseconds: 300)));
+      }
+      await tester.pump();
+    }
+
+    await settle();
+
+    expect(find.byTooltip('ブックマーク'), findsOneWidget);
+    await tester.tap(find.byTooltip('ブックマーク'));
+    await settle();
+    expect(await tester.runAsync(() => bookmarks.contains('t1-001')), isTrue);
+
+    await tester.tap(find.byTooltip('ブックマーク'));
+    await settle();
+    expect(await tester.runAsync(() => bookmarks.contains('t1-001')), isFalse);
   });
 }

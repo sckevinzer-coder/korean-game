@@ -107,7 +107,7 @@ void main() {
     for (final word in order) {
       await tester.tap(find.text(word.korean));
       await tester.pump();
-      await tester.tap(find.text('普通'));
+      await tester.tap(find.text('普通 (3)'));
       await tester.runAsync(
           () => Future<void>.delayed(const Duration(milliseconds: 300)));
       await tester.pump();

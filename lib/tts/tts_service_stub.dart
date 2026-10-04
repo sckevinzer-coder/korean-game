@@ -10,6 +10,7 @@ class FlutterTtsService implements TtsService {
   double _pitch = 1.0;
   double _volume = 1.0;
   TtsVoice? _selectedVoice;
+  TtsProgressHandler? _progressHandler;
 
   Future<FlutterTts> _ensureInitialized() async {
     var tts = _tts;
@@ -37,6 +38,9 @@ class FlutterTtsService implements TtsService {
     if (_selectedVoice != null && _selectedVoice!.uri != null) {
       await tts.setVoice({'name': _selectedVoice!.name, 'locale': _selectedVoice!.lang});
     }
+    if (_progressHandler != null) {
+      tts.setProgressHandler(_onProgress);
+    }
     await tts.speak(text);
   }
 
@@ -53,7 +57,16 @@ class FlutterTtsService implements TtsService {
     if (_selectedVoice != null && _selectedVoice!.uri != null) {
       await tts.setVoice({'name': _selectedVoice!.name, 'locale': _selectedVoice!.lang});
     }
+    if (_progressHandler != null) {
+      tts.setProgressHandler(_onProgress);
+    }
     await tts.speak(ssml);
+  }
+
+  void _onProgress(String text, int start, int end, String word) {
+    if (_progressHandler != null) {
+      _progressHandler!(TtsProgress(start: start, end: end, text: word));
+    }
   }
 
   @override
@@ -79,6 +92,11 @@ class FlutterTtsService implements TtsService {
   @override
   Future<void> setVoice(TtsVoice voice) async {
     _selectedVoice = voice;
+  }
+
+  @override
+  void setProgressHandler(TtsProgressHandler? handler) {
+    _progressHandler = handler;
   }
 }
 

@@ -30,6 +30,7 @@ class FakeTtsService implements TtsService {
   final List<double> pitches = [];
   final List<double> volumes = [];
   final List<TtsVoice> voices = [];
+  final List<TtsProgress> progress = [];
   TtsVoice? selectedVoice;
   final bool shouldThrow;
 
@@ -61,6 +62,19 @@ class FakeTtsService implements TtsService {
   Future<void> setVoice(TtsVoice voice) async {
     selectedVoice = voice;
   }
+
+  @override
+  void setProgressHandler(TtsProgressHandler? handler) {
+    _progressHandler = handler;
+  }
+
+  void _simulateProgress(int start, int end, String? text) {
+    if (_progressHandler != null) {
+      _progressHandler!(TtsProgress(start: start, end: end, text: text));
+    }
+  }
+
+  TtsProgressHandler? _progressHandler;
 }
 
 void main() {

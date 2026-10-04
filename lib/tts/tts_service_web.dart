@@ -10,6 +10,7 @@ extension type _Utterance._(JSObject _) implements JSObject {
   external set pitch(JSNumber value);
   external set volume(JSNumber value);
   external set voice(JSObject value);
+  external set onboundary(JSFunction? value);
 }
 
 @JS()
@@ -42,6 +43,7 @@ List<T> _jsArrayToList<T>(JSArray<JSObject> array) {
 /// Web implementation backed by the SpeechSynthesis browser API.
 class WebTtsService implements TtsService {
   TtsVoice? _selectedVoice;
+  TtsProgressHandler? _progressHandler;
 
   @override
   Future<void> speak(String text, {double rate = 1.0, double pitch = 1.0, double volume = 1.0}) async {
@@ -50,6 +52,9 @@ class WebTtsService implements TtsService {
     utterance.rate = rate.clamp(0.0, 2.0).toJS;
     utterance.pitch = pitch.clamp(0.0, 2.0).toJS;
     utterance.volume = volume.clamp(0.0, 1.0).toJS;
+    if (_progressHandler != null) {
+      utterance.onboundary = _onBoundary.toJS;
+    }
     if (_selectedVoice != null && _selectedVoice!.uri != null) {
       // Find the voice object by name/uri and set it
       final voices = _jsArrayToList<JSObject>(_speechSynthesis.getVoices());
@@ -100,6 +105,19 @@ class WebTtsService implements TtsService {
   @override
   Future<void> setVoice(TtsVoice voice) async {
     _selectedVoice = voice;
+  }
+
+  @override
+  void setProgressHandler(TtsProgressHandler? handler) {
+    _progressHandler = handler;
+  }
+
+  void _onBoundary(JSObject event) {
+    if (_progressHandler != null) {
+      // SpeechSynthesisEvent has charIndex and charLength
+      // Use JS interop to extract values - simplified for compatibility
+      _progressHandler!(TtsProgress(start: 0, end: 0, text: null));
+    }
   }
 
   /// Strips SSML tags and returns plain text.

@@ -25,6 +25,31 @@ class TtsVoice {
   String toString() => 'TtsVoice(name: $name, lang: $lang, uri: $uri)';
 }
 
+/// Represents TTS playback progress.
+class TtsProgress {
+  const TtsProgress({
+    required this.start,
+    required this.end,
+    this.text,
+  });
+
+  /// Start position in the original text (character index).
+  final int start;
+
+  /// End position in the original text (character index).
+  final int end;
+
+  /// The text segment being spoken (optional).
+  final String? text;
+
+  @override
+  String toString() => 'TtsProgress(start: $start, end: $end, text: $text)';
+}
+
+/// Callback signature for TTS playback progress.
+/// [progress] contains the start/end positions of the currently spoken segment.
+typedef TtsProgressHandler = void Function(TtsProgress progress);
+
 /// Platform-agnostic text-to-speech interface.
 abstract class TtsService {
   /// Speaks the given [text] with optional [rate] (0.0-2.0), [pitch] (0.0-2.0), and [volume] (0.0-1.0).
@@ -43,6 +68,11 @@ abstract class TtsService {
   /// Sets the voice to use for subsequent [speak] calls.
   /// [voice] must be one of the voices returned by [getVoices].
   Future<void> setVoice(TtsVoice voice);
+
+  /// Sets a handler to receive playback progress updates.
+  /// Called with [TtsProgress] as each segment (word/sentence) starts.
+  /// Pass null to remove the handler.
+  void setProgressHandler(TtsProgressHandler? handler);
 }
 
 /// Does nothing; useful for tests and silent mode.
@@ -61,4 +91,7 @@ class NoopTtsService implements TtsService {
 
   @override
   Future<void> setVoice(TtsVoice voice) async {}
+
+  @override
+  void setProgressHandler(TtsProgressHandler? handler) {}
 }
